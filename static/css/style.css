@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #3E885B;
+}
+#main-container {
+    width: 70%;
+    background-color: #E0E0E2;
+    margin: auto;
+}
+main {
+    width: 100%;
+    margin: auto;
+    color: #353535;
+}
+
+.header-footer {
+    background-color: #353535;
+    width: 100%;
+    margin: auto;
+}
+
+#profile-title {
+    height: 80px;
+    line-height: 80px;
+}
+
+#profile-title h1 {
+    margin: auto;;
+}
+
+#profile-title img {
+    float: right;
+    background-color: #FFF;
+    width: 150px;
+    height: 150px;
+    max-width: 80%;
+    border: 1px solid #353535;
+    padding: 4px;
+    box-shadow: 0 4px 8px 0 #353535, 0 6px 20px 0 #353535;
+}
+
+#profile-title img {
+    margin-right: 1%;
+    margin-top: -6px;
+}
+
+#assignment-links {
+    margin: 15px;
+}
+
+#assignment-links h2 {
+    border-bottom: 2px solid #353535;
+    padding-bottom: 4px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+footer {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#footer-info a,
+#footer-info span {
+    color: #E0E0E2;
+}
+
+#footer-last-modified {
+    color: #3E885B;
+}
