@@ -1,75 +1,76 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
 
 body {
-    font-family: 'Roboto', sans-serif;
-    color: #3E885B;
+  font-family: "Roboto", sans-serif;
+  color: #edf5e1;
 }
 #main-container {
-    width: 70%;
-    background-color: #E0E0E2;
-    margin: auto;
+  width: 70%;
+  background-color: #5cd595;
+  margin: auto;
 }
 main {
-    width: 100%;
-    margin: auto;
-    color: #353535;
+  width: 100%;
+  margin: auto;
+  color: #05386b;
 }
 
 .header-footer {
-    background-color: #353535;
-    width: 100%;
-    margin: auto;
+  background-color: #05386b;
+  width: 100%;
+  margin: auto;
 }
 
 #profile-title {
-    height: 80px;
-    line-height: 80px;
+  height: 80px;
+  line-height: 80px;
 }
 
 #profile-title h1 {
-    margin: auto;;
+  margin: auto;
 }
 
 #profile-title img {
-    float: right;
-    background-color: #FFF;
-    width: 150px;
-    height: 150px;
-    max-width: 80%;
-    border: 1px solid #353535;
-    padding: 4px;
-    box-shadow: 0 4px 8px 0 #353535, 0 6px 20px 0 #353535;
+  float: right;
+  background-color: #fff;
+  width: 150px;
+  height: 150px;
+  max-width: 80%;
+  border: 1px solid #353535;
+  padding: 4px;
+  box-shadow: 0 4px 8px 0 #353535, 0 6px 20px 0 #353535;
 }
 
 #profile-title img {
-    margin-right: 1%;
-    margin-top: -6px;
+  margin-right: 1%;
+  margin-top: -6px;
 }
 
 #assignment-links {
-    margin: 15px;
+  margin: 15px;
 }
 
 #assignment-links h2 {
-    border-bottom: 2px solid #353535;
-    padding-bottom: 4px;
+  border-bottom: 2px solid #05386b;
+  padding-bottom: 2px;
+  box-shadow: #edf5e1 1px 1px;
 }
 
 .text-center {
-    text-align: center;
+  text-align: center;
 }
 
 footer {
-    padding-top: 10px;
-    padding-bottom: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 #footer-info a,
 #footer-info span {
-    color: #E0E0E2;
+  color: #e0e0e2;
 }
 
 #footer-last-modified {
-    font-size: 14px;
-    color: #3E885B;
+  font-size: 14px;
+  color: #3e885b;
 }
