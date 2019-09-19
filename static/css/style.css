@@ -3,9 +3,11 @@
 body {
   font-family: "Roboto", sans-serif;
   color: #edf5e1;
+  margin-top: 2%;
+  line-height: 150%;
 }
 #main-container {
-  width: 70%;
+  width: 85%;
   background-color: #5cd595;
   margin: auto;
 }
@@ -43,7 +45,7 @@ main {
 
 #profile-title img {
   margin-right: 1%;
-  margin-top: -6px;
+  margin-top: -12px;
 }
 
 #assignment-links {
@@ -53,7 +55,7 @@ main {
 #assignment-links h2 {
   border-bottom: 2px solid #05386b;
   padding-bottom: 2px;
-  box-shadow: #edf5e1 1px 1px;
+  box-shadow: 2px 2px 2px 1px #8ee4af;
 }
 
 .text-center {
@@ -71,6 +73,6 @@ footer {
 }
 
 #footer-last-modified {
-  font-size: 14px;
-  color: #5cd595;
+  font-size: 13px;
+  color: #5cd55c;
 }
