@@ -24,8 +24,8 @@ main {
 }
 
 main section {
-  background-color: #8ee4af;
-  border: 1px solid #edf5e1;
+  background-color: #edf5e1;
+  border: 1px solid #8ee4af;
   /*padding: 5px;*/
 }
 
