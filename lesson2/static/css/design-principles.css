@@ -52,10 +52,17 @@ main section img {
     margin-left: auto;
     margin-right: auto;
     margin-top: 5px;
+    max-width: 500px;
 }
 
 main section h3 {
     text-align: center;
+}
+
+main section p {
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: justify;
 }
 
 /* Tablet */
