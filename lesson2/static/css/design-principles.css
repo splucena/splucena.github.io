@@ -7,85 +7,85 @@
 */
 
 #title {
-    width: 100%;
-    text-align: center;
-    color: #05386b;
+  width: 100%;
+  text-align: center;
+  color: #05386b;
 }
 
 /* Mobile */
 main {
-    display: grid;
-    grid-template-columns: 98%;
-    grid-gap: 4px;
-    color: #05386b;
-    justify-content: space-evenly;
-    font-family: 'Ubuntu', sans-serif;
-    margin-bottom: 4px;
+  display: grid;
+  grid-template-columns: 98%;
+  grid-gap: 4px;
+  color: #05386b;
+  justify-content: space-evenly;
+  font-family: "Ubuntu", sans-serif;
+  margin-bottom: 4px;
 }
 
 main section {
-    background-color: #8ee4af;
-    border: 1px solid #edf5e1;
-    /*padding: 5px;*/
+  background-color: #8ee4af;
+  border: 1px solid #edf5e1;
+  /*padding: 5px;*/
 }
 
 main section h2,
 main section a {
-    display: block;
-    text-align: center;
-    background-color: #05386b;
-    color: #edf5e1;
-    margin: 0px;
+  display: block;
+  text-align: center;
+  background-color: #05386b;
+  color: #edf5e1;
+  margin: 0px;
 }
 
 main section h2 {
-    padding-top: 10px;
+  padding-top: 10px;
 }
 
 main section a {
-    padding-bottom: 10px;
-    font-size: 14px;
+  padding-bottom: 10px;
+  font-size: 14px;
 }
 
 main section img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 5px;
-    max-width: 500px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5px;
+  max-width: 500px;
 }
 
 main section h3 {
-    text-align: center;
+  text-align: center;
 }
 
 main section p {
-    padding-left: 10px;
-    padding-right: 10px;
-    text-align: justify;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: justify;
 }
 
 /* Tablet */
 @media only screen and (min-width: 37.5em) {
-    main {
-        grid-template-columns: 49% 49%;
-        row-gap: 4px;
-    }
+  main {
+    grid-template-columns: 49% 49%;
+    row-gap: 4px;
+  }
 
-    section:nth-child(3) {
-        grid-column: span 2;
-    }
+  section:nth-child(3) {
+    grid-column: span 2;
+  }
 }
 
 /* Desktop */
 @media only screen and (min-width: 60em) {
-    main {
-        grid-template-columns: 32.5% 32.6% 32.5%;
-        grid-gap: 2px;
-        margin-bottom: 6px;
-    }
+  main {
+    grid-template-columns: 32.5% 32.6% 32.5%;
+    grid-gap: 2px;
+    margin-bottom: 6px;
+  }
 
-    section:nth-child(3) {
-        grid-column: span 1;
-    }
+  section:nth-child(3) {
+    grid-column: span 1;
+  }
 }
