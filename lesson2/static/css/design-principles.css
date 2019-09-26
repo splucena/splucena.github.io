@@ -26,14 +26,14 @@ main {
 main section {
     background-color: #8ee4af;
     border: 1px solid #edf5e1;
-    padding: 5px;
+    /*padding: 5px;*/
 }
 
 main section h2,
 main section a {
     display: block;
     text-align: center;
-    background-color: #05386b;
+    background-color: #379683;
     color: #edf5e1;
     margin: 0px;
 }
