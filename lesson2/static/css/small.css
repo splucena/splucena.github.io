@@ -6,27 +6,72 @@
     font-family: 'Ubuntu', sans-serif;
 */
 
-#title {
+body {
+  font-family: "Roboto", sans-serif;
+  color: #edf5e1;
+}
+
+#main-container {
+  width: 85%;
+  /*background-color: #5cd595;*/
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.blue-bg-100 {
+  background-color: #05386b;
   width: 100%;
+}
+
+header {
+  background-color: #05386b;
+  width: 100%;
+  margin: auto;
   text-align: center;
-  color: #05386b;
+  display: block;
+  height: 100px;
+  margin-bottom: 6px;
+}
+
+header h1 {
+  margin: auto;
+  line-height: 100px;
+}
+
+footer {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 6px;
+}
+
+#footer-info a,
+#footer-info span {
+  color: #e0e0e2;
+}
+
+#footer-last-modified {
+  font-size: 13px;
+  color: #5cd55c;
+}
+
+.text-center {
+  text-align: center;
 }
 
 /* Mobile */
 main {
   display: grid;
-  grid-template-columns: 98%;
+  grid-template-columns: 100%;
   grid-gap: 4px;
   color: #05386b;
   justify-content: space-evenly;
   font-family: "Ubuntu", sans-serif;
-  margin-bottom: 4px;
 }
 
 main section {
   background-color: #edf5e1;
-  border: 1px solid #8ee4af;
-  /*padding: 5px;*/
+  border: 1px solid #05386b;
+  box-shadow: 1px 1px 3px 1px #05386b;
 }
 
 main section h2,
