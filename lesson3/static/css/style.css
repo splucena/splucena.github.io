@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+
+body {
+    font-family: "Ubuntu", sans-serif;
+    width: 80%;
+    background-color: #FEFFFF;
+    margin: auto;
+    color: #FEFFFF;
+}
+
+footer,
+header {
+    background-color: #287a78;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    padding: 5px;
+}
+
+header,
+nav,
+main,
+footer {
+    margin: 0 auto;
+}
+
+header img {
+    /* */
+}
+
+h1 {
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+}
+
+nav {
+    background-color: #17252A;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav li a {
+    display: block;
+    color: #FEFFFF;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #3aafa9;
+    color: #17252A;
+}
+
+main {
+    color: #17252A;
+    display: flex;
+    margin: 0 auto;
+    padding: 12px;
+    background-color: #3aafa9;
+}
+
+main p {
+    text-align: justify;
+}
+
+/* Tablet */
+@media only screen and (min-width: 37.5em) {}
+
+/* Desktop */
+@media only screen and (min-width: 60em) {
+    header {
+        flex-flow: row wrap;
+    }
+    nav ul {
+        display: flex;
+    }
+
+    nav ul li {
+        flex: 1 1 100%;
+    }
+}
