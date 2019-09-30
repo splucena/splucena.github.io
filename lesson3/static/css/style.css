@@ -72,6 +72,7 @@ main table {
     border: solid 1px #17252a;
     border-collapse: collapse;
     width: 100%;
+    overflow-x: auto;
 }
 
 main table td,
@@ -93,6 +94,67 @@ main section img {
     margin: 0 auto;
     display: block;
 }
+
+/*#table-typography table,
+#table-typography thead,
+#table-typography tbody,
+#table-typography th,
+#table-typography tr,
+#table-typography td {
+    display: block;
+}
+
+#table-typography thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+
+#table-typography tr {
+    border: solid 1px #feffff;
+}
+
+#table-typography td {
+    border: none;
+    border-bottom: 1px solid #17252a;
+    position: relative;
+    padding-left: 50%;
+}
+
+#table-typography td:before {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+}
+
+td:nth-of-type(1):before {
+    content: "Selector";
+    padding-top: 8px;
+}
+
+td:nth-of-type(2):before {
+    content: "Family";
+    padding-top: 8px;
+}
+
+td:nth-of-type(3):before {
+    content: "Size";
+    padding-top: 8px;
+}
+
+td:nth-of-type(4):before {
+    content: "Color";
+    padding-top: 8px;
+}
+
+td:nth-of-type(5):before {
+    content: "Sample";
+    display: flex;
+    font-size: 16px;
+}*/
 
 .text-primary-color {
     background-color: #feffff;
@@ -166,6 +228,11 @@ main section img {
 
 /* Desktop */
 @media only screen and (min-width: 60em) {
+
+    body {
+        width: 95%;
+    }
+
     header {
         flex-flow: row wrap;
     }
@@ -189,9 +256,9 @@ main section img {
     }
 
     main section img {
-        width: 450px;
-        height: 300px;
-        max-width: 450px;
-        max-height: 300px;
+        width: 300px;
+        height: 200px;
+        max-width: 300px;
+        max-height: 200px;
     }
 }
