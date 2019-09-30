@@ -3,7 +3,6 @@
 
 body {
     font-family: "Ubuntu", sans-serif;
-    width: 80%;
     background-color: #FEFFFF;
     margin: auto;
     color: #FEFFFF;
@@ -132,6 +131,10 @@ main section img {
 
 /* Desktop */
 @media only screen and (min-width: 60em) {
+    body {
+        width: 80%;
+    }
+    
     header {
         flex-flow: row wrap;
     }
