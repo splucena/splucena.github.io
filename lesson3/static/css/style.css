@@ -56,7 +56,7 @@ nav li a {
 }
 
 nav a:hover {
-    background-color: #3aafa9;
+    background-color:#def2f1;
     color: #17252A;
 }
 
@@ -65,11 +65,59 @@ main {
     display: flex;
     margin: 0 auto;
     padding: 12px;
-    background-color: #3aafa9;
+    background-color: #def2f1;
 }
 
 main p {
     text-align: justify;
+}
+
+main table {
+    border: solid 1px #17252A;
+    border-collapse: collapse;
+}
+
+main table td,
+main table th {
+    border: solid 1px #17252A;
+    padding: 15px;
+}
+
+.text-primary-color {
+    background-color: #FEFFFF;
+}
+
+.text-secondary-color {
+    background-color: #17252A;
+    color: #FEFFFF;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.text-roboto {
+    font-family: "Roboto", sans-serif;
+}
+
+.text-ubuntu {
+    font-family: "Ubuntu", sans-serif;
+}
+
+.text-small {
+    font-size: 16px;
+}
+
+.text-medium {
+    font-size: 25px;
+}
+
+.text-large {
+    font-size: 30px;
+}
+
+.m-auto {
+    margin: 0 auto;
 }
 
 /* Tablet */

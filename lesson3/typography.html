@@ -4,14 +4,98 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Weather Channel</title>
+    <title>Sumilang Plucena: Weather Bureau Home</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="static/css/style.css" />
+    <!--<script src="main.js"></script>-->
 </head>
 
 <body>
-
+    <header>
+        <img src="static/img/iconfinder_weather-rainy-h_274768.png" alt="" />
+        <h1>The Weather Bureau</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html" target="_self">Home</a></li>
+            <li><a href="target-audience.html" target="_self">Target Audience</a></li>
+            <li><a href="color-scheme.html" target="_self">Color Scheme</a></li>
+            <li><a href="typography.html" target="_self">Typography</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="m-auto">
+            <h2 class="text-align-center">Typography</h2>
+            <p>The primary text fonts are Roboto and Ubuntu (stacked in that order).</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Selector</th>
+                        <th>Family</th>
+                        <th>Size</th>
+                        <th>Color</th>
+                        <th>Sample</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Site Header</td>
+                        <td>Roboto</td>
+                        <td>30px</td>
+                        <td class="text-primary-color">#FEFFFF</td>
+                        <td class="text-primary-color text-roboto text-large">Sample</td>
+                    </tr>
+                    <tr>
+                        <td>Primary Navigation</td>
+                        <td>Ubuntu</td>
+                        <td>16px</td>
+                        <td class="text-primary-color">#FEFFFF</td>
+                        <td class="text-primary-color">Sample</td>
+                    </tr>
+                    <tr>
+                        <td>Footer Navigation</td>
+                        <td>Ubuntu</td>
+                        <td>16px</td>
+                        <td class="text-primary-color">#FEFFFF</td>
+                        <td class="text-primary-color text-ubuntu text-small">Sample</td>
+                    </tr>
+                    <tr>
+                        <td>Heading 1 (h1)</td>
+                        <td>Roboto</td>
+                        <td>30px</td>
+                        <td class="text-primary-color">#FEFFFF</td>
+                        <td class="text-primary-color text-roboto text-large">Sample</td>
+                    </tr>
+                    <tr>
+                        <td>Heading 2 (h2)</td>
+                        <td>Ubuntu</td>
+                        <td>25px</td>
+                        <td class="text-primary-color">#FEFFFF</td>
+                        <td class="text-primary-color text-ubuntu text-medium">Sample</td>
+                    </tr>
+                    <tr>
+                        <td>Paragraph (p)</td>
+                        <td>Ubuntu</td>
+                        <td>16px</td>
+                        <td class="text-secondary-color">#17252A</td>
+                        <td class="text-secondary-color text-ubuntu text-small">Sample</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <footer class="header-footer">
+            <div id="footer-info" class="text-center">
+                <span>&copy; <span id="footer-year"></span> | Sumilang R. Plucena |
+                    Philippines |
+                    <span><a href="https://www.byui.edu/online" target="_blank">BYUI Online Learning</a></span></span>
+            </div>
+            <div id="footer-last-modified" class="text-center">
+                Last Updated: <span id="footer-dt"></span>
+            </div>
+        </footer>
+    </footer>
 </body>
 
 </html>
