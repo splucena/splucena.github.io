@@ -16,11 +16,11 @@
         <h1>The Philippine Weather Bureau</h1>
     </header>
     <nav>
-        <ul>
-            <li><a href="index.html" target="_self">Home</a></li>
-            <li><a href="target-audience.html" target="_self">Target Audience</a></li>
-            <li><a href="color-scheme.html" target="_self">Color Scheme</a></li>
-            <li><a href="typography.html" target="_self">Typography</a></li>
+        <ul id="ul-navbar">
+            <li class="li-menu-item"><a href="index.html" target="_self">Home</a></li>
+            <li class="li-menu-item active"><a href="target-audience.html" target="_self">Target Audience</a></li>
+            <li class="li-menu-item"><a href="color-scheme.html" target="_self">Color Scheme</a></li>
+            <li class="li-menu-item"><a href="typography.html" target="_self">Typography</a></li>
         </ul>
     </nav>
     <main>
@@ -31,7 +31,7 @@
         </section>
         <section>
             <h2 class="text-align-center">Grab Driver Group</h2>
-            <table>
+            <table class="colored-td-first-child">
                 <tbody>
                     <tr>
                         <td>Persona:</td>
@@ -62,7 +62,7 @@
         </section>
         <section>
             <h2 class="text-align-center">Student Group</h2>
-            <table>
+            <table class="colored-td-first-child">
                 <tbody>
                     <tr>
                         <td>Persona:</td>
@@ -92,18 +92,17 @@
             </table>
         </section>
     </main>
-    <footer>
-        <footer class="header-footer">
-            <div id="footer-info" class="text-center">
-                <span>&copy; <span id="footer-year"></span> | Sumilang R. Plucena |
-                    Philippines |
-                    <span><a href="https://www.byui.edu/online" target="_blank">BYUI Online Learning</a></span></span>
-            </div>
-            <div id="footer-last-modified" class="text-center">
-                Last Updated: <span id="footer-dt"></span>
-            </div>
-        </footer>
+    <footer class="header-footer">
+        <div id="footer-info" class="text-center">
+            <span>&copy; <span id="footer-year"></span> | Sumilang R. Plucena |
+                Philippines |
+                <span><a href="https://www.byui.edu/online" target="_blank">BYUI Online Learning</a></span></span>
+        </div>
+        <div id="footer-last-modified" class="text-center">
+            Last Updated: <span id="footer-dt"></span>
+        </div>
     </footer>
+    <script src="static/js/script.js"></script>
 </body>
 
 </html>
