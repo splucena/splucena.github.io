@@ -82,7 +82,8 @@ main table {
 main table td,
 main table th {
     border: solid 1px #17252a;
-    padding: 15px;
+    padding: 5px;
+    font-size: 12px;
 }
 
 main table th {
@@ -95,6 +96,10 @@ main section table.colored-td-first-child td:first-child {
     color: #feffff;
 }
 
+#table-color-scheme tr:first-child td {
+    padding-top: 150px;
+}
+
 main section img {
     max-width: 200px;
     max-height: 100px;
@@ -105,67 +110,6 @@ main section img {
     border: solid 1px #287a78;
 }
 
-/*#table-typography table,
-#table-typography thead,
-#table-typography tbody,
-#table-typography th,
-#table-typography tr,
-#table-typography td {
-    display: block;
-}
-
-#table-typography thead tr {
-    position: absolute;
-    top: -9999px;
-    left: -9999px;
-}
-
-#table-typography tr {
-    border: solid 1px #feffff;
-}
-
-#table-typography td {
-    border: none;
-    border-bottom: 1px solid #17252a;
-    position: relative;
-    padding-left: 50%;
-}
-
-#table-typography td:before {
-    position: absolute;
-    top: 6px;
-    left: 6px;
-    width: 45%;
-    padding-right: 10px;
-    white-space: nowrap;
-}
-
-td:nth-of-type(1):before {
-    content: "Selector";
-    padding-top: 8px;
-}
-
-td:nth-of-type(2):before {
-    content: "Family";
-    padding-top: 8px;
-}
-
-td:nth-of-type(3):before {
-    content: "Size";
-    padding-top: 8px;
-}
-
-td:nth-of-type(4):before {
-    content: "Color";
-    padding-top: 8px;
-}
-
-td:nth-of-type(5):before {
-    content: "Sample";
-    display: flex;
-    font-size: 16px;
-}*/
-
 .text-primary-color {
     background-color: #feffff;
 }
@@ -173,6 +117,30 @@ td:nth-of-type(5):before {
 .text-secondary-color {
     background-color: #17252a;
     color: #feffff;
+}
+
+.primary-color {
+    background-color: #17252a;
+}
+
+.secondary-color {
+    background-color: #2b7a78;
+}
+
+.tertiary-color {
+    background-color: #3aafa9;
+}
+
+.tertiary-color-2 {
+    background-color: #def2f1;
+}
+
+.tertiary-color-3 {
+    background-color: #feffff;
+}
+
+.gray {
+    color: gray;
 }
 
 .text-align-center {
@@ -188,15 +156,15 @@ td:nth-of-type(5):before {
 }
 
 .text-small {
-    font-size: 16px;
+    font-size: 12px;
 }
 
 .text-medium {
-    font-size: 25px;
+    font-size: 19px;
 }
 
 .text-large {
-    font-size: 30px;
+    font-size: 24px;
 }
 
 .m-auto {
@@ -270,5 +238,31 @@ td:nth-of-type(5):before {
         height: 200px;
         max-width: 300px;
         max-height: 200px;
+    }
+    
+    main table td,
+    main table th {
+        padding: 15px;
+        font-size: 16px;
+    }
+
+    #table-color-scheme tr:first-child td {
+        padding-top: 300px;
+    }
+
+    .no-underline {
+        text-decoration: none;
+    }
+
+    .text-small {
+        font-size: 16px;
+    }
+    
+    .text-medium {
+        font-size: 25px;
+    }
+    
+    .text-large {
+        font-size: 30px;
     }
 }
