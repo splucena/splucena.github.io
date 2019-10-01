@@ -143,6 +143,10 @@ main section img {
     color: gray;
 }
 
+.no-underline {
+    text-decoration: none;
+}
+
 .text-align-center {
     text-align: center;
 }
@@ -248,10 +252,6 @@ main section img {
 
     #table-color-scheme tr:first-child td {
         padding-top: 300px;
-    }
-
-    .no-underline {
-        text-decoration: none;
     }
 
     .text-small {
