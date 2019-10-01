@@ -160,11 +160,11 @@ main section img {
 }
 
 .text-medium {
-    font-size: 19px;
+    font-size: 15px;
 }
 
 .text-large {
-    font-size: 24px;
+    font-size: 20px;
 }
 
 .m-auto {
@@ -239,7 +239,7 @@ main section img {
         max-width: 300px;
         max-height: 200px;
     }
-    
+
     main table td,
     main table th {
         padding: 15px;
@@ -257,11 +257,11 @@ main section img {
     .text-small {
         font-size: 16px;
     }
-    
+
     .text-medium {
         font-size: 25px;
     }
-    
+
     .text-large {
         font-size: 30px;
     }
