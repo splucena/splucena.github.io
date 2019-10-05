@@ -59,6 +59,14 @@ nav a:hover {
     color: #17252a;
 }
 
+.active,
+.active a {
+    /*background-color: #def2f1;*/
+    border-top: solid 2px #feffff;
+    /*color: #17252a;*/
+    font-weight: bold;
+}
+
 main {
     color: #17252a;
     display: flex;
@@ -108,6 +116,11 @@ main section img {
     margin: 0 auto;
     display: block;
     border: solid 1px #287a78;
+}
+
+main section li {
+    list-style-type: square;
+    line-height: 1.5em;
 }
 
 .text-primary-color {
@@ -171,15 +184,16 @@ main section img {
     font-size: 20px;
 }
 
+.font-bold {
+    font-weight: bold;
+}
+
 .m-auto {
     margin: 0 auto;
 }
 
-.active,
-.active a {
-    background-color: #def2f1;
-    color: #17252a;
-    font-weight: bold;
+p {
+    text-align: justify;
 }
 
 /* Tablet */
@@ -199,12 +213,14 @@ main section img {
 
     main {
         display: grid;
-        grid-template-columns: 1fr 1fr;
         grid-gap: 6px;
+        justify-items: center;
     }
 
-    main section:nth-child(1) {
-        grid-column: span 2;
+    main section {
+        grid-template-columns: 1fr;
+        margin: 0 auto;
+        width: 70%;
     }
 }
 
@@ -229,12 +245,14 @@ main section img {
 
     main {
         display: grid;
-        grid-template-columns: 1fr 1fr;
         grid-gap: 6px;
+        justify-items: center;
     }
 
-    main section:nth-child(1) {
-        grid-column: span 2;
+    main section {
+        grid-template-columns: 1fr;
+        margin: 0 auto;
+        width: 70%;
     }
 
     main section img {
