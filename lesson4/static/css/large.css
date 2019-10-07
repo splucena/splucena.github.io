@@ -1,0 +1,59 @@
+/* Desktop */
+@media only screen and (min-width: 60em) {
+    body {
+        width: 100%;
+    }
+
+    header {
+        flex-flow: row wrap;
+        
+    }
+
+    header div h1 {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    header div:nth-child(2) {
+        margin-bottom: 0;
+    }
+
+    nav {
+        max-width: 100%;
+    }
+
+    nav li:first-child {
+        display: none;
+    }
+
+    nav ul {
+        display: flex;
+        max-width: 100%;
+    }
+
+    nav li {
+        display: block;
+        flex: 1 1 100%;
+    }
+
+    .active,
+    .active a {
+        /*background-color: #def2f1;*/
+        border-top: solid 2px #feffff;
+        /*color: #17252a;*/
+        font-weight: bold;
+    }
+
+    main {
+        margin: auto;
+        padding: 20px;
+        width: 80%;
+        /*border: solid 1px #000;*/
+    }
+
+    footer {
+        margin: auto;
+        padding: 20px;
+        width: 80%;
+    }
+}

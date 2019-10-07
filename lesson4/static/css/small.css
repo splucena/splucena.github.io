@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Ubuntu&display=swap");
+
+body {
+    font-family: "Ubuntu", sans-serif;
+    background-color: #feffff;
+    margin: auto;
+    color: #feffff;
+}
+
+footer,
+header {
+    background-color: #287a78;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    padding: 5px;
+}
+
+header,
+nav,
+main,
+footer {
+    margin: 0 auto;
+}
+
+header div h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+header div:nth-child(2) {
+    margin-bottom: 10px;
+}
+
+footer {
+    padding: 20px;
+}
+
+h1 {
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+}
+
+nav {
+    margin: 0 auto;
+    /*max-width: 760px;*/
+    background-color: #17252a;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+}
+
+nav li:first-child {
+    display: block;
+}
+
+nav li {
+    display: none;
+}
+
+nav li a {
+    display: block;
+    color: #feffff;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #def2f1;
+    color: #17252a;
+}
+
+.responsive li {
+    display: block;
+}
+
+main {
+    color: #17252a;
+    display: flex;
+    flex-flow: column;
+    margin: 0 auto;
+    padding: 12px;
+    background-color: #def2f1;
+}
+
+.content-box {
+    border: solid 1px #17252a;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 4px;
+}
+
+.text-primary-color {
+    background-color: #feffff;
+}
+
+.text-secondary-color {
+    background-color: #17252a;
+    color: #feffff;
+}
+
+.primary-color {
+    background-color: #17252a;
+}
+
+.secondary-color {
+    background-color: #2b7a78;
+}
+
+.tertiary-color {
+    background-color: #3aafa9;
+}
+
+.tertiary-color-2 {
+    background-color: #def2f1;
+}
+
+.tertiary-color-3 {
+    background-color: #feffff;
+}
+
+.gray {
+    color: gray;
+}
+
+.no-underline {
+    text-decoration: none;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.navigation .text-roboto {
+    font-family: "Roboto", sans-serif;
+}
+
+.text-ubuntu {
+    font-family: "Ubuntu", sans-serif;
+}
+
+.text-small {
+    font-size: 12px;
+}
+
+.text-medium {
+    font-size: 15px;
+}
+
+.text-large {
+    font-size: 20px;
+}
+
+.font-bold {
+    font-weight: bold;
+}
+
+.m-auto {
+    margin: 0 auto;
+}
+
+p {
+    text-align: justify;
+}
+

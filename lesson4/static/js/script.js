@@ -1,20 +1,11 @@
 window.onload = function () {
-    var current_month, current_day, date_last_modified_value,
-        current_hour, current_minutes, current_seconds,
-        date_last_modified, current_year;
-
-    date_last_modified = new Date(document.lastModified);
-    current_year = date_last_modified.getFullYear();
-    current_month = date_last_modified.getMonth() + 1;
-    current_day = date_last_modified.getDate();
-    current_hour = date_last_modified.getHours();
-    current_minutes = date_last_modified.getMinutes();
-    current_seconds = date_last_modified.getSeconds();
-    date_last_modified_value = current_month + '/' + current_day + '/' + current_year +
-        ' ' + current_hour + ':' + current_minutes + ':' + current_seconds;
-
-    document.getElementById('footer-year').innerHTML = current_year;
-    //document.getElementById('footer-dt').innerHTML = date_last_modified_value;
+    
+    let date_today = new Date();
+    let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "Dececember"];
+    let days_of_the_week = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    
+    document.getElementById('footer-year').innerHTML = date_today.getFullYear();
+    document.getElementById('footer-date').innerHTML = days_of_the_week[date_today.getDay()] +', '+ date_today.getDate() + ' ' + months[date_today.getMonth()] + ' ' + date_today.getFullYear()
 }
 
 function toggleMenu() {
