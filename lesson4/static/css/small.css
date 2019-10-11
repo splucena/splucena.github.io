@@ -28,6 +28,14 @@ footer {
     margin: 0 auto;
 }
 
+footer {
+    flex-direction: column;
+}
+
+footer div {
+    margin: 2px;
+}
+
 .site-motto {
     font-style: italic;
 }
