@@ -14,8 +14,11 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-flow: column;
     padding: 5px;
+}
+
+header img {
+    max-width: 100px;
 }
 
 header,
@@ -23,6 +26,11 @@ nav,
 main,
 footer {
     margin: 0 auto;
+}
+
+.site-motto {
+    font-style: italic;
+    font-weight: bold;
 }
 
 header div h1 {
