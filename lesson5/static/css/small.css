@@ -221,6 +221,7 @@ main {
 
 .google-map {
     order: 2;
+    display: none;
 }
 
 .main-contact-info {

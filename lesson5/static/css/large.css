@@ -73,6 +73,10 @@
     }
 
     .google-map {
+        display: block;
+    }
+
+    .google-map {
         order: 1;
     }
     
