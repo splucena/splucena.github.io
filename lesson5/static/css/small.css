@@ -138,6 +138,7 @@ main {
 
 .banner-summary-content table td:nth-child(2) {
     width: 45%;
+    color: yellow;
 }
 
 .banner-summary-content-row {
@@ -163,7 +164,7 @@ main {
     position: absolute;
     top: 5px;
     left: 5px;
-    background: rgba(23, 37, 42, 0.9);
+    background: rgba(23, 37, 42, 0.7);
     width: 180px;
     color: #def2f1;
     padding: 10px;
