@@ -51,9 +51,8 @@
 
     .active,
     .active a {
-        color: #feefff;
-        border-bottom: solid 2px #3aafa9;
-        font-weight: bold;
+        color: yellow;
+        border-bottom: solid 2px yellow;
         background-color: #172429;
     }
 
