@@ -1,0 +1,321 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Ubuntu&display=swap");
+
+body {
+    font-family: "Ubuntu", sans-serif;
+    background-color: #feffff;
+    margin: auto;
+    color: #feffff;
+}
+
+footer,
+header {
+    background-color: #287a78;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+
+header img {
+    max-width: 100px;
+}
+
+header,
+nav,
+main,
+footer {
+    margin: 0 auto;
+}
+
+footer {
+    flex-direction: column;
+}
+
+footer div {
+    margin: 2px;
+}
+
+.site-motto {
+    font-style: italic;
+}
+
+header div h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+header div:nth-child(2) {
+    margin-bottom: 10px;
+}
+
+footer {
+    padding: 20px;
+}
+
+h1 {
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+}
+
+nav {
+    margin: 0 auto;
+    /*max-width: 760px;*/
+    background-color: #17252a;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+}
+
+nav li:first-child {
+    display: block;
+}
+
+nav li {
+    display: none;
+}
+
+nav li a {
+    display: block;
+    color: #feffff;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #def2f1;
+    color: #17252a;
+}
+
+.responsive li {
+    display: block;
+}
+
+main {
+    color: #17252a;
+    display: flex;
+    flex-flow: column;
+    margin: 0 auto;
+    padding: 12px;
+    background-color: #def2f1;
+}
+
+.banner-summary {
+    position: relative;
+    margin: 4px;
+    border: 1px solid #17252a;
+}
+
+.banner-summary img {
+    max-width: 100%;
+    max-height: 100%;
+    min-height: 200px;
+    margin-bottom: -3px; /* This is weird */
+    padding: 0;
+    
+}
+
+.banner-summary h3 {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+.banner-summary-content table {
+    border: none;
+    width: 100%;
+}
+
+.banner-summary-content table td:first-child {
+    text-align: right;
+}
+
+.banner-summary-content table td:nth-child(2) {
+    width: 45%;
+}
+
+.banner-summary-content-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.banner-summary-content-col {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+    padding: 4px;
+}
+
+.text-align-right {
+    text-align: right;
+}
+
+.weather-summary {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    background: rgba(23, 37, 42, 0.9);
+    width: 180px;
+    color: #def2f1;
+    padding: 10px;
+    box-shadow: 0 0 2px 1px rgba(222, 242, 241, 0.7);
+}
+
+.weather-summary h3 {
+    border-bottom: 1px solid #def2f1;
+}
+
+.content-box {
+    border: solid 1px #17252a;
+    margin: 4px;
+}
+
+.five-day-forecast {
+    border: none;
+    display: none;
+}
+
+.five-day-forecast img {
+    width: 50px;
+    height: 50px;
+}
+
+.five-day-forecast table {
+    width: 50%;
+    margin: 0 auto;
+    border: 1px solid #17252a;
+    border-collapse: collapse;
+}
+
+.five-day-forecast table td {
+    border: 1px solid #17252a;
+    border-collapse: collapse;
+    text-align: center;
+    padding: 4px;
+}
+
+.five-day-forecast table th {
+    background-color: #17252a;
+    color: #feffff;
+    padding: 4px;
+}
+
+.article-content h3 {
+    padding: 0;
+    margin: 0;
+}
+
+.article-image {
+    min-width: 300px;
+    min-height: 300px;
+}
+
+.google-map {
+    order: 2;
+}
+
+.main-contact-info {
+    order: 1;
+}
+
+.google-map iframe {
+    min-height: 300px;
+}
+
+.contact-info {
+    margin: auto auto;
+}
+
+.contact-info img {
+    width: 30px;
+    height: 30px;
+}
+
+.contact-info h3,
+.contact-info p {
+    margin: 0;
+    padding: 2px;
+}
+
+.text-primary-color {
+    background-color: #feffff;
+}
+
+.text-secondary-color {
+    background-color: #17252a;
+    color: #feffff;
+}
+
+.primary-color {
+    background-color: #17252a;
+}
+
+.secondary-color {
+    background-color: #2b7a78;
+}
+
+.tertiary-color {
+    background-color: #3aafa9;
+}
+
+.tertiary-color-2 {
+    background-color: #def2f1;
+}
+
+.tertiary-color-3 {
+    background-color: #feffff;
+}
+
+.gray {
+    color: gray;
+}
+
+.no-underline {
+    text-decoration: none;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.navigation .text-roboto {
+    font-family: "Roboto", sans-serif;
+}
+
+.text-ubuntu {
+    font-family: "Ubuntu", sans-serif;
+}
+
+.text-small {
+    font-size: 12px;
+}
+
+.text-medium {
+    font-size: 15px;
+}
+
+.text-large {
+    font-size: 20px;
+}
+
+.font-bold {
+    font-weight: bold;
+}
+
+.m-auto {
+    margin: 0 auto;
+}
+
+p {
+    text-align: justify;
+}
+

@@ -56,6 +56,11 @@ header img {
   box-shadow: 0 1px 2px 0 #353535, 0 1px 5px 0 #353535;
 }
 
+.banner-summary {
+  background-color: red;
+  z-index: 100;
+}
+
 #assignment-links {
   margin: 15px;
 }

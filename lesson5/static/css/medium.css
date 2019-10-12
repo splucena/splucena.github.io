@@ -1,0 +1,18 @@
+/* Tablet */
+@media only screen and (min-width: 37.5em) {
+    body {
+        width: 100%;
+    }
+
+    .five-day-forecast {
+        display: block;
+    }
+
+    .google-map {
+        order: 1;
+    }
+    
+    .main-contact-info {
+        order: 2;
+    }
+}

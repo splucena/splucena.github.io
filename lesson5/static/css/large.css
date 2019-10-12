@@ -1,0 +1,89 @@
+/* Desktop */
+@media only screen and (min-width: 60em) {
+    body {
+        width: 100%;
+    }
+
+    header {
+        flex-flow: row wrap;
+
+    }
+
+    header div h1 {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    header img {
+        min-width: 150px;
+    }
+
+    header div:nth-child(2) {
+        margin-bottom: 0;
+    }
+
+    nav {
+        max-width: 100%;
+    }
+
+    nav li:first-child {
+        display: none;
+    }
+
+    nav ul {
+        display: flex;
+        max-width: 100%;
+    }
+
+    nav li {
+        display: block;
+        flex: 1 1 100%;
+    }
+
+    /*nav ul {
+        border-top: solid 2px #4E6766;
+        border-bottom: solid 2px #4E6766;
+    }
+
+    nav li:not(:last-child) a {
+        border-right: solid 2px #4E6766;
+    }*/
+
+    .active,
+    .active a {
+        color: #feefff;
+        border-bottom: solid 2px #3aafa9;
+        font-weight: bold;
+        background-color: #172429;
+    }
+
+    main {
+        margin: auto;
+        padding: 20px;
+        width: 80%;
+        /*border: solid 1px #000;*/
+    }
+
+    .weather-summary {
+        top: 50px;
+        left: 50px;
+    }
+
+    .five-day-forecast {
+        display: block;
+    }
+
+    .google-map {
+        order: 1;
+    }
+    
+    .main-contact-info {
+        order: 2;
+    }
+
+    footer {
+        margin: auto;
+        padding: 20px;
+        width: 80%;
+    }
+}
