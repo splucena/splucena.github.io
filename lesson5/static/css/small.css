@@ -8,6 +8,17 @@ body {
     color: #feffff;
 }
 
+#friday-banner {
+    position: absolute;
+    display: none;
+    color: #FFFF00;
+    text-align: center;
+    margin: 0 auto;
+    padding: 5px;
+    top: 1px;
+    background: rgba(23, 37, 42, 0.2);
+}
+
 footer,
 header {
     background-color: #287a78;

@@ -6,6 +6,12 @@ window.onload = function () {
     
     document.getElementById('footer-year').innerHTML = date_today.getFullYear();
     document.getElementById('footer-date').innerHTML = days_of_the_week[date_today.getDay()] +', '+ date_today.getDate() + ' ' + months[date_today.getMonth()] + ' ' + date_today.getFullYear()
+
+    let is_friday = 5;
+    let friday_banner = document.getElementById('friday-banner');
+    if (is_friday == 5) {
+        friday_banner.style.display = "block";
+    }
 }
 
 function toggleMenu() {
