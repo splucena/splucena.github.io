@@ -228,10 +228,6 @@ main {
     order: 1;
 }
 
-.google-map iframe {
-    min-height: 300px;
-}
-
 .contact-info {
     margin: auto auto;
 }
