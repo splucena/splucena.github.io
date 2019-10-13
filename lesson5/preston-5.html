@@ -14,10 +14,10 @@
     <!--<script src="main.js"></script>-->
 </head>
 
-<body>
-    <header>
+<body onresize="on_resize()">
+    <header id="header-element">
         <div id="friday-banner">Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.</div>
-        <img src="static/img/mostly_sunny_2x.png" alt="Mostly Sunny" />
+        <img src="static/img/weather_icon.png" alt="Mostly Sunny" />
         <div>
             <h1>The Weather Bureau</h1>
             <div class="text-align-center site-motto">Your weather authority</div>
@@ -49,7 +49,7 @@
     <main>
         <h2 class="text-align-center">Preston Idaho</h2>
         <div class="banner-summary">
-            <picture><img src="static/img/preston_river.jpg" alt="Preston River"></picture>
+            <img src="static/img/preston_river.jpg" alt="Preston River">
             <section class="weather-summary">
                 <h3 class="text-align-center">Weather Summary</h3>
                 <div class="banner-summary-content">

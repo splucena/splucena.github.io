@@ -12,10 +12,11 @@
     header div h1 {
         margin-top: 0;
         margin-bottom: 0;
+        font-size: 32px;
     }
 
     header img {
-        min-width: 150px;
+        min-width: 150px;        
     }
 
     header div:nth-child(2) {
@@ -61,6 +62,18 @@
         padding: 20px;
         width: 80%;
         /*border: solid 1px #000;*/
+    }
+
+    .banner-summary {
+        min-height: 350px;
+    }
+
+    .banner-summary img {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        min-height: 350px;
     }
 
     .weather-summary {

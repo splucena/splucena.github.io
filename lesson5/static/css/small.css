@@ -14,9 +14,10 @@ body {
     color: #FFFF00;
     text-align: center;
     margin: 0 auto;
-    padding: 5px;
+    padding: 10px;
     top: 1px;
     background: rgba(23, 37, 42, 0.2);
+    width: 100%;
 }
 
 footer,
@@ -49,11 +50,13 @@ footer div {
 
 .site-motto {
     font-style: italic;
+    color: #FFFF00;
 }
 
 header div h1 {
     margin-top: 0;
     margin-bottom: 0;
+    font-size: 24px;
 }
 
 header div:nth-child(2) {
@@ -120,15 +123,20 @@ main {
     position: relative;
     margin: 4px;
     border: 1px solid #17252a;
+    max-height: 100%;
+    min-height: 200px;
 }
 
 .banner-summary img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
     max-width: 100%;
     max-height: 100%;
     min-height: 200px;
-    margin-bottom: -3px; /* This is weird */
     padding: 0;
-    
+    margin: 0 auto;
 }
 
 .banner-summary h3 {
