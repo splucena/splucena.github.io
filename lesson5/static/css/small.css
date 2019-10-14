@@ -108,6 +108,7 @@ nav a:hover {
 
 .responsive li {
     display: block;
+    color: #FFFF00;
 }
 
 main {
@@ -334,4 +335,3 @@ main {
 p {
     text-align: justify;
 }
-
