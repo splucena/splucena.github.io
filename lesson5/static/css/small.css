@@ -2,337 +2,341 @@
 @import url("https://fonts.googleapis.com/css?family=Ubuntu&display=swap");
 
 body {
-    font-family: "Ubuntu", sans-serif;
-    background-color: #feffff;
-    margin: auto;
-    color: #feffff;
+  font-family: "Ubuntu", sans-serif;
+  background-color: #feffff;
+  margin: auto;
+  color: #feffff;
 }
 
 #friday-banner {
-    position: absolute;
-    display: none;
-    color: #FFFF00;
-    text-align: center;
-    margin: 0 auto;
-    padding: 10px;
-    top: 1px;
-    background: rgba(23, 37, 42, 0.2);
-    width: 100%;
+  position: absolute;
+  display: none;
+  color: #ffff00;
+  text-align: center;
+  margin: 0 auto;
+  padding: 10px;
+  top: 1px;
+  background: rgba(23, 37, 42, 0.2);
+  width: 100%;
 }
 
 footer,
 header {
-    background-color: #287a78;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 5px;
+  background-color: #287a78;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
 }
 
 header img {
-    max-width: 100px;
+  max-width: 100px;
 }
 
 header,
 nav,
 main,
 footer {
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
 footer {
-    flex-direction: column;
+  flex-direction: column;
 }
 
 footer div {
-    margin: 2px;
+  margin: 2px;
 }
 
 .site-motto {
-    font-style: italic;
-    color: #FFFF00;
+  font-style: italic;
+  color: #ffff00;
 }
 
 header div h1 {
-    margin-top: 0;
-    margin-bottom: 0;
-    font-size: 24px;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 24px;
 }
 
 header div:nth-child(2) {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 footer {
-    padding: 20px;
+  padding: 20px;
 }
 
 h1 {
-    font-family: "Roboto", sans-serif;
-    text-align: center;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
 }
 
 nav {
-    margin: 0 auto;
-    /*max-width: 760px;*/
-    background-color: #17252a;
+  margin: 0 auto;
+  /*max-width: 760px;*/
+  background-color: #17252a;
 }
 
 nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    text-align: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  text-align: center;
 }
 
 nav li:first-child {
-    display: block;
-    color: #FFFF00;
+  display: block;
+  color: #ffff00;
+}
+
+nav li:first-child a {
+  color: #ffff00;
 }
 
 nav li {
-    display: none;
+  display: none;
 }
 
 nav li a {
-    display: block;
-    color: #feffff;
-    text-align: center;
-    padding: 12px;
-    text-decoration: none;
+  display: block;
+  color: #feffff;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
 }
 
 nav a:hover {
-    color: #FFFF00;
+  color: #ffff00;
 }
 
 .responsive li {
-    display: block;
-    color: #FFFF00;
+  display: block;
+  color: #ffff00;
 }
 
 main {
-    color: #17252a;
-    display: flex;
-    flex-flow: column;
-    margin: 0 auto;
-    padding: 12px;
-    background-color: #def2f1;
+  color: #17252a;
+  display: flex;
+  flex-flow: column;
+  margin: 0 auto;
+  padding: 12px;
+  background-color: #def2f1;
 }
 
 .banner-summary {
-    position: relative;
-    margin: 4px;
-    border: 1px solid #17252a;
-    max-height: 100%;
-    min-height: 200px;
+  position: relative;
+  margin: 4px;
+  border: 1px solid #17252a;
+  max-height: 100%;
+  min-height: 200px;
 }
 
 .banner-summary img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    max-width: 100%;
-    max-height: 100%;
-    min-height: 200px;
-    padding: 0;
-    margin: 0 auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  min-height: 200px;
+  padding: 0;
+  margin: 0 auto;
 }
 
 .banner-summary h3 {
-    margin: 0;
-    padding: 0;
-    font-weight: normal;
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
 }
 
 .banner-summary-content table {
-    border: none;
-    width: 100%;
+  border: none;
+  width: 100%;
 }
 
 .banner-summary-content table td:first-child {
-    text-align: right;
+  text-align: right;
 }
 
 .banner-summary-content table td:nth-child(2) {
-    width: 45%;
-    color: yellow;
+  width: 45%;
+  color: yellow;
 }
 
 .banner-summary-content-row {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
 .banner-summary-content-col {
-    display: flex;
-    flex-direction: column;
-    flex-basis: 100%;
-    flex: 1;
-    padding: 4px;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  padding: 4px;
 }
 
 .text-align-right {
-    text-align: right;
+  text-align: right;
 }
 
 .weather-summary {
-    position: absolute;
-    top: 5px;
-    left: 5px;
-    background: rgba(23, 37, 42, 0.7);
-    width: 180px;
-    color: #def2f1;
-    padding: 10px;
-    box-shadow: 0 0 2px 1px rgba(222, 242, 241, 0.7);
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  background: rgba(23, 37, 42, 0.7);
+  width: 180px;
+  color: #def2f1;
+  padding: 10px;
+  box-shadow: 0 0 2px 1px rgba(222, 242, 241, 0.7);
 }
 
 .weather-summary h3 {
-    border-bottom: 1px solid #def2f1;
+  border-bottom: 1px solid #def2f1;
 }
 
 .content-box {
-    border: solid 1px #17252a;
-    margin: 4px;
+  border: solid 1px #17252a;
+  margin: 4px;
 }
 
 .five-day-forecast {
-    border: none;
-    display: none;
+  border: none;
+  display: none;
 }
 
 .five-day-forecast img {
-    width: 80px;
-    height: 80px;
+  width: 80px;
+  height: 80px;
 }
 
 .five-day-forecast table {
-    width: 50%;
-    margin: 0 auto;
-    border: 1px solid #17252a;
-    border-collapse: collapse;
+  width: 50%;
+  margin: 0 auto;
+  border: 1px solid #17252a;
+  border-collapse: collapse;
 }
 
 .five-day-forecast table td {
-    border: 1px solid #17252a;
-    border-collapse: collapse;
-    text-align: center;
-    padding: 4px;
+  border: 1px solid #17252a;
+  border-collapse: collapse;
+  text-align: center;
+  padding: 4px;
 }
 
 .five-day-forecast table th {
-    background-color: #17252a;
-    color: #feffff;
-    padding: 4px;
+  background-color: #17252a;
+  color: #feffff;
+  padding: 4px;
 }
 
 .article-content h3 {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 .article-image {
-    min-width: 300px;
-    min-height: 300px;
+  min-width: 300px;
+  min-height: 300px;
 }
 
 .google-map {
-    order: 2;
-    display: none;
+  order: 2;
+  display: none;
 }
 
 .main-contact-info {
-    order: 1;
+  order: 1;
 }
 
 .contact-info {
-    margin: auto auto;
+  margin: auto auto;
 }
 
 .contact-info img {
-    width: 30px;
-    height: 30px;
+  width: 30px;
+  height: 30px;
 }
 
 .contact-info h3,
 .contact-info p {
-    margin: 0;
-    padding: 2px;
+  margin: 0;
+  padding: 2px;
 }
 
 .text-primary-color {
-    background-color: #feffff;
+  background-color: #feffff;
 }
 
 .text-secondary-color {
-    background-color: #17252a;
-    color: #feffff;
+  background-color: #17252a;
+  color: #feffff;
 }
 
 .primary-color {
-    background-color: #17252a;
+  background-color: #17252a;
 }
 
 .secondary-color {
-    background-color: #2b7a78;
+  background-color: #2b7a78;
 }
 
 .tertiary-color {
-    background-color: #3aafa9;
+  background-color: #3aafa9;
 }
 
 .tertiary-color-2 {
-    background-color: #def2f1;
+  background-color: #def2f1;
 }
 
 .tertiary-color-3 {
-    background-color: #feffff;
+  background-color: #feffff;
 }
 
 .gray {
-    color: gray;
+  color: gray;
 }
 
 .no-underline {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .text-align-center {
-    text-align: center;
+  text-align: center;
 }
 
 .navigation .text-roboto {
-    font-family: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .text-ubuntu {
-    font-family: "Ubuntu", sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 
 .text-small {
-    font-size: 12px;
+  font-size: 12px;
 }
 
 .text-medium {
-    font-size: 15px;
+  font-size: 15px;
 }
 
 .text-large {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .font-bold {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .m-auto {
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
 p {
-    text-align: justify;
+  text-align: justify;
 }
