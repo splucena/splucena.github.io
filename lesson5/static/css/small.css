@@ -88,6 +88,7 @@ nav ul {
 
 nav li:first-child {
     display: block;
+    color: #FFFF00;
 }
 
 nav li {
