@@ -4,10 +4,11 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Preston</title>
+    <title>The Weather Bureau | Preston</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="../static/css/all.css" />
+    <link rel="stylesheet" type="text/css" href="../static/css/all.css" />
+    <link rel="stylesheet" type="text/css" href="../static/css/normalize.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="static/css/small.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="static/css/medium.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="static/css/large.css" />
@@ -16,7 +17,8 @@
 
 <body onresize="on_resize()">
     <header id="header-element">
-        <div id="friday-banner">Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.</div>
+        <div id="friday-banner">Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.
+        </div>
         <img src="static/img/weather_icon.png" alt="Mostly Sunny" />
         <div>
             <h1>The Weather Bureau</h1>
@@ -116,14 +118,23 @@
             <div class="banner-summary-content-row">
                 <div class="banner-summary-content-col article-content">
                     <h3>Preston, Idaho</h3>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                        of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                        but also the leap into electronic typesetting, remaining essentially unchanged. It was
+                        popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                        and more recently with desktop publishing software like Aldus PageMaker including versions of
+                        Lorem Ipsum.</p>
                 </div>
-                <div class="banner-summary-content-col article-image"><img src="static/img/article_image.jpg" alt="Preston, Idaho"></div>
+                <div class="banner-summary-content-col article-image"><img src="static/img/article_image.jpg"
+                        alt="Preston, Idaho"></div>
             </div>
         </div>
         <div class="content-box">
             <div class="banner-summary-content-row">
-                <div class="banner-summary-content-col google-map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47365.77385347071!2d-111.9153445750597!3d42.09974162634671!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20ID%2083263%2C%20USA!5e0!3m2!1sen!2sph!4v1570894327447!5m2!1sen!2sph" allowfullscreen=""></iframe></div>
+                <div class="banner-summary-content-col google-map"><iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47365.77385347071!2d-111.9153445750597!3d42.09974162634671!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20ID%2083263%2C%20USA!5e0!3m2!1sen!2sph!4v1570894327447!5m2!1sen!2sph"
+                        allowfullscreen=""></iframe></div>
                 <div class="banner-summary-content-col main-contact-info">
                     <div class="contact-info">
                         <h3>The Weather Bureau</h3>
@@ -145,10 +156,10 @@
     </main>
     <footer class="text-align-center">
         <div><span>&copy; <span id="footer-year"></span> | Sumilang R. Plucena |
-            Philippines |
-            <span><a href="https://www.byui.edu/online" target="_blank">BYUI Online Learning</a></span>
-            |
-            <span><a href="../index.html" target="_blank">Assignment Portal</a></span></span></div>
+                Philippines |
+                <span><a href="https://www.byui.edu/online" target="_blank">BYUI Online Learning</a></span>
+                |
+                <span><a href="../index.html" target="_blank">Assignment Portal</a></span></span></div>
         <div><span id="footer-date"></span></div>
     </footer>
     <script src="static/js/script.js"></script>
