@@ -2,6 +2,7 @@
 @media only screen and (min-width: 60em) {
     body {
         width: 100%;
+        background-color: #DEF2F1;
     }
 
     header {
@@ -16,7 +17,7 @@
     }
 
     header img {
-        min-width: 150px;        
+        min-width: 150px;
     }
 
     header div:nth-child(2) {
@@ -33,7 +34,8 @@
 
     nav ul {
         display: flex;
-        max-width: 100%;
+        width: 60%;
+        margin: 0 auto;
     }
 
     nav li {
@@ -98,7 +100,7 @@
     .google-map {
         order: 1;
     }
-    
+
     .main-contact-info {
         order: 2;
     }
