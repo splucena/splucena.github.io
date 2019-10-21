@@ -63,11 +63,11 @@
                             </tr>
                             <tr>
                                 <td>High: </td>
-                                <td>80 &#8457;</td>
+                                <td><span id="temperature">50</span> &#8457;</td>
                             </tr>
                             <tr>
                                 <td>Wind Chill: </td>
-                                <td>78 &#8457;</td>
+                                <td><span id="wind_chill">78</span> &#8457;</td>
                             </tr>
                             <tr>
                                 <td>Humidity: </td>
@@ -75,7 +75,7 @@
                             </tr>
                             <tr>
                                 <td>Wind Speed: </td>
-                                <td>6 mph</td>
+                                <td><span id="wind_speed">200</span> mph</td>
                             </tr>
                         </tbody>
                     </table>
@@ -163,6 +163,7 @@
         <div><span id="footer-date"></span></div>
     </footer>
     <script src="static/js/script.js"></script>
+    <script src="static/js/windchill.js"></script>
     <script src="static/js/webfont.js"></script>
     <script>
         WebFont.load({
