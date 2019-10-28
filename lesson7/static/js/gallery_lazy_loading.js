@@ -1,7 +1,6 @@
-var observers = [];
+let observers = [];
 
 startup = () => {
-    //console.log(1);
     let observer_options = {
         root: null,
         rootMargin: '0px',
@@ -9,7 +8,6 @@ startup = () => {
     };
 
     let gallery_images = document.getElementById('gallery-images');
-    console.log(gallery_images);
     for (let i=0; i<gallery_images.childNodes.length; i++) {
         let img = gallery_images.childNodes[i];
         
@@ -22,15 +20,11 @@ startup = () => {
     }
 }
 
-console.log(observers);
-
 intersectionCallback = (entries) => {
     entries.forEach((entry) => {
-        //console.log(entry);
         let box = entry.target;
         let visible_pct = (Math.floor(entry.intersectionRatio * 100)) + '%';
         box.innerHTML = visible_pct + ' ' + box.id;
-        //console.log(visible_pct * 100);
         if ((entry.intersectionRatio * 100) >= 100) {
             entry.target.setAttribute('src', entry.target.getAttribute('data-src'));
         } 
