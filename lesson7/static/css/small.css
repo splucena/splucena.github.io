@@ -173,6 +173,7 @@ main {
 }
 
 .img-desc {
+  visibility: hidden;
   width: 100%;
   position: absolute;
   text-align: center;
@@ -185,11 +186,6 @@ main {
 
 .gallery-images picture img[data-src] {
   filter: blur(0.2em);
-}
-
-.gallery-images picture:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.8);
-  /*box-shadow: 1px 1px 15px #000;*/
 }
 
 .banner-summary {

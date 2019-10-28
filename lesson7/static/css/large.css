@@ -66,6 +66,14 @@
         /*border: solid 1px #000;*/
     }
 
+    .img-desc {
+        visibility: visible;
+    }
+
+    .gallery-images picture:hover {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.8);
+    }
+
     .banner-summary {
         min-height: 350px;
     }
