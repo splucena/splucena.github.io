@@ -31,7 +31,7 @@ intersectionCallback = (entries) => {
         let visible_pct = (Math.floor(entry.intersectionRatio * 100)) + '%';
         box.innerHTML = visible_pct + ' ' + box.id;
         //console.log(visible_pct * 100);
-        if ((entry.intersectionRatio * 100) == 100) {
+        if ((entry.intersectionRatio * 100) >= 100) {
             entry.target.setAttribute('src', entry.target.getAttribute('data-src'));
         } 
     });
