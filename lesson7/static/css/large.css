@@ -63,14 +63,20 @@
         margin: auto;
         padding: 20px;
         width: 80%;
-        /*border: solid 1px #000;*/
+    }
+
+    .picture-container {
+        position: relative;
+        margin: 0 auto;
     }
 
     .img-desc {
         visibility: visible;
+        margin: 0 auto;
+        width: 100%;
     }
 
-    .gallery-images picture:hover {
+    .gallery-images div:hover {
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.8);
     }
 

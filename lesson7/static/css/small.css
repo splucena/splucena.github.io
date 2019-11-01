@@ -156,7 +156,15 @@ main {
   grid-row-gap: 15px;
 }
 
-.gallery-images picture {
+/*.gallery-images div picture {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: solid 1px blue;
+}*/
+
+.picture-container {
   position: relative;
   width: 100%;
   height: 250px;
@@ -178,9 +186,9 @@ main {
   position: absolute;
   text-align: center;
   bottom: 0;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  background-color: rgba(255, 255, 255, 0.8);
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: rgba(255, 255, 255, 0.5);
   color: #000;
 }
 
