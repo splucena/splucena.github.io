@@ -525,7 +525,9 @@ p {
 .form-storm-center input[type="email"]:valid,
 .form-storm-center input[type="number"]:valid,
 .form-storm-center input[type="tel"]:valid,
-.form-storm-center textarea:valid {
+.form-storm-center textarea:valid,
+.form-storm-center input[type="date"]:valid,
+.form-storm-center select:valid {
   border-left: solid 5px green;
 }
 
@@ -533,7 +535,9 @@ p {
 .form-storm-center input[type="email"]:invalid,
 .form-storm-center input[type="number"]:invalid,
 .form-storm-center input[type="tel"]:invalid,
-.form-storm-center textarea:invalid {
+.form-storm-center textarea:invalid,
+.form-storm-center input[type="date"]:invalid,
+.form-storm-center select:invalid {
   border-left: solid 5px red;
 }
 
