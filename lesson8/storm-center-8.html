@@ -67,8 +67,9 @@
     <div class="main-container">
       <form action="" method="GET" class="form-storm-center">
         <fieldset>
-          <legend>User Information</legend>
-          <label for="fullname">Full Name<input type="text" name="fullname" id="fullname"></label>
+          <legend>Personal Information</legend>
+          <label for="fullname">Full Name<input type="text" name="fullname" id="fullname" minlength="5"
+              pattern="[A-Za-z ]+" required></label>
           <label for="email">Email<input type="email" name="email" placeholder="someone@email.com" id="email"></label>
           <label for="phone_number">Phone Number<input type="tel" required name="phone_number"
               id="phone_number"></label>
@@ -107,7 +108,7 @@
           <legend>Additional Information</legend>
           <label for="comment">Comments<input type="textarea" name="comment" id="comment"></label>
         </fieldset>
-        <button>Submit</button>
+        <input type="submit" value="Submit">
       </form>
     </div>
   </main>
