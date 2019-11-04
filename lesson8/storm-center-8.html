@@ -68,11 +68,11 @@
       <h3>Send Storm Report</h3>
       <form action="" method="GET" class="form-storm-center">
         <fieldset>
-          <legend>Reporting Person Information</legend>
+          <legend>Reporting Person's Information</legend>
           <label for="fullname">Full Name<input type="text" name="fullname" id="fullname" minlength="5"
               pattern="[A-Za-z ]+" required></label>
           <label for="email">Email<input type="email" name="email" placeholder="someone@email.com" id="email"></label>
-          <label for="phone_number">Phone Number<input type="tel" required name="phone_number"
+          <label for="phone_number">Phone Number<input type="tel" required name="phone_number" pattern="[0-9]+"
               id="phone_number"></label>
           <label for="zip">ZIP<input type="number" name="zip" id="zip" required></label>
         </fieldset>
@@ -122,24 +122,6 @@
     <div><span id="footer-date"></span></div>
   </footer>
   <script src="static/js/script.js"></script>
-  <script>
-    function adjust_severity_rating(rating) {
-      document.getElementById('storm_severity_rating').innerHTML = rating;
-    }
-
-    function validate_form() {
-      let full_name, phone_number, zip;
-      full_name = document.getElementById('fullname');
-      phone_number = document.getElementById('phone_number');
-      zip = document.getElementById('zip');
-
-
-      if (full_name.checkValidity() && phone_number.checkValidity() && zip.checkValidity()) {
-        let win = window.open('index.html', '_blank');
-        win.focus();
-      }
-    }
-  </script>
 </body>
 
 </html>

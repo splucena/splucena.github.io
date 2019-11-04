@@ -5,7 +5,7 @@ let is_friday = date_today.getDay();
 
 window.onload = function () {
     document.getElementById('footer-year').innerHTML = date_today.getFullYear();
-    document.getElementById('footer-date').innerHTML = days_of_the_week[date_today.getDay()] +', '+ date_today.getDate() + ' ' + months[date_today.getMonth()] + ' ' + date_today.getFullYear()
+    document.getElementById('footer-date').innerHTML = days_of_the_week[date_today.getDay()] + ', ' + date_today.getDate() + ' ' + months[date_today.getMonth()] + ' ' + date_today.getFullYear()
 
     let friday_banner = document.getElementById('friday-banner');
 
@@ -16,7 +16,7 @@ window.onload = function () {
 }
 
 function toggleMenu() {
-	document.getElementsByClassName("navigation")[0].classList.toggle("responsive");
+    document.getElementsByClassName("navigation")[0].classList.toggle("responsive");
 }
 
 function on_resize() {
@@ -31,5 +31,22 @@ function on_resize() {
         } else {
             header_element.style.paddingTop = "30px";
         }
+    }
+}
+
+function adjust_severity_rating(rating) {
+    document.getElementById('storm_severity_rating').innerHTML = rating;
+}
+
+function validate_form() {
+    let full_name, phone_number, zip;
+    full_name = document.getElementById('fullname');
+    phone_number = document.getElementById('phone_number');
+    zip = document.getElementById('zip');
+
+
+    if (full_name.checkValidity() && phone_number.checkValidity() && zip.checkValidity()) {
+        let win = window.open('thanks.html', '_blank');
+        win.focus();
     }
 }
