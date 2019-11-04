@@ -414,14 +414,73 @@ p {
 
 /* Storm Center */
 .main-container {
+  width: 600px;
+  max-width: 100%;
   margin: 0 auto;
 }
 
+.form-storm-center fieldset {
+  box-sizing: border-box;
+  /*border-radius: 4px;*/
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
 .form-storm-center label,
-.form-storm-center input {
+.form-storm-center input,
+.form-storm-center select {
+  display: block;
+  padding: 5px;
+}
+
+.form-storm-center input,
+.form-storm-center select,
+.form-storm-center button {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  box-sizing: border-box;
+  margin-top: 5px;
+}
+
+.form-storm-center input[type="text"],
+.form-storm-center input[type="tel"],
+.form-storm-center input[type="number"],
+.form-storm-center input[type="email"],
+.form-storm-center input[type="textarea"] {
+  width: 100%;
   display: block;
 }
 
-.form-storm-center input[type="text"] {
+.form-storm-center input[type="radio"] {
+  display: inline;
+}
+
+.form-storm-center button {
   width: 100%;
+  float: right;
+  cursor: pointer;
+  background-color: #5b7bc0;
+  color: #FFF;
+}
+
+.form-storm-center input:focus {
+  border: solid 1px gray;
+  background-color: #ccc;
+  box-shadow: none;
+  outline: none;
+}
+
+.form-storm-center input:valid {
+  border-left: solid 5px green;
+}
+
+.form-storm-center input:invalid {
+  border-left: solid 5px red;
+}
+
+em {
+  font-size: smaller;
 }
