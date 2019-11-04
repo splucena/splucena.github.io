@@ -417,20 +417,27 @@ p {
   width: 600px;
   max-width: 100%;
   margin: 0 auto;
+  color: #16252A;
+}
+
+.main-container h3 {
+  text-align: center;
+
 }
 
 .form-storm-center fieldset {
   padding: 15px;
   box-sizing: border-box;
-  /*border-radius: 4px;*/
-  border: 1px solid #ccc;
-  margin-bottom: 10px;
+  border-radius: 10px;
+  border: 1px solid #17252A;
+  margin-bottom: 20px;
   margin-top: 10px;
 }
 
 .form-storm-center fieldset legend {
   font-weight: bold;
 }
+
 
 .form-storm-center label,
 .form-storm-center input,
@@ -445,11 +452,11 @@ p {
 .form-storm-center button,
 .form-storm-center textarea {
   padding: 12px;
-  border: 1px solid #ccc;
+  border: 1px solid gray;
   border-radius: 4px;
   resize: vertical;
   box-sizing: border-box;
-  margin-top: 5px;
+  margin-top: 10px;
 }
 
 .form-storm-center input[type="text"],
@@ -459,6 +466,16 @@ p {
 .form-storm-center textarea {
   width: 100%;
   display: block;
+  background-color: #DDDDDD;
+}
+
+.form-storm-center input[type="range"] {
+  width: 50%;
+  display: block;
+}
+
+.form-storm-center input[type="date"] {
+  background-color: #DDDDDD;
 }
 
 .form-storm-center input[type="radio"] {
@@ -466,23 +483,43 @@ p {
 }
 
 .form-storm-center input[type="submit"] {
-  width: 100%;
-  float: right;
+  width: 50%;
+  margin: 0 auto;
   cursor: pointer;
   background-color: #5b7bc0;
   color: #FFF;
 }
 
-.form-storm-center input:focus {
+.form-storm-center input[type="submit"]:hover {
+  background-color: green;
+}
+
+.form-storm-center fieldset:not(:nth-child(3)) label {
+  margin-top: 10px;
+}
+
+.form-storm-center fieldset:nth-child(3) label,
+.form-storm-center fieldset:nth-child(3) input {
+  margin-top: 4px;
+  padding: 0;
+}
+
+.form-storm-center input[type="text"]:focus,
+.form-storm-center input[type="email"]:focus,
+.form-storm-center input[type="number"]:focus,
+.form-storm-center input[type="tel"]:focus,
+.form-storm-center textarea:focus,
+.form-storm-center input[type="date"]:focus,
+.form-storm-center select:focus {
   border: solid 1px gray;
   background-color: #e0e0e0;
-  box-shadow: none;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 10px rgba(82, 168, 236, .8);
   outline: none;
 }
 
-.form-storm-center input:hover {
-  border: solid 1px #5b7bc0;
-}
+/*.form-storm-center input:hover {
+  background-color: #62ACB5;
+}*/
 
 .form-storm-center input[type="text"]:valid,
 .form-storm-center input[type="email"]:valid,

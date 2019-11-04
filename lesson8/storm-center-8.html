@@ -65,9 +65,10 @@
       form submission button using input of type submit
     -->
     <div class="main-container">
+      <h3>Send Storm Report</h3>
       <form action="" method="GET" class="form-storm-center">
         <fieldset>
-          <legend>Personal Information</legend>
+          <legend>Reporting Person Information</legend>
           <label for="fullname">Full Name<input type="text" name="fullname" id="fullname" minlength="5"
               pattern="[A-Za-z ]+" required></label>
           <label for="email">Email<input type="email" name="email" placeholder="someone@email.com" id="email"></label>
@@ -76,7 +77,7 @@
           <label for="zip">ZIP<input type="number" name="zip" id="zip" required></label>
         </fieldset>
         <fieldset>
-          <legend>Storm Information</legend>
+          <legend>Storm Details</legend>
           <label for="storm_date">Date<input type="date" name="storm_date" id="storm_date"></label>
           <label for="storm_type">Type<input type="text" name="storm_type" id="storm_type" list="storm_types"></label>
           <datalist id="storm_types">
@@ -88,8 +89,8 @@
           </datalist>
           <label for="storm_severity">Severity Range (1 to 10)<input name="storm_severity" id="storm_severity"
               type="range" min="1" max="10" step="1" value="5" oninput="adjust_severity_rating(this.value)"
-              onchange="adjust_severity_rating(this.value)"></label>
-          <span id="storm_severity_rating">5</span>
+              onchange="adjust_severity_rating(this.value)"><span id="storm_severity_rating">5</span></label>
+
           <label for="storm_region">Region<select name="storm_regtion" id="storm_region">
               <option value="select_value" disabled selected>Select Region ...</option>
               <option value="preston">Preston</option>
@@ -98,7 +99,7 @@
             </select></label>
         </fieldset>
         <fieldset>
-          <legend>User In-danger Level <em>(Choose one)</em></legend>
+          <legend>Are you in the storm's path? <em>(Choose one)</em></legend>
           <label for="rb_yes"><input type="radio" value="yes" name="user_indanger_level" id="rb_yes"> Yes</label>
           <label for="rb_no"><input type="radio" value="no" name="user_indanger_level" id="rb_no"> No</label>
           <label for="rb_maybe"><input type="radio" value="maybe" name="user_indanger_level" id="rb_maybe">
@@ -106,9 +107,9 @@
         </fieldset>
         <fieldset>
           <legend>Additional Information</legend>
-          <label for="comment">Comments<textarea name="comment" id="comment"></textarea></label>
+          <label for="comment">Comments<textarea name="comment" id="comment" rows="5"></textarea></label>
         </fieldset>
-        <input type="submit" value="Submit">
+        <input type="submit" value="Send Storm Report">
       </form>
     </div>
   </main>
