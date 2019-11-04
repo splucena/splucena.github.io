@@ -109,7 +109,7 @@
           <legend>Additional Information</legend>
           <label for="comment">Comments<textarea name="comment" id="comment" rows="5"></textarea></label>
         </fieldset>
-        <input type="submit" value="Send Storm Report">
+        <input type="submit" value="Send Storm Report" onclick="validate_form()">
       </form>
     </div>
   </main>
@@ -125,6 +125,19 @@
   <script>
     function adjust_severity_rating(rating) {
       document.getElementById('storm_severity_rating').innerHTML = rating;
+    }
+
+    function validate_form() {
+      let full_name, phone_number, zip;
+      full_name = document.getElementById('fullname');
+      phone_number = document.getElementById('phone_number');
+      zip = document.getElementById('zip');
+
+
+      if (full_name.checkValidity() && phone_number.checkValidity() && zip.checkValidity()) {
+        let win = window.open('index.html', '_blank');
+        win.focus();
+      }
     }
   </script>
 </body>
