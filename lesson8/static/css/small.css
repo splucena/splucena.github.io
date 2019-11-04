@@ -434,14 +434,16 @@ p {
 
 .form-storm-center label,
 .form-storm-center input,
-.form-storm-center select {
+.form-storm-center select,
+.form-storm-center textarea {
   display: block;
   padding: 5px;
 }
 
 .form-storm-center input,
 .form-storm-center select,
-.form-storm-center button {
+.form-storm-center button,
+.form-storm-center textarea {
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -454,7 +456,7 @@ p {
 .form-storm-center input[type="tel"],
 .form-storm-center input[type="number"],
 .form-storm-center input[type="email"],
-.form-storm-center input[type="textarea"] {
+.form-storm-center textarea {
   width: 100%;
   display: block;
 }
@@ -486,7 +488,7 @@ p {
 .form-storm-center input[type="email"]:valid,
 .form-storm-center input[type="number"]:valid,
 .form-storm-center input[type="tel"]:valid,
-.form-storm-center input[type="textarea"]:valid {
+.form-storm-center textarea:valid {
   border-left: solid 5px green;
 }
 
@@ -494,7 +496,7 @@ p {
 .form-storm-center input[type="email"]:invalid,
 .form-storm-center input[type="number"]:invalid,
 .form-storm-center input[type="tel"]:invalid,
-.form-storm-center input[type="textarea"]:invalid {
+.form-storm-center textarea:invalid {
   border-left: solid 5px red;
 }
 
