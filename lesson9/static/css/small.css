@@ -586,6 +586,11 @@ em {
   height: 220px;
   max-width: 100%;
   margin-top: 10px;
-  margin-bottom: -4px;
+  margin-bottom: 10px;
   box-shadow: 2px 2px 8px #121619;
+}
+
+.cards .motto {
+  font-style: italic;
+  font-weight: bold;
 }

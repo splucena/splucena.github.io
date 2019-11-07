@@ -22,6 +22,7 @@ fetch(request_url)
 
             let motto = document.createElement("p");
             motto.textContent = towns[i].motto;
+            motto.setAttribute('class', 'motto');
             card.appendChild(motto);
 
             let year_founded = document.createElement("p");
@@ -29,18 +30,20 @@ fetch(request_url)
             card.appendChild(year_founded);
 
             let population = document.createElement("p");
-            population.textContent = "Population: " + towns[i].population;
+            population.textContent = "Population: " + towns[i].currentPopulation;
             card.appendChild(population);
 
             let average_rainfall = document.createElement("p");
             average_rainfall.textContent = "Annual Rainfall: " + towns[i].averageRainfall;
             card.appendChild(average_rainfall);
 
-            //let img = document.createElement("img");
-            //img.setAttribute("src", towns[i].photo);
+            console.log(towns[i].photo);
+
+            let img = document.createElement("img");
+            img.setAttribute("src", "static/img/home/" + towns[i].photo);
             //let order = towns[i].order;
-            //img.setAttribute("alt", town_name);
-            //card.appendChild(img);
+            img.setAttribute("alt", town_name);
+            card.appendChild(img);
 
             document.querySelector("div.cards").appendChild(card);
         }
