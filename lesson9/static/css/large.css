@@ -128,4 +128,9 @@
         padding: 20px;
         width: 80%;
     }
+
+    /* index.html */
+    .cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }

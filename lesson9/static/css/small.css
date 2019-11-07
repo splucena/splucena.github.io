@@ -544,3 +544,48 @@ p {
 em {
   font-size: smaller;
 }
+
+/* index.html */
+.cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-column-gap: 5px;
+  grid-row-gap: 10px;
+}
+
+.cards section {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  background-color: #CCDAD1;
+  border: solid 1px #121619;
+  font-family: 'Roboto', sans-serif;
+}
+
+.cards h2,
+.cards p,
+.cards img {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.cards h2 {
+  margin-top: 10px;
+  margin-bottom: 6px;
+  color: #1C7C54;
+}
+
+.cards p {
+  margin-bottom: 2px;
+  color: #121619;
+}
+
+.cards img {
+  width: 180px;
+  height: 220px;
+  max-width: 100%;
+  margin-top: 10px;
+  margin-bottom: -4px;
+  box-shadow: 2px 2px 8px #121619;
+}
