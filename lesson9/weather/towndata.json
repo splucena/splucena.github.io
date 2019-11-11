@@ -4,6 +4,8 @@
       "photo": "franklin.jpg",
       "motto": "Where you will grow!",
       "yearFounded": 1788,
+      "currentPopulation": 30458,
+      "averageRainfall": 21,
       "events": [
         "March 4: March to the Drum of Donuts",
         "September 5 - 11: Founder Days",
@@ -13,8 +15,8 @@
     {
       "name": "Fish Haven",
       "photo": "fishhaven.jpg",
-      "currentPopulation": 501,
-      "averageRainfall": 14.20,
+      "motto": "This is Fish Heaven.",
+      "yearFounded": 1864,
       "events": [
         "April 1: How Big Was That Fish Day",
         "May 15-30: Rush the Creek Days",
@@ -49,8 +51,7 @@
       ]
     },
     {
-      "photo": "preston.jpg",
-      "motto": "Home of Napoleon Dynamite.",
+      "name": "Preston",
       "yearFounded": 1866,
       "currentPopulation": 5204,
       "averageRainfall": 16.65,
@@ -63,8 +64,6 @@
     {
       "name": "Soda Springs",
       "photo": "sodasprings.jpg",
-      "motto": "Historic Oregon Trail Oasis. The Soda is on Us.",
-      "yearFounded": 1858,
       "currentPopulation": 2985,
       "averageRainfall": 15.75,
       "events": [
