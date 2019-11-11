@@ -51,11 +51,22 @@ function create_cards(json_object) {
         return accepted_towns.includes(town.name);
     });
 
-    /*if (!towns.includes("Preston")) {
-        towns.splice(1, 0, offline_data['towns'][1]);
-    }*/
+    let town_names = [];
+    towns.forEach(element => {
+        town_names.push(element.name);
+    });
 
-    console.log(towns);
+    if (!town_names.includes("Preston")) {
+        towns.splice(1, 0, offline_data['towns'][1]);
+    }
+
+    if (!town_names.includes("Fish Haven")) {
+        towns.splice(0, 0, offline_data['towns'][0]);
+    }
+
+    if (!town_names.includes("Soda Springs")) {
+        towns.splice(2, 0, offline_data['towns'][2]);
+    }
 
     for (let i = 0; i < towns.length; i++) {
         let card = document.createElement("section");
