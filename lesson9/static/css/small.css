@@ -145,7 +145,7 @@ main {
   margin: 0 auto;
   padding: 12px;
   /*background-color: #def2f1;*/
-  background-color: #FFF;
+  background-color: #fff;
 }
 
 .gallery-images {
@@ -214,6 +214,19 @@ main {
   min-height: 200px;
   padding: 0;
   margin: 0 auto;
+}
+
+.banner-summary-home {
+  border: 1px solid #17252a;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.banner-summary-home img {
+  max-width: 100%;
+  max-height: 100%;
+  margin: auto;
+  display: block;
 }
 
 .banner-summary h3 {
@@ -417,19 +430,18 @@ p {
   width: 600px;
   max-width: 100%;
   margin: 0 auto;
-  color: #16252A;
+  color: #16252a;
 }
 
 .main-container h3 {
   text-align: center;
-
 }
 
 .form-storm-center fieldset {
   padding: 15px;
   box-sizing: border-box;
   border-radius: 10px;
-  border: 1px solid #17252A;
+  border: 1px solid #17252a;
   margin-bottom: 20px;
   margin-top: 10px;
 }
@@ -437,7 +449,6 @@ p {
 .form-storm-center fieldset legend {
   font-weight: bold;
 }
-
 
 .form-storm-center label,
 .form-storm-center input,
@@ -466,7 +477,7 @@ p {
 .form-storm-center textarea {
   width: 100%;
   display: block;
-  background-color: #DDDDDD;
+  background-color: #dddddd;
 }
 
 .form-storm-center input[type="range"] {
@@ -475,7 +486,7 @@ p {
 }
 
 .form-storm-center input[type="date"] {
-  background-color: #DDDDDD;
+  background-color: #dddddd;
 }
 
 .form-storm-center input[type="radio"] {
@@ -487,7 +498,7 @@ p {
   margin: 0 auto;
   cursor: pointer;
   background-color: #5b7bc0;
-  color: #FFF;
+  color: #fff;
 }
 
 .form-storm-center input[type="submit"]:hover {
@@ -513,7 +524,8 @@ p {
 .form-storm-center select:focus {
   border: solid 1px gray;
   background-color: #e0e0e0;
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 10px rgba(82, 168, 236, .8);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
+    0 0 10px rgba(82, 168, 236, 0.8);
   outline: none;
 }
 
@@ -557,9 +569,9 @@ em {
   width: 100%;
   height: auto;
   text-align: center;
-  background-color: #CCDAD1;
+  background-color: #ccdad1;
   border: solid 1px #121619;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .cards h2,
@@ -573,7 +585,7 @@ em {
 .cards h2 {
   margin-top: 10px;
   margin-bottom: 6px;
-  color: #1C7C54;
+  color: #1c7c54;
 }
 
 .cards p {
