@@ -51,9 +51,9 @@ function create_cards(json_object) {
         return accepted_towns.includes(town.name);
     });
 
-    if (!towns.includes("Preston")) {
+    /*if (!towns.includes("Preston")) {
         towns.splice(1, 0, offline_data['towns'][1]);
-    }
+    }*/
 
     console.log(towns);
 
@@ -74,12 +74,19 @@ function create_cards(json_object) {
         let motto = document.createElement("p");
         if (towns[i].hasOwnProperty("motto")) {
             motto.textContent = towns[i].motto;
-            motto.setAttribute("class", "motto");
         } else {
             motto.textContent = offline_data['towns'][i].motto;
-            motto.setAttribute("class", "motto");
         }
+        motto.setAttribute("class", "motto");
         card.appendChild(motto);
+
+        let year_founded = document.createElement("p");
+        if (towns[i].hasOwnProperty("yearFounded")) {
+            year_founded.textContent = "Year Founded: " + towns[i].yearFounded;
+        } else {
+            year_founded.textContent = "Year Founded: " + offline_data['towns'][i].yearFounded;
+        }
+        card.appendChild(year_founded);
 
         let population = document.createElement("p");
         if (towns[i].hasOwnProperty("currentPopulation")) {
@@ -103,11 +110,10 @@ function create_cards(json_object) {
         let img = document.createElement("img");
         if (towns[i].hasOwnProperty("photo")) {
             img.setAttribute("src", "static/img/home/" + towns[i].photo);
-            img.setAttribute("alt", town_name);
         } else {
             img.setAttribute("src", "static/img/home/" + offline_data['towns'][i].photo);
-            img.setAttribute("alt", town_name);
         }
+        img.setAttribute("alt", town_name);
         card.appendChild(img);
 
         document.querySelector("div.cards").appendChild(card);
