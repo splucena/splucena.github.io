@@ -1,5 +1,6 @@
-const request_url = "https://byui-cit230.github.io/weather/data/towndata.json";
+//const request_url = "https://byui-cit230.github.io/weather/data/towndata.json";
 //const request_url = "https://splucena.github.io/lesson9/weather/towndata.json";
+const request_url = "http://127.0.0.1:5500/lesson9/weather/towndata.json";
 
 offline_data = {
     towns: [{
@@ -70,7 +71,12 @@ function create_cards(json_object) {
 
     for (let i = 0; i < towns.length; i++) {
         let card = document.createElement("section");
+        let desc_container = document.createElement('div')
+        let img_container = document.createElement('div');
         let h2 = document.createElement("h2");
+
+        desc_container.setAttribute('class', 'desc_container');
+        img_container.setAttribute('class', 'img_container');
 
         let town_name;
         if (towns[i].hasOwnProperty("name")) {
@@ -80,7 +86,7 @@ function create_cards(json_object) {
             town_name = offline_data['towns'][i].name;
             h2.textContent = town_name;
         }
-        card.appendChild(h2);
+        desc_container.appendChild(h2);
 
         let motto = document.createElement("p");
         if (towns[i].hasOwnProperty("motto")) {
@@ -89,7 +95,7 @@ function create_cards(json_object) {
             motto.textContent = offline_data['towns'][i].motto;
         }
         motto.setAttribute("class", "motto");
-        card.appendChild(motto);
+        desc_container.appendChild(motto);
 
         let year_founded = document.createElement("p");
         if (towns[i].hasOwnProperty("yearFounded")) {
@@ -97,7 +103,7 @@ function create_cards(json_object) {
         } else {
             year_founded.textContent = "Year Founded: " + offline_data['towns'][i].yearFounded;
         }
-        card.appendChild(year_founded);
+        desc_container.appendChild(year_founded);
 
         let population = document.createElement("p");
         if (towns[i].hasOwnProperty("currentPopulation")) {
@@ -106,7 +112,7 @@ function create_cards(json_object) {
             population.textContent =
                 "Population: " + offline_data['towns'][i].currentPopulation;
         }
-        card.appendChild(population);
+        desc_container.appendChild(population);
 
         let average_rainfall = document.createElement("p");
         if (towns[i].hasOwnProperty("averageRainfall")) {
@@ -116,7 +122,7 @@ function create_cards(json_object) {
             average_rainfall.textContent =
                 "Annual Rainfall: " + offline_data['towns'][i].averageRainfall;
         }
-        card.appendChild(average_rainfall);
+        desc_container.appendChild(average_rainfall);
 
         let img = document.createElement("img");
         if (towns[i].hasOwnProperty("photo")) {
@@ -125,8 +131,10 @@ function create_cards(json_object) {
             img.setAttribute("src", "static/img/home/" + offline_data['towns'][i].photo);
         }
         img.setAttribute("alt", town_name);
-        card.appendChild(img);
+        img_container.appendChild(img);
 
+        card.appendChild(desc_container);
+        card.appendChild(img_container);
         document.querySelector("div.cards").appendChild(card);
     }
 }

@@ -133,4 +133,27 @@
     .cards {
         grid-template-columns: repeat(3, 1fr);
     }
+
+    .cards section {
+        display: inline;
+        border: solid 1px #121619;
+    }
+
+    .cards .desc_container {
+        border: none;
+        order: 0;
+        width: 100%;
+    }
+
+    .cards .desc_container h2,
+    .cards .desc_container p {
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .cards .img_container {
+        border: none;
+        order: 0;
+        text-align: center;
+    }
 }

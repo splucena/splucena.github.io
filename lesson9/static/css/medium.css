@@ -29,7 +29,30 @@
 
     /* index.html */
     .cards {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr;
         row-gap: 3px;
+    }
+
+    .cards section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        border: solid 1px #121619;
+    }
+
+    .cards .desc_container {
+        order: 2;
+        margin: auto 0;
+        width: 50%;
+    }
+
+    .cards .desc_container h2,
+    .cards .desc_container p {
+        text-align: left;
+        margin-left: 15px;
+    }
+
+    .cards .img_container {
+        text-align: right;
+        order: 1;
     }
 }
