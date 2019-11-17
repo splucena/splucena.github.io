@@ -20,6 +20,8 @@ wind_chill_value = compute_wind_chill(temperature, wind_speed);
 
 if (temperature <= 50 && wind_speed > 3) {
     wind_chill.innerHTML = wind_chill_value;
+    document.getElementById('wind_chill_attribute').style.visibility = 'visible';
 } else {
     wind_chill.innerHTML = 'N/A';
+    document.getElementById('wind_chill_attribute').style.visibility = 'hidden';
 }

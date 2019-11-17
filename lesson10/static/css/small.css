@@ -283,6 +283,11 @@ main {
   border-bottom: 1px solid #def2f1;
 }
 
+#tbl-five-day-forecast td {
+  background-color: #6096BA;
+  color: #17252a;
+}
+
 .content-box {
   border: solid 1px #17252a;
   margin: 4px;

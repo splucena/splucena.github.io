@@ -18,6 +18,8 @@ fetch(apiURL)
         document.getElementById('temperature').textContent = temperature;
         let humidity = data_source.main.humidity;
         document.getElementById('humidity').textContent = humidity;
+        let wind_speed = data_source.wind.speed;
+        document.getElementById('wind_speed').textContent = wind_speed;
     });
 
 const apiURLForecast = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&APPID=80ade633c3150127b8188f51cb8e0b1a";
