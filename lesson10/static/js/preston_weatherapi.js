@@ -2,15 +2,6 @@ const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=5604473&APPID
 fetch(apiURL)
     .then((response) => response.json())
     .then((jsObject) => {
-        console.log(jsObject);
-
-        //document.getElementById('current-temp').textContent = jsObject.main.temp;
-
-        //const imagesrc = 'https://openweathermap.org/img/w/' + jsObject.weather[0].icon + '.png'; // note the concatenation
-        //const desc = jsObject.weather[0].description; // note how we reference the weather array
-        //document.getElementById('imagesrc').textContent = imagesrc; // informational specification only
-        //document.getElementById('icon').setAttribute('src', imagesrc); // focus on the setAttribute() method
-        //document.getElementById('icon').setAttribute('alt', desc);
         let data_source = jsObject;
         let currently = data_source.weather[0].main;
         document.getElementById('currently').textContent = currently;
@@ -35,10 +26,14 @@ fetch(apiURLForecast)
             if (dt_txts[1] == '18:00:00') {
                 document.getElementById('forecast_value_' + counter).textContent = forecast_data[i].main.temp;
                 let weather_icon = forecast_data[i].weather[0].icon;
+
+                let img = document.createElement("img");
                 let image_src = 'http://openweathermap.org/img/wn/' + weather_icon + '@2x.png'
-                document.getElementById('forecast_image_' + counter).setAttribute('src', image_src);
+                img.setAttribute('src', image_src);
                 let image_alt = forecast_data[i].weather[0].description;
-                document.getElementById('forecast_image_' + counter).setAttribute('alt', image_alt);
+                img.setAttribute('alt', image_alt);
+
+                document.getElementById('forecast_image_' + counter).appendChild(img);
                 counter = counter + 1;
             }
         }
