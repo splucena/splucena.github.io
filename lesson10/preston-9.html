@@ -100,18 +100,18 @@
                                 <th>Thu</th>
                             </tr>
                             <tr>
-                                <td><img src="static/img/cloudy.png" alt="Cloudy"></td>
-                                <td><img src="static/img/rainy.png" alt="Rainy"></td>
-                                <td><img src="static/img/sunny.png" alt="Sunny"></td>
-                                <td><img src="static/img/partly_sunny.png" alt="Partly Sunny"></td>
-                                <td><img src="static/img/thunderstorm.png" alt="Thunderstorm"></td>
+                                <td><img id="forecast_image_1"></td>
+                                <td><img id="forecast_image_2"></td>
+                                <td><img id="forecast_image_3"></td>
+                                <td><img id="forecast_image_4"></td>
+                                <td><img id="forecast_image_5"></td>
                             </tr>
                             <tr>
-                                <td>73 &#8457;</td>
-                                <td>83 &#8457;</td>
-                                <td>80 &#8457;</td>
-                                <td>87 &#8457;</td>
-                                <td>84 &#8457;</td>
+                                <td><span id="forecast_value_1"></span> &#8457;</td>
+                                <td><span id="forecast_value_2"></span> &#8457;</td>
+                                <td><span id="forecast_value_3"></span> &#8457;</td>
+                                <td><span id="forecast_value_4"></span> &#8457;</td>
+                                <td><span id="forecast_value_5"></span> &#8457;</td>
                             </tr>
                         </thead>
                     </table>
@@ -169,6 +169,7 @@
     <script src="static/js/script.js"></script>
     <script src="static/js/windchill.js"></script>
     <script src="static/js/webfont.js"></script>
+    <script src="static/js/preston_weatherapi.js"></script>
     <script>
         WebFont.load({
             google: {
