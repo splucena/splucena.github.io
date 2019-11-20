@@ -585,6 +585,18 @@ em {
   font-family: "Roboto", sans-serif;
 }
 
+#s-0 {
+  order: 3;
+}
+
+#s-1 {
+  order: 1;
+}
+
+#s-2 {
+  order: 2;
+}
+
 .cards h2,
 .cards p,
 .cards img {
