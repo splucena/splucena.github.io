@@ -75,6 +75,8 @@ function create_cards(json_object) {
         let img_container = document.createElement('div');
         let h2 = document.createElement("h2");
 
+        card.setAttribute('id', 's-' + i);
+
         desc_container.setAttribute('class', 'desc_container');
         img_container.setAttribute('class', 'img_container');
 

@@ -612,3 +612,15 @@ em {
   font-style: italic;
   font-weight: bold;
 }
+
+#s-0 {
+  order: 3;
+}
+
+#s-1 {
+  order: 1;
+}
+
+#s-2 {
+  order: 2;
+}
