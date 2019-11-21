@@ -38,7 +38,7 @@ fetch(apiURL)
       wind_chill_value.innerHTML = wind_chill_computed;
       document.getElementById('wind_chill_attribute').style.visibility = 'visible';
     } else {
-      wind_chill.innerHTML = 'N/A';
+      wind_chill_value.innerHTML = 'N/A';
       document.getElementById('wind_chill_attribute').style.visibility = 'hidden';
     }
   });
