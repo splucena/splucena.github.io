@@ -285,14 +285,23 @@ main {
 
 .forecast-events {
   display: grid;
-  grid-template-columns: 2fr 2fr;
+  grid-template-columns: 1fr 1fr;
   margin: 0 auto;
+  grid-column-gap: 10px;
+}
+
+.forecast-events h3 {
+  margin: auto 0;
+  padding: 10px;
+}
+
+.events hr {
+  margin: 0px 0 10px 0;
 }
 
 .events {
-  padding: 10px;
-  margin: auto auto;
-  background: rgba(23, 37, 42, 0.2);
+  padding: 0 10px 10px 10px;
+  background-color: #DEF2F1;
   color: #000;
   border: solid 1px #17252a;
 }
@@ -303,7 +312,7 @@ main {
 }
 
 #tbl-five-day-forecast td {
-  background-color: #6096BA;
+  background-color: #DEF2F1;
   color: #17252a;
 }
 
@@ -319,17 +328,20 @@ main {
 }
 
 .five-day-forecast {
+  /*border: solid 1px #000;*/
   border: none;
-  display: none;
+  margin: 4px;
 }
 
 .five-day-forecast img {
   width: 80px;
   height: 80px;
+  -webkit-filter: drop-shadow(2px 2px 2px #222);
+  filter: drop-shadow(2px 2px 2px #222);
 }
 
 .five-day-forecast table {
-  width: 50%;
+  width: 100%;
   margin: 0 auto;
   border: 1px solid #17252a;
   border-collapse: collapse;

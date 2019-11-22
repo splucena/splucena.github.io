@@ -114,78 +114,80 @@ function create_cards(json_object) {
     }
   }
 
-  /*for (let i = 0; i < towns.length; i++) {
-        let card = document.createElement("section");
-        let desc_container = document.createElement('div')
-        let img_container = document.createElement('div');
-        let h2 = document.createElement("h2");
+  for (let i = 0; i < towns.length; i++) {
+    let card = document.createElement("section");
+    let desc_container = document.createElement("div");
+    let img_container = document.createElement("div");
+    let h2 = document.createElement("h2");
 
-        card.setAttribute('id', 's-' + i);
+    card.setAttribute("id", "s-" + i);
 
-        desc_container.setAttribute('class', 'desc_container');
-        img_container.setAttribute('class', 'img_container');
+    desc_container.setAttribute("class", "desc_container");
+    img_container.setAttribute("class", "img_container");
 
-        let town_name;
-        if (towns[i].hasOwnProperty("name")) {
-            town_name = towns[i].name;
-            h2.textContent = town_name;
-        } else {
-            town_name = offline_data['towns'][i].name;
-            h2.textContent = town_name;
-        }
-        desc_container.appendChild(h2);
+    let town_name;
+    if (towns[i].hasOwnProperty("name")) {
+      town_name = towns[i].name;
+      h2.textContent = town_name;
+    } else {
+      town_name = offline_data["towns"][i].name;
+      h2.textContent = town_name;
+    }
+    desc_container.appendChild(h2);
 
-        let motto = document.createElement("p");
-        if (towns[i].hasOwnProperty("motto")) {
-            motto.textContent = towns[i].motto;
-        } else {
-            motto.textContent = offline_data['towns'][i].motto;
-        }
-        motto.setAttribute("class", "motto");
-        desc_container.appendChild(motto);
+    let motto = document.createElement("p");
+    if (towns[i].hasOwnProperty("motto")) {
+      motto.textContent = towns[i].motto;
+    } else {
+      motto.textContent = offline_data["towns"][i].motto;
+    }
+    motto.setAttribute("class", "motto");
+    desc_container.appendChild(motto);
 
-        let year_founded = document.createElement("p");
-        if (towns[i].hasOwnProperty("yearFounded")) {
-            year_founded.textContent = "Year Founded: " + towns[i].yearFounded;
-        } else {
-            year_founded.textContent = "Year Founded: " + offline_data['towns'][i].yearFounded;
-            desc_container.appendChild(year_founded);
-        }
+    let year_founded = document.createElement("p");
+    if (towns[i].hasOwnProperty("yearFounded")) {
+      year_founded.textContent = "Year Founded: " + towns[i].yearFounded;
+    } else {
+      year_founded.textContent =
+        "Year Founded: " + offline_data["towns"][i].yearFounded;
+      desc_container.appendChild(year_founded);
+    }
 
-        let population = document.createElement("p");
-        if (towns[i].hasOwnProperty("currentPopulation")) {
-            population.textContent = "Population: " + towns[i].currentPopulation;
-        } else {
-            population.textContent =
-                "Population: " + offline_data['towns'][i].currentPopulation;
-        }
-        desc_container.appendChild(population);
+    let population = document.createElement("p");
+    if (towns[i].hasOwnProperty("currentPopulation")) {
+      population.textContent = "Population: " + towns[i].currentPopulation;
+    } else {
+      population.textContent =
+        "Population: " + offline_data["towns"][i].currentPopulation;
+    }
+    desc_container.appendChild(population);
 
-        let average_rainfall = document.createElement("p");
-        if (towns[i].hasOwnProperty("averageRainfall")) {
-            average_rainfall.textContent =
-                "Annual Rainfall: " + towns[i].averageRainfall;
-        } else {
-            average_rainfall.textContent =
-                "Annual Rainfall: " + offline_data['towns'][i].averageRainfall;
-        }
-        desc_container.appendChild(average_rainfall);
+    let average_rainfall = document.createElement("p");
+    if (towns[i].hasOwnProperty("averageRainfall")) {
+      average_rainfall.textContent =
+        "Annual Rainfall: " + towns[i].averageRainfall;
+    } else {
+      average_rainfall.textContent =
+        "Annual Rainfall: " + offline_data["towns"][i].averageRainfall;
+    }
+    desc_container.appendChild(average_rainfall);
 
-        let img = document.createElement("img");
-        if (towns[i].hasOwnProperty("photo")) {
-            img.setAttribute("src", "static/img/home/" + towns[i].photo);
-        } else {
-            img.setAttribute("src", "static/img/home/" + offline_data['towns'][i].photo);
-        }
-        img.setAttribute("alt", town_name);
-        img_container.appendChild(img);
+    let img = document.createElement("img");
+    if (towns[i].hasOwnProperty("photo")) {
+      img.setAttribute("src", "static/img/home/" + towns[i].photo);
+    } else {
+      img.setAttribute(
+        "src",
+        "static/img/home/" + offline_data["towns"][i].photo
+      );
+    }
+    img.setAttribute("alt", town_name);
+    img_container.appendChild(img);
 
-        card.appendChild(desc_container);
-        card.appendChild(img_container);
-        document.querySelector("div.cards").appendChild(card);
-
-
-    }*/
+    card.appendChild(desc_container);
+    card.appendChild(img_container);
+    document.querySelector("div.cards").appendChild(card);
+  }
 }
 
 fetch(request_url)
@@ -198,5 +200,5 @@ fetch(request_url)
   })
   .then(json_object => {
     create_cards(json_object);
-  });
-//.catch(error => console.log(JSON.parse(error)));
+  })
+  .catch(error => console.log(JSON.parse(error)));
