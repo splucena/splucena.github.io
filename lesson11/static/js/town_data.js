@@ -3,117 +3,118 @@ const request_url = "https://byui-cit230.github.io/weather/data/towndata.json";
 //const request_url = "http://127.0.0.1:5500/lesson11/weather/towndata.json";
 
 offline_data = {
-    towns: [{
-            name: "Fish Haven",
-            photo: "fishhaven.jpg",
-            motto: "This is Fish Heaven.",
-            yearFounded: 1864,
-            currentPopulation: 501,
-            averageRainfall: 14.2,
-            events: [
-                "April 1: How Big Was That Fish Day",
-                "May 15-30: Rush the Creek Days",
-                "July 24: Bear Lake Blunder Run",
-                "December 12: Light the Tree"
-            ]
-        },
-        {
-            name: "Preston",
-            photo: "preston.jpg",
-            motto: "Home of Napoleon Dynamite.",
-            yearFounded: 1866,
-            currentPopulation: 5204,
-            averageRainfall: 16.65,
-            events: [
-                "March 29: Work Creek Revival",
-                "July 8-12: Napoleon Dynamite Festival",
-                "November 2-4: Freedom Days"
-            ]
-        },
-        {
-            name: "Soda Springs",
-            photo: "sodasprings.jpg",
-            motto: "Historic Oregon Trail Oasis. The Soda is on Us.",
-            yearFounded: 1858,
-            currentPopulation: 2985,
-            averageRainfall: 15.75,
-            events: [
-                "February 29: Geyser Song Day",
-                "May 1-6: Days of May Celebration",
-                "October 15-16: Octoberfest"
-            ]
-        }
-    ]
+  towns: [
+    {
+      name: "Fish Haven",
+      photo: "fishhaven.jpg",
+      motto: "This is Fish Heaven.",
+      yearFounded: 1864,
+      currentPopulation: 501,
+      averageRainfall: 14.2,
+      events: [
+        "April 1: How Big Was That Fish Day",
+        "May 15-30: Rush the Creek Days",
+        "July 24: Bear Lake Blunder Run",
+        "December 12: Light the Tree"
+      ]
+    },
+    {
+      name: "Preston",
+      photo: "preston.jpg",
+      motto: "Home of Napoleon Dynamite.",
+      yearFounded: 1866,
+      currentPopulation: 5204,
+      averageRainfall: 16.65,
+      events: [
+        "March 29: Work Creek Revival",
+        "July 8-12: Napoleon Dynamite Festival",
+        "November 2-4: Freedom Days"
+      ]
+    },
+    {
+      name: "Soda Springs",
+      photo: "sodasprings.jpg",
+      motto: "Historic Oregon Trail Oasis. The Soda is on Us.",
+      yearFounded: 1858,
+      currentPopulation: 2985,
+      averageRainfall: 15.75,
+      events: [
+        "February 29: Geyser Song Day",
+        "May 1-6: Days of May Celebration",
+        "October 15-16: Octoberfest"
+      ]
+    }
+  ]
 };
 
 let url2 = window.location.href;
 
-let current_url2 = url2.split('/').slice(-1)[0];
+let current_url2 = url2.split("/").slice(-1)[0];
 let city_name;
 
-if (current_url2 == 'preston-11.html') {
-    city_name = 'Preston';
-} else if (current_url2 == 'soda-springs-11.html') {
-    city_name = 'Soda Springs';
-} else {
-    city_name = "Fish Haven";
+if (current_url2 == "preston-11.html") {
+  city_name = "Preston";
+}
+if (current_url2 == "soda-springs-11.html") {
+  city_name = "Soda Springs";
+}
+if (current_url2 == "fish-haven-11.html") {
+  city_name = "Fish Haven";
 }
 
 console.log(city_name);
 
 function create_cards(json_object) {
-    let accepted_towns = ["Preston", "Soda Springs", "Fish Haven"];
-    let towns = json_object["towns"].filter(town => {
-        return accepted_towns.includes(town.name);
-    });
+  let accepted_towns = ["Preston", "Soda Springs", "Fish Haven"];
+  let towns = json_object["towns"].filter(town => {
+    return accepted_towns.includes(town.name);
+  });
 
-    let town_names = [];
-    towns.forEach(element => {
-        town_names.push(element.name);
-    });
+  let town_names = [];
+  towns.forEach(element => {
+    town_names.push(element.name);
+  });
 
-    if (city_name == "Preston") {
-        towns.splice(1, 0, offline_data['towns'][1]);
+  if (city_name == "Preston") {
+    towns.splice(1, 0, offline_data["towns"][1]);
 
+    let events = offline_data["towns"][1]["events"];
 
-        let events = offline_data['towns'][1]['events'];
-
-        for (let i = 0; i < events.length; i++) {
-            let p = document.createElement('p');
-            p.textContent = events[i];
-            p.setAttribute('class', 'text-align-center');
-            document.querySelector("div.events").appendChild(p);
-        }
-
+    for (let i = 0; i < events.length; i++) {
+      let p = document.createElement("p");
+      p.textContent = events[i];
+      p.setAttribute("class", "text-align-center");
+      document.querySelector("div.events").appendChild(p);
     }
+  }
 
-    if (city_name == "Fish Haven") {
-        towns.splice(0, 0, offline_data['towns'][0]);
+  if (city_name == "Fish Haven") {
+    towns.splice(0, 0, offline_data["towns"][0]);
 
-        let events = offline_data['towns'][0]['events'];
+    let events = offline_data["towns"][0]["events"];
 
-        for (let i = 0; i < events.length; i++) {
-            let p = document.createElement('p');
-            p.textContent = events[i];
-            p.setAttribute('class', 'text-align-center');
-            document.querySelector("div.events").appendChild(p);
-        }
+    for (let i = 0; i < events.length; i++) {
+      let p = document.createElement("p");
+      p.textContent = events[i];
+      p.setAttribute("class", "text-align-center");
+      document.querySelector("div.events").appendChild(p);
     }
+  }
 
-    if (city_name == "Soda Springs") {
-        towns.splice(2, 0, offline_data['towns'][2]);
+  if (city_name == "Soda Springs") {
+    towns.splice(2, 0, offline_data["towns"][2]);
 
-        let events = offline_data['towns'][2]['events'];
+    let events = offline_data["towns"][2]["events"];
 
-        for (let i = 0; i < events.length; i++) {
-            let p = document.createElement('p');
-            p.textContent = events[i];
-            p.setAttribute('class', 'text-align-center');
-            document.querySelector("div.events").appendChild(p);
-        }
+    for (let i = 0; i < events.length; i++) {
+      let p = document.createElement("p");
+      p.textContent = events[i];
+      p.setAttribute("class", "text-align-center");
+      document.querySelector("div.events").appendChild(p);
     }
+  }
 
-    /*for (let i = 0; i < towns.length; i++) {
+  /*for (let i = 0; i < towns.length; i++) {
         let card = document.createElement("section");
         let desc_container = document.createElement('div')
         let img_container = document.createElement('div');
@@ -188,14 +189,14 @@ function create_cards(json_object) {
 }
 
 fetch(request_url)
-    .then(response => {
-        if (!response.ok) {
-            return offline_data;
-        }
+  .then(response => {
+    if (!response.ok) {
+      return offline_data;
+    }
 
-        return response.json();
-    })
-    .then(json_object => {
-        create_cards(json_object);
-    })
+    return response.json();
+  })
+  .then(json_object => {
+    create_cards(json_object);
+  });
 //.catch(error => console.log(JSON.parse(error)));
