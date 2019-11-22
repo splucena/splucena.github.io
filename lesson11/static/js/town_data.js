@@ -1,6 +1,6 @@
-const request_url = "https://byui-cit230.github.io/weather/data/towndata.json";
+//const request_url = "https://byui-cit230.github.io/weather/data/towndata.json";
 //const request_url = "https://splucena.github.io/lesson9/weather/towndata.json";
-//const request_url = "http://127.0.0.1:5500/lesson9/weather/towndata.json";
+const request_url = "http://127.0.0.1:5500/lesson11/weather/towndata.json";
 
 offline_data = {
     towns: [{
@@ -46,6 +46,21 @@ offline_data = {
     ]
 };
 
+let url2 = window.location.href;
+
+let current_url2 = url2.split('/').slice(-1)[0];
+let city_name;
+
+if (current_url2 == 'preston-11.html') {
+    city_name = 'Preston';
+} else if (current_url2 == 'soda-springs-11.html') {
+    city_name = 'Soda Springs';
+} else {
+    city_name = "Fish Haven";
+}
+
+console.log(city_name);
+
 function create_cards(json_object) {
     let accepted_towns = ["Preston", "Soda Springs", "Fish Haven"];
     let towns = json_object["towns"].filter(town => {
@@ -57,19 +72,48 @@ function create_cards(json_object) {
         town_names.push(element.name);
     });
 
-    if (!town_names.includes("Preston")) {
+    if (city_name == "Preston") {
         towns.splice(1, 0, offline_data['towns'][1]);
+
+
+        let events = offline_data['towns'][1]['events'];
+
+        for (let i = 0; i < events.length; i++) {
+            let p = document.createElement('p');
+            p.textContent = events[i];
+            p.setAttribute('class', 'text-align-center');
+            document.querySelector("div.events").appendChild(p);
+        }
+
     }
 
-    if (!town_names.includes("Fish Haven")) {
+    if (city_name == "Fish Haven") {
         towns.splice(0, 0, offline_data['towns'][0]);
+
+        let events = offline_data['towns'][0]['events'];
+
+        for (let i = 0; i < events.length; i++) {
+            let p = document.createElement('p');
+            p.textContent = events[i];
+            p.setAttribute('class', 'text-align-center');
+            document.querySelector("div.events").appendChild(p);
+        }
     }
 
-    if (!town_names.includes("Soda Springs")) {
+    if (city_name == "Soda Springs") {
         towns.splice(2, 0, offline_data['towns'][2]);
+
+        let events = offline_data['towns'][2]['events'];
+
+        for (let i = 0; i < events.length; i++) {
+            let p = document.createElement('p');
+            p.textContent = events[i];
+            p.setAttribute('class', 'text-align-center');
+            document.querySelector("div.events").appendChild(p);
+        }
     }
 
-    for (let i = 0; i < towns.length; i++) {
+    /*for (let i = 0; i < towns.length; i++) {
         let card = document.createElement("section");
         let desc_container = document.createElement('div')
         let img_container = document.createElement('div');
@@ -104,8 +148,8 @@ function create_cards(json_object) {
             year_founded.textContent = "Year Founded: " + towns[i].yearFounded;
         } else {
             year_founded.textContent = "Year Founded: " + offline_data['towns'][i].yearFounded;
+            desc_container.appendChild(year_founded);
         }
-        desc_container.appendChild(year_founded);
 
         let population = document.createElement("p");
         if (towns[i].hasOwnProperty("currentPopulation")) {
@@ -138,7 +182,9 @@ function create_cards(json_object) {
         card.appendChild(desc_container);
         card.appendChild(img_container);
         document.querySelector("div.cards").appendChild(card);
-    }
+
+
+    }*/
 }
 
 fetch(request_url)
@@ -152,4 +198,4 @@ fetch(request_url)
     .then(json_object => {
         create_cards(json_object);
     })
-    .catch(error => console.log(JSON.parse(error)));
+//.catch(error => console.log(JSON.parse(error)));

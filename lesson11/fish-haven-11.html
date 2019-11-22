@@ -87,36 +87,40 @@
             </section>
         </div>
         <div class="content-box five-day-forecast">
-            <div class="banner-summary-content-row">
-                <div class="banner-summary-content-col">
-                    <h3 class="text-align-center">Five Day Forecast</h3>
-                    <table id="tbl-five-day-forecast">
-                        <thead>
-                            <tr>
-                                <th>Sun</th>
-                                <th>Mon</th>
-                                <th>Tue</th>
-                                <th>Wed</th>
-                                <th>Thu</th>
-                            </tr>
-                            <tr>
-                                <td id="forecast_image_1"></td>
-                                <td id="forecast_image_2"></td>
-                                <td id="forecast_image_3"></td>
-                                <td id="forecast_image_4"></td>
-                                <td id="forecast_image_5"></td>
-                            </tr>
-                            <tr>
-                                <td><span id="forecast_value_1"></span> &#8457;</td>
-                                <td><span id="forecast_value_2"></span> &#8457;</td>
-                                <td><span id="forecast_value_3"></span> &#8457;</td>
-                                <td><span id="forecast_value_4"></span> &#8457;</td>
-                                <td><span id="forecast_value_5"></span> &#8457;</td>
-                            </tr>
-                        </thead>
-                    </table>
-                </div>
-            </div>
+                <div class="forecast-events">
+                        <div>
+                            <h3 class="text-align-center">Five Day Forecast</h3>
+                            <table id="tbl-five-day-forecast">
+                                <thead>
+                                    <tr>
+                                        <th>Sun</th>
+                                        <th>Mon</th>
+                                        <th>Tue</th>
+                                        <th>Wed</th>
+                                        <th>Thu</th>
+                                    </tr>
+                                    <tr>
+                                        <td id="forecast_image_1"></td>
+                                        <td id="forecast_image_2"></td>
+                                        <td id="forecast_image_3"></td>
+                                        <td id="forecast_image_4"></td>
+                                        <td id="forecast_image_5"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span id="forecast_value_1"></span> &#8457;</td>
+                                        <td><span id="forecast_value_2"></span> &#8457;</td>
+                                        <td><span id="forecast_value_3"></span> &#8457;</td>
+                                        <td><span id="forecast_value_4"></span> &#8457;</td>
+                                        <td><span id="forecast_value_5"></span> &#8457;</td>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>
+                        <div class="events text-align-center">
+                            <h3>Upcoming Events</h3>
+                            <hr />
+                        </div>
+                    </div>
         </div>
         <div class="content-box">
             <div class="banner-summary-content-row">
@@ -174,6 +178,7 @@
     <script src="static/js/windchill.js"></script>
     <script src="static/js/webfont.js"></script>
     <script src="static/js/preston_weatherapi.js"></script>
+    <script src="static/js/town_data.js"></script>
     <script>
         WebFont.load({
             google: {
