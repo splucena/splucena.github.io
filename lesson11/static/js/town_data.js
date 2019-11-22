@@ -1,6 +1,6 @@
-//const request_url = "https://byui-cit230.github.io/weather/data/towndata.json";
+const request_url = "https://byui-cit230.github.io/weather/data/towndata.json";
 //const request_url = "https://splucena.github.io/lesson9/weather/towndata.json";
-const request_url = "http://127.0.0.1:5500/lesson11/weather/towndata.json";
+//const request_url = "http://127.0.0.1:5500/lesson11/weather/towndata.json";
 
 offline_data = {
     towns: [{
