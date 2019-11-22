@@ -329,6 +329,7 @@ main {
 
 .five-day-forecast {
   /*border: solid 1px #000;*/
+  display: none;
   border: none;
   margin: 4px;
 }
@@ -372,6 +373,10 @@ main {
 .article-image {
   min-width: 300px;
   min-height: 300px;
+}
+
+.article-image img {
+  height: 400px;
 }
 
 .google-map {
