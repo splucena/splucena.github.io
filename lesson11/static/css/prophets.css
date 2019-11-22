@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+header,
+footer {
+    margin: 0 auto;
+    text-align: center;
+    color: #121619;
+    font-family: 'Roboto Slab', serif;
+}
+
+footer {
+    margin-top: 20px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 3px;
+}
+
+.cards section {
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px;
+    background-color: #CCDAD1;
+    border: solid 1px #121619;
+    font-family: 'Roboto', sans-serif;
+}
+
+.cards h2,
+.cards p,
+.cards img {
+    padding: 0;
+    margin: 0;
+}
+
+.cards h2 {
+    margin-top: 10px;
+    margin-bottom: 6px;
+    color: #1C7C54;
+}
+
+.cards p {
+    margin-bottom: 2px;
+    color: #121619;
+}
+
+.cards img {
+    width: 180px;
+    height: 220px;
+    max-width: 100%;
+    margin-top: 10px;
+    margin-bottom: -4px;
+    box-shadow: 2px 2px 8px #121619;
+}
+
+@media only screen and (min-width: 37.5em) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 3px;
+    }
+}
+
+
+@media only screen and (min-width: 60em) {
+    main {
+        margin: 0 auto;
+    }
+
+    .cards {
+        grid-template-columns: repeat(4, 1fr);
+        row-gap: 12px;
+    }
+}

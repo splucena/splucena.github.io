@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-11" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>The Weather Bureau | Storm Center</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" type="text/css" media="screen" href="../static/css/normalize.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="static/css/small.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="static/css/medium.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="static/css/large.css" />
+  <!--<script src="main.js"></script>-->
+</head>
+
+<body>
+  <header>
+    <!--<img src="static/img/iconfinder_weather-rainy-h_274768.png" alt="" />-->
+    <img src="static/img/weather_icon.png" alt="Mostly Sunny" />
+    <div>
+      <h1>The Weather Bureau</h1>
+      <div class="text-align-center site-motto">Your weather authority</div>
+    </div>
+  </header>
+  <nav>
+    <ul id="ul-navbar" class="navigation">
+      <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+      <li class="li-menu-item">
+        <a href="index.html" target="_self">Home</a>
+      </li>
+      <li class="li-menu-item">
+        <a href="preston-11.html" target="_self">Preston</a>
+      </li>
+      <li class="li-menu-item">
+        <a href="soda-springs-11.html" target="_self">Soda Springs</a>
+      </li>
+      <li class="li-menu-item">
+        <a href="fish-haven-11.html" target="_self">Fish Haven</a>
+      </li>
+      <li class="li-menu-item active">
+        <a href="storm-center-11.html" target="_self">Storm Center</a>
+      </li>
+      <li class="li-menu-item">
+        <a href="gallery-11.html" target="_self">Gallery</a>
+      </li>
+    </ul>
+  </nav>
+  <main>
+    <h2 class="text-align-center">Storm Center</h2>
+    <!--
+      full name using input of type text and is required and only accepts alpha characters with a minimum of five characters using a regular expression pattern
+      email using input of type email and use a placeholder to provide a demo email
+      phone number using input of type tel and is required
+      zip code using input of type number and is required
+      storm date using input of type date
+      storm type using input with a list attribute referencing a datalist of suggestions that include "Flash Flood," "Hail," "Hurricane," "Thunderstorm," and "Tornado."
+      storm severity using type range (1 to 10) with a corresponding label that indicates the current range value from 1 to 10.
+      Hint: See the Pen HTML Form example objects (Links to an external site.)
+      storm region using select with drop-down options of "Preston", "Sugar City", and "Fish Haven".
+      Add a first option with the text "Select Region ..." that is shown by default but not selectable (disabled).
+      The rest of the options should have relevant value attributes.
+      user in-danger level using input of type radio with options and values of "yes," "maybe," and "no."
+      additional information or comments using a textarea
+      form submission button using input of type submit
+    -->
+    <div class="main-container">
+      <h3>Send Storm Report</h3>
+      <form action="" method="GET" class="form-storm-center">
+        <fieldset>
+          <legend>Reporting Person's Information</legend>
+          <label for="fullname">Full Name<input type="text" name="fullname" id="fullname" minlength="5"
+              pattern="[A-Za-z ]+" required></label>
+          <label for="email">Email<input type="email" name="email" placeholder="someone@email.com" id="email"></label>
+          <label for="phone_number">Phone Number<input type="tel" required name="phone_number" pattern="[0-11]+"
+              id="phone_number"></label>
+          <label for="zip">ZIP<input type="number" name="zip" id="zip" required></label>
+        </fieldset>
+        <fieldset>
+          <legend>Storm Details</legend>
+          <label for="storm_date">Date<input type="date" name="storm_date" id="storm_date"></label>
+          <label for="storm_type">Type<input type="text" name="storm_type" id="storm_type" list="storm_types"></label>
+          <datalist id="storm_types">
+            <option value="Flash Flood">
+            <option value="Hail">
+            <option value="Hurricane">
+            <option value="Thunderstorm">
+            <option value="Tornado">
+          </datalist>
+          <label for="storm_severity">Severity Range (1 to 10)<input name="storm_severity" id="storm_severity"
+              type="range" min="1" max="10" step="1" value="5" oninput="adjust_severity_rating(this.value)"
+              onchange="adjust_severity_rating(this.value)"><span id="storm_severity_rating">5</span></label>
+
+          <label for="storm_region">Region<select name="storm_regtion" id="storm_region">
+              <option value="select_value" disabled selected>Select Region ...</option>
+              <option value="preston">Preston</option>
+              <option value="sugar_city">Sugar City</option>
+              <option value="fish_haven">Fish Haven</option>
+            </select></label>
+        </fieldset>
+        <fieldset>
+          <legend>Are you in the storm's path? <em>(Choose one)</em></legend>
+          <label for="rb_yes"><input type="radio" value="yes" name="user_indanger_level" id="rb_yes"> Yes</label>
+          <label for="rb_no"><input type="radio" value="no" name="user_indanger_level" id="rb_no"> No</label>
+          <label for="rb_maybe"><input type="radio" value="maybe" name="user_indanger_level" id="rb_maybe">
+            Maybe</label>
+        </fieldset>
+        <fieldset>
+          <legend>Additional Information</legend>
+          <label for="comment">Comments<textarea name="comment" id="comment" rows="5"></textarea></label>
+        </fieldset>
+        <input type="submit" value="Send Storm Report" onclick="validate_form()">
+      </form>
+    </div>
+    <br />
+    <div class="home-content-box">
+      <div class="banner-summary-content-row">
+        <div class="banner-summary-content-col google-map"><iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47365.77385347071!2d-111.9153445750597!3d42.09974162634671!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20ID%2083263%2C%20USA!5e0!3m2!1sen!2sph!4v1570894327447!5m2!1sen!2sph"
+            allowfullscreen=""></iframe></div>
+        <div class="banner-summary-content-col main-contact-info">
+          <div class="contact-info">
+            <h3>The Weather Bureau</h3>
+            <p><i class="fas fa-map-marker-alt"></i> W 8th N</p>
+            <p>Preston, ID</p>
+            <p>&nbsp;</p>
+            <p><i class="fas fa-phone-square-alt"></i> 999 999 9999</p>
+            <p><i class="fas fa-at"></i> the.weather.bureau@idaho.gov.us</p>
+            <p>
+              <span><img src="static/img/fb.png" alt="Facebook"></span>
+              <span><img src="static/img/pinterest.png" alt="Pinterest"></span>
+              <span><img src="static/img/twitter.png" alt="Twitter"></span>
+              <span><img src="static/img/viber.png" alt="Viber"></span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="text-align-center">
+    <span>&copy; <span id="footer-year"></span> | Sumilang R. Plucena |
+      Philippines |
+      <span><a href="https://www.byui.edu/online" target="_blank">BYUI Online Learning</a></span>
+      |
+      <span><a href="../index.html" target="_blank">Assignment Portal</a></span></span>
+    <div><span id="footer-date"></span></div>
+  </footer>
+  <script src="static/js/script.js"></script>
+</body>
+
+</html>

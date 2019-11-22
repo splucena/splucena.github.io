@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-11">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        main {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .gallery-images {
+            width: 80%;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            column-gap: 20px;
+            row-gap: 20px;
+            justify-content: center;
+        }
+
+        .gallery-images picture {
+        position: relative;
+        width: 100%;
+        height: 250px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        .gallery-images picture img {
+        width: 100%;
+        height: 100%;
+        max-width: 100%;
+        max-height: 100%;
+        filter: blur(0em);
+        transition: filter 0.5s;
+        }
+
+        .img-desc {
+        width: 100%;
+        position: absolute;
+        text-align: center;
+        bottom: 0;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background-color: rgba(255, 255, 255, 0.8);
+        color: #000;
+        }
+
+        .box {
+            width: 400px;
+            height: 300px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="gallery-images" id="gallery-images">
+            <picture>
+                <img src="static/img/blurred.jpeg" data-src="static/img/gallery/cloudy.jpeg">
+                <div class="img-desc">Cloudy sky over Springfield</div>
+            </picture>
+            <picture>
+                <img src="static/img/blurred.jpeg" data-src="static/img/gallery/fog.jpeg">
+                <div class="img-desc">Sea of clouds over Franklin</div>
+            </picture>
+            <picture>
+                <img src="static/img/blurred.jpeg" data-src="static/img/gallery/lightning.jpeg">
+                <div class="img-desc">Lightning over Clark County</div>
+            </picture>
+            <picture>
+                <img src="static/img/blurred.jpeg" data-src="static/img/gallery/rain.jpeg">
+                <div class="img-desc">Scattered rainshower over Greenville</div>
+            </picture>
+            <picture>
+                <img src="static/img/blurred.jpeg" data-src="static/img/gallery/snow.jpeg">
+                <div class="img-desc">Greenville covered in fresh snow</div>
+            </picture>
+            <picture>
+                <img src="static/img/blurred.jpeg" data-src="static/img/gallery/sunny.jpeg">
+                <div class="img-desc">Sunny day at Franklin</div>
+            </picture>
+            <picture>
+                <img src="static/img/blurred.jpeg" data-src="static/img/gallery/tornado.jpeg">
+                <div class="img-desc">Tornado over Clark County</div>
+            </picture>
+            <picture>
+                <img src="static/img/blurred.jpeg" data-src="static/img/gallery/typhoon.jpeg">
+                <div class="img-desc">Typhoon approaching Preston</div>
+            </picture>
+            <picture>
+                <img src="static/img/blurred.jpeg" data-src="static/img/gallery/windy.jpeg">
+                <div class="img-desc">Windy Greenville</div>
+            </picture>
+        </div>
+    </main>
+    <script>
+        let observers = [];
+
+        startup = () => {
+            
+            let observer_options = {
+                root: null,
+                rootMargin: '0px',
+                threshold: [0.0, 1.0] 
+            };
+
+            let gallery_images = document.getElementById('gallery-images');
+            for (let i=0; i<gallery_images.childNodes.length; i++) {
+                let img = gallery_images.childNodes[i];
+
+                if (img.nodeType == 1) {
+                    //console.log(img.childNodes[1]);
+                    let img_id = 'img-' + (i+1);
+                    img.childNodes[1].id = img_id;
+                    observers[i] = new IntersectionObserver(intersectionCallback, observer_options);
+                    observers[i].observe(document.querySelector('#' + img_id));
+                }
+            }
+        }
+
+        intersectionCallback = (entries) => {
+            entries.forEach((entry) => {
+                let box = entry.target;
+                let visible_pct = (Math.floor(entry.intersectionRatio * 100)) + '%';
+                box.innerHTML = visible_pct + ' ' + box.id;
+                console.log(box.id);
+                if ((entry.intersectionRatio * 100) == 100) {
+                    entry.target.setAttribute('src', entry.target.getAttribute('data-src'));
+                } 
+            });
+        }  
+
+        startup();
+
+    </script>
+</body>
+</html>
