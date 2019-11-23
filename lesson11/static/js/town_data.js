@@ -51,13 +51,13 @@ let url2 = window.location.href;
 let current_url2 = url2.split("/").slice(-1)[0];
 let city_name = "";
 
-if (current_url2 == "preston-11.html") {
+if (current_url2 == "preston-11.html" || current_url2 == "preston.html") {
   city_name = "Preston";
 }
-if (current_url2 == "soda-springs-11.html") {
+if (current_url2 == "soda-springs-11.html" || current_url2 == "soda-springs.html") {
   city_name = "Soda Springs";
 }
-if (current_url2 == "fish-haven-11.html") {
+if (current_url2 == "fish-haven-11.html" || current_url2 == "fish-haven.html") {
   city_name = "Fish Haven";
 }
 
