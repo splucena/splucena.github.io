@@ -264,6 +264,11 @@ main {
   padding: 4px;
 }
 
+.banner-summary-content-col p {
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+
 .text-align-right {
   text-align: right;
 }
@@ -377,6 +382,10 @@ main {
 
 .article-image img {
   height: 400px;
+}
+
+.article-title {
+  font-size: 14px;
 }
 
 .google-map {
