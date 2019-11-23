@@ -62,6 +62,10 @@ if (current_url2 == "fish-haven-11.html") {
   city_name = "Fish Haven";
 }
 
+if (current_url2 == "index.html") {
+  city_name = "Home";
+}
+
 console.log(city_name);
 
 function create_cards(json_object, page) {
@@ -114,7 +118,7 @@ function create_cards(json_object, page) {
     }
   }
 
-  if (page == "index.html") {
+  if (page == "Home") {
     for (let i = 0; i < towns.length; i++) {
       let card = document.createElement("section");
       let desc_container = document.createElement("div");
@@ -197,9 +201,9 @@ fetch(request_url)
     if (!response.ok) {
       return offline_data;
     }
-
     return response.json();
   })
   .then(json_object => {
+    console.log(city_name);
     create_cards(json_object, city_name);
   });
