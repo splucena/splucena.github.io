@@ -3,8 +3,7 @@ const request_url = "https://byui-cit230.github.io/weather/data/towndata.json";
 //const request_url = "http://127.0.0.1:5500/lesson11/weather/towndata.json";
 
 offline_data = {
-  towns: [
-    {
+  towns: [{
       name: "Fish Haven",
       photo: "fishhaven.jpg",
       motto: "This is Fish Heaven.",
@@ -62,7 +61,7 @@ if (current_url2 == "fish-haven-11.html") {
   city_name = "Fish Haven";
 }
 
-if (current_url2 == "index.html") {
+if (current_url2 == "index.html" || current_url2 == "index-11.html") {
   city_name = "Home";
 }
 
