@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>The Weather Bureau | Gallery</title>
+    <title>The Weather Bureau | Home</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" type="text/css" media="screen" href="../static/css/normalize.css" />
@@ -16,9 +16,9 @@
 
 <body>
     <header id="header-element">
-        <!--<img src="static/img/iconfinder_weather-rainy-h_274768.png" alt="" />-->
         <div id="friday-banner">Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.
         </div>
+        <!--<img src="static/img/iconfinder_weather-rainy-h_274768.png" alt="" />-->
         <img src="static/img/weather_icon.png" alt="Mostly Sunny" />
         <div>
             <h1>The Weather Bureau</h1>
@@ -28,7 +28,7 @@
     <nav>
         <ul id="ul-navbar" class="navigation">
             <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
-            <li class="li-menu-item">
+            <li class="li-menu-item active">
                 <a href="index-11.html" target="_self">Home</a>
             </li>
             <li class="li-menu-item">
@@ -43,84 +43,18 @@
             <li class="li-menu-item">
                 <a href="storm-center-11.html" target="_self">Storm Center</a>
             </li>
-            <li class="li-menu-item active">
+            <li class="li-menu-item">
                 <a href="gallery-11.html" target="_self">Gallery</a>
             </li>
         </ul>
     </nav>
-    <main>
-        <h2 class="text-align-center">Gallery</h2>
-        <div class="gallery-images" id="gallery-images">
-            <div class="picture-container">
-                <picture>
-                    <img src="static/img/blurred.jpeg" data-src="static/img/gallery/cloudy.jpeg"
-                        alt="Cloudy sky over Springfield">
-                </picture>
-                <div class="img-desc">Cloudy sky over Springfield</div>
-            </div>
-
-            <div class="picture-container">
-                <picture>
-                    <img src="static/img/blurred.jpeg" data-src="static/img/gallery/fog.jpeg"
-                        alt="Sea of clouds over Franklin">
-                </picture>
-                <div class="img-desc">Sea of clouds over Franklin</div>
-            </div>
-
-            <div class="picture-container">
-                <picture>
-                    <img src="static/img/blurred.jpeg" data-src="static/img/gallery/lightning.jpeg"
-                        alt="Lightning over Clark County">
-                </picture>
-                <div class="img-desc">Lightning over Clark County</div>
-            </div>
-
-            <div class="picture-container">
-                <picture>
-                    <img src="static/img/blurred.jpeg" data-src="static/img/gallery/rain.jpeg"
-                        alt="Scattered rainshower over Greenville">
-                </picture>
-                <div class="img-desc">Scattered rainshower over Greenville</div>
-            </div>
-
-            <div class="picture-container">
-                <picture>
-                    <img src="static/img/blurred.jpeg" data-src="static/img/gallery/snow.jpeg"
-                        alt="Greenville covered in fresh snow">
-                </picture>
-                <div class="img-desc">Greenville covered in fresh snow</div>
-            </div>
-
-            <div class="picture-container">
-                <picture>
-                    <img src="static/img/blurred.jpeg" data-src="static/img/gallery/sunny.jpeg"
-                        alt="Sunny day at Franklin">
-                </picture>
-                <div class="img-desc">Sunny day at Franklin</div>
-            </div>
-
-            <div class="picture-container">
-                <picture>
-                    <img src="static/img/blurred.jpeg" data-src="static/img/gallery/tornado.jpeg"
-                        alt="Tornado over Clark County">
-                </picture>
-                <div class="img-desc">Tornado over Clark County</div>
-            </div>
-            <div class="picture-container">
-                <picture>
-                    <img src="static/img/blurred.jpeg" data-src="static/img/gallery/typhoon.jpeg" alt="Typhoon approaching Preston
-                        ">
-                </picture>
-                <div class="img-desc">Typhoon approaching Preston</div>
-            </div>
-            <div class="picture-container">
-                <picture>
-                    <img src="static/img/blurred.jpeg" data-src="static/img/gallery/windy.jpeg" alt="Windy Greenville">
-                </picture>
-                <div class="img-desc">Windy Greenville</div>
-            </div>
+    <main class="main-home">
+        <div class="banner-summary-home">
+            <img src="static/img/preston_river.jpg" alt="Preston River">
         </div>
-        <br />
+        <div class="cards">
+
+        </div>
         <div class="home-content-box">
             <div class="banner-summary-content-row">
                 <div class="banner-summary-content-col google-map"><iframe
@@ -154,8 +88,7 @@
         <div><span id="footer-date"></span></div>
     </footer>
     <script src="static/js/script.js"></script>
-    <script src="static/js/webfont.js"></script>
-    <script src="static/js/gallery_lazy_loading.js"></script>
+    <script src="static/js/town_data.js"></script>
 </body>
 
 </html>
