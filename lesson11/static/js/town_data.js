@@ -82,39 +82,80 @@ function create_cards(json_object, page) {
     towns.splice(1, 0, offline_data["towns"][1]);
 
     let events = offline_data["towns"][1]["events"];
-
+    let tbl = document.createElement("table");
+    tbl.setAttribute("id", "tbl-events-preston");
     for (let i = 0; i < events.length; i++) {
-      let p = document.createElement("p");
-      p.textContent = events[i];
-      p.setAttribute("class", "text-align-center");
-      document.querySelector("div.events").appendChild(p);
+      //let p = document.createElement("p");
+      let tr = document.createElement("tr");
+      let td_event = document.createElement("td");
+      let td_image = document.createElement("td");
+      let img = document.createElement("img");
+
+      img.setAttribute("src", "static/img/towns/preston-" + i + ".jpg" );
+      img.setAttribute("id", "preston-" + i);
+      img.setAttribute("alt", "Preston-" + i);
+      td_image.appendChild(img);
+      tbl.appendChild(tr);
+      td_event.textContent = events[i];
+      
+      tr.appendChild(td_event);
+      tr.appendChild(td_image);
+      
     }
+    document.querySelector("div.events").appendChild(tbl);
   }
 
   if (city_name == "Fish Haven") {
     towns.splice(0, 0, offline_data["towns"][0]);
 
     let events = offline_data["towns"][0]["events"];
-
+    let tbl = document.createElement("table");
+    tbl.setAttribute("id", "tbl-events-fish-haven");
     for (let i = 0; i < events.length; i++) {
-      let p = document.createElement("p");
-      p.textContent = events[i];
-      p.setAttribute("class", "text-align-center");
-      document.querySelector("div.events").appendChild(p);
+      let tr = document.createElement("tr");
+      let td_event = document.createElement("td");
+      let td_image = document.createElement("td");
+      let img = document.createElement("img");
+
+      img.setAttribute("src", "static/img/towns/fish-haven-" + i + ".jpg" );
+      img.setAttribute("id", "fish-haven-" + i);
+      img.setAttribute("alt", "Fish Haven-" + i);
+      td_image.appendChild(img);
+      tbl.appendChild(tr);
+      td_event.textContent = events[i];
+      
+      tr.appendChild(td_event);
+      tr.appendChild(td_image);
+      
     }
+    document.querySelector("div.events").appendChild(tbl);
   }
 
   if (city_name == "Soda Springs") {
     towns.splice(2, 0, offline_data["towns"][2]);
 
     let events = offline_data["towns"][2]["events"];
-
+    let tbl = document.createElement("table");
+    tbl.setAttribute("id", "tbl-events-soda-springs");
     for (let i = 0; i < events.length; i++) {
-      let p = document.createElement("p");
-      p.textContent = events[i];
-      p.setAttribute("class", "text-align-center");
-      document.querySelector("div.events").appendChild(p);
+      //let p = document.createElement("p");
+      let tr = document.createElement("tr");
+      let td_event = document.createElement("td");
+      let td_image = document.createElement("td");
+      let img = document.createElement("img");
+
+      img.setAttribute("src", "static/img/towns/soda-springs-" + i + ".jpg" );
+      img.setAttribute("id", "soda-springs-" + i);
+      img.setAttribute("alt", "Soda Springs-" + i);
+      td_image.appendChild(img);
+      tbl.appendChild(tr);
+      td_event.textContent = events[i];
+      
+      tr.appendChild(td_event);
+      tr.appendChild(td_image);
+      
     }
+    document.querySelector("div.events").appendChild(tbl);
   }
 
   if (page == "Home") {
