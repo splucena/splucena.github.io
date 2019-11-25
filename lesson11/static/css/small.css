@@ -348,6 +348,53 @@ main {
   filter: drop-shadow(2px 2px 2px #222);
 }
 
+/*.events-img {
+  width: 50px;
+  height: 50px;
+}*/
+#tbl-events-preston,
+#tbl-events-fish-haven,
+#tbl-events-soda-springs {
+  border-collapse: collapse;
+  border: none;
+}
+
+#tbl-events-preston td,
+#tbl-events-fish-haven td,
+#tbl-events-soda-springs td {
+  border-collapse: collapse;
+  border: none;
+  text-align: left;
+}
+
+#tbl-events-preston td:nth-child(1),
+#tbl-events-fish-haven td:nth-child(1),
+#tbl-events-soda-springs td:nth-child(1) {
+  padding-left: 10%;
+  /*border: solid 1px #000;*/
+}
+
+#tbl-events-preston td:nth-child(2),
+#tbl-events-fish-haven td:nth-child(2),
+#tbl-events-soda-springs td:nth-child(2) {
+  width: 25%;
+  /*border: solid 1px #000;*/
+}
+
+#preston-0,
+#preston-1,
+#preston-2,
+#fish-haven-0,
+#fish-haven-1,
+#fish-haven-2,
+#fish-haven-3,
+#soda-springs-0,
+#soda-springs-1,
+#soda-springs-2 {
+  width: 30px;
+  height: 30px;
+}
+
 .five-day-forecast table {
   width: 100%;
   margin: 0 auto;
