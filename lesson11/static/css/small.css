@@ -411,6 +411,7 @@ main {
 #soda-springs-0 div img,
 #soda-springs-1 div img,
 #soda-springs-2 div img {
+  display: block;
   width: 100%;
   height: 100%;
 }
