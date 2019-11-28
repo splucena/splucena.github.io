@@ -387,18 +387,32 @@ main {
   /*border: solid 1px #000;*/
 }
 
-#preston-0,
-#preston-1,
-#preston-2,
-#fish-haven-0,
-#fish-haven-1,
-#fish-haven-2,
-#fish-haven-3,
-#soda-springs-0,
-#soda-springs-1,
-#soda-springs-2 {
+#preston-0 div,
+#preston-1 div,
+#preston-2 div,
+#fish-haven-0 div,
+#fish-haven-1 div,
+#fish-haven-2 div,
+#fish-haven-3 div,
+#soda-springs-0 div,
+#soda-springs-1 div,
+#soda-springs-2 div {
   width: 30px;
   height: 30px;
+}
+
+#preston-0 div img,
+#preston-1 div img,
+#preston-2 div img,
+#fish-haven-0 div img,
+#fish-haven-1 div img,
+#fish-haven-2 div img,
+#fish-haven-3 div img,
+#soda-springs-0 div img,
+#soda-springs-1 div img,
+#soda-springs-2 div img {
+  width: 100%;
+  height: 100%;
 }
 
 .five-day-forecast table {

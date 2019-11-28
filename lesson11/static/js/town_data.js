@@ -87,18 +87,19 @@ function create_cards(json_object, page) {
       let tr = document.createElement("tr");
       let td_event = document.createElement("td");
       let td_image = document.createElement("td");
+      td_image.setAttribute("id", "preston-" + i);
+      let img_container = document.createElement("div");
       let img = document.createElement("img");
-
-      img.setAttribute("src", "static/img/towns/preston-" + i + ".gif" );
-      img.setAttribute("id", "preston-" + i);
+      img.setAttribute("src", "static/img/towns/preston-" + i + ".gif");
       img.setAttribute("alt", "Preston-" + i);
-      td_image.appendChild(img);
+      img_container.appendChild(img)
+      td_image.appendChild(img_container);
       tbl.appendChild(tr);
       td_event.textContent = events[i];
-      
+
       tr.appendChild(td_event);
       tr.appendChild(td_image);
-      
+
     }
     document.querySelector("div.events").appendChild(tbl);
   }
@@ -113,18 +114,19 @@ function create_cards(json_object, page) {
       let tr = document.createElement("tr");
       let td_event = document.createElement("td");
       let td_image = document.createElement("td");
+      td_image.setAttribute("id", "fish-haven-" + i);
+      let img_container = document.createElement("div");
       let img = document.createElement("img");
-
-      img.setAttribute("src", "static/img/towns/fish-haven-" + i + ".gif" );
-      img.setAttribute("id", "fish-haven-" + i);
+      img.setAttribute("src", "static/img/towns/fish-haven-" + i + ".gif");
       img.setAttribute("alt", "Fish Haven-" + i);
-      td_image.appendChild(img);
+      img_container.appendChild(img)
+      td_image.appendChild(img_container);
       tbl.appendChild(tr);
       td_event.textContent = events[i];
-      
+
       tr.appendChild(td_event);
       tr.appendChild(td_image);
-      
+
     }
     document.querySelector("div.events").appendChild(tbl);
   }
@@ -140,18 +142,19 @@ function create_cards(json_object, page) {
       let tr = document.createElement("tr");
       let td_event = document.createElement("td");
       let td_image = document.createElement("td");
+      td_image.setAttribute("id", "soda-springs-" + i);
+      let img_container = document.createElement("div");
       let img = document.createElement("img");
-
-      img.setAttribute("src", "static/img/towns/soda-springs-" + i + ".gif" );
-      img.setAttribute("id", "soda-springs-" + i);
+      img.setAttribute("src", "static/img/towns/soda-springs-" + i + ".gif");
       img.setAttribute("alt", "Soda Springs-" + i);
-      td_image.appendChild(img);
+      img_container.appendChild(img);
+      td_image.appendChild(img_container);
       tbl.appendChild(tr);
       td_event.textContent = events[i];
-      
+
       tr.appendChild(td_event);
       tr.appendChild(td_image);
-      
+
     }
     document.querySelector("div.events").appendChild(tbl);
   }
