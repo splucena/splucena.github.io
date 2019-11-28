@@ -11,7 +11,13 @@ if (current_url == 'preston-11.html') {
   city_id = 5585010;
 }
 
-console.log(city_id);
+const fish_haven_url = "https://api.openweathermap.org/data/2.5/weather?zip=83287,us&units=imperial&APPID=80ade633c3150127b8188f51cb8e0b1a"
+
+fetch(fish_haven_url)
+.then(r => r.json)
+.then(jobj => {
+  console.log(jobj);
+})
 
 const apiURL =
   "https://api.openweathermap.org/data/2.5/weather?id=" + city_id + "&units=imperial&APPID=80ade633c3150127b8188f51cb8e0b1a";

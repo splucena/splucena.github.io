@@ -65,8 +65,6 @@ if (current_url2 == "index.html" || current_url2 == "index-11.html") {
   city_name = "Home";
 }
 
-console.log(city_name);
-
 function create_cards(json_object, page) {
   let accepted_towns = ["Preston", "Soda Springs", "Fish Haven"];
   let towns = json_object["towns"].filter(town => {
@@ -91,7 +89,7 @@ function create_cards(json_object, page) {
       let td_image = document.createElement("td");
       let img = document.createElement("img");
 
-      img.setAttribute("src", "static/img/towns/preston-" + i + ".jpg" );
+      img.setAttribute("src", "static/img/towns/preston-" + i + ".gif" );
       img.setAttribute("id", "preston-" + i);
       img.setAttribute("alt", "Preston-" + i);
       td_image.appendChild(img);
@@ -117,7 +115,7 @@ function create_cards(json_object, page) {
       let td_image = document.createElement("td");
       let img = document.createElement("img");
 
-      img.setAttribute("src", "static/img/towns/fish-haven-" + i + ".jpg" );
+      img.setAttribute("src", "static/img/towns/fish-haven-" + i + ".gif" );
       img.setAttribute("id", "fish-haven-" + i);
       img.setAttribute("alt", "Fish Haven-" + i);
       td_image.appendChild(img);
@@ -144,7 +142,7 @@ function create_cards(json_object, page) {
       let td_image = document.createElement("td");
       let img = document.createElement("img");
 
-      img.setAttribute("src", "static/img/towns/soda-springs-" + i + ".jpg" );
+      img.setAttribute("src", "static/img/towns/soda-springs-" + i + ".gif" );
       img.setAttribute("id", "soda-springs-" + i);
       img.setAttribute("alt", "Soda Springs-" + i);
       td_image.appendChild(img);
