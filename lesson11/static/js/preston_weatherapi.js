@@ -79,7 +79,7 @@ fetch(apiURLForecast)
 
         let img = document.createElement("img");
         let image_src =
-          "http://openweathermap.org/img/wn/" + weather_icon + "@2x.png";
+          "https://openweathermap.org/img/wn/" + weather_icon + "@2x.png";
         img.setAttribute("src", image_src);
         let image_alt = forecast_data[i].weather[0].description;
         img.setAttribute("alt", image_alt);
