@@ -74,6 +74,12 @@ footer {
   padding: 20px;
 }
 
+footer a:visited,
+footer a {
+  color: #DEF2F1;
+  text-decoration: none;
+}
+
 h1 {
   /*font-family: "Roboto", sans-serif;*/
   font-family: 'Roboto Slab', serif;
