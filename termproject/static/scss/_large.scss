@@ -1,0 +1,28 @@
+html,
+body {
+    height: 100%;
+    background-image: url('../img/rome-italy-temple-2190090-wallpaper.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+nav {
+    grid-template-rows: none;
+    grid-template-columns: 1fr auto auto auto auto auto;
+    text-align: right;
+    justify-items: start;
+    border: solid 1px #000;
+    min-height: 8rem;
+    background-color: #000;
+    opacity: 0.7;
+
+    >div {
+        display: flex;
+
+        a,
+        span {
+            margin: auto 0;
+            color: #FFF;
+        }
+    }
+}

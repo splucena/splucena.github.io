@@ -1,0 +1,48 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Ubuntu", sans-serif;
+}
+
+nav {
+    display: grid;
+    justify-items: center;
+    text-align: center;
+
+    >div {
+        font-size: 1.6em;
+        padding: 1rem 4rem;
+    }
+
+    a {
+        text-decoration: none;
+    }
+}
+
+footer {
+    height: 6rem;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #000;
+    opacity: 0.8;
+    text-align: center;
+    display: flex;
+
+    >div {
+        font-size: 1.6em;
+        padding: 1rem 4rem;
+        margin: 0 auto;
+        display: flex;
+
+        a,
+        span {
+            margin: auto 0;
+            text-decoration: none;
+            color: #FFF;
+        }
+    }
+}
