@@ -45,6 +45,7 @@ nav {
         padding: auto;
         text-decoration: none;
         font-size: 17px;
+        margin: auto 0;
     }
 
     .top-nav a.icon {
@@ -106,6 +107,20 @@ main {
         color: $font-color-temple;
     }
 
+    .temples section h3 {
+        background-color: #17252A;
+        padding: 20px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .temples section div {
+        text-align: justify;
+        padding-left: 20px;
+        padding-right: 20px;
+        color: #17252A;
+    }
+
     .contact-information {
         display: flex;
         flex-direction: column;
@@ -117,7 +132,7 @@ main {
         .map-contact-information iframe {
             display: block;
             width: 350px;
-            height: 300px;
+            height: 350px;
         }
 
         .details-contact-information {
@@ -125,11 +140,11 @@ main {
             height: 100%;
             margin: auto 0;
             display: flex;
-            align-items: center;
-            justify-content: center;
+            /*align-items: center;
+            justify-content: center;*/
 
             h3 {
-                margin-top: 0;
+                margin-top: 40px;
             }
 
             div {
