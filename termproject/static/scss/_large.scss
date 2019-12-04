@@ -62,6 +62,11 @@ main {
     grid-template-columns: 3fr 1fr;
     padding: 10px;
 
+    .temples>div {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
     .home-header {
         grid-area: home-header;
     }
@@ -146,8 +151,8 @@ main {
             height: 100%;
             margin: auto 0;
             display: flex;
-            /*align-items: center;
-            justify-content: center;*/
+            align-items: flex-start;
+            justify-content: flex-start;
 
             h3 {
                 margin-top: 40px;
@@ -155,7 +160,7 @@ main {
 
             div {
                 margin: 0 auto;
-                width: 230px;
+                width: auto;
             }
 
             p {

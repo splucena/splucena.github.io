@@ -486,6 +486,10 @@ main {
   display: grid;
   grid-template-columns: 1fr;
 }
+main .temples > div {
+  margin-top: 2px;
+  margin-bottom: -10px;
+}
 main .temples {
   display: grid;
   grid-row-gap: 10px;
@@ -521,9 +525,9 @@ main .contact-information {
 main .contact-information > h3 {
   padding-top: 10px;
   padding-bottom: 10px;
-  width: 230px;
+  width: auto;
   margin: 0 auto;
-  text-align: left;
+  text-align: center;
 }
 main .contact-information .map-contact-information iframe {
   display: none;
@@ -533,23 +537,23 @@ main .contact-information .details-contact-information {
   height: 100%;
   margin: auto 0;
   display: flex;
-  /*align-items: center;
-  justify-content: center;*/
+  align-items: center;
+  justify-content: center;
 }
 main .contact-information .details-contact-information h3 {
   margin-top: 0;
 }
 main .contact-information .details-contact-information div {
   margin: 0 auto;
-  width: 230px;
+  width: auto;
 }
 main .contact-information .details-contact-information p {
   margin: 2px;
 }
 main .contact-information .details-contact-information img {
   margin-top: 15px;
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
 }
 
 footer {
@@ -578,6 +582,93 @@ footer > div a:visited {
   color: #FEFFFF;
 }
 
+@media only screen and (min-width: 560px) {
+  main {
+    padding: 10px;
+  }
+  main .temples > div {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  main .home-header {
+    grid-area: home-header;
+  }
+  main .temple-1 {
+    grid-area: temple1;
+  }
+  main .temple-2 {
+    grid-area: temple2;
+  }
+  main .temple-3 {
+    grid-area: temple3;
+  }
+  main .temple-4 {
+    grid-area: temple4;
+  }
+  main .temples {
+    padding: 10px;
+    display: grid;
+    grid-template-areas: "home-header home-header" "temple1 temple2" "temple3 temple4";
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    border: none;
+  }
+  main .contact-information {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10px;
+    grid-template-areas: "h3 h3" "map details";
+    grid-auto-flow: column;
+  }
+  main .contact-information .h3-contact-information {
+    grid-area: h3;
+  }
+  main .contact-information .map-contact-information {
+    grid-area: map;
+  }
+  main .contact-information .details-contact-information {
+    grid-area: details;
+  }
+  main .contact-information > h3 {
+    text-align: left;
+    width: 100%;
+  }
+  main .contact-information section {
+    margin: auto 0;
+    width: 100%;
+  }
+  main .contact-information .map-contact-information {
+    width: 100%;
+  }
+  main .contact-information .map-contact-information iframe {
+    display: block;
+    width: 100%;
+    height: 200px;
+  }
+  main .contact-information .details-contact-information {
+    width: 100%;
+    height: 100%;
+    margin: auto 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  main .contact-information .details-contact-information h3 {
+    margin-top: 0;
+  }
+  main .contact-information .details-contact-information div {
+    margin: 0 auto;
+    width: auto;
+  }
+  main .contact-information .details-contact-information p {
+    margin: 2px;
+  }
+  main .contact-information .details-contact-information img {
+    margin-top: 15px;
+    width: 30px;
+    height: 30px;
+  }
+}
 /* end of media query */
 @media only screen and (min-width: 1028px) {
   html,
@@ -637,6 +728,10 @@ footer > div a:visited {
   main {
     grid-template-columns: 3fr 1fr;
     padding: 10px;
+  }
+  main .temples > div {
+    margin-top: 0;
+    margin-bottom: 0;
   }
   main .home-header {
     grid-area: home-header;
@@ -706,15 +801,15 @@ footer > div a:visited {
     height: 100%;
     margin: auto 0;
     display: flex;
-    /*align-items: center;
-    justify-content: center;*/
+    align-items: flex-start;
+    justify-content: flex-start;
   }
   main .contact-information .details-contact-information h3 {
     margin-top: 40px;
   }
   main .contact-information .details-contact-information div {
     margin: 0 auto;
-    width: 230px;
+    width: auto;
   }
   main .contact-information .details-contact-information p {
     margin: 2px;

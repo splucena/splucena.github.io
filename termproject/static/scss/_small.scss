@@ -60,6 +60,11 @@ main {
     display: grid;
     grid-template-columns: 1fr;
 
+    .temples>div {
+        margin-top: 2px;
+        margin-bottom: -10px;
+    }
+
     .temples {
         display: grid;
         grid-row-gap: 10px;
@@ -100,9 +105,9 @@ main {
         >h3 {
             padding-top: 10px;
             padding-bottom: 10px;
-            width: 230px;
+            width: auto;
             margin: 0 auto;
-            text-align: left;
+            text-align: center;
         }
 
         .map-contact-information iframe {
@@ -114,8 +119,8 @@ main {
             height: 100%;
             margin: auto 0;
             display: flex;
-            /*align-items: center;
-            justify-content: center;*/
+            align-items: center;
+            justify-content: center;
 
             h3 {
                 margin-top: 0;
@@ -123,7 +128,7 @@ main {
 
             div {
                 margin: 0 auto;
-                width: 230px;
+                width: auto;
             }
 
             p {
@@ -132,8 +137,8 @@ main {
 
             img {
                 margin-top: 15px;
-                width: 50px;
-                height: 50px;
+                width: 30px;
+                height: 30px;
             }
         }
     }
