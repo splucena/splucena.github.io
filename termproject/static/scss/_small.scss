@@ -62,7 +62,6 @@ main {
 
     .temples {
         display: grid;
-        border: $border;
         grid-row-gap: 10px;
         grid-column-gap: 10px;
     }
@@ -79,6 +78,7 @@ main {
         text-align: center;
         box-shadow: $box-shadow;
         color: $font-color-temple;
+        border: $border;
     }
 
     .temples section h3 {

@@ -488,7 +488,6 @@ main {
 }
 main .temples {
   display: grid;
-  border: solid 1px #DEF2F1;
   grid-row-gap: 10px;
   grid-column-gap: 10px;
 }
@@ -503,6 +502,7 @@ main .temples section {
   text-align: center;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
   color: #FEFFFF;
+  border: solid 1px #DEF2F1;
 }
 main .temples section h3 {
   background-color: #042A2B;
