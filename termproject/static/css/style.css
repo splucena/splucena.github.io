@@ -437,17 +437,18 @@ template {
 }*/
 body {
   font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(to left, #3aafa9, #2B7A7B);
   color: #FEFFFF;
 }
 
 nav {
-  height: 50px;
+  height: auto;
   border-bottom: solid 1px #DEF2F1;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
 }
 nav .top-nav {
   overflow: hidden;
-  background-color: #333;
+  background-color: rgba(23, 37, 42, 0.8);
   position: relative;
 }
 nav .navigation {
@@ -464,26 +465,82 @@ nav .top-nav a {
   color: #FEFFFF;
 }
 nav .top-nav a.icon {
-  background: #000;
+  background-color: transparent;
   display: block;
   position: absolute;
   right: 0;
   top: 0;
+  font-size: 25px;
+  height: 40px;
+  width: 50px;
+  text-align: center;
+  padding-top: 30px;
 }
 nav .top-nav a:hover {
-  background-color: #DDD;
-  color: #000;
+  background-color: transparent;
+  color: #FEFFFF;
 }
 
 main {
   display: grid;
   grid-template-columns: 1fr;
 }
+main .temples {
+  display: grid;
+  border: solid 1px #DEF2F1;
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+}
+main .temples section img {
+  width: 100%;
+  height: 200px;
+  border-top: 1px solid #FEFFFF;
+  border-bottom: 1px solid #FEFFFF;
+}
+main .temples section {
+  background-color: #DEF2F1;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+  color: #FEFFFF;
+}
+main .temples section h3 {
+  background-color: #042A2B;
+  padding: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+main .temples section div {
+  text-align: justify;
+  padding: 20px;
+  color: #17252A;
+}
 main .contact-information {
   padding: 10px;
 }
+main .contact-information > h3 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 230px;
+  margin: 0 auto;
+  text-align: left;
+}
 main .contact-information .map-contact-information iframe {
   display: none;
+}
+main .contact-information .details-contact-information {
+  width: 100%;
+  height: 100%;
+  margin: auto 0;
+  display: flex;
+  /*align-items: center;
+  justify-content: center;*/
+}
+main .contact-information .details-contact-information h3 {
+  margin-top: 0;
+}
+main .contact-information .details-contact-information div {
+  margin: 0 auto;
+  width: 230px;
 }
 main .contact-information .details-contact-information p {
   margin: 2px;
@@ -599,8 +656,10 @@ footer > div a:visited {
     padding: 10px;
     display: grid;
     grid-template-areas: "home-header home-header" "temple1 temple2" "temple3 temple4";
-    grid-column-gap: 15px;
-    grid-row-gap: 15px;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    border: none;
+    /*border: solid 1px #FFF;*/
   }
   main .temples section img {
     width: 100%;
@@ -615,7 +674,7 @@ footer > div a:visited {
     color: #FEFFFF;
   }
   main .temples section h3 {
-    background-color: #17252A;
+    background-color: #042A2B;
     padding: 20px;
     margin-top: 0;
     margin-bottom: 0;
@@ -629,10 +688,12 @@ footer > div a:visited {
   main .contact-information {
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
+    /*margin: 0 auto;*/
+    margin: 10px 0 10px 0;
     background-color: rgba(23, 37, 42, 0.8);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
     padding: 10px;
+    /*border: solid 1px #FFF;*/
   }
   main .contact-information .map-contact-information iframe {
     display: block;

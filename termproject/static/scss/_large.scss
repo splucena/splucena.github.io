@@ -88,14 +88,16 @@ main {
             'temple1 temple2'
             'temple3 temple4'
         ;
-        grid-column-gap: 15px;
-        grid-row-gap: 15px;
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+        border: none;
+
+        /*border: solid 1px #FFF;*/
     }
 
     .temples section img {
         width: 100%;
         height: 200px;
-
         border-top: 1px solid #FEFFFF;
         border-bottom: 1px solid #FEFFFF;
     }
@@ -108,7 +110,7 @@ main {
     }
 
     .temples section h3 {
-        background-color: #17252A;
+        background-color: #042A2B;
         padding: 20px;
         margin-top: 0;
         margin-bottom: 0;
@@ -124,10 +126,13 @@ main {
     .contact-information {
         display: flex;
         flex-direction: column;
-        margin: 0 auto;
+        /*margin: 0 auto;*/
+        margin: 10px 0 10px 0;
         background-color: $bg-rgba;
         box-shadow: $box-shadow;
         padding: 10px;
+
+        /*border: solid 1px #FFF;*/
 
         .map-contact-information iframe {
             display: block;
