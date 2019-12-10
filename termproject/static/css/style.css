@@ -433,24 +433,51 @@ template {
 }
 
 html {
-  font-size: 62.5%;
+  font-size: 100%;
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  /*background-image: url('../img/rome-italy-temple-2190090-wallpaper.jpg');*/
   background: linear-gradient(to left, #3aafa9, #2B7A7B);
-  color: #FEFFFF;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #FED23F;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: fit-content(100%) fit-content(100%) fit-content(100%);
+  grid-row-gap: 0;
+  grid-gap: 0;
+}
+
+header,
+footer {
+  grid-column: 1;
 }
 
 nav {
   height: auto;
   border-bottom: solid 1px #DEF2F1;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+}
+nav .logo {
+  width: 145px;
+  height: 25;
+  margin: 0;
+  padding: 0;
 }
 nav .top-nav {
   overflow: hidden;
   background-color: rgba(23, 37, 42, 0.8);
-  position: relative;
+  margin-bottom: -6px;
+}
+nav .navigation {
+  margin-top: -6px;
 }
 nav .navigation {
   display: none;
@@ -463,7 +490,7 @@ nav .top-nav a {
   text-decoration: none;
   font-size: 17px;
   display: block;
-  color: #FEFFFF;
+  color: #FED23F;
 }
 nav .top-nav a.icon {
   background-color: transparent;
@@ -478,87 +505,146 @@ nav .top-nav a.icon {
   padding-top: 30px;
 }
 nav .top-nav a:hover {
-  background-color: transparent;
+  background: linear-gradient(to bottom, #FE4A49, #F06449);
+  color: #FEFFFF;
+}
+nav .top-nav a.active {
+  background: linear-gradient(to bottom, #F06449, #FE4A49);
   color: #FEFFFF;
 }
 
 main {
   display: grid;
   grid-template-columns: 1fr;
-}
-main .temples > div {
-  margin-top: 2px;
-  margin-bottom: -10px;
-}
-main .temples {
+  margin: 0;
+  padding: 0;
   display: grid;
-  grid-row-gap: 10px;
-  grid-column-gap: 10px;
+  grid-template-columns: 100%;
+  grid-template-rows: fit-content(100%);
+  grid-row-gap: 0;
+  grid-gap: 0;
 }
-main .temples section img {
-  width: 100%;
-  height: 200px;
-  border-top: 1px solid #FEFFFF;
-  border-bottom: 1px solid #FEFFFF;
-}
-main .temples section {
-  background-color: #DEF2F1;
-  text-align: center;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
-  color: #FEFFFF;
-  border: solid 1px #DEF2F1;
-}
-main .temples section h3 {
-  background-color: #042A2B;
-  padding: 20px;
+main > div {
   margin-top: 0;
-  margin-bottom: 0;
+  padding: 0;
 }
-main .temples section div {
-  text-align: justify;
-  padding: 20px;
-  color: #17252A;
+main div.tagline-logo img {
+  display: none;
+  margin-left: 20px;
+  width: 120px;
+  height: 50px;
 }
-main .contact-information {
-  padding: 10px;
+main div.tagline-message {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  background-color: #fed23f;
+  color: #000;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
 }
-main .contact-information > h3 {
+main div.tagline-message p {
+  margin: 0;
+  margin-left: 20px;
+  padding: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-weight: bold;
+  font-size: 30px;
+}
+main div.tagline-invitation {
+  margin-left: 20px;
+}
+main div.tagline-invitation p {
+  color: #FE4A49;
+  font-weight: bold;
+  margin: 0;
   padding-top: 10px;
   padding-bottom: 10px;
-  width: auto;
-  margin: 0 auto;
-  text-align: center;
 }
-main .contact-information .map-contact-information iframe {
+main div.tagline-button {
+  margin-left: 20px;
+}
+main div.tagline-button button {
+  background: #FE4A49;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+  /*background-image: -webkit-linear-gradient(top, #3aafa9, #2b7a78);
+  background-image: -moz-linear-gradient(top, #3aafa9, #2b7a78);
+  background-image: -ms-linear-gradient(top, #3aafa9, #2b7a78);
+  background-image: -o-linear-gradient(top, #3aafa9, #2b7a78);*/
+  background-image: linear-gradient(to bottom, #F06449, #FE4A49);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  color: #FEFFFF;
+  font-size: 18px;
+  font-weight: 100;
+  padding: 15px;
+  box-shadow: 1px 1px 20px 0px #000000;
+  -webkit-box-shadow: 1px 1px 20px 0px #000000;
+  -moz-box-shadow: 1px 1px 20px 0px #000000;
+  text-shadow: 1px 1px 20px #000000;
+  border: solid 1px #FE4A49;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+}
+main div.tagline-button button:hover {
+  border: solid 1px #F06449;
+  background: #FE4A49;
+  /*background-image: -webkit-linear-gradient(top, #2b7a78, #3aafa9);
+  background-image: -moz-linear-gradient(top, #2b7a78, #3aafa9);
+  background-image: -ms-linear-gradient(top, #2b7a78, #3aafa9);
+  background-image: -o-linear-gradient(top, #2b7a78, #3aafa9);*/
+  background-image: linear-gradient(to bottom, #FE4A49, #F06449);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+aside section {
+  margin-bottom: 20px;
+}
+aside section iframe {
   display: none;
-}
-main .contact-information .details-contact-information {
   width: 100%;
-  height: 100%;
-  margin: auto 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+  height: 200px;
 }
-main .contact-information .details-contact-information h3 {
-  margin-top: 0;
+aside h3,
+aside h4,
+aside p {
+  margin: 0;
+  margin-bottom: 5px;
 }
-main .contact-information .details-contact-information div {
-  margin: 0 auto;
-  width: auto;
-}
-main .contact-information .details-contact-information p {
-  margin: 2px;
-}
-main .contact-information .details-contact-information img {
-  margin-top: 15px;
+aside img {
   width: 30px;
   height: 30px;
 }
+aside .details-contact-information {
+  color: #FEFFFF;
+}
+aside .details-contact-information div {
+  /*background-color: $bg-rgba;*/
+  padding-left: 20px;
+  /*border-top: 4px solid $font-color-yellow;*/
+  /*box-shadow: $box-shadow;*/
+}
+aside .details-contact-information h3 {
+  color: #FED23F;
+}
+aside .details-contact-information p,
+aside .details-contact-information h3 {
+  text-align: left;
+}
 
 footer {
-  height: 6rem;
-  /*position: fixed;*/
+  height: auto;
+  position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -582,93 +668,6 @@ footer > div a:visited {
   color: #FEFFFF;
 }
 
-@media only screen and (min-width: 560px) {
-  main {
-    padding: 10px;
-  }
-  main .temples > div {
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-  main .home-header {
-    grid-area: home-header;
-  }
-  main .temple-1 {
-    grid-area: temple1;
-  }
-  main .temple-2 {
-    grid-area: temple2;
-  }
-  main .temple-3 {
-    grid-area: temple3;
-  }
-  main .temple-4 {
-    grid-area: temple4;
-  }
-  main .temples {
-    padding: 10px;
-    display: grid;
-    grid-template-areas: "home-header home-header" "temple1 temple2" "temple3 temple4";
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
-    border: none;
-  }
-  main .contact-information {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 10px;
-    grid-template-areas: "h3 h3" "map details";
-    grid-auto-flow: column;
-  }
-  main .contact-information .h3-contact-information {
-    grid-area: h3;
-  }
-  main .contact-information .map-contact-information {
-    grid-area: map;
-  }
-  main .contact-information .details-contact-information {
-    grid-area: details;
-  }
-  main .contact-information > h3 {
-    text-align: left;
-    width: 100%;
-  }
-  main .contact-information section {
-    margin: auto 0;
-    width: 100%;
-  }
-  main .contact-information .map-contact-information {
-    width: 100%;
-  }
-  main .contact-information .map-contact-information iframe {
-    display: block;
-    width: 100%;
-    height: 200px;
-  }
-  main .contact-information .details-contact-information {
-    width: 100%;
-    height: 100%;
-    margin: auto 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  main .contact-information .details-contact-information h3 {
-    margin-top: 0;
-  }
-  main .contact-information .details-contact-information div {
-    margin: 0 auto;
-    width: auto;
-  }
-  main .contact-information .details-contact-information p {
-    margin: 2px;
-  }
-  main .contact-information .details-contact-information img {
-    margin-top: 15px;
-    width: 30px;
-    height: 30px;
-  }
-}
 /* end of media query */
 @media only screen and (min-width: 1028px) {
   html,
@@ -676,27 +675,61 @@ footer > div a:visited {
     /*background-image: url('../img/rome-italy-temple-2190090-wallpaper.jpg');
     background-size: 100% 100%;
     background-repeat: no-repeat;*/
-    background: #1c92d2;
+    /*background: #1c92d2;*/
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #17252a, #3aafa9);
+    /*background: -webkit-linear-gradient(to left, #17252a, #3aafa9);*/
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #3aafa9, #2B7A7B);
+    /*background: linear-gradient(to left, #3aafa9, #2B7A7B);*/
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    color: #FEFFFF;
     font-size: 100%;
+    color: #FEFFFF;
+    height: 100%;
   }
 
+  body {
+    background-image: url("../img/rome-italy-temple-2190090-wallpaper.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background-color: #999;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-template-rows: fit-content(115px) fit-content(100%) auto;
+    grid-row-gap: 0;
+    grid-gap: 0;
+  }
+
+  header,
+  footer {
+    grid-column: 1 / span 2;
+  }
+
+  /*header
+  main,
+  aside,
+  footer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }*/
   nav {
     display: grid;
     grid-template-rows: none;
     grid-template-columns: 1fr auto auto auto auto auto;
     text-align: right;
     justify-items: start;
-    min-height: 6rem;
+    /*min-height: 6rem;*/
     background-color: rgba(23, 37, 42, 0.8);
     padding-left: 10px;
     padding-right: 10px;
-    height: auto;
+    /*height: auto;*/
+  }
+  nav .logo {
+    width: 200px;
+    height: 80px;
   }
   nav .top-nav {
     overflow: auto;
@@ -704,7 +737,16 @@ footer > div a:visited {
     background-color: transparent;
     display: flex;
     width: 100%;
+    margin-bottom: 0;
     margin: auto 0;
+    height: 100%;
+  }
+  nav .top-nav span {
+    padding: 4px;
+    padding-right: 5px;
+    margin: auto 0;
+    text-align: center;
+    color: #FED23F;
   }
   nav .top-nav #top-links {
     display: flex;
@@ -712,118 +754,156 @@ footer > div a:visited {
     margin-left: auto;
     margin-right: 0;
   }
+  nav .navigation {
+    margin-top: 0;
+  }
   nav .top-nav a {
     padding: auto;
     text-decoration: none;
     font-size: 17px;
     margin: auto 0;
+    margin-right: 2px;
   }
   nav .top-nav a.icon {
     display: none;
   }
   nav .top-nav a:hover {
-    background-color: #DDD;
+    background-color: #FE4A49;
   }
 
   main {
-    grid-template-columns: 3fr 1fr;
-    padding: 10px;
-  }
-  main .temples > div {
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-  main .home-header {
-    grid-area: home-header;
-  }
-  main .temple-1 {
-    grid-area: temple1;
-  }
-  main .temple-2 {
-    grid-area: temple2;
-  }
-  main .temple-3 {
-    grid-area: temple3;
-  }
-  main .temple-4 {
-    grid-area: temple4;
-  }
-  main .temples {
-    padding: 10px;
+    padding: 0;
     display: grid;
-    grid-template-areas: "home-header home-header" "temple1 temple2" "temple3 temple4";
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
-    border: none;
-    /*border: solid 1px #FFF;*/
+    grid-template-columns: 1fr;
+    grid-template-rows: fit-content(50px) fit-content(150px) fit-content(10px) 152px;
+    padding-top: 10%;
   }
-  main .temples section img {
-    width: 100%;
-    height: 200px;
-    border-top: 1px solid #FEFFFF;
-    border-bottom: 1px solid #FEFFFF;
-  }
-  main .temples section {
-    background-color: #DEF2F1;
-    text-align: center;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
-    color: #FEFFFF;
-  }
-  main .temples section h3 {
-    background-color: #042A2B;
-    padding: 20px;
+  main > div {
     margin-top: 0;
-    margin-bottom: 0;
+    padding: 0;
   }
-  main .temples section div {
-    text-align: justify;
-    padding-left: 20px;
-    padding-right: 20px;
-    color: #17252A;
-  }
-  main .contact-information {
-    display: flex;
-    flex-direction: column;
-    /*margin: 0 auto;*/
-    margin: 10px 0 10px 0;
-    background-color: rgba(23, 37, 42, 0.8);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
-    padding: 10px;
-    /*border: solid 1px #FFF;*/
-  }
-  main .contact-information .map-contact-information iframe {
+  main div.tagline-logo img {
     display: block;
-    width: 350px;
-    height: 350px;
+    margin-left: 100px;
+    width: 120px;
+    height: 50px;
   }
-  main .contact-information .details-contact-information {
-    width: 100%;
-    height: 100%;
-    margin: auto 0;
+  main div.tagline-message {
     display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    background-color: #fed23f;
+    color: #000;
+    width: 545px;
+    margin: 0;
+    padding: 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
   }
-  main .contact-information .details-contact-information h3 {
-    margin-top: 40px;
+  main div.tagline-message p {
+    margin: 0;
+    margin-left: 100px;
+    padding: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-weight: bold;
+    font-size: 40px;
   }
-  main .contact-information .details-contact-information div {
-    margin: 0 auto;
-    width: auto;
+  main div.tagline-invitation {
+    margin-left: 100px;
   }
-  main .contact-information .details-contact-information p {
-    margin: 2px;
+  main div.tagline-invitation p {
+    color: #FE4A49;
+    font-weight: bold;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
-  main .contact-information .details-contact-information img {
-    margin-top: 15px;
+  main div.tagline-button {
+    margin-left: 100px;
+  }
+  main div.tagline-button button {
+    background: #FE4A49;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    /*background-image: -webkit-linear-gradient(top, #3aafa9, #2b7a78);
+    background-image: -moz-linear-gradient(top, #3aafa9, #2b7a78);
+    background-image: -ms-linear-gradient(top, #3aafa9, #2b7a78);
+    background-image: -o-linear-gradient(top, #3aafa9, #2b7a78);*/
+    background-image: linear-gradient(to bottom, #F06449, #FE4A49);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    color: #FEFFFF;
+    font-size: 20px;
+    font-weight: 100;
+    padding: 15px;
+    box-shadow: 1px 1px 20px 0px #000000;
+    -webkit-box-shadow: 1px 1px 20px 0px #000000;
+    -moz-box-shadow: 1px 1px 20px 0px #000000;
+    text-shadow: 1px 1px 20px #000000;
+    border: solid 1px #FE4A49;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+  }
+  main div.tagline-button button:hover {
+    border: solid 1px #F06449;
+    background: #FE4A49;
+    /*background-image: -webkit-linear-gradient(top, #2b7a78, #3aafa9);
+    background-image: -moz-linear-gradient(top, #2b7a78, #3aafa9);
+    background-image: -ms-linear-gradient(top, #2b7a78, #3aafa9);
+    background-image: -o-linear-gradient(top, #2b7a78, #3aafa9);*/
+    background-image: linear-gradient(to bottom, #FE4A49, #F06449);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+  }
+
+  aside {
+    padding: 25px;
+  }
+  aside section {
+    margin-bottom: 20px;
+  }
+  aside section iframe {
+    display: block;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    height: 200px;
+  }
+  aside h3,
+  aside h4,
+  aside p {
+    margin: 0;
+    margin-bottom: 5px;
+  }
+  aside img {
     width: 50px;
     height: 50px;
+  }
+  aside .details-contact-information div {
+    background-color: rgba(23, 37, 42, 0.8);
+    padding: 10px;
+    border-right: 4px solid #FED23F;
+    border-top: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+  }
+  aside .details-contact-information h3 {
+    color: #FED23F;
+  }
+  aside .details-contact-information p,
+  aside .details-contact-information h3 {
+    text-align: right;
   }
 
   /* 
   https://uigradients.com/#Jodhpur
   https://visme.co/blog/website-color-schemes/ Clean and Modern
+  http://clipart-library.com/clipart/rTjKkp4Gc.htm temple logo FFD23F
   
+  https://css-tricks.com/snippets/css/css-grid-starter-layouts/
+  https://medium.com/@elad/becoming-a-css-grid-ninja-f4c6db018cc1
   */
 }
 /* end of media query */

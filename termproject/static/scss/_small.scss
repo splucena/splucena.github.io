@@ -1,23 +1,51 @@
 html {
-    font-size: 62.5%;
+    font-size: 100%;
 }
 
-
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    /*background-image: url('../img/rome-italy-temple-2190090-wallpaper.jpg');*/
     background: linear-gradient(to left, #3aafa9, #2B7A7B);
-    color: $font-color;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: $font-color-yellow;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: fit-content(100%) fit-content(100%) fit-content(100%);
+    grid-row-gap: 0;
+    grid-gap: 0;
+}
+
+header,
+footer {
+    grid-column: 1;
 }
 
 nav {
     height: auto;
     border-bottom: $border;
     box-shadow: $box-shadow;
+    font-weight: bold;
+
+    .logo {
+        width: 145px;
+        height: 25;
+        margin: 0;
+        padding: 0;
+    }
 
     .top-nav {
         overflow: hidden;
         background-color: $bg-rgba;
-        position: relative;
+        margin-bottom: -6px;
+    }
+
+    .navigation {
+        margin-top: -6px;
     }
 
     .navigation {
@@ -33,7 +61,7 @@ nav {
         text-decoration: none;
         font-size: 17px;
         display: block;
-        color: $font-color;
+        color: $font-color-yellow;
     }
 
     .top-nav a.icon {
@@ -50,7 +78,12 @@ nav {
     }
 
     .top-nav a:hover {
-        background-color: transparent;
+        background: $button-background-image-2;
+        color: $font-color;
+    }
+
+    .top-nav a.active {
+        background: $button-background-image-1;
         color: $font-color;
     }
 
@@ -59,94 +92,153 @@ nav {
 main {
     display: grid;
     grid-template-columns: 1fr;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: fit-content(100%);
+    grid-row-gap: 0;
+    grid-gap: 0;
 
-    .temples>div {
-        margin-top: 2px;
-        margin-bottom: -10px;
-    }
-
-    .temples {
-        display: grid;
-        grid-row-gap: 10px;
-        grid-column-gap: 10px;
-    }
-
-    .temples section img {
-        width: 100%;
-        height: 200px;
-        border-top: 1px solid #FEFFFF;
-        border-bottom: 1px solid #FEFFFF;
-    }
-
-    .temples section {
-        background-color: $bg-temples-header;
-        text-align: center;
-        box-shadow: $box-shadow;
-        color: $font-color-temple;
-        border: $border;
-    }
-
-    .temples section h3 {
-        background-color: #042A2B;
-        padding: 20px;
+    >div {
         margin-top: 0;
-        margin-bottom: 0;
+        padding: 0;
     }
 
-    .temples section div {
-        text-align: justify;
-        padding: 20px;
-        color: #17252A;
+    div.tagline-logo img {
+        display: none;
+        margin-left: $tagline-margin-left-small;
+        width: 120px;
+        height: 50px;
     }
 
-    .contact-information {
-        padding: 10px;
+    div.tagline-message {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+        background-color: rgba($color: #fed23f, $alpha: 1);
+        color: #000;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        box-shadow: $box-shadow;
 
-        >h3 {
+        p {
+            margin: 0;
+            margin-left: $tagline-margin-left-small;
+            padding: 0;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            font-weight: bold;
+            font-size: 30px;
+        }
+    }
+
+    div.tagline-invitation {
+        margin-left: $tagline-margin-left-small;
+
+        p {
+            color: $font-color-tart;
+            font-weight: bold;
+            margin: 0;
             padding-top: 10px;
             padding-bottom: 10px;
-            width: auto;
-            margin: 0 auto;
-            text-align: center;
+        }
+    }
+
+    div.tagline-button {
+        margin-left: $tagline-margin-left-small;
+
+        button {
+            background: $button-background;
+            box-shadow: $box-shadow;
+            /*background-image: -webkit-linear-gradient(top, #3aafa9, #2b7a78);
+            background-image: -moz-linear-gradient(top, #3aafa9, #2b7a78);
+            background-image: -ms-linear-gradient(top, #3aafa9, #2b7a78);
+            background-image: -o-linear-gradient(top, #3aafa9, #2b7a78);*/
+            background-image: $button-background-image-1;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            border-radius: 10px;
+            color: $font-color;
+            font-size: 18px;
+            font-weight: 100;
+            padding: 15px;
+            box-shadow: 1px 1px 20px 0px #000000;
+            -webkit-box-shadow: 1px 1px 20px 0px #000000;
+            -moz-box-shadow: 1px 1px 20px 0px #000000;
+            text-shadow: 1px 1px 20px #000000;
+            border: $button-border-1;
+            text-decoration: none;
+            display: inline-block;
+            cursor: pointer;
         }
 
-        .map-contact-information iframe {
+        button:hover {
+            border: $button-border-2;
+            background: $button-background;
+            /*background-image: -webkit-linear-gradient(top, #2b7a78, #3aafa9);
+            background-image: -moz-linear-gradient(top, #2b7a78, #3aafa9);
+            background-image: -ms-linear-gradient(top, #2b7a78, #3aafa9);
+            background-image: -o-linear-gradient(top, #2b7a78, #3aafa9);*/
+            background-image: $button-background-image-2;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            border-radius: 10px;
+            text-decoration: none;
+        }
+    }
+}
+
+aside {
+    section {
+        margin-bottom: 20px;
+
+        iframe {
             display: none;
+            width: 100%;
+            box-shadow: $box-shadow;
+            height: 200px;
+        }
+    }
+
+    h3,
+    h4,
+    p {
+        margin: 0;
+        margin-bottom: 5px;
+    }
+
+    img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .details-contact-information {
+        color: $font-color;
+
+        div {
+            /*background-color: $bg-rgba;*/
+            padding-left: 20px;
+            /*border-top: 4px solid $font-color-yellow;*/
+            /*box-shadow: $box-shadow;*/
         }
 
-        .details-contact-information {
-            width: 100%;
-            height: 100%;
-            margin: auto 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+        h3 {
+            color: $font-color-yellow;
+        }
 
-            h3 {
-                margin-top: 0;
-            }
-
-            div {
-                margin: 0 auto;
-                width: auto;
-            }
-
-            p {
-                margin: 2px;
-            }
-
-            img {
-                margin-top: 15px;
-                width: 30px;
-                height: 30px;
-            }
+        p,
+        h3 {
+            text-align: left;
         }
     }
 }
 
 footer {
-    height: 6rem;
-    /*position: fixed;*/
+    height: auto;
+    position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -165,7 +257,6 @@ footer {
         span {
             margin: auto 0;
             text-decoration: none;
-
         }
 
         a:visited {

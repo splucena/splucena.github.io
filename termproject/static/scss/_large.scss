@@ -1,18 +1,48 @@
 html,
-body .home {
-    background-image: url('../img/rome-italy-temple-2190090-wallpaper.jpg');
+body {
+    /*background-image: url('../img/rome-italy-temple-2190090-wallpaper.jpg');
     background-size: 100% 100%;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat;*/
     /*background: #1c92d2;*/
     /* fallback for old browsers */
     /*background: -webkit-linear-gradient(to left, #17252a, #3aafa9);*/
     /* Chrome 10-25, Safari 5.1-6 */
     /*background: linear-gradient(to left, #3aafa9, #2B7A7B);*/
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-    color: $font-color;
     font-size: 100%;
+    color: $font-color;
+    height: 100%;
 }
+
+body {
+    background-image: url('../img/rome-italy-temple-2190090-wallpaper.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background-color: #999;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-template-rows: fit-content(115px) fit-content(100%) auto;
+    grid-row-gap: 0;
+    grid-gap: 0;
+}
+
+header,
+footer {
+    grid-column: 1 / span 2;
+}
+
+/*header
+main,
+aside,
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}*/
 
 nav {
     display: grid;
@@ -20,11 +50,16 @@ nav {
     grid-template-columns: 1fr auto auto auto auto auto;
     text-align: right;
     justify-items: start;
-    min-height: 6rem;
+    /*min-height: 6rem;*/
     background-color: $bg-rgba;
     padding-left: 10px;
     padding-right: 10px;
-    height: auto;
+    /*height: auto;*/
+
+    .logo {
+        width: 200px;
+        height: 80px;
+    }
 
     .top-nav {
         overflow: auto;
@@ -32,7 +67,17 @@ nav {
         background-color: transparent;
         display: flex;
         width: 100%;
+        margin-bottom: 0;
         margin: auto 0;
+        height: 100%;
+    }
+
+    .top-nav span {
+        padding: 4px;
+        padding-right: 5px;
+        margin: auto 0;
+        text-align: center;
+        color: $font-color-yellow;
     }
 
     .top-nav #top-links {
@@ -42,11 +87,17 @@ nav {
         margin-right: 0;
     }
 
+    .navigation {
+        margin-top: 0;
+    }
+
+
     .top-nav a {
         padding: auto;
         text-decoration: none;
         font-size: 17px;
         margin: auto 0;
+        margin-right: 2px;
     }
 
     .top-nav a.icon {
@@ -54,130 +105,160 @@ nav {
     }
 
     .top-nav a:hover {
-        background-color: #DDD;
+        background-color: $button-background;
     }
 }
 
 main {
-    grid-template-columns: 3fr 1fr;
-    padding: 10px;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: fit-content(50px) fit-content(150px) fit-content(10px) 152px;
+    padding-top: 10%;
 
-    .temples>div {
+    >div {
         margin-top: 0;
-        margin-bottom: 0;
+        padding: 0;
     }
 
-    .home-header {
-        grid-area: home-header;
+    div.tagline-logo img {
+        display: block;
+        margin-left: $tagline-margin-left;
+        width: 120px;
+        height: 50px;
     }
 
-    .temple-1 {
-        grid-area: temple1;
-    }
-
-    .temple-2 {
-        grid-area: temple2;
-    }
-
-    .temple-3 {
-        grid-area: temple3;
-    }
-
-    .temple-4 {
-        grid-area: temple4;
-    }
-
-    .temples {
-        padding: 10px;
-        display: grid;
-        grid-template-areas: 'home-header home-header'
-            'temple1 temple2'
-            'temple3 temple4'
-        ;
-        grid-column-gap: 10px;
-        grid-row-gap: 10px;
-        border: none;
-
-        /*border: solid 1px #FFF;*/
-    }
-
-    .temples section img {
-        width: 100%;
-        height: 200px;
-        border-top: 1px solid #FEFFFF;
-        border-bottom: 1px solid #FEFFFF;
-    }
-
-    .temples section {
-        background-color: $bg-temples-header;
-        text-align: center;
-        box-shadow: $box-shadow;
-        color: $font-color-temple;
-    }
-
-    .temples section h3 {
-        background-color: #042A2B;
-        padding: 20px;
-        margin-top: 0;
-        margin-bottom: 0;
-    }
-
-    .temples section div {
-        text-align: justify;
-        padding-left: 20px;
-        padding-right: 20px;
-        color: #17252A;
-    }
-
-    .contact-information {
+    div.tagline-message {
         display: flex;
+        justify-content: center;
+        align-content: center;
         flex-direction: column;
-        /*margin: 0 auto;*/
-        margin: 10px 0 10px 0;
-        background-color: $bg-rgba;
+        background-color: rgba($color: #fed23f, $alpha: 1);
+        color: #000;
+        width: 545px;
+        margin: 0;
+        padding: 0;
         box-shadow: $box-shadow;
-        padding: 10px;
 
-        /*border: solid 1px #FFF;*/
-
-        .map-contact-information iframe {
-            display: block;
-            width: 350px;
-            height: 350px;
-        }
-
-        .details-contact-information {
-            width: 100%;
-            height: 100%;
-            margin: auto 0;
-            display: flex;
-            align-items: flex-start;
-            justify-content: flex-start;
-
-            h3 {
-                margin-top: 40px;
-            }
-
-            div {
-                margin: 0 auto;
-                width: auto;
-            }
-
-            p {
-                margin: 2px;
-            }
-
-            img {
-                margin-top: 15px;
-                width: 50px;
-                height: 50px;
-            }
+        p {
+            margin: 0;
+            margin-left: $tagline-margin-left;
+            padding: 0;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            font-weight: bold;
+            font-size: 40px;
         }
     }
+
+    div.tagline-invitation {
+        margin-left: $tagline-margin-left;
+
+        p {
+            color: $font-color-tart;
+            font-weight: bold;
+            margin: 0;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+    }
+
+    div.tagline-button {
+        margin-left: $tagline-margin-left;
+
+        button {
+            background: $button-background;
+            box-shadow: $box-shadow;
+            /*background-image: -webkit-linear-gradient(top, #3aafa9, #2b7a78);
+            background-image: -moz-linear-gradient(top, #3aafa9, #2b7a78);
+            background-image: -ms-linear-gradient(top, #3aafa9, #2b7a78);
+            background-image: -o-linear-gradient(top, #3aafa9, #2b7a78);*/
+            background-image: $button-background-image-1;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            border-radius: 10px;
+            color: $font-color;
+            font-size: 20px;
+            font-weight: 100;
+            padding: 15px;
+            box-shadow: 1px 1px 20px 0px #000000;
+            -webkit-box-shadow: 1px 1px 20px 0px #000000;
+            -moz-box-shadow: 1px 1px 20px 0px #000000;
+            text-shadow: 1px 1px 20px #000000;
+            border: $button-border-1;
+            text-decoration: none;
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        button:hover {
+            border: $button-border-2;
+            background: $button-background;
+            /*background-image: -webkit-linear-gradient(top, #2b7a78, #3aafa9);
+            background-image: -moz-linear-gradient(top, #2b7a78, #3aafa9);
+            background-image: -ms-linear-gradient(top, #2b7a78, #3aafa9);
+            background-image: -o-linear-gradient(top, #2b7a78, #3aafa9);*/
+            background-image: $button-background-image-2;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            border-radius: 10px;
+            text-decoration: none;
+        }
+    }
+}
+
+aside {
+    padding: 25px;
+
+    section {
+        margin-bottom: 20px;
+
+        iframe {
+            display: block;
+            width: 100%;
+            box-shadow: $box-shadow;
+            height: 200px;
+        }
+    }
+
+    h3,
+    h4,
+    p {
+        margin: 0;
+        margin-bottom: 5px;
+    }
+
+    img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .details-contact-information {
+        div {
+            background-color: $bg-rgba;
+            padding: 10px;
+            border-right: 4px solid $font-color-yellow;
+            border-top: none;
+            box-shadow: $box-shadow;
+        }
+
+        h3 {
+            color: $font-color-yellow;
+        }
+
+        p,
+        h3 {
+            text-align: right;
+        }
+    }
+
 }
 
 /* 
 https://uigradients.com/#Jodhpur
 https://visme.co/blog/website-color-schemes/ Clean and Modern
 http://clipart-library.com/clipart/rTjKkp4Gc.htm temple logo FFD23F
+
+https://css-tricks.com/snippets/css/css-grid-starter-layouts/
+https://medium.com/@elad/becoming-a-css-grid-ninja-f4c6db018cc1
 */

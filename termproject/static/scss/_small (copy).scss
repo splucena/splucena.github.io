@@ -1,0 +1,177 @@
+html {
+    font-size: 62.5%;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    /*background: linear-gradient(to left, #3aafa9, #2B7A7B);*/
+    color: $font-color;
+}
+
+
+
+nav {
+    height: auto;
+    border-bottom: $border;
+    box-shadow: $box-shadow;
+
+    .top-nav {
+        overflow: hidden;
+        background-color: $bg-rgba;
+        position: relative;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    .top-nav .responsive {
+        display: block;
+    }
+
+    .top-nav a {
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+        color: $font-color;
+    }
+
+    .top-nav a.icon {
+        background-color: transparent;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        font-size: 25px;
+        height: 40px;
+        width: 50px;
+        text-align: center;
+        padding-top: 30px;
+    }
+
+    .top-nav a:hover {
+        background-color: transparent;
+        color: $font-color;
+    }
+
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    .temples>div {
+        margin-top: 2px;
+        margin-bottom: -10px;
+    }
+
+    .temples {
+        display: grid;
+        grid-row-gap: 10px;
+        grid-column-gap: 10px;
+    }
+
+    .temples section img {
+        width: 100%;
+        height: 200px;
+        border-top: 1px solid #FEFFFF;
+        border-bottom: 1px solid #FEFFFF;
+    }
+
+    .temples section {
+        background-color: $bg-temples-header;
+        text-align: center;
+        box-shadow: $box-shadow;
+        color: $font-color-temple;
+        border: $border;
+    }
+
+    .temples section h3 {
+        background-color: #042A2B;
+        padding: 20px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .temples section div {
+        text-align: justify;
+        padding: 20px;
+        color: #17252A;
+    }
+
+    .contact-information {
+        padding: 10px;
+
+        >h3 {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            width: auto;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .map-contact-information iframe {
+            display: none;
+        }
+
+        .details-contact-information {
+            width: 100%;
+            height: 100%;
+            margin: auto 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            h3 {
+                margin-top: 0;
+            }
+
+            div {
+                margin: 0 auto;
+                width: auto;
+            }
+
+            p {
+                margin: 2px;
+            }
+
+            img {
+                margin-top: 15px;
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
+}
+
+footer {
+    height: 3.3rem;
+    /*position: fixed;*/
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: $bg-rgba;
+    text-align: center;
+    display: flex;
+    border-top: $border;
+
+    >div {
+        /*font-size: 1.6em;*/
+        padding: 1rem 4rem;
+        margin: 0 auto;
+        display: flex;
+
+        a,
+        span {
+            margin: auto 0;
+            text-decoration: none;
+
+        }
+
+        a:visited {
+            color: $font-color;
+        }
+    }
+}
