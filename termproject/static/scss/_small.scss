@@ -254,8 +254,10 @@ aside {
         color: $font-color;
 
         div {
-            /*background-color: $bg-rgba;*/
-            padding-left: 20px;
+            background-color: $bg-rgba;
+            padding-left: 0;
+            padding: 10px;
+            border-left: 4px solid $font-color-yellow;
             /*border-top: 4px solid $font-color-yellow;*/
             /*box-shadow: $box-shadow;*/
         }

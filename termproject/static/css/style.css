@@ -658,8 +658,10 @@ aside .details-contact-information {
   color: #FEFFFF;
 }
 aside .details-contact-information div {
-  /*background-color: $bg-rgba;*/
-  padding-left: 20px;
+  background-color: rgba(23, 37, 42, 0.8);
+  padding-left: 0;
+  padding: 10px;
+  border-left: 4px solid #FED23F;
   /*border-top: 4px solid $font-color-yellow;*/
   /*box-shadow: $box-shadow;*/
 }
@@ -1014,6 +1016,7 @@ footer > div a:visited {
     background-color: rgba(23, 37, 42, 0.8);
     padding: 10px;
     border-right: 4px solid #FED23F;
+    border-left: none;
     border-top: none;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
   }
