@@ -16,19 +16,26 @@
 <body>
     <header>
         <nav>
-            <a href="index.html"><img src="static/img/temple-logo-1.png" alt="Logo" class="logo"></a>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Temples</a>
-                <li><a href="#">Reservation</a>
-                <li><a href="#">Services</a>
-                    <ul class="dropdown">
-                        <li><a href="#">Reception</a></li>
-                        <li><a href="#">Full-time Temple Missionary</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Contact Page</a></li>
-            </ul>
+            <div class="top-nav">
+                <a href="index.html"><img src="static/img/temple-logo-1.png" alt="Logo" class="logo"></a>
+                <div id="top-links" class="navigation">
+                    <a href="index.html" target="_self">Home</a>
+                    <a href="temples.html" target="_self" class="active">Temples</a>
+                    <a href="reservation.html" target="_self">Reservation</a>
+                    <!--<a href="services.html" target="_self">Services</a>-->
+                    <div class="dropdown">
+                        <button class="dropbtn">Services</button>
+                        <div class="dropdown-content">
+                            <a href="#">Reception</a>
+                            <a href="#">Full-time Temple Missionary</a>
+                        </div>
+                    </div>
+                    <a href="contact-page.html" target="_self">Contact Page</a>
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
         </nav>
     </header>
     <main class="main-temples">

@@ -716,59 +716,64 @@ footer > div a:visited {
       justify-content: center;
   }*/
   nav {
+    background: rgba(23, 37, 42, 0.8);
     display: grid;
-    grid-template-rows: none;
-    grid-template-columns: 1fr auto auto auto auto auto;
+    padding: 10px;
+    grid-template-columns: 15% 85%;
+  }
+  nav > a {
+    margin: auto 0;
+  }
+  nav a {
+    text-decoration: none;
+  }
+  nav ul {
+    margin: 0;
+    padding-left: 0;
+    margin: auto 0;
+    background: transparent;
+    list-style: none;
     text-align: right;
-    justify-items: start;
-    /*min-height: 6rem;*/
-    background-color: rgba(23, 37, 42, 0.8);
-    padding-left: 10px;
-    padding-right: 10px;
-    /*height: auto;*/
   }
-  nav .logo {
-    width: 200px;
-    height: 80px;
-  }
-  nav .top-nav {
-    overflow: auto;
+  nav li {
+    color: #FED23F;
+    background: transparent;
+    display: inline-block;
+    /*float: left;*/
+    padding: 1rem;
     position: relative;
-    background-color: transparent;
-    display: flex;
-    width: 100%;
-    margin-bottom: 0;
-    margin: auto 0;
-    height: 100%;
+    text-decoration: none;
+    transition-duration: 0.5s;
   }
-  nav .top-nav span {
-    padding: 4px;
-    padding-right: 5px;
-    margin: auto 0;
-    text-align: center;
+  nav li a {
     color: #FED23F;
   }
-  nav .top-nav #top-links {
-    display: flex;
-    text-align: right;
-    margin-left: auto;
-    margin-right: 0;
+  nav li:hover {
+    background: red;
+    cursor: pointer;
   }
-  nav .navigation {
-    margin-top: 0;
-  }
-  nav .top-nav a {
-    padding: auto;
-    text-decoration: none;
-    font-size: 17px;
-    margin: auto 0;
-    margin-right: 2px;
-  }
-  nav .top-nav a.icon {
+  nav ul li ul {
+    /*background: $bg-rgba;*/
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    transition: all 0.5s ease;
+    margin-top: 1rem;
+    left: 0;
     display: none;
+    text-align: left;
   }
-  nav .top-nav a:hover {
-    background-color: #FE4A49;
+  nav ul li:hover > ul,
+  nav ul li ul:hover {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+    min-width: 10rem;
+  }
+  nav ul li ul li {
+    background: rgba(23, 37, 42, 0.8);
+    clear: both;
+    width: 100%;
   }
 
   /* Main */
