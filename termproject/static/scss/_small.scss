@@ -28,6 +28,8 @@ footer {
 nav {
     display: grid;
     grid-template-columns: 1fr;
+    background: $bg-rgba;
+
 
     .responsive li {
         display: block;
@@ -38,6 +40,7 @@ nav {
         height: 25;
         margin: 0;
         padding: 0;
+        padding-left: 15px;
     }
 
     >ul>li:first-child {
@@ -70,7 +73,18 @@ nav {
 
         a {
             text-decoration: none;
+            color: $font-color-yellow;
         }
+    }
+}
+
+/* main temples */
+main.main-temples {
+    margin: auto 0;
+
+    h1 {
+        padding-left: 10px;
+        padding-right: 10px;
     }
 }
 
@@ -174,6 +188,42 @@ main {
             text-decoration: none;
         }
     }
+
+    .temples {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-row-gap: 10px;
+    }
+
+    .temples section img {
+        width: 100%;
+        height: 150px;
+        border-top: 1px solid #FEFFFF;
+        border-bottom: 1px solid #FEFFFF;
+    }
+
+    .temples section {
+        background-color: $bg-temples-header;
+        text-align: center;
+        box-shadow: $box-shadow;
+        color: $font-color-temple;
+        border: $border;
+    }
+
+    .temples section h3 {
+        background-color: #042A2B;
+        padding: 20px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .temples section div {
+        margin: auto 0;
+        text-align: justify;
+        color: #17252A;
+        padding: 10px;
+    }
+
 }
 
 aside {
@@ -223,7 +273,7 @@ aside {
 
 footer {
     height: auto;
-    position: fixed;
+    /*position: fixed;*/
     left: 0;
     bottom: 0;
     width: 100%;

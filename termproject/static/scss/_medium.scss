@@ -1,0 +1,33 @@
+main {
+
+    /*temples*/
+    .temples {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 10px;
+        grid-column-gap: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+aside {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    section {
+        margin-bottom: 20px;
+
+        iframe {
+            display: block;
+            width: 100%;
+            box-shadow: $box-shadow;
+            height: 200px;
+        }
+    }
+}

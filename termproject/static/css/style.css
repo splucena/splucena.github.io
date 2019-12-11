@@ -462,6 +462,7 @@ footer {
 nav {
   display: grid;
   grid-template-columns: 1fr;
+  background: rgba(23, 37, 42, 0.8);
 }
 nav .responsive li {
   display: block;
@@ -471,6 +472,7 @@ nav .logo {
   height: 25;
   margin: 0;
   padding: 0;
+  padding-left: 15px;
 }
 nav > ul > li:first-child {
   display: block;
@@ -498,6 +500,16 @@ nav ul li {
 }
 nav ul li a {
   text-decoration: none;
+  color: #FED23F;
+}
+
+/* main temples */
+main.main-temples {
+  margin: auto 0;
+}
+main.main-temples h1 {
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 main {
@@ -592,6 +604,36 @@ main div.tagline-button button:hover {
   border-radius: 10px;
   text-decoration: none;
 }
+main .temples {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: 10px;
+}
+main .temples section img {
+  width: 100%;
+  height: 150px;
+  border-top: 1px solid #FEFFFF;
+  border-bottom: 1px solid #FEFFFF;
+}
+main .temples section {
+  background-color: #DEF2F1;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+  color: #FEFFFF;
+  border: solid 1px #DEF2F1;
+}
+main .temples section h3 {
+  background-color: #042A2B;
+  padding: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+main .temples section div {
+  margin: auto 0;
+  text-align: justify;
+  color: #17252A;
+  padding: 10px;
+}
 
 aside section {
   margin-bottom: 20px;
@@ -631,7 +673,7 @@ aside .details-contact-information h3 {
 
 footer {
   height: auto;
-  position: fixed;
+  /*position: fixed;*/
   left: 0;
   bottom: 0;
   width: 100%;
@@ -655,6 +697,38 @@ footer > div a:visited {
   color: #FEFFFF;
 }
 
+@media only screen and (min-width: 560px) {
+  main {
+    /*temples*/
+  }
+  main .temples {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  aside {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  aside section {
+    margin-bottom: 20px;
+  }
+  aside section iframe {
+    display: block;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    height: 200px;
+  }
+}
 /* end of media query */
 @media only screen and (min-width: 1028px) {
   html,
@@ -684,7 +758,7 @@ footer > div a:visited {
     padding: 0;
     display: grid;
     grid-template-columns: 75% 25%;
-    grid-template-rows: fit-content(115px) fit-content(100%) auto;
+    grid-template-rows: fit-content(115px) fit-content(100%) fit-content(100%);
     grid-row-gap: 0;
     grid-gap: 0;
   }
@@ -726,6 +800,9 @@ footer > div a:visited {
     background: transparent;
     list-style: none;
     text-align: right;
+  }
+  nav ul li {
+    display: block;
   }
   nav li {
     color: #FED23F;
@@ -770,8 +847,7 @@ footer > div a:visited {
 
   /* Main */
   main.main-temples {
-    margin-left: 25px;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
   }
 
   main.home {
@@ -871,8 +947,8 @@ footer > div a:visited {
     color: #FE4A49;
   }
   main .temples > div {
-    margin-top: 2px;
-    margin-bottom: -10px;
+    margin-top: 0;
+    margin-bottom: 0;
   }
   main .temples {
     display: grid;
@@ -906,13 +982,20 @@ footer > div a:visited {
   }
 
   aside {
-    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    padding-top: 10px;
+    padding-right: 10px;
+    /*grid-template-columns: 1fr;
+    grid-row-gap: 0;
+    grid-column-gap: 0;*/
   }
   aside section {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
   aside section iframe {
-    display: block;
     width: 100%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
     height: 200px;
