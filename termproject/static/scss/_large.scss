@@ -51,6 +51,10 @@ nav {
 
     grid-template-columns: 15% 85%;
 
+    >ul>li:first-child {
+        display: none;
+    }
+
     >a {
         margin: auto 0;
     }
@@ -60,6 +64,8 @@ nav {
     }
 
     ul {
+        display: flex;
+        justify-content: flex-end;
         margin: 0;
         padding-left: 0;
         margin: auto 0;
@@ -78,6 +84,7 @@ nav {
         text-decoration: none;
         transition-duration: 0.5s;
     }
+
 
     li a {
         color: $font-color-yellow;

@@ -17,17 +17,19 @@
     <header>
         <nav>
             <a href="index.html"><img src="static/img/temple-logo-1.png" alt="Logo" class="logo"></a>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Temples</a>
-                <li><a href="#">Reservation</a>
-                <li><a href="#">Services</a>
-                    <ul class="dropdown">
-                        <li><a href="#">Reception</a></li>
-                        <li><a href="#">Full-time Temple Missionary</a></li>
+            <ul class="nav">
+                <li><a href="#" onclick="toggleMenu()">&#9776;</a></li>
+                <li><a href="index.html" target="_self">Home</a></li>
+                <li><a href="temples.html" target="_self" class="active">Temples</a>
+                <li><a href="reservation.html" target="_self">Reservation</a>
+                <li><a href="#" target="_self">Services</a>
+                    <ul class="nav">
+                        <li><a href="services-reception.html" target="_self">Reception</a></li>
+                        <li><a href="services-temple-missionary.html" target="_self">Full-time Temple Missionary</a>
+                        </li>
                     </ul>
                 </li>
-                <li><a href="#">Contact Page</a></li>
+                <li><a href="contact-page.html">Contact Page</a></li>
             </ul>
         </nav>
     </header>
@@ -118,10 +120,9 @@
         </div>
     </footer>
     <script>
-        function myFunction() {
-
-            document.getElementsByClassName("navigation")[0].classList.toggle("responsive");
-
+        function toggleMenu() {
+            console.log(document.getElementsByClassName("nav")[0]);
+            document.getElementsByClassName("nav")[0].classList.toggle("responsive");
         }
     </script>
 </body>

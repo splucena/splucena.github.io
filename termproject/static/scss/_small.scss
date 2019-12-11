@@ -26,10 +26,12 @@ footer {
 }
 
 nav {
-    height: auto;
-    border-bottom: $border;
-    box-shadow: $box-shadow;
-    font-weight: bold;
+    display: grid;
+    grid-template-columns: 1fr;
+
+    .responsive li {
+        display: block;
+    }
 
     .logo {
         width: 145px;
@@ -38,55 +40,38 @@ nav {
         padding: 0;
     }
 
-    .top-nav {
-        overflow: hidden;
-        background-color: $bg-rgba;
-        margin-bottom: -6px;
-    }
-
-    .navigation {
-        margin-top: -6px;
-    }
-
-    .navigation {
-        display: none;
-    }
-
-    .top-nav .responsive {
+    >ul>li:first-child {
         display: block;
     }
 
-    .top-nav a {
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 17px;
-        display: block;
+    ul {
+        margin: 0;
+        padding-left: 10px;
+        background: transparent;
+        list-style: none;
+    }
+
+    li {
         color: $font-color-yellow;
+        background: transparent;
+        display: inline-block;
+        position: relative;
+        text-decoration: none;
+        padding: 5px;
+        transition-duration: 0.5s;
     }
 
-    .top-nav a.icon {
-        background-color: transparent;
-        display: block;
-        position: absolute;
-        right: 0;
-        top: 0;
-        font-size: 25px;
-        height: 40px;
-        width: 50px;
-        text-align: center;
-        padding-top: 30px;
+    ul li ul li:last-child {
+        padding-bottom: 0;
     }
 
-    .top-nav a:hover {
-        background: $button-background-image-2;
-        color: $font-color;
-    }
+    ul li {
+        display: none;
 
-    .top-nav a.active {
-        background: $button-background-image-1;
-        color: $font-color;
+        a {
+            text-decoration: none;
+        }
     }
-
 }
 
 main {
