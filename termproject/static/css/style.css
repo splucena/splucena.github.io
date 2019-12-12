@@ -558,7 +558,6 @@ main.main-services .slideshow-wrapper {
   grid-template-columns: 1fr;
   margin: 10px;
   z-index: 1;
-  border: solid 1px #DEF2F1;
 }
 main.main-temples img,
 main.main-contact-page img,
@@ -658,7 +657,7 @@ main.main-services .text {
   padding: 8px 12px;
   position: absolute;
   bottom: 8px;
-  width: 100%;
+  width: 98%;
   text-align: center;
 }
 main.main-temples .numbertext,
@@ -1280,6 +1279,7 @@ footer > div a:visited {
     grid-template-rows: fit-content(115px) fit-content(100%) fit-content(100%);
     grid-row-gap: 0;
     grid-gap: 0;
+    /*overflow-x: hidden;*/
   }
 
   header,
@@ -1372,7 +1372,6 @@ footer > div a:visited {
     background: rgba(8, 61, 119, 0.7);
     clear: both;
     width: 100%;
-    overflow: visible !important;
     z-index: 1000;
   }
   nav ul li ul li:last-child {
@@ -1402,6 +1401,10 @@ footer > div a:visited {
     grid-template-rows: fit-content(50px) fit-content(150px) fit-content(10px) 152px;
   }
 
+  main.main-reservation,
+  main.main-contact-page {
+    margin: 0;
+  }
   main.main-reservation .reservation,
   main.main-reservation .contact-page,
   main.main-contact-page .reservation,
@@ -1409,8 +1412,15 @@ footer > div a:visited {
     width: 50%;
   }
 
+  /* IMPORTANT: Troubleshooting horizontal overflow
+  .slide-content .scroller {
+      width: 1024px;
+  }
+  
+  * {
+      border: 1px solid #f00 !important;
+  }*/
   main {
-    border: solid 1px #DEF2F1;
     /* home */
     /* temples */
   }

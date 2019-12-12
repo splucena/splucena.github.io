@@ -43,3 +43,14 @@ function showSlides(n) {
     dots[slideIndex - 1].className += " active";
     slides[slideIndex - 1].style.zIndex = "1";
 }
+
+var docWidth = document.documentElement.offsetWidth;
+
+[].forEach.call(
+    document.querySelectorAll('*'),
+    function (el) {
+        if (el.offsetWidth > docWidth) {
+            console.log(el);
+        }
+    }
+);

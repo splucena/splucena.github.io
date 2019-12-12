@@ -116,7 +116,6 @@ main.main-services {
         grid-template-columns: 1fr;
         margin: 10px;
         z-index: 1;
-        border: $border;
     }
 
     img {
@@ -176,7 +175,7 @@ main.main-services {
         padding: 8px 12px;
         position: absolute;
         bottom: 8px;
-        width: 100%;
+        width: 98%;
         text-align: center;
     }
 
