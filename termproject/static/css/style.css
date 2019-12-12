@@ -527,14 +527,16 @@ main.main-temples h1 {
   padding-right: 10px;
 }
 
-main.main-temples .slideshow-wrapper {
+main.main-temples,
+main.main-contact-page,
+main.main-home,
+main.main-reservation,
+main.main-services-temple-missionary,
+main.main-services-reception,
+main.main-services {
   /** {
       box-sizing: border-box;
   }*/
-  display: grid;
-  grid-template-columns: 1fr;
-  margin: 10px;
-  z-index: 1;
   /* Slideshow container */
   /* Hide the images by default */
   /* Next & previous buttons */
@@ -545,23 +547,66 @@ main.main-temples .slideshow-wrapper {
   /* The dots/bullets/indicators */
   /* Fading animation */
 }
-main.main-temples .slideshow-wrapper img {
+main.main-temples .slideshow-wrapper,
+main.main-contact-page .slideshow-wrapper,
+main.main-home .slideshow-wrapper,
+main.main-reservation .slideshow-wrapper,
+main.main-services-temple-missionary .slideshow-wrapper,
+main.main-services-reception .slideshow-wrapper,
+main.main-services .slideshow-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 10px;
+  z-index: 1;
+  border: solid 1px #DEF2F1;
+}
+main.main-temples img,
+main.main-contact-page img,
+main.main-home img,
+main.main-reservation img,
+main.main-services-temple-missionary img,
+main.main-services-reception img,
+main.main-services img {
   width: 100%;
   height: 150px;
   border: #1C77C3;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
   z-index: 1;
 }
-main.main-temples .slideshow-wrapper .slideshow-container {
+main.main-temples .slideshow-container,
+main.main-contact-page .slideshow-container,
+main.main-home .slideshow-container,
+main.main-reservation .slideshow-container,
+main.main-services-temple-missionary .slideshow-container,
+main.main-services-reception .slideshow-container,
+main.main-services .slideshow-container {
   width: 100%;
   position: relative;
   /*margin: auto;*/
 }
-main.main-temples .slideshow-wrapper .mySlides {
+main.main-temples .mySlides,
+main.main-contact-page .mySlides,
+main.main-home .mySlides,
+main.main-reservation .mySlides,
+main.main-services-temple-missionary .mySlides,
+main.main-services-reception .mySlides,
+main.main-services .mySlides {
   display: none;
 }
-main.main-temples .slideshow-wrapper .prev,
-main.main-temples .slideshow-wrapper .next {
+main.main-temples .prev,
+main.main-temples .next,
+main.main-contact-page .prev,
+main.main-contact-page .next,
+main.main-home .prev,
+main.main-home .next,
+main.main-reservation .prev,
+main.main-reservation .next,
+main.main-services-temple-missionary .prev,
+main.main-services-temple-missionary .next,
+main.main-services-reception .prev,
+main.main-services-reception .next,
+main.main-services .prev,
+main.main-services .next {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -575,15 +620,39 @@ main.main-temples .slideshow-wrapper .next {
   border-radius: 0 3px 3px 0;
   user-select: none;
 }
-main.main-temples .slideshow-wrapper .next {
+main.main-temples .next,
+main.main-contact-page .next,
+main.main-home .next,
+main.main-reservation .next,
+main.main-services-temple-missionary .next,
+main.main-services-reception .next,
+main.main-services .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
-main.main-temples .slideshow-wrapper .prev:hover,
-main.main-temples .slideshow-wrapper .next:hover {
+main.main-temples .prev:hover,
+main.main-temples .next:hover,
+main.main-contact-page .prev:hover,
+main.main-contact-page .next:hover,
+main.main-home .prev:hover,
+main.main-home .next:hover,
+main.main-reservation .prev:hover,
+main.main-reservation .next:hover,
+main.main-services-temple-missionary .prev:hover,
+main.main-services-temple-missionary .next:hover,
+main.main-services-reception .prev:hover,
+main.main-services-reception .next:hover,
+main.main-services .prev:hover,
+main.main-services .next:hover {
   background-color: rgba(8, 61, 119, 0.7);
 }
-main.main-temples .slideshow-wrapper .text {
+main.main-temples .text,
+main.main-contact-page .text,
+main.main-home .text,
+main.main-reservation .text,
+main.main-services-temple-missionary .text,
+main.main-services-reception .text,
+main.main-services .text {
   color: #FFFF00;
   font-size: 15px;
   padding: 8px 12px;
@@ -592,14 +661,26 @@ main.main-temples .slideshow-wrapper .text {
   width: 100%;
   text-align: center;
 }
-main.main-temples .slideshow-wrapper .numbertext {
+main.main-temples .numbertext,
+main.main-contact-page .numbertext,
+main.main-home .numbertext,
+main.main-reservation .numbertext,
+main.main-services-temple-missionary .numbertext,
+main.main-services-reception .numbertext,
+main.main-services .numbertext {
   color: #FFFF00;
   font-size: 12px;
   padding: 8px 12px;
   position: absolute;
   top: 0;
 }
-main.main-temples .slideshow-wrapper .dot {
+main.main-temples .dot,
+main.main-contact-page .dot,
+main.main-home .dot,
+main.main-reservation .dot,
+main.main-services-temple-missionary .dot,
+main.main-services-reception .dot,
+main.main-services .dot {
   cursor: pointer;
   height: 15px;
   width: 15px;
@@ -609,11 +690,29 @@ main.main-temples .slideshow-wrapper .dot {
   display: inline-block;
   transition: background-color 0.6s ease;
 }
-main.main-temples .slideshow-wrapper .active,
-main.main-temples .slideshow-wrapper .dot:hover {
+main.main-temples .active,
+main.main-temples .dot:hover,
+main.main-contact-page .active,
+main.main-contact-page .dot:hover,
+main.main-home .active,
+main.main-home .dot:hover,
+main.main-reservation .active,
+main.main-reservation .dot:hover,
+main.main-services-temple-missionary .active,
+main.main-services-temple-missionary .dot:hover,
+main.main-services-reception .active,
+main.main-services-reception .dot:hover,
+main.main-services .active,
+main.main-services .dot:hover {
   background-color: #FFFF00;
 }
-main.main-temples .slideshow-wrapper .fade {
+main.main-temples .fade,
+main.main-contact-page .fade,
+main.main-home .fade,
+main.main-reservation .fade,
+main.main-services-temple-missionary .fade,
+main.main-services-reception .fade,
+main.main-services .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
   animation-name: fade;
@@ -1281,7 +1380,13 @@ footer > div a:visited {
   }
 
   /* Main */
-  main.main-temples .slideshow-wrapper img {
+  main.main-temples .slideshow-container img,
+  main.main-contact-page .slideshow-container img,
+  main.main-home .slideshow-container img,
+  main.main-reservation .slideshow-container img,
+  main.main-services-reception .slideshow-container img,
+  main.main-services-temple-missionary .slideshow-container img,
+  main.main-services .slideshow-container img {
     height: 400px;
   }
 
@@ -1305,6 +1410,7 @@ footer > div a:visited {
   }
 
   main {
+    border: solid 1px #DEF2F1;
     /* home */
     /* temples */
   }
@@ -1433,7 +1539,7 @@ footer > div a:visited {
     margin: 0;
     padding: 0;
     padding-top: 10px;
-    padding-right: 10px;
+    /*padding-right: 10px;*/
     /*grid-template-columns: 1fr;
     grid-row-gap: 0;
     grid-column-gap: 0;*/

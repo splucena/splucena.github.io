@@ -100,14 +100,24 @@ main.main-temples {
     }
 }
 
-main.main-temples .slideshow-wrapper {
+main.main-temples,
+main.main-contact-page,
+main.main-home,
+main.main-reservation,
+main.main-services-temple-missionary,
+main.main-services-reception,
+main.main-services {
+
     /** {
         box-sizing: border-box;
     }*/
-    display: grid;
-    grid-template-columns: 1fr;
-    margin: 10px;
-    z-index: 1;
+    .slideshow-wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 10px;
+        z-index: 1;
+        border: $border;
+    }
 
     img {
         width: 100%;

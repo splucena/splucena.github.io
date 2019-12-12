@@ -149,8 +149,15 @@ nav {
 
 /* Main */
 
-main.main-temples .slideshow-wrapper {
-    img {
+main.main-temples,
+main.main-contact-page,
+main.main-home,
+main.main-reservation,
+main.main-services-reception,
+main.main-services-temple-missionary,
+main.main-services {
+
+    .slideshow-container img {
         height: 400px;
     }
 }
@@ -177,6 +184,8 @@ main.main-contact-page {
 }
 
 main {
+
+    border: $border;
 
     /* home */
     >div {
@@ -322,7 +331,7 @@ aside {
     margin: 0;
     padding: 0;
     padding-top: 10px;
-    padding-right: 10px;
+    /*padding-right: 10px;*/
     /*grid-template-columns: 1fr;
     grid-row-gap: 0;
     grid-column-gap: 0;*/
