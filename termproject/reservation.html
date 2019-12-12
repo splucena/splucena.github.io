@@ -6,7 +6,7 @@
     <meta name="Description" content="Author: Sumilang R. Plucena, Category: Education">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>The Temple Inn & Suites | Home</title>
+    <title>The Temple Inn & Suites | Reservation</title>
 
     <!-- STYLE SHEETS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -16,25 +16,81 @@
 <body>
     <header>
         <nav>
-            <div class="top-nav">
-                <a href="index.html"><img src="static/img/temple-logo-1.png" alt="Logo" class="logo"></a>
-                <div id="top-links" class="navigation">
-                    <a href="index.html" target="_self">Home</a>
-                    <a href="temples.html" target="_self">Temples</a>
-                    <a href="reservation.html" target="_self" class="active">Reservation</a>
-                    <a href="services.html" target="_self">Services</a>
-                    <a href="contact-page.html" target="_self">Contact Page</a>
-                </div>
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                    <i class="fa fa-bars"></i>
-                </a>
-            </div>
+            <a href="index.html"><img src="static/img/temple-logo-1.png" alt="Logo" class="logo"></a>
+            <ul class="nav">
+                <li><a href="#" onclick="toggleMenu()">&#9776;</a></li>
+                <li><a href="index.html" target="_self">Home</a></li>
+                <li><a href="temples.html" target="_self">Temples</a>
+                <li class="active"><a href="reservation.html" target="_self">Reservation</a>
+                <li><a href="#" target="_self">Services</a>
+                    <ul class="nav">
+                        <li><a href="services-reception.html" target="_self">Reception</a></li>
+                        <li><a href="services-temple-missionary.html" target="_self">Full-time Temple Missionary</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="contact-page.html">Contact Page</a></li>
+            </ul>
         </nav>
     </header>
     <main class="main-reservation">
-        <h1>RESERVATION</h1>
         <div class="reservation">
-
+            <h3>Reservation Details</h3>
+            <form action="https://splucena.github.io/lesson11/storm-center-11.html" method="GET"
+                class="form-storm-center">
+                <fieldset>
+                    <legend>Guest Information</legend>
+                    <label for="fullname">Full Name<input type="text" name="fullname" id="fullname" minlength="5"
+                            pattern="[A-Za-z ]+" required></label>
+                    <label for="email">Email<input type="email" name="email" placeholder="someone@email.com"
+                            id="email"></label>
+                    <label for="phone_number">Phone Number<input type="tel" required name="phone_number"
+                            pattern="[0-11]+" id="phone_number"></label>
+                    <label for="state_country">State/Country<input type="text" name="state_country"
+                            id="state_country"></label>
+                    <label for="zip">ZIP<input type="number" name="zip" id="zip" required></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Accomodation</legend>
+                    <label for="location">Location<input type="text" name="location" id="location"
+                            list="location_list"></label>
+                    <datalist id="location_list">
+                        <option value="Manila, Philippines">
+                        <option value="Cebu, Philippines">
+                        <option value="Tokyo, Japan">
+                        <option value="Seoul, South Korea">
+                        <option value="Phoenix, Arizon">
+                    </datalist>
+                    <label for="check_in_date">Check-in Date<input type="date" name="check_in_date"
+                            id="check_in_date"></label>
+                    <label for="check_out_date">Check-out Date<input type="date" name="check_out_date"
+                            id="check_out_date"></label>
+                    <label for="no_of_guests">Number of Guests<select name="no_of_guests" id="no_of_guests">
+                            <option value="select_value" disabled selected>Select Number of Guests ...</option>
+                            <option value="one">1</option>
+                            <option value="two">2</option>
+                            <option value="three">3</option>
+                            <option value="four">4</option>
+                            <option value="five">5</option>
+                            <option value="six">6</option>
+                            <option value="seven">7</option>
+                        </select></label>
+                    <label for="room_type">Room Type<select name="room_type" id="room_type">
+                            <option value="select_value" disabled selected>Select Room Type ...</option>
+                            <option value="private">Private</option>
+                            <option value="semi_private">Semi Private</option>
+                            <option value="deluxe">Deluxe</option>
+                            <option value="suite">Suite</option>
+                        </select></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Special Accomodations / Comments</legend>
+                    <label for="comment">Comments<textarea name="comment" id="comment" rows="5"></textarea></label>
+                </fieldset>
+                <div class="submit-button">
+                    <input type="submit" value="Reserve" onclick="validate_form()">
+                </div>
+            </form>
         </div>
     </main>
     <aside>
@@ -76,6 +132,7 @@
 
         }
     </script>
+    <script src="static/js/script.js"></script>
 </body>
 
 </html>
