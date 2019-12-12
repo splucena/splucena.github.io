@@ -39,7 +39,41 @@
         </nav>
     </header>
     <main class="main-temples">
-        <h1>COME, VISIT THE HOUSE OF THE LORD</h1>
+        <!--<h1>COME, VISIT THE HOUSE OF THE LORD</h1>-->
+        <!-- Slideshow container -->
+        <div class="slideshow-wrapper">
+            <div class="slideshow-container">
+
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="static/img/temples/anchorage-alaska-temple-lds-1636401-tablet.jpg">
+                    <div class="text">Caption Text</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="static/img/temples/cebu-philippines-temple-lds-852837-tablet.jpg">
+                    <div class="text">Caption Two</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="static/img/temples/laie-visitors-center-772759-tablet.jpg">
+                    <div class="text">Caption Three</div>
+                </div>
+
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div><br />
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
         <div class="temples">
             <section class="temple-1">
                 <h3>Anchorage, Alaska</h3>
@@ -92,7 +126,7 @@
             </section>
         </div>
     </main>
-    <aside>
+    <!--<aside>
         <section class="map-contact-information">
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d49607.02739672819!2d-77.13960290564492!3d39.00529331571174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c9580effe569%3A0xc35a74ae85a2b2e6!2sBethesda%2C%20MD%2020814%2C%20USA!5e0!3m2!1sen!2sph!4v1575379273414!5m2!1sen!2sph"
@@ -114,7 +148,7 @@
                 </p>
             </div>
         </section>
-    </aside>
+    </aside>-->
     <footer>
         <div>
             <span>&copy; <span id="footer-year"></span> | Sumilang R. Plucena |
@@ -130,6 +164,7 @@
             document.getElementsByClassName("nav")[0].classList.toggle("responsive");
         }
     </script>
+    <script src="static/js/script.js"></script>
 </body>
 
 </html>

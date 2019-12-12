@@ -432,6 +432,10 @@ template {
   display: none;
 }
 
+/*$bg-rgba: rgba(30, 144, 255, 0.8);*/
+/*$bg-rgba: rgba(23, 37, 42, 0.8);*/
+/*$bg-rgba: rgba(28, 119, 195, 0.8);*/
+/*https://coolors.co/1e90ff-000000-ffffff-b89e97-decccc*/
 html {
   font-size: 100%;
 }
@@ -444,7 +448,7 @@ body {
   background-attachment: fixed;
   background-size: 100% 100%;
   font-family: Arial, Helvetica, sans-serif;
-  color: #FED23F;
+  color: #FFFF00;
   margin: 0;
   padding: 0;
   display: grid;
@@ -466,7 +470,8 @@ header {
 nav {
   display: grid;
   grid-template-columns: 1fr;
-  background: rgba(23, 37, 42, 0.8);
+  background: rgba(8, 61, 119, 0.7);
+  z-index: 1000;
 }
 nav li.active {
   background: linear-gradient(to bottom, #F06449, #FE4A49);
@@ -494,7 +499,7 @@ nav ul {
   list-style: none;
 }
 nav li {
-  color: #FED23F;
+  color: #FFFF00;
   background: transparent;
   display: inline-block;
   position: relative;
@@ -510,7 +515,7 @@ nav ul li {
 }
 nav ul li a {
   text-decoration: none;
-  color: #FED23F;
+  color: #FFFF00;
 }
 
 /* main temples */
@@ -522,6 +527,114 @@ main.main-temples h1 {
   padding-right: 10px;
 }
 
+main.main-temples .slideshow-wrapper {
+  /** {
+      box-sizing: border-box;
+  }*/
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 10px;
+  z-index: 1;
+  /* Slideshow container */
+  /* Hide the images by default */
+  /* Next & previous buttons */
+  /* Position the "next button" to the right */
+  /* On hover, add a black background color with a little bit see-through */
+  /* Caption text */
+  /* Number text (1/3 etc) */
+  /* The dots/bullets/indicators */
+  /* Fading animation */
+}
+main.main-temples .slideshow-wrapper img {
+  width: 100%;
+  height: 150px;
+  border: #1C77C3;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+main.main-temples .slideshow-wrapper .slideshow-container {
+  width: 100%;
+  position: relative;
+  /*margin: auto;*/
+}
+main.main-temples .slideshow-wrapper .mySlides {
+  display: none;
+}
+main.main-temples .slideshow-wrapper .prev,
+main.main-temples .slideshow-wrapper .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: #FFFF00;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+main.main-temples .slideshow-wrapper .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+main.main-temples .slideshow-wrapper .prev:hover,
+main.main-temples .slideshow-wrapper .next:hover {
+  background-color: rgba(8, 61, 119, 0.7);
+}
+main.main-temples .slideshow-wrapper .text {
+  color: #FFFF00;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+main.main-temples .slideshow-wrapper .numbertext {
+  color: #FFFF00;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+main.main-temples .slideshow-wrapper .dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #083d77;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+main.main-temples .slideshow-wrapper .active,
+main.main-temples .slideshow-wrapper .dot:hover {
+  background-color: #FFFF00;
+}
+main.main-temples .slideshow-wrapper .fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
 /* main reservation */
 main.main-reservation,
 main.main-contact-page {
@@ -539,8 +652,8 @@ main.main-contact-page .contact-page {
   flex-direction: column;
   flex-basis: 100%;
   flex: 1;
-  color: #FED23F;
-  background: rgba(23, 37, 42, 0.8);
+  color: #FFFF00;
+  background: rgba(8, 61, 119, 0.7);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
   padding: 10px;
 }
@@ -556,7 +669,7 @@ main.main-contact-page .contact-page fieldset {
   padding: 15px;
   box-sizing: border-box;
   border-radius: 0;
-  border: 1px solid #FED23F;
+  border: 1px solid #FFFF00;
   margin-bottom: 20px;
   margin-top: 10px;
 }
@@ -915,7 +1028,7 @@ main .temples section img {
   border-bottom: 1px solid #FEFFFF;
 }
 main .temples section {
-  background-color: #DEF2F1;
+  background-color: #083D77;
   text-align: center;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
   color: #FEFFFF;
@@ -957,15 +1070,15 @@ aside .details-contact-information {
   color: #FEFFFF;
 }
 aside .details-contact-information div {
-  background-color: rgba(23, 37, 42, 0.8);
+  background-color: rgba(8, 61, 119, 0.7);
   padding-left: 0;
   padding: 10px;
-  border-left: 4px solid #FED23F;
+  border-left: 4px solid #FFFF00;
   /*border-top: 4px solid $font-color-yellow;*/
   /*box-shadow: $box-shadow;*/
 }
 aside .details-contact-information h3 {
-  color: #FED23F;
+  color: #FFFF00;
 }
 aside .details-contact-information p,
 aside .details-contact-information h3 {
@@ -978,10 +1091,11 @@ footer {
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: rgba(23, 37, 42, 0.8);
+  background-color: rgba(8, 61, 119, 0.7);
   text-align: center;
   display: flex;
   border-top: solid 1px #DEF2F1;
+  color: #FFFF00;
 }
 footer > div {
   /*font-size: 1.6em;*/
@@ -995,10 +1109,14 @@ footer > div span {
   text-decoration: none;
 }
 footer > div a:visited {
-  color: #FEFFFF;
+  color: #FFFF00;
 }
 
 @media only screen and (min-width: 560px) {
+  main.main-temples .slideshow-wrapper img {
+    height: 250px;
+  }
+
   main {
     /*temples*/
   }
@@ -1058,7 +1176,8 @@ footer > div a:visited {
     margin: 0;
     padding: 0;
     display: grid;
-    grid-template-columns: 75% 25%;
+    /*grid-template-columns: 75% 25%;*/
+    grid-template-columns: 100%;
     grid-template-rows: fit-content(115px) fit-content(100%) fit-content(100%);
     grid-row-gap: 0;
     grid-gap: 0;
@@ -1088,7 +1207,7 @@ footer > div a:visited {
   }
 
   nav {
-    background: rgba(23, 37, 42, 0.8);
+    background: rgba(8, 61, 119, 0.7);
     display: grid;
     padding: 10px;
     grid-template-columns: 15% 45% 40%;
@@ -1116,7 +1235,7 @@ footer > div a:visited {
     display: block;
   }
   nav li {
-    color: #FED23F;
+    color: #FFFF00;
     background: transparent;
     display: inline-block;
     /*float: left;*/
@@ -1126,7 +1245,7 @@ footer > div a:visited {
     transition-duration: 0.5s;
   }
   nav li a {
-    color: #FED23F;
+    color: #FFFF00;
   }
   nav li:hover {
     background: red;
@@ -1151,15 +1270,21 @@ footer > div a:visited {
     min-width: 10rem;
   }
   nav ul li ul li {
-    background: rgba(23, 37, 42, 0.8);
+    background: rgba(8, 61, 119, 0.7);
     clear: both;
     width: 100%;
+    overflow: visible !important;
+    z-index: 1000;
   }
   nav ul li ul li:last-child {
     padding-bottom: 15px;
   }
 
   /* Main */
+  main.main-temples .slideshow-wrapper img {
+    height: 400px;
+  }
+
   main.main-temples {
     margin-bottom: 10px;
   }
@@ -1265,7 +1390,7 @@ footer > div a:visited {
     text-decoration: none;
   }
   main > h1 {
-    color: #FE4A49;
+    color: #FFFF00;
   }
   main .temples > div {
     margin-top: 0;
@@ -1284,14 +1409,14 @@ footer > div a:visited {
     border-bottom: 1px solid #FEFFFF;
   }
   main .temples section {
-    background-color: #DEF2F1;
+    background-color: rgba(28, 119, 195, 0.8);
     text-align: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
     color: #FEFFFF;
-    border: solid 1px #DEF2F1;
+    border: #1C77C3;
   }
   main .temples section h3 {
-    background-color: #042A2B;
+    background-color: #083D77;
     padding: 20px;
     margin-top: 0;
     margin-bottom: 0;
@@ -1299,7 +1424,7 @@ footer > div a:visited {
   main .temples section div {
     text-align: justify;
     padding: 20px;
-    color: #17252A;
+    color: #090809;
   }
 
   aside {
@@ -1332,15 +1457,15 @@ footer > div a:visited {
     height: 50px;
   }
   aside .details-contact-information div {
-    background-color: rgba(23, 37, 42, 0.8);
+    background-color: rgba(8, 61, 119, 0.7);
     padding: 10px;
-    border-right: 4px solid #FED23F;
+    border-right: 4px solid #FFFF00;
     border-left: none;
     border-top: none;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
   }
   aside .details-contact-information h3 {
-    color: #FED23F;
+    color: #FFFF00;
   }
   aside .details-contact-information p,
   aside .details-contact-information h3 {

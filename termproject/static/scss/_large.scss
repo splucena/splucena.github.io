@@ -24,7 +24,8 @@ body {
     margin: 0;
     padding: 0;
     display: grid;
-    grid-template-columns: 75% 25%;
+    /*grid-template-columns: 75% 25%;*/
+    grid-template-columns: 100%;
     grid-template-rows: fit-content(115px) fit-content(100%) fit-content(100%);
     grid-row-gap: 0;
     grid-gap: 0;
@@ -137,6 +138,8 @@ nav {
         background: $bg-rgba;
         clear: both;
         width: 100%;
+        overflow: visible !important;
+        z-index: 1000;
     }
 
     ul li ul li:last-child {
@@ -145,6 +148,12 @@ nav {
 }
 
 /* Main */
+
+main.main-temples .slideshow-wrapper {
+    img {
+        height: 400px;
+    }
+}
 
 main.main-temples {
     margin-bottom: 10px;
@@ -263,7 +272,7 @@ main {
     /* temples */
 
     >h1 {
-        color: $font-color-tart;
+        color: $font-color-yellow;
     }
 
     .temples>div {
@@ -286,15 +295,15 @@ main {
     }
 
     .temples section {
-        background-color: $bg-temples-header;
+        background-color: $bg-rgba-dodger-blue;
         text-align: center;
         box-shadow: $box-shadow;
-        color: $font-color-temple;
-        border: $border;
+        color: $font-color;
+        border: $border-bright-navy-blue;
     }
 
     .temples section h3 {
-        background-color: #042A2B;
+        background-color: $bg-temples-header;
         padding: 20px;
         margin-top: 0;
         margin-bottom: 0;
@@ -303,7 +312,7 @@ main {
     .temples section div {
         text-align: justify;
         padding: 20px;
-        color: #17252A;
+        color: $font-color-registration-black;
     }
 }
 

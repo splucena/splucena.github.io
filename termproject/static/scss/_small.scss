@@ -33,6 +33,7 @@ nav {
     display: grid;
     grid-template-columns: 1fr;
     background: $bg-rgba;
+    z-index: 1000;
 
     li.active {
         background: $button-background-image-1;
@@ -96,6 +97,131 @@ main.main-temples {
     h1 {
         padding-left: 10px;
         padding-right: 10px;
+    }
+}
+
+main.main-temples .slideshow-wrapper {
+    /** {
+        box-sizing: border-box;
+    }*/
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 10px;
+    z-index: 1;
+
+    img {
+        width: 100%;
+        height: 150px;
+        border: $border-bright-navy-blue;
+        box-shadow: $box-shadow;
+        z-index: 1;
+    }
+
+    /* Slideshow container */
+    .slideshow-container {
+        width: 100%;
+        position: relative;
+        /*margin: auto;*/
+
+    }
+
+    /* Hide the images by default */
+    .mySlides {
+        display: none;
+    }
+
+    /* Next & previous buttons */
+    .prev,
+    .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -22px;
+        padding: 16px;
+        color: $font-color-yellow;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+        background-color: $bg-rgba;
+    }
+
+    /* Caption text */
+    .text {
+        color: $font-color-yellow;
+        font-size: 15px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+        color: $font-color-yellow;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: rgba(8, 61, 119, 1);
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+
+    .active,
+    .dot:hover {
+        background-color: #FFFF00;
+    }
+
+    /* Fading animation */
+    .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+        from {
+            opacity: .4
+        }
+
+        to {
+            opacity: 1
+        }
+    }
+
+    @keyframes fade {
+        from {
+            opacity: .4
+        }
+
+        to {
+            opacity: 1
+        }
     }
 }
 
@@ -464,6 +590,7 @@ footer {
     text-align: center;
     display: flex;
     border-top: $border;
+    color: $font-color-yellow;
 
     >div {
         /*font-size: 1.6em;*/
@@ -478,7 +605,7 @@ footer {
         }
 
         a:visited {
-            color: $font-color;
+            color: $font-color-yellow;
         }
     }
 }
