@@ -44,11 +44,26 @@ footer {
     justify-content: center;
 }*/
 
+header {
+    .company {
+        h1 {
+            margin: 0;
+            margin-top: 20px;
+        }
+
+        p {
+            margin: 0;
+            margin-bottom: 20px;
+            font-size: 14px;
+        }
+    }
+}
+
 nav {
     background: $bg-rgba;
     display: grid;
     padding: 10px;
-    grid-template-columns: 15% 85%;
+    grid-template-columns: 15% 45% 40%;
 
     >ul>li:first-child {
         display: none;
@@ -122,6 +137,10 @@ nav {
         background: $bg-rgba;
         clear: both;
         width: 100%;
+    }
+
+    ul li ul li:last-child {
+        padding-bottom: 15px;
     }
 }
 
@@ -209,9 +228,9 @@ main {
             background-image: -ms-linear-gradient(top, #3aafa9, #2b7a78);
             background-image: -o-linear-gradient(top, #3aafa9, #2b7a78);*/
             background-image: $button-background-image-1;
-            -webkit-border-radius: 10px;
-            -moz-border-radius: 10px;
-            border-radius: 10px;
+            -webkit-border-radius: 0;
+            -moz-border-radius: 0;
+            border-radius: 0;
             color: $font-color;
             font-size: 20px;
             font-weight: 100;
@@ -234,9 +253,9 @@ main {
             background-image: -ms-linear-gradient(top, #2b7a78, #3aafa9);
             background-image: -o-linear-gradient(top, #2b7a78, #3aafa9);*/
             background-image: $button-background-image-2;
-            -webkit-border-radius: 10px;
-            -moz-border-radius: 10px;
-            border-radius: 10px;
+            -webkit-border-radius: 0;
+            -moz-border-radius: 0;
+            border-radius: 0;
             text-decoration: none;
         }
     }

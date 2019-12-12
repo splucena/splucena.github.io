@@ -127,7 +127,7 @@ main.main-contact-page {
             flex: 1;
             padding: 15px;
             box-sizing: border-box;
-            border-radius: 10px;
+            border-radius: 0;
             border: 1px solid $font-color-yellow;
             margin-bottom: 20px;
             margin-top: 10px;
@@ -151,7 +151,7 @@ main.main-contact-page {
         textarea {
             padding: 12px;
             border: 1px solid gray;
-            border-radius: 4px;
+            border-radius: 0;
             resize: vertical;
             box-sizing: border-box;
             margin-top: 10px;
@@ -193,9 +193,9 @@ main.main-contact-page {
             background-image: -ms-linear-gradient(top, #3aafa9, #2b7a78);
             background-image: -o-linear-gradient(top, #3aafa9, #2b7a78);*/
             background-image: $button-background-image-1;
-            -webkit-border-radius: 10px;
-            -moz-border-radius: 10px;
-            border-radius: 10px;
+            -webkit-border-radius: 0;
+            -moz-border-radius: 0;
+            border-radius: 0;
             color: $font-color;
             font-size: 18px;
             font-weight: 100;
@@ -217,9 +217,9 @@ main.main-contact-page {
             background-image: -ms-linear-gradient(top, #2b7a78, #3aafa9);
             background-image: -o-linear-gradient(top, #2b7a78, #3aafa9);*/
             background-image: $button-background-image-2;
-            -webkit-border-radius: 10px;
-            -moz-border-radius: 10px;
-            border-radius: 10px;
+            -webkit-border-radius: 0;
+            -moz-border-radius: 0;
+            border-radius: 0;
             text-decoration: none;
         }
 
@@ -338,9 +338,9 @@ main {
             background-image: -ms-linear-gradient(top, #3aafa9, #2b7a78);
             background-image: -o-linear-gradient(top, #3aafa9, #2b7a78);*/
             background-image: $button-background-image-1;
-            -webkit-border-radius: 10px;
-            -moz-border-radius: 10px;
-            border-radius: 10px;
+            -webkit-border-radius: 0;
+            -moz-border-radius: 0;
+            border-radius: 0;
             color: $font-color;
             font-size: 18px;
             font-weight: 100;
@@ -363,9 +363,9 @@ main {
             background-image: -ms-linear-gradient(top, #2b7a78, #3aafa9);
             background-image: -o-linear-gradient(top, #2b7a78, #3aafa9);*/
             background-image: $button-background-image-2;
-            -webkit-border-radius: 10px;
-            -moz-border-radius: 10px;
-            border-radius: 10px;
+            -webkit-border-radius: 0;
+            -moz-border-radius: 0;
+            border-radius: 0;
             text-decoration: none;
         }
     }
