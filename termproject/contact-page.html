@@ -34,8 +34,30 @@
         </nav>
     </header>
     <main class="main-contact-page">
-        <h1>CONTACT PAGE</h1>
-        <div class="contct-page">
+        <div class="contact-page">
+            <h3>Contact Us</h3>
+            <form action="https://splucena.github.io/lesson11/storm-center-11.html" method="GET"
+                class="form-storm-center">
+                <fieldset>
+                    <legend>Guest Information</legend>
+                    <label for="fullname">Full Name<input type="text" name="fullname" id="fullname" minlength="5"
+                            pattern="[A-Za-z ]+" required></label>
+                    <label for="email">Email<input type="email" name="email" placeholder="someone@email.com"
+                            id="email"></label>
+                    <label for="phone_number">Phone Number<input type="tel" required name="phone_number"
+                            pattern="[0-11]+" id="phone_number"></label>
+                    <label for="state_country">State/Country<input type="text" name="state_country"
+                            id="state_country"></label>
+                    <label for="zip">ZIP<input type="number" name="zip" id="zip" required></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Comments/Suggestions</legend>
+                    <label for="comment">Comments<textarea name="comment" id="comment" rows="5"></textarea></label>
+                </fieldset>
+                <div class="submit-button">
+                    <input type="submit" value="Send" onclick="validate_form()">
+                </div>
+            </form>
         </div>
     </main>
     <aside>

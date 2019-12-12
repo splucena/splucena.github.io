@@ -100,12 +100,14 @@ main.main-temples {
 }
 
 /* main reservation */
-main.main-reservation {
+main.main-reservation,
+main.main-contact-page {
     display: grid;
     grid-template-columns: 1fr;
     margin: 10px;
 
-    .reservation {
+    .reservation,
+    .contact-page {
         margin: 0 auto;
         width: 100%;
         display: flex;
@@ -180,6 +182,7 @@ main.main-reservation {
 
         .submit-button input[type="submit"] {
             margin: 0 auto;
+            width: 100%;
         }
 
         input[type="submit"] {
@@ -243,10 +246,6 @@ main.main-reservation {
                 0 0 10px rgba(82, 168, 236, 0.8);
             outline: none;
         }
-
-        /* input:hover {
-  background-color: #62ACB5;
-}*/
 
         input[type="text"]:valid,
         input[type="email"]:valid,

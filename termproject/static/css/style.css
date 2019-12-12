@@ -523,12 +523,16 @@ main.main-temples h1 {
 }
 
 /* main reservation */
-main.main-reservation {
+main.main-reservation,
+main.main-contact-page {
   display: grid;
   grid-template-columns: 1fr;
   margin: 10px;
 }
-main.main-reservation .reservation {
+main.main-reservation .reservation,
+main.main-reservation .contact-page,
+main.main-contact-page .reservation,
+main.main-contact-page .contact-page {
   margin: 0 auto;
   width: 100%;
   display: flex;
@@ -539,11 +543,11 @@ main.main-reservation .reservation {
   background: rgba(23, 37, 42, 0.8);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
   padding: 10px;
-        /* input:hover {
-  background-color: #62ACB5;
-}*/
 }
-main.main-reservation .reservation fieldset {
+main.main-reservation .reservation fieldset,
+main.main-reservation .contact-page fieldset,
+main.main-contact-page .reservation fieldset,
+main.main-contact-page .contact-page fieldset {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -556,20 +560,47 @@ main.main-reservation .reservation fieldset {
   margin-bottom: 20px;
   margin-top: 10px;
 }
-main.main-reservation .reservation fieldset legend {
+main.main-reservation .reservation fieldset legend,
+main.main-reservation .contact-page fieldset legend,
+main.main-contact-page .reservation fieldset legend,
+main.main-contact-page .contact-page fieldset legend {
   font-weight: bold;
 }
 main.main-reservation .reservation label,
 main.main-reservation .reservation input,
 main.main-reservation .reservation select,
-main.main-reservation .reservation textarea {
+main.main-reservation .reservation textarea,
+main.main-reservation .contact-page label,
+main.main-reservation .contact-page input,
+main.main-reservation .contact-page select,
+main.main-reservation .contact-page textarea,
+main.main-contact-page .reservation label,
+main.main-contact-page .reservation input,
+main.main-contact-page .reservation select,
+main.main-contact-page .reservation textarea,
+main.main-contact-page .contact-page label,
+main.main-contact-page .contact-page input,
+main.main-contact-page .contact-page select,
+main.main-contact-page .contact-page textarea {
   display: block;
   padding: 5px;
 }
 main.main-reservation .reservation input,
 main.main-reservation .reservation select,
 main.main-reservation .reservation button,
-main.main-reservation .reservation textarea {
+main.main-reservation .reservation textarea,
+main.main-reservation .contact-page input,
+main.main-reservation .contact-page select,
+main.main-reservation .contact-page button,
+main.main-reservation .contact-page textarea,
+main.main-contact-page .reservation input,
+main.main-contact-page .reservation select,
+main.main-contact-page .reservation button,
+main.main-contact-page .reservation textarea,
+main.main-contact-page .contact-page input,
+main.main-contact-page .contact-page select,
+main.main-contact-page .contact-page button,
+main.main-contact-page .contact-page textarea {
   padding: 12px;
   border: 1px solid gray;
   border-radius: 4px;
@@ -581,25 +612,56 @@ main.main-reservation .reservation input[type="text"],
 main.main-reservation .reservation input[type="tel"],
 main.main-reservation .reservation input[type="number"],
 main.main-reservation .reservation input[type="email"],
-main.main-reservation .reservation textarea {
+main.main-reservation .reservation textarea,
+main.main-reservation .contact-page input[type="text"],
+main.main-reservation .contact-page input[type="tel"],
+main.main-reservation .contact-page input[type="number"],
+main.main-reservation .contact-page input[type="email"],
+main.main-reservation .contact-page textarea,
+main.main-contact-page .reservation input[type="text"],
+main.main-contact-page .reservation input[type="tel"],
+main.main-contact-page .reservation input[type="number"],
+main.main-contact-page .reservation input[type="email"],
+main.main-contact-page .reservation textarea,
+main.main-contact-page .contact-page input[type="text"],
+main.main-contact-page .contact-page input[type="tel"],
+main.main-contact-page .contact-page input[type="number"],
+main.main-contact-page .contact-page input[type="email"],
+main.main-contact-page .contact-page textarea {
   width: 100%;
   display: block;
   background-color: #dddddd;
 }
-main.main-reservation .reservation input[type="range"] {
+main.main-reservation .reservation input[type="range"],
+main.main-reservation .contact-page input[type="range"],
+main.main-contact-page .reservation input[type="range"],
+main.main-contact-page .contact-page input[type="range"] {
   width: 50%;
   display: block;
 }
-main.main-reservation .reservation input[type="date"] {
+main.main-reservation .reservation input[type="date"],
+main.main-reservation .contact-page input[type="date"],
+main.main-contact-page .reservation input[type="date"],
+main.main-contact-page .contact-page input[type="date"] {
   background-color: #dddddd;
 }
-main.main-reservation .reservation input[type="radio"] {
+main.main-reservation .reservation input[type="radio"],
+main.main-reservation .contact-page input[type="radio"],
+main.main-contact-page .reservation input[type="radio"],
+main.main-contact-page .contact-page input[type="radio"] {
   display: inline;
 }
-main.main-reservation .reservation .submit-button input[type="submit"] {
+main.main-reservation .reservation .submit-button input[type="submit"],
+main.main-reservation .contact-page .submit-button input[type="submit"],
+main.main-contact-page .reservation .submit-button input[type="submit"],
+main.main-contact-page .contact-page .submit-button input[type="submit"] {
   margin: 0 auto;
+  width: 100%;
 }
-main.main-reservation .reservation input[type="submit"] {
+main.main-reservation .reservation input[type="submit"],
+main.main-reservation .contact-page input[type="submit"],
+main.main-contact-page .reservation input[type="submit"],
+main.main-contact-page .contact-page input[type="submit"] {
   background: #FE4A49;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
   /*background-image: -webkit-linear-gradient(top, #3aafa9, #2b7a78);
@@ -622,7 +684,10 @@ main.main-reservation .reservation input[type="submit"] {
   text-decoration: none;
   cursor: pointer;
 }
-main.main-reservation .reservation input[type="submit"]:hover {
+main.main-reservation .reservation input[type="submit"]:hover,
+main.main-reservation .contact-page input[type="submit"]:hover,
+main.main-contact-page .reservation input[type="submit"]:hover,
+main.main-contact-page .contact-page input[type="submit"]:hover {
   border: solid 1px #F06449;
   background: #FE4A49;
   /*background-image: -webkit-linear-gradient(top, #2b7a78, #3aafa9);
@@ -635,11 +700,20 @@ main.main-reservation .reservation input[type="submit"]:hover {
   border-radius: 10px;
   text-decoration: none;
 }
-main.main-reservation .reservation fieldset:not(:nth-child(3)) label {
+main.main-reservation .reservation fieldset:not(:nth-child(3)) label,
+main.main-reservation .contact-page fieldset:not(:nth-child(3)) label,
+main.main-contact-page .reservation fieldset:not(:nth-child(3)) label,
+main.main-contact-page .contact-page fieldset:not(:nth-child(3)) label {
   margin-top: 10px;
 }
 main.main-reservation .reservation fieldset:nth-child(3) label,
-main.main-reservation .reservation fieldset:nth-child(3) input {
+main.main-reservation .reservation fieldset:nth-child(3) input,
+main.main-reservation .contact-page fieldset:nth-child(3) label,
+main.main-reservation .contact-page fieldset:nth-child(3) input,
+main.main-contact-page .reservation fieldset:nth-child(3) label,
+main.main-contact-page .reservation fieldset:nth-child(3) input,
+main.main-contact-page .contact-page fieldset:nth-child(3) label,
+main.main-contact-page .contact-page fieldset:nth-child(3) input {
   margin-top: 4px;
   padding: 0;
 }
@@ -649,7 +723,28 @@ main.main-reservation .reservation input[type="number"]:focus,
 main.main-reservation .reservation input[type="tel"]:focus,
 main.main-reservation .reservation textarea:focus,
 main.main-reservation .reservation input[type="date"]:focus,
-main.main-reservation .reservation select:focus {
+main.main-reservation .reservation select:focus,
+main.main-reservation .contact-page input[type="text"]:focus,
+main.main-reservation .contact-page input[type="email"]:focus,
+main.main-reservation .contact-page input[type="number"]:focus,
+main.main-reservation .contact-page input[type="tel"]:focus,
+main.main-reservation .contact-page textarea:focus,
+main.main-reservation .contact-page input[type="date"]:focus,
+main.main-reservation .contact-page select:focus,
+main.main-contact-page .reservation input[type="text"]:focus,
+main.main-contact-page .reservation input[type="email"]:focus,
+main.main-contact-page .reservation input[type="number"]:focus,
+main.main-contact-page .reservation input[type="tel"]:focus,
+main.main-contact-page .reservation textarea:focus,
+main.main-contact-page .reservation input[type="date"]:focus,
+main.main-contact-page .reservation select:focus,
+main.main-contact-page .contact-page input[type="text"]:focus,
+main.main-contact-page .contact-page input[type="email"]:focus,
+main.main-contact-page .contact-page input[type="number"]:focus,
+main.main-contact-page .contact-page input[type="tel"]:focus,
+main.main-contact-page .contact-page textarea:focus,
+main.main-contact-page .contact-page input[type="date"]:focus,
+main.main-contact-page .contact-page select:focus {
   border: solid 1px gray;
   background-color: #e0e0e0;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 10px rgba(82, 168, 236, 0.8);
@@ -661,7 +756,28 @@ main.main-reservation .reservation input[type="number"]:valid,
 main.main-reservation .reservation input[type="tel"]:valid,
 main.main-reservation .reservation textarea:valid,
 main.main-reservation .reservation input[type="date"]:valid,
-main.main-reservation .reservation select:valid {
+main.main-reservation .reservation select:valid,
+main.main-reservation .contact-page input[type="text"]:valid,
+main.main-reservation .contact-page input[type="email"]:valid,
+main.main-reservation .contact-page input[type="number"]:valid,
+main.main-reservation .contact-page input[type="tel"]:valid,
+main.main-reservation .contact-page textarea:valid,
+main.main-reservation .contact-page input[type="date"]:valid,
+main.main-reservation .contact-page select:valid,
+main.main-contact-page .reservation input[type="text"]:valid,
+main.main-contact-page .reservation input[type="email"]:valid,
+main.main-contact-page .reservation input[type="number"]:valid,
+main.main-contact-page .reservation input[type="tel"]:valid,
+main.main-contact-page .reservation textarea:valid,
+main.main-contact-page .reservation input[type="date"]:valid,
+main.main-contact-page .reservation select:valid,
+main.main-contact-page .contact-page input[type="text"]:valid,
+main.main-contact-page .contact-page input[type="email"]:valid,
+main.main-contact-page .contact-page input[type="number"]:valid,
+main.main-contact-page .contact-page input[type="tel"]:valid,
+main.main-contact-page .contact-page textarea:valid,
+main.main-contact-page .contact-page input[type="date"]:valid,
+main.main-contact-page .contact-page select:valid {
   border-left: solid 5px green;
 }
 main.main-reservation .reservation input[type="text"]:invalid,
@@ -670,7 +786,28 @@ main.main-reservation .reservation input[type="number"]:invalid,
 main.main-reservation .reservation input[type="tel"]:invalid,
 main.main-reservation .reservation textarea:invalid,
 main.main-reservation .reservation input[type="date"]:invalid,
-main.main-reservation .reservation select:invalid {
+main.main-reservation .reservation select:invalid,
+main.main-reservation .contact-page input[type="text"]:invalid,
+main.main-reservation .contact-page input[type="email"]:invalid,
+main.main-reservation .contact-page input[type="number"]:invalid,
+main.main-reservation .contact-page input[type="tel"]:invalid,
+main.main-reservation .contact-page textarea:invalid,
+main.main-reservation .contact-page input[type="date"]:invalid,
+main.main-reservation .contact-page select:invalid,
+main.main-contact-page .reservation input[type="text"]:invalid,
+main.main-contact-page .reservation input[type="email"]:invalid,
+main.main-contact-page .reservation input[type="number"]:invalid,
+main.main-contact-page .reservation input[type="tel"]:invalid,
+main.main-contact-page .reservation textarea:invalid,
+main.main-contact-page .reservation input[type="date"]:invalid,
+main.main-contact-page .reservation select:invalid,
+main.main-contact-page .contact-page input[type="text"]:invalid,
+main.main-contact-page .contact-page input[type="email"]:invalid,
+main.main-contact-page .contact-page input[type="number"]:invalid,
+main.main-contact-page .contact-page input[type="tel"]:invalid,
+main.main-contact-page .contact-page textarea:invalid,
+main.main-contact-page .contact-page input[type="date"]:invalid,
+main.main-contact-page .contact-page select:invalid {
   border-left: solid 5px red;
 }
 
@@ -1022,7 +1159,10 @@ footer > div a:visited {
     grid-template-rows: fit-content(50px) fit-content(150px) fit-content(10px) 152px;
   }
 
-  main.main-reservation .reservation {
+  main.main-reservation .reservation,
+  main.main-reservation .contact-page,
+  main.main-contact-page .reservation,
+  main.main-contact-page .contact-page {
     width: 50%;
   }
 

@@ -139,9 +139,11 @@ main.home {
     grid-template-rows: fit-content(50px) fit-content(150px) fit-content(10px) 152px;
 }
 
-main.main-reservation {
+main.main-reservation,
+main.main-contact-page {
 
-    .reservation {
+    .reservation,
+    .contact-page {
         width: 50%;
     }
 }
