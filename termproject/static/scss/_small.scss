@@ -4,7 +4,7 @@ html {
 
 body {
     /*background-image: url('../img/rome-italy-temple-2190090-wallpaper.jpg');*/
-    background: linear-gradient(to left, #3aafa9, #2B7A7B);
+    background: linear-gradient(to right, #083D77, #001021);
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -27,6 +27,7 @@ footer {
 
 header {
     box-shadow: $box-shadow;
+    border-bottom: solid 1px #1E4E83;
 }
 
 nav {
@@ -116,15 +117,17 @@ main.main-services {
         grid-template-columns: 1fr;
         margin: 10px;
         z-index: 1;
+
+        img {
+            width: 100%;
+            height: 150px;
+            /*border: solid 1px #1E4E83;*/
+            box-shadow: $box-shadow;
+            z-index: 1;
+        }
     }
 
-    img {
-        width: 100%;
-        height: 150px;
-        border: $border-bright-navy-blue;
-        box-shadow: $box-shadow;
-        z-index: 1;
-    }
+
 
     /* Slideshow container */
     .slideshow-container {
@@ -322,7 +325,7 @@ main.main-contact-page {
 
         input[type="submit"] {
             background: $button-background;
-            box-shadow: $box-shadow;
+            /*box-shadow: $box-shadow;*/
             /*background-image: -webkit-linear-gradient(top, #3aafa9, #2b7a78);
             background-image: -moz-linear-gradient(top, #3aafa9, #2b7a78);
             background-image: -ms-linear-gradient(top, #3aafa9, #2b7a78);
@@ -335,9 +338,9 @@ main.main-contact-page {
             font-size: 18px;
             font-weight: 100;
             padding: 15px;
-            box-shadow: 1px 1px 20px 0px #000000;
+            /*box-shadow: 1px 1px 20px 0px #000000;
             -webkit-box-shadow: 1px 1px 20px 0px #000000;
-            -moz-box-shadow: 1px 1px 20px 0px #000000;
+            -moz-box-shadow: 1px 1px 20px 0px #000000;*/
             text-shadow: 1px 1px 20px #000000;
             border: $button-border-1;
             text-decoration: none;
@@ -467,7 +470,7 @@ main {
 
         button {
             background: $button-background;
-            box-shadow: $box-shadow;
+            /*box-shadow: $box-shadow;*/
             /*background-image: -webkit-linear-gradient(top, #3aafa9, #2b7a78);
             background-image: -moz-linear-gradient(top, #3aafa9, #2b7a78);
             background-image: -ms-linear-gradient(top, #3aafa9, #2b7a78);
@@ -480,9 +483,9 @@ main {
             font-size: 18px;
             font-weight: 100;
             padding: 15px;
-            box-shadow: 1px 1px 20px 0px #000000;
+            /*box-shadow: 1px 1px 20px 0px #000000;
             -webkit-box-shadow: 1px 1px 20px 0px #000000;
-            -moz-box-shadow: 1px 1px 20px 0px #000000;
+            -moz-box-shadow: 1px 1px 20px 0px #000000;*/
             text-shadow: 1px 1px 20px #000000;
             border: $button-border-1;
             text-decoration: none;
@@ -523,7 +526,7 @@ main {
         text-align: center;
         box-shadow: $box-shadow;
         color: $font-color-temple;
-        border: $border;
+        border: solid 1px #74B3CE;
     }
 
     .temples section h3 {
@@ -542,14 +545,14 @@ main {
 
 }
 
-aside {
+.aside {
     section {
         margin-bottom: 20px;
 
         iframe {
             display: none;
             width: 100%;
-            box-shadow: $box-shadow;
+            /*box-shadow: $box-shadow;*/
             height: 200px;
         }
     }
@@ -570,7 +573,7 @@ aside {
         color: $font-color;
 
         div {
-            background-color: $bg-rgba;
+            /*background-color: $bg-rgba;*/
             padding-left: 0;
             padding: 10px;
             border-left: 4px solid $font-color-yellow;
@@ -598,7 +601,7 @@ footer {
     background-color: $bg-rgba;
     text-align: center;
     display: flex;
-    border-top: $border;
+    border-top: solid 1px #1E4E83;
     color: $font-color-yellow;
 
     >div {

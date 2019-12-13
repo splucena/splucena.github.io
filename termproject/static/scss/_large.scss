@@ -15,7 +15,7 @@ body {
 }
 
 body {
-    background-image: url('../img/rome-italy-temple-2190090-wallpaper.jpg');
+    /*background-image: url('../img/rome-italy-temple-2190090-wallpaper.jpg');*/
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -177,10 +177,22 @@ main.home {
 main.main-reservation,
 main.main-contact-page {
     margin: 0;
+    border: $border-yale-blue;
 
-    .reservation,
-    .contact-page {
+    .reservation {
         width: 50%;
+        margin-bottom: 10px;
+    }
+
+    .contact-page {
+        display: grid;
+        grid-template-columns: 60% 40%;
+        margin: 10px;
+        width: auto;
+
+        h1 {
+            grid-column: 1 / span 2;
+        }
     }
 }
 
@@ -248,7 +260,7 @@ main {
 
         button {
             background: $button-background;
-            box-shadow: $box-shadow;
+            /*box-shadow: $box-shadow;*/
             /*background-image: -webkit-linear-gradient(top, #3aafa9, #2b7a78);
             background-image: -moz-linear-gradient(top, #3aafa9, #2b7a78);
             background-image: -ms-linear-gradient(top, #3aafa9, #2b7a78);
@@ -261,9 +273,9 @@ main {
             font-size: 20px;
             font-weight: 100;
             padding: 15px;
-            box-shadow: 1px 1px 20px 0px #000000;
+            /*box-shadow: 1px 1px 20px 0px #000000;
             -webkit-box-shadow: 1px 1px 20px 0px #000000;
-            -moz-box-shadow: 1px 1px 20px 0px #000000;
+            -moz-box-shadow: 1px 1px 20px 0px #000000;*/
             text-shadow: 1px 1px 20px #000000;
             border: $button-border-1;
             text-decoration: none;
@@ -316,7 +328,6 @@ main {
         text-align: center;
         box-shadow: $box-shadow;
         color: $font-color;
-        border: $border-bright-navy-blue;
     }
 
     .temples section h3 {
@@ -333,12 +344,13 @@ main {
     }
 }
 
-aside {
+.aside {
     display: flex;
     flex-direction: column;
-    margin: 0;
+    margin-left: 10px;
+    margin-bottom: 10px;
     padding: 0;
-    padding-top: 10px;
+    padding-top: 18px;
     /*padding-right: 10px;*/
     /*grid-template-columns: 1fr;
     grid-row-gap: 0;
@@ -348,9 +360,10 @@ aside {
         margin-bottom: 10px;
 
         iframe {
+            display: block;
             width: 100%;
-            box-shadow: $box-shadow;
-            height: 200px;
+            /*box-shadow: $box-shadow;*/
+            height: 400px;
         }
     }
 
@@ -368,12 +381,12 @@ aside {
 
     .details-contact-information {
         div {
-            background-color: $bg-rgba;
+            /*background-color: $bg-rgba;*/
             padding: 10px;
-            border-right: 4px solid $font-color-yellow;
+            border-right: none;
             border-left: none;
             border-top: none;
-            box-shadow: $box-shadow;
+            /*box-shadow: $box-shadow;*/
         }
 
         h3 {
@@ -382,7 +395,7 @@ aside {
 
         p,
         h3 {
-            text-align: right;
+            text-align: center;
         }
     }
 }
@@ -392,6 +405,8 @@ footer {
 }
 
 /* 
+https://coolors.co/083d77-001021-1e4e83-ffbc42-d81159
+
 https://uigradients.com/#Jodhpur
 https://visme.co/blog/website-color-schemes/ Clean and Modern
 http://clipart-library.com/clipart/rTjKkp4Gc.htm temple logo FFD23F
