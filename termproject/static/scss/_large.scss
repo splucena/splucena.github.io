@@ -177,18 +177,22 @@ main.home {
 main.main-reservation,
 main.main-contact-page {
     margin: 0;
-    border: $border-yale-blue;
+    /*border: solid 1px #74B3CE;*/
 
     .reservation {
         width: 50%;
         margin-bottom: 10px;
+        border: solid 1px #74B3CE;
+        padding: 20px;
     }
 
     .contact-page {
+        border: solid 1px #74B3CE;
         display: grid;
         grid-template-columns: 60% 40%;
         margin: 10px;
         width: auto;
+        padding: 20px;
 
         h1 {
             grid-column: 1 / span 2;

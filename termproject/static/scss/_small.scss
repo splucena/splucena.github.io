@@ -171,7 +171,7 @@ main.main-services {
         background-color: $bg-rgba;
     }
 
-    /* Caption text */
+    /* Adelaide, Australia */
     .text {
         color: $font-color-yellow;
         font-size: 15px;
@@ -266,7 +266,8 @@ main.main-contact-page {
             padding: 15px;
             box-sizing: border-box;
             border-radius: 0;
-            border: 1px solid $font-color-yellow;
+            /*border: 1px solid $font-color-yellow;*/
+            border: none;
             margin-bottom: 20px;
             margin-top: 10px;
         }
