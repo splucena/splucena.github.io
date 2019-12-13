@@ -1436,6 +1436,8 @@ footer > div a:visited {
     margin: 10px;
     width: auto;
     padding: 20px;
+    background-color: rgba(8, 61, 119, 0.7);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
   }
   main.main-services .services ul {
     margin: 0;
