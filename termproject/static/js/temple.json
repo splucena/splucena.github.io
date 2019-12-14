@@ -1,0 +1,106 @@
+{
+    "temples": [{
+            "name": "Anchorage, Alaska",
+            "address": "13161 Brayton Dr Anchorage AK 99516 United States",
+            "telephone": "(1) 907-348-7890",
+            "email": "",
+            "services": ["No clothing rental available", "No cafeteria available", "No patron housing available", "No distribution center nearby"],
+            "history": "",
+            "ordinance-schecule": "",
+            "session-schedule": "",
+            "temple-closure-schedule": {
+                "2019": ["Tuesday, 24 December 2019 - Wednesday, 25 December 2019", "Tuesday, 31 December 2019"],
+                "2020": ["Wednesday, 1 January 2020",
+                    "Monday, 23 March 2020 - Monday, 6 April 2020",
+                    "Saturday, 4 July 2020",
+                    "Monday, 31 August 2020 - Monday, 12 October 2020",
+                    "Wednesday, 25 November 2020 - Thursday, 26 November 2020",
+                    "Friday, 25 December 2020"
+                ]
+            },
+            "summary": ""
+        },
+        {
+            "name": "Manila, Philippines",
+            "address": "13 Temple Dr Greenmeadows Subd, Quezon City 1110 Metro Manila, Philippines",
+            "telephone": "(63) 2-8635-9111",
+            "email": "",
+            "services": ["Clothing rental available", "No cafeteria available", "Patron housing available", "Distribution center nearby"],
+            "history": "",
+            "ordinance-schecule": "",
+            "session-schedule": "",
+            "temple-closure-schedule": {
+                "2019": ["Tuesday, 24 December 2019", "Wednesday, 25 December 2019", "Tuesday, 31 December 2019"],
+                "2020": ["Wednesday, 1 January 2020",
+                    "Monday, 2 March 2020 - Monday, 16 March 2020",
+                    "Monday, 3 August 2020 - Monday, 17 August 2020",
+                    "Thursday, 24 December 2020",
+                    "Friday, 25 December 2020",
+                    "Thursday, 31 December 2020"
+                ]
+            },
+            "summary": ""
+        },
+        {
+            "name": "Laie, Hawaii",
+            "address": "55-600 Naniloa Loop Laie HI 96762-2202 United States",
+            "telephone": "(1) 808-293-2427",
+            "email": "",
+            "services": ["Clothing rental available", "Cafeteria available", "No patron housing available", "Distribution center nearby"],
+            "history": "",
+            "ordinance-schecule": "",
+            "session-schedule": "",
+            "temple-closure-schedule": {
+                "2019": [
+                    "Tuesday, 24 December 2019 - Wednesday, 25 December 2019",
+                    "Friday, 27 December 2019 (Limited Hours)",
+                    "Saturday, 28 December 2019 (Limited Hours)",
+                    "Monday, 30 December 2019 - Monday, 13 January 2020"
+                ],
+                "2020": [
+                    "Friday, 3 April 2020 (Limited Hours)",
+                    "Saturday, 4 April 2020",
+                    "Friday, 26 June 2020 (Limited Hours)",
+                    "Saturday, 27 June 2020 (Limited Hours)",
+                    "Monday, 29 June 2020 - Monday, 13 July 2020",
+                    "Friday, 2 October 2020 (Limited Hours)",
+                    "Saturday, 3 October 2020",
+                    "Wednesday, 25 November 2020 (Limited Hours)",
+                    "Thursday, 26 November 2020",
+                    "Thursday, 24 December 2020 - Friday, 25 December 2020",
+                    "Thursday, 31 December 2020 (Limited Hours)"
+                ],
+                "2021": [
+                    "Friday, 1 January 2021",
+                    "Saturday, 2 January 2021(Limited Hours)",
+                    "Monday, 4 January 2021 - Monday, 18 January 2021"
+                ]
+            },
+            "summary": ""
+        },
+        {
+            "name": "London, England",
+            "address": "West Park Road Newchapel Surrey, England RH7 6HW, United Kingdom",
+            "telephone": "(44) 1342 831-400",
+            "email": "",
+            "services": ["Clothing rental available", "Cafeteria available", "Patron housing available", "Distribution center nearby"],
+            "history": "",
+            "ordinance-schecule": "",
+            "session-schedule": "",
+            "temple-closure-schedule": {
+                "2019": ["Monday, 16 March 2020 - Monday, 30 March 2020",
+                    "Saturday, 4 April 2020 (Limited Hours)",
+                    "Friday, 8 May 2020 (Limited Hours)",
+                    "Friday, 8 May 2020",
+                    "Monday, 7 September 2020 - Monday, 5 October 2020",
+                    "Tuesday, 15 December 2020 - Saturday, 19 December 2020 (Limited Hours)",
+                    "Tuesday, 22 December 2020 - Thursday, 24 December 2020 (Limited Hours)",
+                    "Thursday, 24 December 2020 - Saturday, 26 December 2020",
+                    "Tuesday, 29 December 2020 - Wednesday, 30 December 2020 (Limited Hours)",
+                    "Thursday, 31 December 2020 - Saturday, 2 January 2021"
+                ]
+            },
+            "summary": ""
+        }
+    ]
+}
