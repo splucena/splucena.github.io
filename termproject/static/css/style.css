@@ -734,6 +734,45 @@ main.main-services .fade {
     opacity: 1;
   }
 }
+input[type="submit"] {
+  background: #FE4A49;
+  /*box-shadow: $box-shadow;*/
+  /*background-image: -webkit-linear-gradient(top, #3aafa9, #2b7a78);
+  background-image: -moz-linear-gradient(top, #3aafa9, #2b7a78);
+  background-image: -ms-linear-gradient(top, #3aafa9, #2b7a78);
+  background-image: -o-linear-gradient(top, #3aafa9, #2b7a78);*/
+  background-image: linear-gradient(to bottom, #F06449, #FE4A49);
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  color: #FEFFFF;
+  font-size: 18px;
+  font-weight: 100;
+  padding: 15px;
+  /*box-shadow: 1px 1px 20px 0px #000000;
+  -webkit-box-shadow: 1px 1px 20px 0px #000000;
+  -moz-box-shadow: 1px 1px 20px 0px #000000;*/
+  text-shadow: 1px 1px 20px #000000;
+  border: solid 1px #FE4A49;
+  text-decoration: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+input[type="submit"]:hover {
+  border: solid 1px #F06449;
+  background: #FE4A49;
+  /*background-image: -webkit-linear-gradient(top, #2b7a78, #3aafa9);
+  background-image: -moz-linear-gradient(top, #2b7a78, #3aafa9);
+  background-image: -ms-linear-gradient(top, #2b7a78, #3aafa9);
+  background-image: -o-linear-gradient(top, #2b7a78, #3aafa9);*/
+  background-image: linear-gradient(to bottom, #FE4A49, #F06449);
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  text-decoration: none;
+}
+
 /* main reservation */
 main.main-reservation,
 main.main-contact-page,
@@ -1064,65 +1103,6 @@ main.main-services-reception .contact-page input[type="radio"],
 main.main-services-reception .container-contact-us input[type="radio"] {
   display: inline;
 }
-main.main-reservation .reservation input[type="submit"],
-main.main-reservation .contact-page input[type="submit"],
-main.main-reservation .container-contact-us input[type="submit"],
-main.main-contact-page .reservation input[type="submit"],
-main.main-contact-page .contact-page input[type="submit"],
-main.main-contact-page .container-contact-us input[type="submit"],
-main.main-services-temple-missionary .reservation input[type="submit"],
-main.main-services-temple-missionary .contact-page input[type="submit"],
-main.main-services-temple-missionary .container-contact-us input[type="submit"],
-main.main-services-reception .reservation input[type="submit"],
-main.main-services-reception .contact-page input[type="submit"],
-main.main-services-reception .container-contact-us input[type="submit"] {
-  background: #FE4A49;
-  /*box-shadow: $box-shadow;*/
-  /*background-image: -webkit-linear-gradient(top, #3aafa9, #2b7a78);
-  background-image: -moz-linear-gradient(top, #3aafa9, #2b7a78);
-  background-image: -ms-linear-gradient(top, #3aafa9, #2b7a78);
-  background-image: -o-linear-gradient(top, #3aafa9, #2b7a78);*/
-  background-image: linear-gradient(to bottom, #F06449, #FE4A49);
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  border-radius: 0;
-  color: #FEFFFF;
-  font-size: 18px;
-  font-weight: 100;
-  padding: 15px;
-  /*box-shadow: 1px 1px 20px 0px #000000;
-  -webkit-box-shadow: 1px 1px 20px 0px #000000;
-  -moz-box-shadow: 1px 1px 20px 0px #000000;*/
-  text-shadow: 1px 1px 20px #000000;
-  border: solid 1px #FE4A49;
-  text-decoration: none;
-  cursor: pointer;
-  width: 100%;
-}
-main.main-reservation .reservation input[type="submit"]:hover,
-main.main-reservation .contact-page input[type="submit"]:hover,
-main.main-reservation .container-contact-us input[type="submit"]:hover,
-main.main-contact-page .reservation input[type="submit"]:hover,
-main.main-contact-page .contact-page input[type="submit"]:hover,
-main.main-contact-page .container-contact-us input[type="submit"]:hover,
-main.main-services-temple-missionary .reservation input[type="submit"]:hover,
-main.main-services-temple-missionary .contact-page input[type="submit"]:hover,
-main.main-services-temple-missionary .container-contact-us input[type="submit"]:hover,
-main.main-services-reception .reservation input[type="submit"]:hover,
-main.main-services-reception .contact-page input[type="submit"]:hover,
-main.main-services-reception .container-contact-us input[type="submit"]:hover {
-  border: solid 1px #F06449;
-  background: #FE4A49;
-  /*background-image: -webkit-linear-gradient(top, #2b7a78, #3aafa9);
-  background-image: -moz-linear-gradient(top, #2b7a78, #3aafa9);
-  background-image: -ms-linear-gradient(top, #2b7a78, #3aafa9);
-  background-image: -o-linear-gradient(top, #2b7a78, #3aafa9);*/
-  background-image: linear-gradient(to bottom, #FE4A49, #F06449);
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  border-radius: 0;
-  text-decoration: none;
-}
 main.main-reservation .reservation fieldset:not(:nth-child(3)) label,
 main.main-reservation .contact-page fieldset:not(:nth-child(3)) label,
 main.main-reservation .container-contact-us fieldset:not(:nth-child(3)) label,
@@ -1406,6 +1386,54 @@ main.main-services-reception .container-contact-us {
   background-color: transparent;
 }
 
+main.main-home {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+main.main-home .tagline-temple {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+main.main-home .tagline img {
+  width: 150px;
+  height: 75px;
+  margin-left: 20px;
+}
+main.main-home .tagline h1 {
+  background-color: #FFFF00;
+  padding: 20px;
+  color: #090809;
+}
+main.main-home .tagline h3 {
+  padding-left: 20px;
+}
+main.main-home .tagline input[type=submit] {
+  margin-left: 20px;
+  width: auto;
+}
+main.main-home .temple {
+  position: relative;
+}
+main.main-home .temple img {
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+main.main-home .temple div {
+  margin: 0;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 45%;
+  background-color: rgba(255, 255, 255, 0.6);
+  color: #090809;
+}
+main.main-home .temple div p {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
 main {
   display: grid;
   grid-template-columns: 1fr;
@@ -1416,87 +1444,6 @@ main {
   grid-template-rows: fit-content(100%);
   grid-row-gap: 0;
   grid-gap: 0;
-}
-main > div {
-  margin-top: 0;
-  padding: 0;
-}
-main div.tagline-logo img {
-  display: none;
-  margin-left: 20px;
-  width: 120px;
-  height: 50px;
-}
-main div.tagline-message {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  flex-direction: column;
-  background-color: #fed23f;
-  color: #000;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
-}
-main div.tagline-message p {
-  margin: 0;
-  margin-left: 20px;
-  padding: 0;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  font-weight: bold;
-  font-size: 30px;
-}
-main div.tagline-invitation {
-  margin-left: 20px;
-}
-main div.tagline-invitation p {
-  color: #FE4A49;
-  font-weight: bold;
-  margin: 0;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-main div.tagline-button {
-  margin-left: 20px;
-}
-main div.tagline-button button {
-  background: #FE4A49;
-  /*box-shadow: $box-shadow;*/
-  /*background-image: -webkit-linear-gradient(top, #3aafa9, #2b7a78);
-  background-image: -moz-linear-gradient(top, #3aafa9, #2b7a78);
-  background-image: -ms-linear-gradient(top, #3aafa9, #2b7a78);
-  background-image: -o-linear-gradient(top, #3aafa9, #2b7a78);*/
-  background-image: linear-gradient(to bottom, #F06449, #FE4A49);
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  border-radius: 0;
-  color: #FEFFFF;
-  font-size: 18px;
-  font-weight: 100;
-  padding: 15px;
-  /*box-shadow: 1px 1px 20px 0px #000000;
-  -webkit-box-shadow: 1px 1px 20px 0px #000000;
-  -moz-box-shadow: 1px 1px 20px 0px #000000;*/
-  text-shadow: 1px 1px 20px #000000;
-  border: solid 1px #FE4A49;
-  text-decoration: none;
-  display: inline-block;
-  cursor: pointer;
-}
-main div.tagline-button button:hover {
-  border: solid 1px #F06449;
-  background: #FE4A49;
-  /*background-image: -webkit-linear-gradient(top, #2b7a78, #3aafa9);
-  background-image: -moz-linear-gradient(top, #2b7a78, #3aafa9);
-  background-image: -ms-linear-gradient(top, #2b7a78, #3aafa9);
-  background-image: -o-linear-gradient(top, #2b7a78, #3aafa9);*/
-  background-image: linear-gradient(to bottom, #FE4A49, #F06449);
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  border-radius: 0;
-  text-decoration: none;
 }
 main .temples {
   display: grid;
@@ -1589,8 +1536,6 @@ footer > div a,
 footer > div span {
   margin: auto 0;
   text-decoration: none;
-}
-footer > div a:visited {
   color: #FFFF00;
 }
 
@@ -1777,14 +1722,6 @@ footer > div a:visited {
     margin-bottom: 10px;
   }
 
-  main.home {
-    padding: 0;
-    display: grid;
-    padding-top: 10%;
-    grid-template-columns: 1fr;
-    grid-template-rows: fit-content(50px) fit-content(150px) fit-content(10px) 152px;
-  }
-
   main.main-reservation,
   main.main-contact-page {
     margin: 0;
@@ -1920,90 +1857,31 @@ footer > div a:visited {
   * {
       border: 1px solid #f00 !important;
   }*/
+  main.main-home .tagline-temple {
+    grid-template-columns: 1fr 1fr;
+    margin: 10px;
+    margin-top: 10px;
+  }
+  main.main-home .tagline-temple .tagline img {
+    width: 200px;
+    height: 100px;
+    margin-left: 20px;
+  }
+  main.main-home .tagline-temple .tagline h1 {
+    background-color: #FFFF00;
+    padding: 20px;
+    color: #090809;
+  }
+  main.main-home .tagline-temple .tagline h3 {
+    padding-left: 20px;
+  }
+  main.main-home .tagline-temple .tagline input[type=submit] {
+    margin-left: 20px;
+    width: auto;
+  }
+
   main {
-    /* home */
     /* temples */
-  }
-  main > div {
-    margin-top: 0;
-    padding: 0;
-  }
-  main div.tagline-logo img {
-    display: block;
-    margin-left: 100px;
-    width: 120px;
-    height: 50px;
-  }
-  main div.tagline-message {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-direction: column;
-    background-color: #fed23f;
-    color: #000;
-    width: 545px;
-    margin: 0;
-    padding: 0;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
-  }
-  main div.tagline-message p {
-    margin: 0;
-    margin-left: 100px;
-    padding: 0;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    font-weight: bold;
-    font-size: 40px;
-  }
-  main div.tagline-invitation {
-    margin-left: 100px;
-  }
-  main div.tagline-invitation p {
-    color: #FE4A49;
-    font-weight: bold;
-    margin: 0;
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-  main div.tagline-button {
-    margin-left: 100px;
-  }
-  main div.tagline-button button {
-    background: #FE4A49;
-    /*box-shadow: $box-shadow;*/
-    /*background-image: -webkit-linear-gradient(top, #3aafa9, #2b7a78);
-    background-image: -moz-linear-gradient(top, #3aafa9, #2b7a78);
-    background-image: -ms-linear-gradient(top, #3aafa9, #2b7a78);
-    background-image: -o-linear-gradient(top, #3aafa9, #2b7a78);*/
-    background-image: linear-gradient(to bottom, #F06449, #FE4A49);
-    -webkit-border-radius: 0;
-    -moz-border-radius: 0;
-    border-radius: 0;
-    color: #FEFFFF;
-    font-size: 20px;
-    font-weight: 100;
-    padding: 15px;
-    /*box-shadow: 1px 1px 20px 0px #000000;
-    -webkit-box-shadow: 1px 1px 20px 0px #000000;
-    -moz-box-shadow: 1px 1px 20px 0px #000000;*/
-    text-shadow: 1px 1px 20px #000000;
-    border: solid 1px #FE4A49;
-    text-decoration: none;
-    display: inline-block;
-    cursor: pointer;
-  }
-  main div.tagline-button button:hover {
-    border: solid 1px #F06449;
-    background: #FE4A49;
-    /*background-image: -webkit-linear-gradient(top, #2b7a78, #3aafa9);
-    background-image: -moz-linear-gradient(top, #2b7a78, #3aafa9);
-    background-image: -ms-linear-gradient(top, #2b7a78, #3aafa9);
-    background-image: -o-linear-gradient(top, #2b7a78, #3aafa9);*/
-    background-image: linear-gradient(to bottom, #FE4A49, #F06449);
-    -webkit-border-radius: 0;
-    -moz-border-radius: 0;
-    border-radius: 0;
-    text-decoration: none;
   }
   main > h1 {
     color: #FFFF00;

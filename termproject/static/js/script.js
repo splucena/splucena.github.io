@@ -1,3 +1,12 @@
+let date_today = new Date();
+let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "Dececember"];
+let days_of_the_week = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+let is_friday = date_today.getDay();
+
+window.onload = function () {
+    document.getElementById('footer-year').innerHTML = date_today.getFullYear();
+}
+
 function toggleMenu() {
     document.getElementsByClassName("nav")[0].classList.toggle("responsive");
 }
