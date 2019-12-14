@@ -1,3 +1,7 @@
+function toggleMenu() {
+    document.getElementsByClassName("nav")[0].classList.toggle("responsive");
+}
+
 function validate_form() {
     let full_name, phone_number, zip;
     full_name = document.getElementById('fullname');
