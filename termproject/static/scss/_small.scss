@@ -240,7 +240,8 @@ main.main-services {
 /* main reservation */
 main.main-reservation,
 main.main-contact-page,
-main.main-services-temple-missionary {
+main.main-services-temple-missionary,
+main.main-services-reception {
     display: grid;
     grid-template-columns: 1fr;
     margin: 10px;
@@ -276,6 +277,22 @@ main.main-services-temple-missionary {
 
         fieldset legend {
             font-weight: bold;
+        }
+
+        fieldset:last-child {
+            padding: 0;
+            margin-top: -20px;
+            margin-right: 21px;
+            margin-left: 21px;
+
+            legend {
+                padding: 0;
+                margin: 0;
+            }
+
+            input[type="submit"] {
+                margin: 0;
+            }
         }
 
         label,
@@ -321,11 +338,6 @@ main.main-services-temple-missionary {
             display: inline;
         }
 
-        .submit-button input[type="submit"] {
-            margin: 0 auto;
-            width: 95%;
-        }
-
         input[type="submit"] {
             background: $button-background;
             /*box-shadow: $box-shadow;*/
@@ -348,6 +360,7 @@ main.main-services-temple-missionary {
             border: $button-border-1;
             text-decoration: none;
             cursor: pointer;
+            width: 100%;
         }
 
         input[type="submit"]:hover {
@@ -368,11 +381,7 @@ main.main-services-temple-missionary {
             margin-top: 10px;
         }
 
-        fieldset:nth-child(3) label,
-        fieldset:nth-child(3) input {
-            margin-top: 4px;
-            padding: 0;
-        }
+
 
         input[type="text"]:focus,
         input[type="email"]:focus,

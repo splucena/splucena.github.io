@@ -156,7 +156,6 @@ main.main-reservation,
 main.main-services-reception,
 main.main-services-temple-missionary,
 main.main-services {
-
     .slideshow-container img {
         height: 400px;
     }
@@ -184,6 +183,7 @@ main.main-contact-page {
         margin-bottom: 10px;
         border: solid 1px #74B3CE;
         padding: 20px;
+        margin-top: 10px;
     }
 
     .contact-page {
@@ -201,7 +201,8 @@ main.main-contact-page {
 }
 
 main.main-services,
-main.main-services-temple-missionary {
+main.main-services-temple-missionary,
+main.main-services-reception {
 
     h1 {
         color: $font-color-yellow;
@@ -216,7 +217,6 @@ main.main-services-temple-missionary {
             width: 50%;
         }
     }
-
 
     .services {
         border: solid 1px #74B3CE;
@@ -396,6 +396,7 @@ main {
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-row-gap: 10px;
         grid-column-gap: 10px;
+        margin-top: 10px;
     }
 
     .temples section img {
