@@ -239,13 +239,15 @@ main.main-services {
 
 /* main reservation */
 main.main-reservation,
-main.main-contact-page {
+main.main-contact-page,
+main.main-services-temple-missionary {
     display: grid;
     grid-template-columns: 1fr;
     margin: 10px;
 
     .reservation,
-    .contact-page {
+    .contact-page,
+    .container-contact-us {
         margin: 0 auto;
         width: 100%;
         display: flex;
@@ -405,6 +407,11 @@ main.main-contact-page {
         select:invalid {
             border-left: solid 5px red;
         }
+    }
+
+    .container-contact-us {
+        box-shadow: none;
+        background-color: transparent;
     }
 }
 

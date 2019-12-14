@@ -200,11 +200,29 @@ main.main-contact-page {
     }
 }
 
-main.main-services {
+main.main-services,
+main.main-services-temple-missionary {
+
+    h1 {
+        color: $font-color-yellow;
+    }
+
+    .contact-us {
+        margin: auto 0;
+        width: 100%;
+
+        .container-contact-us {
+            margin: 0 auto;
+            width: 50%;
+        }
+    }
+
+
     .services {
         border: solid 1px #74B3CE;
         display: grid;
         grid-template-columns: 100%;
+        grid-row-gap: 10px;
         margin: 10px;
         width: auto;
         padding: 20px;
