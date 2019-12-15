@@ -3,12 +3,12 @@
             "name": "Anchorage, Alaska",
             "address": "13161 Brayton Dr Anchorage AK 99516 United States",
             "telephone": "(1) 907-348-7890",
-            "email": "",
+            "email": "Login to your LDS account to send email.",
             "services": ["No clothing rental available", "No cafeteria available", "No patron housing available", "No distribution center nearby"],
-            "history": "",
-            "ordinance-schecule": "",
-            "session-schedule": "",
-            "temple-closure-schedule": {
+            "history": "TBA",
+            "ordinance_schedule": "TBA",
+            "session_schedule": "TBA",
+            "temple_closure_schedule": {
                 "2019": ["Tuesday, 24 December 2019 - Wednesday, 25 December 2019", "Tuesday, 31 December 2019"],
                 "2020": ["Wednesday, 1 January 2020",
                     "Monday, 23 March 2020 - Monday, 6 April 2020",
@@ -18,7 +18,7 @@
                     "Friday, 25 December 2020"
                 ]
             },
-            "summary": ""
+            "summary": "The Anchorage Alaska Temple is the 54th operating temple of The Church of Jesus Christ of Latter-day Saints. The temple serves church members in Alaska and the Yukon Territory. In 1997, church president Gordon B. Hinckley, announced the building of smaller LDS temples."
         },
         {
             "name": "Manila, Philippines",
@@ -27,9 +27,9 @@
             "email": "",
             "services": ["Clothing rental available", "No cafeteria available", "Patron housing available", "Distribution center nearby"],
             "history": "",
-            "ordinance-schecule": "",
-            "session-schedule": "",
-            "temple-closure-schedule": {
+            "ordinance_schedule": "",
+            "session_schedule": "",
+            "temple_closure_schedule": {
                 "2019": ["Tuesday, 24 December 2019", "Wednesday, 25 December 2019", "Tuesday, 31 December 2019"],
                 "2020": ["Wednesday, 1 January 2020",
                     "Monday, 2 March 2020 - Monday, 16 March 2020",
@@ -39,7 +39,7 @@
                     "Thursday, 31 December 2020"
                 ]
             },
-            "summary": ""
+            "summary": "The Manila Philippines Temple is a temple of The Church of Jesus Christ of Latter-day Saints in Manila, Philippines. It is the 29th operating temple of the LDS Church."
         },
         {
             "name": "Laie, Hawaii",
@@ -48,9 +48,9 @@
             "email": "",
             "services": ["Clothing rental available", "Cafeteria available", "No patron housing available", "Distribution center nearby"],
             "history": "",
-            "ordinance-schecule": "",
-            "session-schedule": "",
-            "temple-closure-schedule": {
+            "ordinance_schedule": "",
+            "session_schedule": "",
+            "temple_closure-schedule": {
                 "2019": [
                     "Tuesday, 24 December 2019 - Wednesday, 25 December 2019",
                     "Friday, 27 December 2019 (Limited Hours)",
@@ -76,7 +76,7 @@
                     "Monday, 4 January 2021 - Monday, 18 January 2021"
                 ]
             },
-            "summary": ""
+            "summary": "The Laie Hawaii Temple is a temple of The Church of Jesus Christ of Latter-day Saints located on the northeast shore of the Hawaiian island of Oʻahu. The temple sits on a small hill, a half-mile from the Pacific Ocean, in the town of Lāʻie, 35 miles from Honolulu."
         },
         {
             "name": "London, England",
@@ -85,9 +85,9 @@
             "email": "",
             "services": ["Clothing rental available", "Cafeteria available", "Patron housing available", "Distribution center nearby"],
             "history": "",
-            "ordinance-schecule": "",
-            "session-schedule": "",
-            "temple-closure-schedule": {
+            "ordinance_schedule": "",
+            "session_schedule": "",
+            "temple_closure-schedule": {
                 "2019": ["Monday, 16 March 2020 - Monday, 30 March 2020",
                     "Saturday, 4 April 2020 (Limited Hours)",
                     "Friday, 8 May 2020 (Limited Hours)",
@@ -100,7 +100,7 @@
                     "Thursday, 31 December 2020 - Saturday, 2 January 2021"
                 ]
             },
-            "summary": ""
+            "summary": "The London England Temple is the 12th operating temple of The Church of Jesus Christ of Latter-day Saints. It is located in Newchapel, Surrey, England. The temple serves church members in south Wales, the Channel Islands, southern parts of England, the Limerick District of Ireland, and Jordan."
         }
     ]
 }

@@ -26,16 +26,6 @@ function displayPopup() {
     window.open('thanks.html', '_blank', 'scrollbars=yes, width=' + w / systemZoom + ', height=' + h / systemZoom + ', top=' + top + ', left=' + left);
 }
 
-/*var frm_reservation = document.getElementById('frm-reservation');
-frm_reservation.onsubmit = function () {
-    displayPopup();
-}
-
-var frm_contact_us = document.getElementById('frm-contact-us');
-frm_contact_us.onsubmit = function () {
-    displayPopup();
-}*/
-
 function validate_form(formID) {
     let full_name, phone_number, zip;
     full_name = document.getElementById('fullname');
@@ -98,3 +88,4 @@ var docWidth = document.documentElement.offsetWidth;
         }
     }
 );
+

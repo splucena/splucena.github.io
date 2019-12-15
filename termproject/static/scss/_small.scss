@@ -328,6 +328,7 @@ main.main-services-reception {
 
             input[type="submit"] {
                 margin: 0;
+                border: 1px solid $button-border;
             }
         }
 
@@ -523,6 +524,10 @@ main {
         color: #17252a;
         padding: 10px;
     }
+}
+
+.bold {
+    font-weight: bold;
 }
 
 .aside {

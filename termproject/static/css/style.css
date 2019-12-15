@@ -889,6 +889,7 @@ main.main-services-reception .reservation fieldset:last-child input[type="submit
 main.main-services-reception .contact-page fieldset:last-child input[type="submit"],
 main.main-services-reception .container-contact-us fieldset:last-child input[type="submit"] {
   margin: 0;
+  border: 1px solid #F06449;
 }
 main.main-reservation .reservation label,
 main.main-reservation .reservation input,
@@ -1474,6 +1475,10 @@ main .temples section div {
   text-align: justify;
   color: #17252a;
   padding: 10px;
+}
+
+.bold {
+  font-weight: bold;
 }
 
 .aside section {
