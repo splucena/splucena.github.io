@@ -442,7 +442,7 @@ html {
 
 body {
   /*background-image: url('../img/rome-italy-temple-2190090-wallpaper.jpg');*/
-  background: linear-gradient(to right, #083D77, #001021);
+  background: linear-gradient(to right, #083d77, #001021);
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -465,7 +465,7 @@ footer {
 
 header {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
-  border-bottom: solid 1px #1E4E83;
+  border-bottom: solid 1px #1e4e83;
 }
 
 nav {
@@ -704,7 +704,7 @@ main.main-services-reception .active,
 main.main-services-reception .dot:hover,
 main.main-services .active,
 main.main-services .dot:hover {
-  background-color: #FFFF00;
+  background-color: #ffff00;
 }
 main.main-temples .fade,
 main.main-contact-page .fade,
@@ -1409,7 +1409,7 @@ main.main-home .tagline h1 {
 main.main-home .tagline h3 {
   padding-left: 20px;
 }
-main.main-home .tagline input[type=submit] {
+main.main-home .tagline input[type="submit"] {
   margin-left: 20px;
   width: auto;
 }
@@ -1453,18 +1453,18 @@ main .temples {
 main .temples section img {
   width: 100%;
   height: 150px;
-  border-top: 1px solid #FEFFFF;
-  border-bottom: 1px solid #FEFFFF;
+  border-top: 1px solid #feffff;
+  border-bottom: 1px solid #feffff;
 }
 main .temples section {
   background-color: #083D77;
   text-align: center;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
   color: #FEFFFF;
-  border: solid 1px #74B3CE;
+  border: solid 1px #74b3ce;
 }
 main .temples section h3 {
-  background-color: #042A2B;
+  background-color: #042a2b;
   padding: 20px;
   margin-top: 0;
   margin-bottom: 0;
@@ -1472,7 +1472,7 @@ main .temples section h3 {
 main .temples section div {
   margin: auto 0;
   text-align: justify;
-  color: #17252A;
+  color: #17252a;
   padding: 10px;
 }
 
@@ -1514,6 +1514,45 @@ main .temples section div {
   text-align: left;
 }
 
+.thank-you {
+  background: none;
+  background-color: none;
+}
+
+.main-thank-you {
+  background: none;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  color: #090809;
+}
+.main-thank-you div {
+  margin: 0 auto;
+}
+
+main.main-attribution {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-column-gap: 10px;
+  width: 60%;
+  height: 100%;
+  border: 1px solid #1C77C3;
+  margin: 0 auto;
+  margin-top: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+  color: #FFFF00;
+}
+main.main-attribution h1 {
+  margin-left: 10px;
+}
+main.main-attribution h3 {
+  margin-top: 0;
+}
+main.main-attribution div {
+  width: 100%;
+  padding: 10px;
+}
+
 footer {
   height: auto;
   /*position: fixed;*/
@@ -1523,7 +1562,7 @@ footer {
   background-color: rgba(8, 61, 119, 0.7);
   text-align: center;
   display: flex;
-  border-top: solid 1px #1E4E83;
+  border-top: solid 1px #1e4e83;
   color: #FFFF00;
 }
 footer > div {
