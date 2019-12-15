@@ -6,8 +6,8 @@
             "email": "Login to your LDS account to send email.",
             "services": ["No clothing rental available", "No cafeteria available", "No patron housing available", "No distribution center nearby"],
             "history": "TBA",
-            "ordinance_schedule": "TBA",
-            "session_schedule": "TBA",
+            "ordinance_schedule": "Call or email for schedule.",
+            "session_schedule": "Call or email for schedule.",
             "temple_closure_schedule": {
                 "2019": ["Tuesday, 24 December 2019 - Wednesday, 25 December 2019", "Tuesday, 31 December 2019"],
                 "2020": ["Wednesday, 1 January 2020",

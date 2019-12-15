@@ -1477,8 +1477,18 @@ main .temples section div {
   padding: 10px;
 }
 
-.bold {
-  font-weight: bold;
+.temple-container p:first-child {
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.temp {
+  font-size: smaller;
+}
+.temp p {
+  margin: 0;
+  padding: 0;
+  text-align: left;
 }
 
 .aside section {
