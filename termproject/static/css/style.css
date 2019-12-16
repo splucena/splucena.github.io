@@ -2132,6 +2132,11 @@ footer > div span {
     grid-column: 1 / span 2;
   }
 
+  main.main-services,
+  main.main-services-temple-missionary,
+  main.main-services-reception {
+    margin-bottom: 0;
+  }
   main.main-services h1,
   main.main-services-temple-missionary h1,
   main.main-services-reception h1 {
