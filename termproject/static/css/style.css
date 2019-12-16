@@ -458,6 +458,14 @@ body {
   grid-gap: 0;
 }
 
+/* IMPORTANT: Troubleshooting horizontal overflow*/
+/*.slide-content .scroller {
+    width: 1024px;
+}
+
+* {
+    border: 1px solid #f00 !important;
+}*/
 header,
 footer {
   grid-column: 1;
@@ -655,11 +663,12 @@ main.main-services-reception .text,
 main.main-services .text {
   color: #FFFF00;
   font-size: 15px;
-  padding: 8px 12px;
+  /*padding: 8px 12px;*/
   position: absolute;
   bottom: 8px;
-  width: 98%;
+  width: 100%;
   text-align: center;
+  margin: 0 auto !important;
 }
 main.main-temples .numbertext,
 main.main-contact-page .numbertext,
@@ -1665,6 +1674,14 @@ footer > div span {
     /*overflow-x: hidden;*/
   }
 
+  /* IMPORTANT: Troubleshooting horizontal overflow
+  .slide-content .scroller {
+      width: 1024px;
+  }
+  
+  * {
+      border: 1px solid #f00 !important;
+  }*/
   header,
   footer {
     grid-column: 1 / span 2;
@@ -1903,14 +1920,6 @@ footer > div span {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
   }
 
-  /* IMPORTANT: Troubleshooting horizontal overflow
-  .slide-content .scroller {
-      width: 1024px;
-  }
-  
-  * {
-      border: 1px solid #f00 !important;
-  }*/
   main.main-home .tagline-temple {
     grid-template-columns: 1fr 1fr;
     margin: 10px;

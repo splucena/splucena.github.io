@@ -1,3 +1,4 @@
+
 html,
 body {
     /*background-image: url('../img/rome-italy-temple-2190090-wallpaper.jpg');
@@ -31,6 +32,15 @@ body {
     grid-gap: 0;
     /*overflow-x: hidden;*/
 }
+
+/* IMPORTANT: Troubleshooting horizontal overflow
+.slide-content .scroller {
+    width: 1024px;
+}
+
+* {
+    border: 1px solid #f00 !important;
+}*/
 
 header,
 footer {
@@ -269,15 +279,6 @@ main.main-services-reception {
         }
     }
 }
-
-/* IMPORTANT: Troubleshooting horizontal overflow
-.slide-content .scroller {
-    width: 1024px;
-}
-
-* {
-    border: 1px solid #f00 !important;
-}*/
 
 main.main-home {
 

@@ -20,6 +20,15 @@ body {
     grid-gap: 0;
 }
 
+/* IMPORTANT: Troubleshooting horizontal overflow*/
+/*.slide-content .scroller {
+    width: 1024px;
+}
+
+* {
+    border: 1px solid #f00 !important;
+}*/
+
 header,
 footer {
     grid-column: 1;
@@ -172,11 +181,12 @@ main.main-services {
     .text {
         color: $font-color-yellow;
         font-size: 15px;
-        padding: 8px 12px;
+        /*padding: 8px 12px;*/
         position: absolute;
         bottom: 8px;
-        width: 98%;
+        width: 100%;
         text-align: center;
+        margin: 0 auto !important;
     }
 
     /* Number text (1/3 etc) */
