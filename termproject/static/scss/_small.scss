@@ -37,6 +37,7 @@ footer {
 header {
     box-shadow: $box-shadow;
     border-bottom: solid 1px #1e4e83;
+    padding-left: 10px;
 }
 
 nav {
@@ -531,7 +532,7 @@ main {
     .temples section div {
         margin: auto 0;
         text-align: justify;
-        color: #17252a;
+        color: $font-color;
         padding: 10px;
     }
 }
