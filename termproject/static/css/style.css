@@ -1632,6 +1632,15 @@ main.main-services-reception .container-contact-us {
   box-shadow: none;
   background-color: transparent;
 }
+main.main-services .contact-page,
+main.main-reservation .contact-page,
+main.main-contact-page .contact-page,
+main.main-services-temple-missionary .contact-page,
+main.main-services-reception .contact-page {
+  grid-template-columns: 100%;
+  margin: 0;
+  margin-top: 10px;
+}
 
 main.main-home {
   display: grid;
