@@ -105,6 +105,7 @@ nav {
 /* main temples */
 main.main-temples {
     margin: auto 0;
+    margin-bottom: 10px;
 
     h1 {
         padding-left: 10px;
@@ -126,7 +127,7 @@ main.main-services {
     .slideshow-wrapper {
         display: grid;
         grid-template-columns: 1fr;
-        margin: 10px;
+        margin: 0;
         z-index: 1;
 
         img {
@@ -246,6 +247,85 @@ main.main-services {
     }
 }
 
+main.main-services,
+main.main-services-temple-missionary,
+main.main-services-reception {
+
+    h1 {
+        color: $font-color-yellow;
+    }
+
+    .contact-us {
+        margin: auto 0;
+        width: 100%;
+
+        .container-contact-us {
+            margin: 0 auto;
+            width: 100%;
+        }
+    }
+
+    .services {
+        border: solid 1px #74B3CE;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-row-gap: 10px;
+        margin: 0;
+        margin-top: 10px;
+        width: auto;
+        padding: 20px;
+        background-color: $bg-rgba;
+        box-shadow: $box-shadow;
+
+        ul {
+            margin: 0;
+            padding-left: 17px;
+
+            li {
+                padding: 5px;
+            }
+        }
+
+        section:last-child div>div {
+            border: none;
+        }
+
+        div.amenities,
+        div.specialized-services {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-column-gap: 10px;
+            grid-row-gap: 10px;
+
+            .container {
+                position: relative;
+                text-align: center;
+            }
+
+            div.top-left {
+                position: absolute;
+                bottom: 0px;
+                left: 0px;
+                height: auto;
+                width: 100%;
+                background-color: $bg-rgba;
+                color: $font-color;
+                border-bottom: 4px solid $font-color-yellow;
+            }
+
+            h3 {
+                text-align: center;
+            }
+
+            img {
+                width: 100%;
+                height: 150px;
+                box-shadow: $box-shadow;
+            }
+        }
+    }
+}
+
 input[type="submit"] {
     background: $button-background;
     /*box-shadow: $box-shadow;*/
@@ -286,6 +366,7 @@ input[type="submit"]:hover {
 }
 
 /* main reservation */
+main.main-services,
 main.main-reservation,
 main.main-contact-page,
 main.main-services-temple-missionary,
