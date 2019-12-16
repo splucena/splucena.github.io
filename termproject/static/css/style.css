@@ -498,6 +498,7 @@ nav .logo {
   margin: 0;
   padding: 0;
   padding-left: 15px;
+  padding-top: 15px;
 }
 nav > ul > li:first-child {
   display: block;
@@ -1554,27 +1555,37 @@ main .temples section div {
   margin: 0 auto;
 }
 
+.attribution {
+  width: 100%;
+  border: solid 1px #FFF !important;
+}
+
 main.main-attribution {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-column-gap: 10px;
-  width: 60%;
-  height: 100%;
   border: 1px solid #1C77C3;
   margin: 0 auto;
-  margin-top: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
   color: #FFFF00;
+  padding: 10px;
+  box-sizing: border-box;
+  width: 100%;
+  word-wrap: break-word;
 }
 main.main-attribution h1 {
-  margin-left: 10px;
+  margin: 0 auto;
 }
 main.main-attribution h3 {
   margin-top: 0;
+  margin: 0 auto;
+}
+main.main-attribution li {
+  overflow: hidden;
+  word-wrap: break-word;
 }
 main.main-attribution div {
-  width: 100%;
-  padding: 10px;
+  overflow: hidden;
+  word-wrap: break-word;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 
 footer {
@@ -1636,6 +1647,10 @@ footer > div span {
     width: 100%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
     height: 200px;
+  }
+
+  main.main-attribution {
+    width: 80%;
   }
 }
 /* end of media query */
@@ -1713,6 +1728,9 @@ footer > div span {
     display: grid;
     padding: 10px;
     grid-template-columns: 15% 45% 40%;
+  }
+  nav .logo {
+    padding-top: 0;
   }
   nav > ul > li:first-child {
     display: none;
@@ -2032,6 +2050,10 @@ footer > div span {
   .aside .details-contact-information p,
   .aside .details-contact-information h3 {
     text-align: center;
+  }
+
+  main.main-attribution {
+    width: 60%;
   }
 
   footer {

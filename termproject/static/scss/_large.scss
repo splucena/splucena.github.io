@@ -78,6 +78,10 @@ nav {
     padding: 10px;
     grid-template-columns: 15% 45% 40%;
 
+    .logo {
+        padding-top: 0;
+    }
+
     >ul>li:first-child {
         display: none;
     }
@@ -419,6 +423,10 @@ main {
             text-align: center;
         }
     }
+}
+
+main.main-attribution {
+    width: 60%;
 }
 
 footer {
