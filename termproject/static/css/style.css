@@ -1561,6 +1561,7 @@ main.main-attribution {
   padding: 10px;
   box-sizing: border-box;
   width: 100%;
+  height: 100%;
   word-wrap: break-word;
 }
 main.main-attribution h1 {
