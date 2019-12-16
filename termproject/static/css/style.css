@@ -1570,10 +1570,6 @@ main.main-attribution h3 {
   margin-top: 0;
   margin: 0 auto;
 }
-main.main-attribution li {
-  overflow: hidden;
-  word-wrap: break-word;
-}
 main.main-attribution div {
   overflow: hidden;
   word-wrap: break-word;
