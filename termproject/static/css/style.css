@@ -1646,6 +1646,7 @@ footer > div span {
     width: 80%;
     border: 1px solid #1C77C3;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
   }
 }
 /* end of media query */
@@ -2051,6 +2052,7 @@ footer > div span {
     width: 60%;
     border: 1px solid #1C77C3;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
   }
 
   footer {
