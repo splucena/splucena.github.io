@@ -568,7 +568,7 @@ main.main-services-reception .slideshow-wrapper,
 main.main-services .slideshow-wrapper {
   display: grid;
   grid-template-columns: 1fr;
-  margin: 0;
+  margin-top: 10px;
   z-index: 1;
 }
 main.main-temples .slideshow-wrapper img,
@@ -768,7 +768,7 @@ main.main-services-temple-missionary .services,
 main.main-services-reception .services {
   border: solid 1px #74B3CE;
   display: grid;
-  grid-template-columns: 100%;
+  grid-template-columns: 1fr;
   grid-row-gap: 10px;
   margin: 0;
   margin-top: 10px;
@@ -894,7 +894,7 @@ main.main-services-temple-missionary,
 main.main-services-reception {
   display: grid;
   grid-template-columns: 1fr;
-  margin: 10px;
+  /*margin: 10px;*/
 }
 main.main-services .reservation,
 main.main-services .contact-page,
@@ -1679,9 +1679,9 @@ main.main-home .temple img {
 main.main-home .temple div {
   margin: 0;
   position: absolute;
-  top: 10px;
-  left: 10px;
-  width: 45%;
+  top: 0;
+  left: 0;
+  width: 100%;
   background-color: rgba(255, 255, 255, 0.6);
   color: #090809;
 }
@@ -1854,8 +1854,41 @@ footer > div span {
 }
 
 @media only screen and (min-width: 560px) {
-  main.main-temples .slideshow-wrapper img {
-    height: 300px;
+  .slideshow-wrapper img {
+    height: 350px;
+  }
+
+  main.main-services .services,
+  main.main-services-temple-missionary .services,
+  main.main-services-reception .services {
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10px;
+  }
+
+  main.main-temples,
+  main.main-contact-page,
+  main.main-home,
+  main.main-reservation,
+  main.main-services-reception,
+  main.main-services-temple-missionary,
+  main.main-services {
+    margin-bottom: 10px;
+  }
+  main.main-temples .reservation,
+  main.main-temples .temples,
+  main.main-contact-page .reservation,
+  main.main-contact-page .temples,
+  main.main-home .reservation,
+  main.main-home .temples,
+  main.main-reservation .reservation,
+  main.main-reservation .temples,
+  main.main-services-reception .reservation,
+  main.main-services-reception .temples,
+  main.main-services-temple-missionary .reservation,
+  main.main-services-temple-missionary .temples,
+  main.main-services .reservation,
+  main.main-services .temples {
+    margin-top: 10px;
   }
 
   main {
@@ -1868,6 +1901,12 @@ footer > div span {
     grid-column-gap: 10px;
     padding-left: 10px;
     padding-right: 10px;
+  }
+
+  main.main-home .temple div {
+    top: 10px;
+    left: 10px;
+    width: 40%;
   }
 
   aside {
@@ -2052,6 +2091,15 @@ footer > div span {
   main.main-services .slideshow-container img {
     height: 400px;
   }
+  main.main-temples .slideshow-wrapper,
+  main.main-contact-page .slideshow-wrapper,
+  main.main-home .slideshow-wrapper,
+  main.main-reservation .slideshow-wrapper,
+  main.main-services-reception .slideshow-wrapper,
+  main.main-services-temple-missionary .slideshow-wrapper,
+  main.main-services .slideshow-wrapper {
+    margin: 10px;
+  }
 
   main.main-temples {
     margin-bottom: 10px;
@@ -2108,7 +2156,7 @@ footer > div span {
     display: grid;
     grid-template-columns: 100%;
     grid-row-gap: 10px;
-    margin: 0;
+    margin: 10px;
     margin-top: 10px;
     width: auto;
     padding: 10px;
@@ -2207,6 +2255,9 @@ footer > div span {
     margin-left: 20px;
     width: auto;
   }
+  main.main-home .temple div {
+    width: 45%;
+  }
 
   main {
     /* temples */
@@ -2246,7 +2297,6 @@ footer > div span {
   main .temples section div {
     text-align: justify;
     padding: 20px;
-    color: #090809;
   }
 
   .aside {

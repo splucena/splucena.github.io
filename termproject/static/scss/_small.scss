@@ -127,7 +127,7 @@ main.main-services {
     .slideshow-wrapper {
         display: grid;
         grid-template-columns: 1fr;
-        margin: 0;
+        margin-top: 10px;
         z-index: 1;
 
         img {
@@ -268,7 +268,7 @@ main.main-services-reception {
     .services {
         border: solid 1px #74B3CE;
         display: grid;
-        grid-template-columns: 100%;
+        grid-template-columns: 1fr;
         grid-row-gap: 10px;
         margin: 0;
         margin-top: 10px;
@@ -373,7 +373,7 @@ main.main-services-temple-missionary,
 main.main-services-reception {
     display: grid;
     grid-template-columns: 1fr;
-    margin: 10px;
+    /*margin: 10px;*/
 
     .reservation,
     .contact-page,
@@ -563,9 +563,9 @@ main.main-home {
         div {
             margin: 0;
             position: absolute;
-            top: 10px;
-            left: 10px;
-            width: 45%;
+            top: 0;
+            left: 0;
+            width: 100%;
             background-color: rgba(255, 255, 255, 0.6);
             color: $font-color-registration-black;
 

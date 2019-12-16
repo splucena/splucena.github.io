@@ -171,8 +171,14 @@ main.main-reservation,
 main.main-services-reception,
 main.main-services-temple-missionary,
 main.main-services {
-    .slideshow-container img {
-        height: 400px;
+    .slideshow-container {
+        img {
+            height: 400px;
+        }
+    }
+
+    .slideshow-wrapper {
+        margin: 10px;
     }
 }
 
@@ -230,7 +236,7 @@ main.main-services-reception {
         display: grid;
         grid-template-columns: 100%;
         grid-row-gap: 10px;
-        margin: 0;
+        margin: 10px;
         margin-top: 10px;
         width: auto;
         padding: 10px;
@@ -318,7 +324,11 @@ main.main-home {
 
     }
 
-
+    .temple {
+        div {
+            width: 45%;
+        }
+    }
 }
 
 main {
@@ -366,7 +376,6 @@ main {
     .temples section div {
         text-align: justify;
         padding: 20px;
-        color: $font-color-registration-black;
     }
 }
 

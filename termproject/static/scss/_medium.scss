@@ -1,6 +1,30 @@
-main.main-temples .slideshow-wrapper {
+.slideshow-wrapper {
     img {
-        height: 300px;
+        height: 350px;
+    }
+}
+
+main.main-services,
+main.main-services-temple-missionary,
+main.main-services-reception {
+    .services {
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 10px;
+    }
+}
+
+main.main-temples,
+main.main-contact-page,
+main.main-home,
+main.main-reservation,
+main.main-services-reception,
+main.main-services-temple-missionary,
+main.main-services {
+    margin-bottom: 10px;
+
+    .reservation,
+    .temples {
+        margin-top: 10px;
     }
 }
 
@@ -14,6 +38,17 @@ main {
         grid-column-gap: 10px;
         padding-left: 10px;
         padding-right: 10px;
+    }
+}
+
+main.main-home {
+    .temple {
+
+        div {
+            top: 10px;
+            left: 10px;
+            width: 40%;
+        }
     }
 }
 
