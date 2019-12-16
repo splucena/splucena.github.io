@@ -618,8 +618,11 @@ main {
     }
 }
 
-main.main-attribution {
+.attribution {
+    background-color: $bg-rgba;
+}
 
+main.main-attribution {
     margin: 0 auto;
     color: $font-color-yellow;
     padding: 10px;

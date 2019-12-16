@@ -1555,6 +1555,10 @@ main .temples section div {
   margin: 0 auto;
 }
 
+.attribution {
+  background-color: rgba(8, 61, 119, 0.7);
+}
+
 main.main-attribution {
   margin: 0 auto;
   color: #FFFF00;
