@@ -89,3 +89,6 @@ var docWidth = document.documentElement.offsetWidth;
     }
 );
 
+function book_now() {
+    window.open("reservation.html", "_self");
+}
