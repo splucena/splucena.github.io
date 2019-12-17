@@ -476,6 +476,15 @@ header {
   border-bottom: solid 1px #1e4e83;
   padding-left: 10px;
 }
+header .company {
+  color: #FEFFFF;
+}
+header .company h1,
+header .company p {
+  margin: 0;
+  padding: 0;
+  margin-left: 15px;
+}
 
 nav {
   display: grid;
@@ -766,12 +775,13 @@ main.main-services-reception .contact-us .container-contact-us {
 main.main-services .services,
 main.main-services-temple-missionary .services,
 main.main-services-reception .services {
-  border: solid 1px #74B3CE;
+  border: solid 1px #74b3ce;
   display: grid;
   grid-template-columns: 1fr;
   grid-row-gap: 10px;
   margin: 0;
   margin-top: 10px;
+  margin-bottom: 10px;
   width: auto;
   padding: 20px;
   background-color: rgba(8, 61, 119, 0.7);
@@ -1637,9 +1647,19 @@ main.main-reservation .contact-page,
 main.main-contact-page .contact-page,
 main.main-services-temple-missionary .contact-page,
 main.main-services-reception .contact-page {
-  grid-template-columns: 100%;
-  margin: 0;
+  width: 90%;
+  margin: 0 auto;
   margin-top: 10px;
+  margin-bottom: 10px;
+}
+main.main-services .reservation,
+main.main-reservation .reservation,
+main.main-contact-page .reservation,
+main.main-services-temple-missionary .reservation,
+main.main-services-reception .reservation {
+  width: 90%;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 main.main-home {
@@ -1651,6 +1671,7 @@ main.main-home .tagline-temple {
   grid-template-columns: 1fr;
   grid-column-gap: 10px;
   grid-row-gap: 10px;
+  margin-top: 10px;
 }
 main.main-home .tagline img {
   width: 150px;
@@ -1705,6 +1726,7 @@ main .temples {
   display: grid;
   grid-template-columns: 1fr;
   grid-row-gap: 10px;
+  margin-top: 10px;
 }
 main .temples section img {
   width: 100%;
@@ -1863,17 +1885,9 @@ footer > div span {
   main.main-services-reception .services {
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 10px;
-  }
-
-  main.main-temples,
-  main.main-contact-page,
-  main.main-home,
-  main.main-reservation,
-  main.main-services-reception,
-  main.main-services-temple-missionary,
-  main.main-services {
     margin-bottom: 10px;
   }
+
   main.main-temples .reservation,
   main.main-temples .temples,
   main.main-contact-page .reservation,
@@ -2240,6 +2254,7 @@ footer > div span {
 
   main.main-home .tagline-temple {
     grid-template-columns: 1fr 1fr;
+    margin-top: 0;
     margin: 10px;
     margin-top: 10px;
   }

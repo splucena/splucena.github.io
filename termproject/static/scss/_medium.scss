@@ -10,6 +10,7 @@ main.main-services-reception {
     .services {
         grid-template-columns: 1fr 1fr;
         grid-column-gap: 10px;
+        margin-bottom: 10px;
     }
 }
 
@@ -20,7 +21,6 @@ main.main-reservation,
 main.main-services-reception,
 main.main-services-temple-missionary,
 main.main-services {
-    margin-bottom: 10px;
 
     .reservation,
     .temples {

@@ -38,6 +38,17 @@ header {
     box-shadow: $box-shadow;
     border-bottom: solid 1px #1e4e83;
     padding-left: 10px;
+
+    .company {
+        color: $font-color;
+
+        h1,
+        p {
+            margin: 0;
+            padding: 0;
+            margin-left: 15px;
+        }
+    }
 }
 
 nav {
@@ -250,7 +261,6 @@ main.main-services {
 main.main-services,
 main.main-services-temple-missionary,
 main.main-services-reception {
-
     h1 {
         color: $font-color-yellow;
     }
@@ -266,12 +276,13 @@ main.main-services-reception {
     }
 
     .services {
-        border: solid 1px #74B3CE;
+        border: solid 1px #74b3ce;
         display: grid;
         grid-template-columns: 1fr;
         grid-row-gap: 10px;
         margin: 0;
         margin-top: 10px;
+        margin-bottom: 10px;
         width: auto;
         padding: 20px;
         background-color: $bg-rgba;
@@ -512,9 +523,16 @@ main.main-services-reception {
     }
 
     .contact-page {
-        grid-template-columns: 100%;
-        margin: 0;
+        width: 90%;
+        margin: 0 auto;
         margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .reservation {
+        width: 90%;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
 }
 
@@ -527,6 +545,7 @@ main.main-home {
         grid-template-columns: 1fr;
         grid-column-gap: 10px;
         grid-row-gap: 10px;
+        margin-top: 10px;
     }
 
     .tagline {
@@ -592,6 +611,7 @@ main {
         display: grid;
         grid-template-columns: 1fr;
         grid-row-gap: 10px;
+        margin-top: 10px;
     }
 
     .temples section img {
