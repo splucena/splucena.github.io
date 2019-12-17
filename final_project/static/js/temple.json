@@ -5,7 +5,7 @@
             "telephone": "(1) 907-348-7890",
             "email": "Login to your LDS account to send email.",
             "services": ["No clothing rental available", "No cafeteria available", "No patron housing available", "No distribution center nearby"],
-            "history": "TBA",
+            "history": "Opened 1998",
             "ordinance_schedule": "Call or email for schedule.",
             "session_schedule": "Call or email for schedule.",
             "temple_closure_schedule": {
@@ -26,7 +26,7 @@
             "telephone": "(63) 2-8635-9111",
             "email": "",
             "services": ["Clothing rental available", "No cafeteria available", "Patron housing available", "Distribution center nearby"],
-            "history": "",
+            "history": "Opened 1984",
             "ordinance_schedule": "",
             "session_schedule": "",
             "temple_closure_schedule": {
@@ -47,7 +47,7 @@
             "telephone": "(1) 808-293-2427",
             "email": "",
             "services": ["Clothing rental available", "Cafeteria available", "No patron housing available", "Distribution center nearby"],
-            "history": "",
+            "history": "Dedicated November 27, 1919",
             "ordinance_schedule": "",
             "session_schedule": "",
             "temple_closure-schedule": {
@@ -84,7 +84,7 @@
             "telephone": "(44) 1342 831-400",
             "email": "",
             "services": ["Clothing rental available", "Cafeteria available", "Patron housing available", "Distribution center nearby"],
-            "history": "",
+            "history": "Opened 1958",
             "ordinance_schedule": "",
             "session_schedule": "",
             "temple_closure-schedule": {
