@@ -7,26 +7,6 @@ fetch(apiURL)
     .then(jsObject => {
         let data_source = jsObject;
         let temples = data_source.temples;
-        /*for (let i = 0; i < forecast_data.length; i++) {
-      let dt_txts = forecast_data[i].dt_txt.split(" ");
-
-      if (dt_txts[1] == "18:00:00") {
-        document.getElementById("forecast_value_" + counter).textContent =
-          forecast_data[i].main.temp;
-        let weather_icon = forecast_data[i].weather[0].icon;
-
-        let img = document.createElement("img");
-        let image_src =
-          "https://openweathermap.org/img/wn/" + weather_icon + "@2x.png";
-        img.setAttribute("src", image_src);
-        let image_alt = forecast_data[i].weather[0].description;
-        img.setAttribute("alt", image_alt);
-
-        document.getElementById("forecast_image_" + counter).appendChild(img);
-        counter = counter + 1;
-      }
-    }
-        }*/
         let temple_ids = ['alaska', 'manila', 'laie', 'london'];
 
         for (let i = 0; i < temple_ids.length; i++) {

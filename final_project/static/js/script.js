@@ -33,10 +33,6 @@ function validate_form(formID) {
     zip = document.getElementById('zip');
 
     if (full_name.checkValidity() && phone_number.checkValidity() && zip.checkValidity()) {
-        /*let win = window.open('thanks.html', '_blank');
-        win.focus();*/
-        //console.log(1);
-        //return displayPopup(btnID);
         var frm = document.getElementById(formID);
         frm.onsubmit = function () {
             displayPopup();
