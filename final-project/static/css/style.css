@@ -494,6 +494,9 @@ header .company {
   padding-top: 10px;
   padding-bottom: 10px;
 }
+header .company h2 {
+  color: #FFFF00;
+}
 header .company h2,
 header .company p {
   margin: 0;

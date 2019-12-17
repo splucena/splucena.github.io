@@ -14,8 +14,7 @@ html {
   -ms-text-size-adjust: 100%;
   /* 2 */
   -webkit-text-size-adjust: 100%;
-  /* 2 */
-}
+  /* 2 */ }
 
 /* Sections
      ========================================================================== */
@@ -23,8 +22,7 @@ html {
    * Remove the margin in all browsers (opinionated).
    */
 body {
-  margin: 0;
-}
+  margin: 0; }
 
 /**
    * Add the correct display in IE 9-.
@@ -35,8 +33,7 @@ footer,
 header,
 nav,
 section {
-  display: block;
-}
+  display: block; }
 
 /**
    * Correct the font size and margin on `h1` elements within `section` and
@@ -44,8 +41,7 @@ section {
    */
 h1 {
   font-size: 2em;
-  margin: 0.67em 0;
-}
+  margin: 0.67em 0; }
 
 /* Grouping content
      ========================================================================== */
@@ -57,15 +53,13 @@ figcaption,
 figure,
 main {
   /* 1 */
-  display: block;
-}
+  display: block; }
 
 /**
    * Add the correct margin in IE 8.
    */
 figure {
-  margin: 1em 40px;
-}
+  margin: 1em 40px; }
 
 /**
    * 1. Add the correct box sizing in Firefox.
@@ -77,8 +71,7 @@ hr {
   height: 0;
   /* 1 */
   overflow: visible;
-  /* 2 */
-}
+  /* 2 */ }
 
 /**
    * 1. Correct the inheritance and scaling of font size in all browsers.
@@ -88,8 +81,7 @@ pre {
   font-family: monospace, monospace;
   /* 1 */
   font-size: 1em;
-  /* 2 */
-}
+  /* 2 */ }
 
 /* Text-level semantics
      ========================================================================== */
@@ -101,8 +93,7 @@ a {
   background-color: transparent;
   /* 1 */
   -webkit-text-decoration-skip: objects;
-  /* 2 */
-}
+  /* 2 */ }
 
 /**
    * 1. Remove the bottom border in Chrome 57- and Firefox 39-.
@@ -114,24 +105,21 @@ abbr[title] {
   text-decoration: underline;
   /* 2 */
   text-decoration: underline dotted;
-  /* 2 */
-}
+  /* 2 */ }
 
 /**
    * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
    */
 b,
 strong {
-  font-weight: inherit;
-}
+  font-weight: inherit; }
 
 /**
    * Add the correct font weight in Chrome, Edge, and Safari.
    */
 b,
 strong {
-  font-weight: bolder;
-}
+  font-weight: bolder; }
 
 /**
    * 1. Correct the inheritance and scaling of font size in all browsers.
@@ -143,30 +131,26 @@ samp {
   font-family: monospace, monospace;
   /* 1 */
   font-size: 1em;
-  /* 2 */
-}
+  /* 2 */ }
 
 /**
    * Add the correct font style in Android 4.3-.
    */
 dfn {
-  font-style: italic;
-}
+  font-style: italic; }
 
 /**
    * Add the correct background and color in IE 9-.
    */
 mark {
   background-color: #ff0;
-  color: #000;
-}
+  color: #000; }
 
 /**
    * Add the correct font size in all browsers.
    */
 small {
-  font-size: 80%;
-}
+  font-size: 80%; }
 
 /**
    * Prevent `sub` and `sup` elements from affecting the line height in
@@ -177,16 +161,13 @@ sup {
   font-size: 75%;
   line-height: 0;
   position: relative;
-  vertical-align: baseline;
-}
+  vertical-align: baseline; }
 
 sub {
-  bottom: -0.25em;
-}
+  bottom: -0.25em; }
 
 sup {
-  top: -0.5em;
-}
+  top: -0.5em; }
 
 /* Embedded content
      ========================================================================== */
@@ -195,30 +176,26 @@ sup {
    */
 audio,
 video {
-  display: inline-block;
-}
+  display: inline-block; }
 
 /**
    * Add the correct display in iOS 4-7.
    */
 audio:not([controls]) {
   display: none;
-  height: 0;
-}
+  height: 0; }
 
 /**
    * Remove the border on images inside links in IE 10-.
    */
 img {
-  border-style: none;
-}
+  border-style: none; }
 
 /**
    * Hide the overflow in IE.
    */
 svg:not(:root) {
-  overflow: hidden;
-}
+  overflow: hidden; }
 
 /* Forms
      ========================================================================== */
@@ -238,8 +215,7 @@ textarea {
   line-height: 1.15;
   /* 1 */
   margin: 0;
-  /* 2 */
-}
+  /* 2 */ }
 
 /**
    * Show the overflow in IE.
@@ -248,8 +224,7 @@ textarea {
 button,
 input {
   /* 1 */
-  overflow: visible;
-}
+  overflow: visible; }
 
 /**
    * Remove the inheritance of text transform in Edge, Firefox, and IE.
@@ -258,8 +233,7 @@ input {
 button,
 select {
   /* 1 */
-  text-transform: none;
-}
+  text-transform: none; }
 
 /**
    * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
@@ -271,8 +245,7 @@ html [type="button"],
 [type="reset"],
 [type="submit"] {
   -webkit-appearance: button;
-  /* 2 */
-}
+  /* 2 */ }
 
 /**
    * Remove the inner border and padding in Firefox.
@@ -282,8 +255,7 @@ button::-moz-focus-inner,
 [type="reset"]::-moz-focus-inner,
 [type="submit"]::-moz-focus-inner {
   border-style: none;
-  padding: 0;
-}
+  padding: 0; }
 
 /**
    * Restore the focus styles unset by the previous rule.
@@ -292,15 +264,13 @@ button:-moz-focusring,
 [type="button"]:-moz-focusring,
 [type="reset"]:-moz-focusring,
 [type="submit"]:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
+  outline: 1px dotted ButtonText; }
 
 /**
    * Correct the padding in Firefox.
    */
 fieldset {
-  padding: 0.35em 0.75em 0.625em;
-}
+  padding: 0.35em 0.75em 0.625em; }
 
 /**
    * 1. Correct the text wrapping in Edge and IE.
@@ -320,8 +290,7 @@ legend {
   padding: 0;
   /* 3 */
   white-space: normal;
-  /* 1 */
-}
+  /* 1 */ }
 
 /**
    * 1. Add the correct display in IE 9-.
@@ -331,15 +300,13 @@ progress {
   display: inline-block;
   /* 1 */
   vertical-align: baseline;
-  /* 2 */
-}
+  /* 2 */ }
 
 /**
    * Remove the default vertical scrollbar in IE.
    */
 textarea {
-  overflow: auto;
-}
+  overflow: auto; }
 
 /**
    * 1. Add the correct box sizing in IE 10-.
@@ -350,16 +317,14 @@ textarea {
   box-sizing: border-box;
   /* 1 */
   padding: 0;
-  /* 2 */
-}
+  /* 2 */ }
 
 /**
    * Correct the cursor style of increment and decrement buttons in Chrome.
    */
 [type="number"]::-webkit-inner-spin-button,
 [type="number"]::-webkit-outer-spin-button {
-  height: auto;
-}
+  height: auto; }
 
 /**
    * 1. Correct the odd appearance in Chrome and Safari.
@@ -369,16 +334,14 @@ textarea {
   -webkit-appearance: textfield;
   /* 1 */
   outline-offset: -2px;
-  /* 2 */
-}
+  /* 2 */ }
 
 /**
    * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
    */
 [type="search"]::-webkit-search-cancel-button,
 [type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
+  -webkit-appearance: none; }
 
 /**
    * 1. Correct the inability to style clickable types in iOS and Safari.
@@ -388,8 +351,7 @@ textarea {
   -webkit-appearance: button;
   /* 1 */
   font: inherit;
-  /* 2 */
-}
+  /* 2 */ }
 
 /* Interactive
      ========================================================================== */
@@ -399,15 +361,13 @@ textarea {
    */
 details,
 menu {
-  display: block;
-}
+  display: block; }
 
 /*
    * Add the correct display in all browsers.
    */
 summary {
-  display: list-item;
-}
+  display: list-item; }
 
 /* Scripting
      ========================================================================== */
@@ -415,15 +375,13 @@ summary {
    * Add the correct display in IE 9-.
    */
 canvas {
-  display: inline-block;
-}
+  display: inline-block; }
 
 /**
    * Add the correct display in IE.
    */
 template {
-  display: none;
-}
+  display: none; }
 
 /* Hidden
      ========================================================================== */
@@ -431,8 +389,7 @@ template {
    * Add the correct display in IE 10-.
    */
 [hidden] {
-  display: none;
-}
+  display: none; }
 
 /*$bg-rgba: rgba(30, 144, 255, 0.8);*/
 /*$bg-rgba: rgba(23, 37, 42, 0.8);*/
@@ -440,8 +397,7 @@ template {
 /*https://coolors.co/1e90ff-000000-ffffff-b89e97-decccc*/
 html {
   font-size: 100%;
-  font-family: 'Roboto', sans-serif;
-}
+  font-family: 'Roboto', sans-serif; }
 
 h1,
 h2,
@@ -449,8 +405,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Arvo', serif;
-}
+  font-family: 'Arvo', serif; }
 
 body {
   /*background-image: url('../img/rome-italy-temple-2190090-wallpaper.jpg');*/
@@ -466,8 +421,7 @@ body {
   grid-template-columns: 100%;
   grid-template-rows: fit-content(100%) fit-content(100%) fit-content(100%);
   grid-row-gap: 0;
-  grid-gap: 0;
-}
+  grid-gap: 0; }
 
 /* IMPORTANT: Troubleshooting horizontal overflow*/
 /*.slide-content .scroller {
@@ -479,88 +433,71 @@ body {
 }*/
 header,
 footer {
-  grid-column: 1;
-}
+  grid-column: 1; }
 
 header {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
   border-bottom: solid 1px #1e4e83;
-  padding-left: 10px;
-}
-header .company {
-  color: #FEFFFF;
-  padding: 0;
-  margin: 0;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-header .company h2,
-header .company p {
-  margin: 0;
-  padding: 0;
-}
+  padding-left: 10px; }
+  header .company {
+    color: #FEFFFF;
+    padding: 0;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 10px; }
+    header .company h2,
+    header .company p {
+      margin: 0;
+      padding: 0; }
 
 nav {
   display: grid;
   grid-template-columns: 1fr;
   background: rgba(8, 61, 119, 0.7);
-  z-index: 1000;
-}
-nav li.active {
-  background: linear-gradient(to bottom, #F06449, #FE4A49);
-}
-nav li.active a {
-  color: #FEFFFF;
-}
-nav .responsive li {
-  display: block;
-}
-nav .logo {
-  width: 145px;
-  height: 25;
-  margin: 0;
-  padding: 0;
-  padding-left: 15px;
-  padding-top: 15px;
-}
-nav > ul > li:first-child {
-  display: block;
-}
-nav ul {
-  margin: 0;
-  padding-left: 10px;
-  background: transparent;
-  list-style: none;
-}
-nav li {
-  color: #FFFF00;
-  background: transparent;
-  display: inline-block;
-  position: relative;
-  text-decoration: none;
-  padding: 5px;
-  transition-duration: 0.5s;
-}
-nav ul li ul li:last-child {
-  padding-bottom: 0;
-}
-nav ul li {
-  display: none;
-}
-nav ul li a {
-  text-decoration: none;
-  color: #FFFF00;
-}
+  z-index: 1000; }
+  nav li.active {
+    background: linear-gradient(to bottom, #F06449, #FE4A49); }
+  nav li.active a {
+    color: #FEFFFF; }
+  nav .responsive li {
+    display: block; }
+  nav .logo {
+    width: 145px;
+    height: 25;
+    margin: 0;
+    padding: 0;
+    padding-left: 15px;
+    padding-top: 15px; }
+  nav > ul > li:first-child {
+    display: block; }
+  nav ul {
+    margin: 0;
+    padding-left: 10px;
+    background: transparent;
+    list-style: none; }
+  nav li {
+    color: #FFFF00;
+    background: transparent;
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    padding: 5px;
+    transition-duration: 0.5s; }
+  nav ul li ul li:last-child {
+    padding-bottom: 0; }
+  nav ul li {
+    display: none; }
+    nav ul li a {
+      text-decoration: none;
+      color: #FFFF00; }
 
 /* main temples */
 main.main-temples {
   margin: auto 0;
-  margin-bottom: 10px;
-}
-main.main-temples h1 {
-  padding-left: 10px;
-  padding-right: 10px;
-}
+  margin-bottom: 10px; }
+  main.main-temples h1 {
+    padding-left: 10px;
+    padding-right: 10px; }
 
 main.main-temples,
 main.main-contact-page,
@@ -580,212 +517,190 @@ main.main-services {
   /* Adelaide, Australia */
   /* Number text (1/3 etc) */
   /* The dots/bullets/indicators */
-  /* Fading animation */
-}
-main.main-temples .slideshow-wrapper,
-main.main-contact-page .slideshow-wrapper,
-main.main-home .slideshow-wrapper,
-main.main-reservation .slideshow-wrapper,
-main.main-services-temple-missionary .slideshow-wrapper,
-main.main-services-reception .slideshow-wrapper,
-main.main-services .slideshow-wrapper {
-  display: grid;
-  grid-template-columns: 1fr;
-  margin-top: 10px;
-  z-index: 1;
-}
-main.main-temples .slideshow-wrapper img,
-main.main-contact-page .slideshow-wrapper img,
-main.main-home .slideshow-wrapper img,
-main.main-reservation .slideshow-wrapper img,
-main.main-services-temple-missionary .slideshow-wrapper img,
-main.main-services-reception .slideshow-wrapper img,
-main.main-services .slideshow-wrapper img {
-  width: 100%;
-  height: 150px;
-  /*border: solid 1px #1E4E83;*/
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
-  z-index: 1;
-}
-main.main-temples .slideshow-container,
-main.main-contact-page .slideshow-container,
-main.main-home .slideshow-container,
-main.main-reservation .slideshow-container,
-main.main-services-temple-missionary .slideshow-container,
-main.main-services-reception .slideshow-container,
-main.main-services .slideshow-container {
-  width: 100%;
-  position: relative;
-  /*margin: auto;*/
-}
-main.main-temples .mySlides,
-main.main-contact-page .mySlides,
-main.main-home .mySlides,
-main.main-reservation .mySlides,
-main.main-services-temple-missionary .mySlides,
-main.main-services-reception .mySlides,
-main.main-services .mySlides {
-  display: none;
-}
-main.main-temples .prev,
-main.main-temples .next,
-main.main-contact-page .prev,
-main.main-contact-page .next,
-main.main-home .prev,
-main.main-home .next,
-main.main-reservation .prev,
-main.main-reservation .next,
-main.main-services-temple-missionary .prev,
-main.main-services-temple-missionary .next,
-main.main-services-reception .prev,
-main.main-services-reception .next,
-main.main-services .prev,
-main.main-services .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: #FFFF00;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-main.main-temples .next,
-main.main-contact-page .next,
-main.main-home .next,
-main.main-reservation .next,
-main.main-services-temple-missionary .next,
-main.main-services-reception .next,
-main.main-services .next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-main.main-temples .prev:hover,
-main.main-temples .next:hover,
-main.main-contact-page .prev:hover,
-main.main-contact-page .next:hover,
-main.main-home .prev:hover,
-main.main-home .next:hover,
-main.main-reservation .prev:hover,
-main.main-reservation .next:hover,
-main.main-services-temple-missionary .prev:hover,
-main.main-services-temple-missionary .next:hover,
-main.main-services-reception .prev:hover,
-main.main-services-reception .next:hover,
-main.main-services .prev:hover,
-main.main-services .next:hover {
-  background-color: rgba(8, 61, 119, 0.7);
-}
-main.main-temples .text,
-main.main-contact-page .text,
-main.main-home .text,
-main.main-reservation .text,
-main.main-services-temple-missionary .text,
-main.main-services-reception .text,
-main.main-services .text {
-  color: #FFFF00;
-  font-size: 15px;
-  /*padding: 8px 12px;*/
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-  margin: 0 auto !important;
-}
-main.main-temples .numbertext,
-main.main-contact-page .numbertext,
-main.main-home .numbertext,
-main.main-reservation .numbertext,
-main.main-services-temple-missionary .numbertext,
-main.main-services-reception .numbertext,
-main.main-services .numbertext {
-  color: #FFFF00;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-main.main-temples .dot,
-main.main-contact-page .dot,
-main.main-home .dot,
-main.main-reservation .dot,
-main.main-services-temple-missionary .dot,
-main.main-services-reception .dot,
-main.main-services .dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #083d77;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-main.main-temples .active,
-main.main-temples .dot:hover,
-main.main-contact-page .active,
-main.main-contact-page .dot:hover,
-main.main-home .active,
-main.main-home .dot:hover,
-main.main-reservation .active,
-main.main-reservation .dot:hover,
-main.main-services-temple-missionary .active,
-main.main-services-temple-missionary .dot:hover,
-main.main-services-reception .active,
-main.main-services-reception .dot:hover,
-main.main-services .active,
-main.main-services .dot:hover {
-  background-color: #ffff00;
-}
-main.main-temples .fade,
-main.main-contact-page .fade,
-main.main-home .fade,
-main.main-reservation .fade,
-main.main-services-temple-missionary .fade,
-main.main-services-reception .fade,
-main.main-services .fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
+  /* Fading animation */ }
+  main.main-temples .slideshow-wrapper,
+  main.main-contact-page .slideshow-wrapper,
+  main.main-home .slideshow-wrapper,
+  main.main-reservation .slideshow-wrapper,
+  main.main-services-temple-missionary .slideshow-wrapper,
+  main.main-services-reception .slideshow-wrapper,
+  main.main-services .slideshow-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 10px;
+    z-index: 1; }
+    main.main-temples .slideshow-wrapper img,
+    main.main-contact-page .slideshow-wrapper img,
+    main.main-home .slideshow-wrapper img,
+    main.main-reservation .slideshow-wrapper img,
+    main.main-services-temple-missionary .slideshow-wrapper img,
+    main.main-services-reception .slideshow-wrapper img,
+    main.main-services .slideshow-wrapper img {
+      width: 100%;
+      height: 150px;
+      /*border: solid 1px #1E4E83;*/
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+      z-index: 1; }
+  main.main-temples .slideshow-container,
+  main.main-contact-page .slideshow-container,
+  main.main-home .slideshow-container,
+  main.main-reservation .slideshow-container,
+  main.main-services-temple-missionary .slideshow-container,
+  main.main-services-reception .slideshow-container,
+  main.main-services .slideshow-container {
+    width: 100%;
+    position: relative;
+    /*margin: auto;*/ }
+  main.main-temples .mySlides,
+  main.main-contact-page .mySlides,
+  main.main-home .mySlides,
+  main.main-reservation .mySlides,
+  main.main-services-temple-missionary .mySlides,
+  main.main-services-reception .mySlides,
+  main.main-services .mySlides {
+    display: none; }
+  main.main-temples .prev,
+  main.main-temples .next,
+  main.main-contact-page .prev,
+  main.main-contact-page .next,
+  main.main-home .prev,
+  main.main-home .next,
+  main.main-reservation .prev,
+  main.main-reservation .next,
+  main.main-services-temple-missionary .prev,
+  main.main-services-temple-missionary .next,
+  main.main-services-reception .prev,
+  main.main-services-reception .next,
+  main.main-services .prev,
+  main.main-services .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: #FFFF00;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none; }
+  main.main-temples .next,
+  main.main-contact-page .next,
+  main.main-home .next,
+  main.main-reservation .next,
+  main.main-services-temple-missionary .next,
+  main.main-services-reception .next,
+  main.main-services .next {
+    right: 0;
+    border-radius: 3px 0 0 3px; }
+  main.main-temples .prev:hover,
+  main.main-temples .next:hover,
+  main.main-contact-page .prev:hover,
+  main.main-contact-page .next:hover,
+  main.main-home .prev:hover,
+  main.main-home .next:hover,
+  main.main-reservation .prev:hover,
+  main.main-reservation .next:hover,
+  main.main-services-temple-missionary .prev:hover,
+  main.main-services-temple-missionary .next:hover,
+  main.main-services-reception .prev:hover,
+  main.main-services-reception .next:hover,
+  main.main-services .prev:hover,
+  main.main-services .next:hover {
+    background-color: rgba(8, 61, 119, 0.7); }
+  main.main-temples .text,
+  main.main-contact-page .text,
+  main.main-home .text,
+  main.main-reservation .text,
+  main.main-services-temple-missionary .text,
+  main.main-services-reception .text,
+  main.main-services .text {
+    color: #FFFF00;
+    font-size: 15px;
+    /*padding: 8px 12px;*/
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto !important; }
+  main.main-temples .numbertext,
+  main.main-contact-page .numbertext,
+  main.main-home .numbertext,
+  main.main-reservation .numbertext,
+  main.main-services-temple-missionary .numbertext,
+  main.main-services-reception .numbertext,
+  main.main-services .numbertext {
+    color: #FFFF00;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0; }
+  main.main-temples .dot,
+  main.main-contact-page .dot,
+  main.main-home .dot,
+  main.main-reservation .dot,
+  main.main-services-temple-missionary .dot,
+  main.main-services-reception .dot,
+  main.main-services .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #083d77;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease; }
+  main.main-temples .active,
+  main.main-temples .dot:hover,
+  main.main-contact-page .active,
+  main.main-contact-page .dot:hover,
+  main.main-home .active,
+  main.main-home .dot:hover,
+  main.main-reservation .active,
+  main.main-reservation .dot:hover,
+  main.main-services-temple-missionary .active,
+  main.main-services-temple-missionary .dot:hover,
+  main.main-services-reception .active,
+  main.main-services-reception .dot:hover,
+  main.main-services .active,
+  main.main-services .dot:hover {
+    background-color: #ffff00; }
+  main.main-temples .fade,
+  main.main-contact-page .fade,
+  main.main-home .fade,
+  main.main-reservation .fade,
+  main.main-services-temple-missionary .fade,
+  main.main-services-reception .fade,
+  main.main-services .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s; }
 @-webkit-keyframes fade {
   from {
-    opacity: 0.4;
-  }
+    opacity: 0.4; }
   to {
-    opacity: 1;
-  }
-}
+    opacity: 1; } }
 @keyframes fade {
   from {
-    opacity: 0.4;
-  }
+    opacity: 0.4; }
   to {
-    opacity: 1;
-  }
-}
+    opacity: 1; } }
 main.main-services h1,
 main.main-services-temple-missionary h1,
 main.main-services-reception h1 {
-  color: #FFFF00;
-}
+  color: #FFFF00; }
 main.main-services .contact-us,
 main.main-services-temple-missionary .contact-us,
 main.main-services-reception .contact-us {
   margin: auto 0;
-  width: 100%;
-}
-main.main-services .contact-us .container-contact-us,
-main.main-services-temple-missionary .contact-us .container-contact-us,
-main.main-services-reception .contact-us .container-contact-us {
-  margin: 0 auto;
-  width: 100%;
-}
+  width: 100%; }
+  main.main-services .contact-us .container-contact-us,
+  main.main-services-temple-missionary .contact-us .container-contact-us,
+  main.main-services-reception .contact-us .container-contact-us {
+    margin: 0 auto;
+    width: 100%; }
 main.main-services .services,
 main.main-services-temple-missionary .services,
 main.main-services-reception .services {
@@ -799,77 +714,68 @@ main.main-services-reception .services {
   width: auto;
   padding: 20px;
   background-color: rgba(8, 61, 119, 0.7);
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
-}
-main.main-services .services ul,
-main.main-services-temple-missionary .services ul,
-main.main-services-reception .services ul {
-  margin: 0;
-  padding-left: 17px;
-}
-main.main-services .services ul li,
-main.main-services-temple-missionary .services ul li,
-main.main-services-reception .services ul li {
-  padding: 5px;
-}
-main.main-services .services section:last-child div > div,
-main.main-services-temple-missionary .services section:last-child div > div,
-main.main-services-reception .services section:last-child div > div {
-  border: none;
-}
-main.main-services .services div.amenities,
-main.main-services .services div.specialized-services,
-main.main-services-temple-missionary .services div.amenities,
-main.main-services-temple-missionary .services div.specialized-services,
-main.main-services-reception .services div.amenities,
-main.main-services-reception .services div.specialized-services {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-column-gap: 10px;
-  grid-row-gap: 10px;
-}
-main.main-services .services div.amenities .container,
-main.main-services .services div.specialized-services .container,
-main.main-services-temple-missionary .services div.amenities .container,
-main.main-services-temple-missionary .services div.specialized-services .container,
-main.main-services-reception .services div.amenities .container,
-main.main-services-reception .services div.specialized-services .container {
-  position: relative;
-  text-align: center;
-}
-main.main-services .services div.amenities div.top-left,
-main.main-services .services div.specialized-services div.top-left,
-main.main-services-temple-missionary .services div.amenities div.top-left,
-main.main-services-temple-missionary .services div.specialized-services div.top-left,
-main.main-services-reception .services div.amenities div.top-left,
-main.main-services-reception .services div.specialized-services div.top-left {
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
-  height: auto;
-  width: 100%;
-  background-color: rgba(8, 61, 119, 0.7);
-  color: #FEFFFF;
-  border-bottom: 4px solid #FFFF00;
-}
-main.main-services .services div.amenities h3,
-main.main-services .services div.specialized-services h3,
-main.main-services-temple-missionary .services div.amenities h3,
-main.main-services-temple-missionary .services div.specialized-services h3,
-main.main-services-reception .services div.amenities h3,
-main.main-services-reception .services div.specialized-services h3 {
-  text-align: center;
-}
-main.main-services .services div.amenities img,
-main.main-services .services div.specialized-services img,
-main.main-services-temple-missionary .services div.amenities img,
-main.main-services-temple-missionary .services div.specialized-services img,
-main.main-services-reception .services div.amenities img,
-main.main-services-reception .services div.specialized-services img {
-  width: 100%;
-  height: 150px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
-}
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.1); }
+  main.main-services .services ul,
+  main.main-services-temple-missionary .services ul,
+  main.main-services-reception .services ul {
+    margin: 0;
+    padding-left: 17px; }
+    main.main-services .services ul li,
+    main.main-services-temple-missionary .services ul li,
+    main.main-services-reception .services ul li {
+      padding: 5px; }
+  main.main-services .services section:last-child div > div,
+  main.main-services-temple-missionary .services section:last-child div > div,
+  main.main-services-reception .services section:last-child div > div {
+    border: none; }
+  main.main-services .services div.amenities,
+  main.main-services .services div.specialized-services,
+  main.main-services-temple-missionary .services div.amenities,
+  main.main-services-temple-missionary .services div.specialized-services,
+  main.main-services-reception .services div.amenities,
+  main.main-services-reception .services div.specialized-services {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px; }
+    main.main-services .services div.amenities .container,
+    main.main-services .services div.specialized-services .container,
+    main.main-services-temple-missionary .services div.amenities .container,
+    main.main-services-temple-missionary .services div.specialized-services .container,
+    main.main-services-reception .services div.amenities .container,
+    main.main-services-reception .services div.specialized-services .container {
+      position: relative;
+      text-align: center; }
+    main.main-services .services div.amenities div.top-left,
+    main.main-services .services div.specialized-services div.top-left,
+    main.main-services-temple-missionary .services div.amenities div.top-left,
+    main.main-services-temple-missionary .services div.specialized-services div.top-left,
+    main.main-services-reception .services div.amenities div.top-left,
+    main.main-services-reception .services div.specialized-services div.top-left {
+      position: absolute;
+      bottom: 0px;
+      left: 0px;
+      height: auto;
+      width: 100%;
+      background-color: rgba(8, 61, 119, 0.7);
+      color: #FEFFFF;
+      border-bottom: 4px solid #FFFF00; }
+    main.main-services .services div.amenities h3,
+    main.main-services .services div.specialized-services h3,
+    main.main-services-temple-missionary .services div.amenities h3,
+    main.main-services-temple-missionary .services div.specialized-services h3,
+    main.main-services-reception .services div.amenities h3,
+    main.main-services-reception .services div.specialized-services h3 {
+      text-align: center; }
+    main.main-services .services div.amenities img,
+    main.main-services .services div.specialized-services img,
+    main.main-services-temple-missionary .services div.amenities img,
+    main.main-services-temple-missionary .services div.specialized-services img,
+    main.main-services-reception .services div.amenities img,
+    main.main-services-reception .services div.specialized-services img {
+      width: 100%;
+      height: 150px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.1); }
 
 input[type="submit"] {
   background: #FE4A49;
@@ -893,8 +799,7 @@ input[type="submit"] {
   border: solid 1px #FE4A49;
   text-decoration: none;
   cursor: pointer;
-  width: 100%;
-}
+  width: 100%; }
 
 input[type="submit"]:hover {
   border: solid 1px #F06449;
@@ -907,8 +812,7 @@ input[type="submit"]:hover {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
-  text-decoration: none;
-}
+  text-decoration: none; }
 
 /* main reservation */
 main.main-services,
@@ -918,816 +822,785 @@ main.main-services-temple-missionary,
 main.main-services-reception {
   display: grid;
   grid-template-columns: 1fr;
-  /*margin: 10px;*/
-}
-main.main-services .reservation,
-main.main-services .contact-page,
-main.main-services .container-contact-us,
-main.main-reservation .reservation,
-main.main-reservation .contact-page,
-main.main-reservation .container-contact-us,
-main.main-contact-page .reservation,
-main.main-contact-page .contact-page,
-main.main-contact-page .container-contact-us,
-main.main-services-temple-missionary .reservation,
-main.main-services-temple-missionary .contact-page,
-main.main-services-temple-missionary .container-contact-us,
-main.main-services-reception .reservation,
-main.main-services-reception .contact-page,
-main.main-services-reception .container-contact-us {
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  flex-basis: 100%;
-  flex: 1;
-  color: #FFFF00;
-  background: rgba(8, 61, 119, 0.7);
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
-  padding: 10px;
-}
-main.main-services .reservation fieldset,
-main.main-services .contact-page fieldset,
-main.main-services .container-contact-us fieldset,
-main.main-reservation .reservation fieldset,
-main.main-reservation .contact-page fieldset,
-main.main-reservation .container-contact-us fieldset,
-main.main-contact-page .reservation fieldset,
-main.main-contact-page .contact-page fieldset,
-main.main-contact-page .container-contact-us fieldset,
-main.main-services-temple-missionary .reservation fieldset,
-main.main-services-temple-missionary .contact-page fieldset,
-main.main-services-temple-missionary .container-contact-us fieldset,
-main.main-services-reception .reservation fieldset,
-main.main-services-reception .contact-page fieldset,
-main.main-services-reception .container-contact-us fieldset {
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  flex-basis: 100%;
-  flex: 1;
-  padding: 15px;
-  box-sizing: border-box;
-  border-radius: 0;
-  /*border: 1px solid $font-color-yellow;*/
-  border: none;
-  margin-bottom: 20px;
-  margin-top: 10px;
-}
-main.main-services .reservation fieldset legend,
-main.main-services .contact-page fieldset legend,
-main.main-services .container-contact-us fieldset legend,
-main.main-reservation .reservation fieldset legend,
-main.main-reservation .contact-page fieldset legend,
-main.main-reservation .container-contact-us fieldset legend,
-main.main-contact-page .reservation fieldset legend,
-main.main-contact-page .contact-page fieldset legend,
-main.main-contact-page .container-contact-us fieldset legend,
-main.main-services-temple-missionary .reservation fieldset legend,
-main.main-services-temple-missionary .contact-page fieldset legend,
-main.main-services-temple-missionary .container-contact-us fieldset legend,
-main.main-services-reception .reservation fieldset legend,
-main.main-services-reception .contact-page fieldset legend,
-main.main-services-reception .container-contact-us fieldset legend {
-  font-weight: bold;
-}
-main.main-services .reservation fieldset:last-child,
-main.main-services .contact-page fieldset:last-child,
-main.main-services .container-contact-us fieldset:last-child,
-main.main-reservation .reservation fieldset:last-child,
-main.main-reservation .contact-page fieldset:last-child,
-main.main-reservation .container-contact-us fieldset:last-child,
-main.main-contact-page .reservation fieldset:last-child,
-main.main-contact-page .contact-page fieldset:last-child,
-main.main-contact-page .container-contact-us fieldset:last-child,
-main.main-services-temple-missionary .reservation fieldset:last-child,
-main.main-services-temple-missionary .contact-page fieldset:last-child,
-main.main-services-temple-missionary .container-contact-us fieldset:last-child,
-main.main-services-reception .reservation fieldset:last-child,
-main.main-services-reception .contact-page fieldset:last-child,
-main.main-services-reception .container-contact-us fieldset:last-child {
-  padding: 0;
-  margin-top: -20px;
-  margin-right: 21px;
-  margin-left: 21px;
-}
-main.main-services .reservation fieldset:last-child legend,
-main.main-services .contact-page fieldset:last-child legend,
-main.main-services .container-contact-us fieldset:last-child legend,
-main.main-reservation .reservation fieldset:last-child legend,
-main.main-reservation .contact-page fieldset:last-child legend,
-main.main-reservation .container-contact-us fieldset:last-child legend,
-main.main-contact-page .reservation fieldset:last-child legend,
-main.main-contact-page .contact-page fieldset:last-child legend,
-main.main-contact-page .container-contact-us fieldset:last-child legend,
-main.main-services-temple-missionary .reservation fieldset:last-child legend,
-main.main-services-temple-missionary .contact-page fieldset:last-child legend,
-main.main-services-temple-missionary .container-contact-us fieldset:last-child legend,
-main.main-services-reception .reservation fieldset:last-child legend,
-main.main-services-reception .contact-page fieldset:last-child legend,
-main.main-services-reception .container-contact-us fieldset:last-child legend {
-  padding: 0;
-  margin: 0;
-}
-main.main-services .reservation fieldset:last-child input[type="submit"],
-main.main-services .contact-page fieldset:last-child input[type="submit"],
-main.main-services .container-contact-us fieldset:last-child input[type="submit"],
-main.main-reservation .reservation fieldset:last-child input[type="submit"],
-main.main-reservation .contact-page fieldset:last-child input[type="submit"],
-main.main-reservation .container-contact-us fieldset:last-child input[type="submit"],
-main.main-contact-page .reservation fieldset:last-child input[type="submit"],
-main.main-contact-page .contact-page fieldset:last-child input[type="submit"],
-main.main-contact-page .container-contact-us fieldset:last-child input[type="submit"],
-main.main-services-temple-missionary .reservation fieldset:last-child input[type="submit"],
-main.main-services-temple-missionary .contact-page fieldset:last-child input[type="submit"],
-main.main-services-temple-missionary .container-contact-us fieldset:last-child input[type="submit"],
-main.main-services-reception .reservation fieldset:last-child input[type="submit"],
-main.main-services-reception .contact-page fieldset:last-child input[type="submit"],
-main.main-services-reception .container-contact-us fieldset:last-child input[type="submit"] {
-  margin: 0;
-  border: 1px solid #F06449;
-}
-main.main-services .reservation label,
-main.main-services .reservation input,
-main.main-services .reservation select,
-main.main-services .reservation textarea,
-main.main-services .contact-page label,
-main.main-services .contact-page input,
-main.main-services .contact-page select,
-main.main-services .contact-page textarea,
-main.main-services .container-contact-us label,
-main.main-services .container-contact-us input,
-main.main-services .container-contact-us select,
-main.main-services .container-contact-us textarea,
-main.main-reservation .reservation label,
-main.main-reservation .reservation input,
-main.main-reservation .reservation select,
-main.main-reservation .reservation textarea,
-main.main-reservation .contact-page label,
-main.main-reservation .contact-page input,
-main.main-reservation .contact-page select,
-main.main-reservation .contact-page textarea,
-main.main-reservation .container-contact-us label,
-main.main-reservation .container-contact-us input,
-main.main-reservation .container-contact-us select,
-main.main-reservation .container-contact-us textarea,
-main.main-contact-page .reservation label,
-main.main-contact-page .reservation input,
-main.main-contact-page .reservation select,
-main.main-contact-page .reservation textarea,
-main.main-contact-page .contact-page label,
-main.main-contact-page .contact-page input,
-main.main-contact-page .contact-page select,
-main.main-contact-page .contact-page textarea,
-main.main-contact-page .container-contact-us label,
-main.main-contact-page .container-contact-us input,
-main.main-contact-page .container-contact-us select,
-main.main-contact-page .container-contact-us textarea,
-main.main-services-temple-missionary .reservation label,
-main.main-services-temple-missionary .reservation input,
-main.main-services-temple-missionary .reservation select,
-main.main-services-temple-missionary .reservation textarea,
-main.main-services-temple-missionary .contact-page label,
-main.main-services-temple-missionary .contact-page input,
-main.main-services-temple-missionary .contact-page select,
-main.main-services-temple-missionary .contact-page textarea,
-main.main-services-temple-missionary .container-contact-us label,
-main.main-services-temple-missionary .container-contact-us input,
-main.main-services-temple-missionary .container-contact-us select,
-main.main-services-temple-missionary .container-contact-us textarea,
-main.main-services-reception .reservation label,
-main.main-services-reception .reservation input,
-main.main-services-reception .reservation select,
-main.main-services-reception .reservation textarea,
-main.main-services-reception .contact-page label,
-main.main-services-reception .contact-page input,
-main.main-services-reception .contact-page select,
-main.main-services-reception .contact-page textarea,
-main.main-services-reception .container-contact-us label,
-main.main-services-reception .container-contact-us input,
-main.main-services-reception .container-contact-us select,
-main.main-services-reception .container-contact-us textarea {
-  display: block;
-  padding: 5px;
-}
-main.main-services .reservation input,
-main.main-services .reservation select,
-main.main-services .reservation button,
-main.main-services .reservation textarea,
-main.main-services .contact-page input,
-main.main-services .contact-page select,
-main.main-services .contact-page button,
-main.main-services .contact-page textarea,
-main.main-services .container-contact-us input,
-main.main-services .container-contact-us select,
-main.main-services .container-contact-us button,
-main.main-services .container-contact-us textarea,
-main.main-reservation .reservation input,
-main.main-reservation .reservation select,
-main.main-reservation .reservation button,
-main.main-reservation .reservation textarea,
-main.main-reservation .contact-page input,
-main.main-reservation .contact-page select,
-main.main-reservation .contact-page button,
-main.main-reservation .contact-page textarea,
-main.main-reservation .container-contact-us input,
-main.main-reservation .container-contact-us select,
-main.main-reservation .container-contact-us button,
-main.main-reservation .container-contact-us textarea,
-main.main-contact-page .reservation input,
-main.main-contact-page .reservation select,
-main.main-contact-page .reservation button,
-main.main-contact-page .reservation textarea,
-main.main-contact-page .contact-page input,
-main.main-contact-page .contact-page select,
-main.main-contact-page .contact-page button,
-main.main-contact-page .contact-page textarea,
-main.main-contact-page .container-contact-us input,
-main.main-contact-page .container-contact-us select,
-main.main-contact-page .container-contact-us button,
-main.main-contact-page .container-contact-us textarea,
-main.main-services-temple-missionary .reservation input,
-main.main-services-temple-missionary .reservation select,
-main.main-services-temple-missionary .reservation button,
-main.main-services-temple-missionary .reservation textarea,
-main.main-services-temple-missionary .contact-page input,
-main.main-services-temple-missionary .contact-page select,
-main.main-services-temple-missionary .contact-page button,
-main.main-services-temple-missionary .contact-page textarea,
-main.main-services-temple-missionary .container-contact-us input,
-main.main-services-temple-missionary .container-contact-us select,
-main.main-services-temple-missionary .container-contact-us button,
-main.main-services-temple-missionary .container-contact-us textarea,
-main.main-services-reception .reservation input,
-main.main-services-reception .reservation select,
-main.main-services-reception .reservation button,
-main.main-services-reception .reservation textarea,
-main.main-services-reception .contact-page input,
-main.main-services-reception .contact-page select,
-main.main-services-reception .contact-page button,
-main.main-services-reception .contact-page textarea,
-main.main-services-reception .container-contact-us input,
-main.main-services-reception .container-contact-us select,
-main.main-services-reception .container-contact-us button,
-main.main-services-reception .container-contact-us textarea {
-  padding: 12px;
-  border: 1px solid gray;
-  border-radius: 0;
-  resize: vertical;
-  box-sizing: border-box;
-  margin-top: 10px;
-}
-main.main-services .reservation input[type="text"],
-main.main-services .reservation input[type="tel"],
-main.main-services .reservation input[type="number"],
-main.main-services .reservation input[type="email"],
-main.main-services .reservation textarea,
-main.main-services .contact-page input[type="text"],
-main.main-services .contact-page input[type="tel"],
-main.main-services .contact-page input[type="number"],
-main.main-services .contact-page input[type="email"],
-main.main-services .contact-page textarea,
-main.main-services .container-contact-us input[type="text"],
-main.main-services .container-contact-us input[type="tel"],
-main.main-services .container-contact-us input[type="number"],
-main.main-services .container-contact-us input[type="email"],
-main.main-services .container-contact-us textarea,
-main.main-reservation .reservation input[type="text"],
-main.main-reservation .reservation input[type="tel"],
-main.main-reservation .reservation input[type="number"],
-main.main-reservation .reservation input[type="email"],
-main.main-reservation .reservation textarea,
-main.main-reservation .contact-page input[type="text"],
-main.main-reservation .contact-page input[type="tel"],
-main.main-reservation .contact-page input[type="number"],
-main.main-reservation .contact-page input[type="email"],
-main.main-reservation .contact-page textarea,
-main.main-reservation .container-contact-us input[type="text"],
-main.main-reservation .container-contact-us input[type="tel"],
-main.main-reservation .container-contact-us input[type="number"],
-main.main-reservation .container-contact-us input[type="email"],
-main.main-reservation .container-contact-us textarea,
-main.main-contact-page .reservation input[type="text"],
-main.main-contact-page .reservation input[type="tel"],
-main.main-contact-page .reservation input[type="number"],
-main.main-contact-page .reservation input[type="email"],
-main.main-contact-page .reservation textarea,
-main.main-contact-page .contact-page input[type="text"],
-main.main-contact-page .contact-page input[type="tel"],
-main.main-contact-page .contact-page input[type="number"],
-main.main-contact-page .contact-page input[type="email"],
-main.main-contact-page .contact-page textarea,
-main.main-contact-page .container-contact-us input[type="text"],
-main.main-contact-page .container-contact-us input[type="tel"],
-main.main-contact-page .container-contact-us input[type="number"],
-main.main-contact-page .container-contact-us input[type="email"],
-main.main-contact-page .container-contact-us textarea,
-main.main-services-temple-missionary .reservation input[type="text"],
-main.main-services-temple-missionary .reservation input[type="tel"],
-main.main-services-temple-missionary .reservation input[type="number"],
-main.main-services-temple-missionary .reservation input[type="email"],
-main.main-services-temple-missionary .reservation textarea,
-main.main-services-temple-missionary .contact-page input[type="text"],
-main.main-services-temple-missionary .contact-page input[type="tel"],
-main.main-services-temple-missionary .contact-page input[type="number"],
-main.main-services-temple-missionary .contact-page input[type="email"],
-main.main-services-temple-missionary .contact-page textarea,
-main.main-services-temple-missionary .container-contact-us input[type="text"],
-main.main-services-temple-missionary .container-contact-us input[type="tel"],
-main.main-services-temple-missionary .container-contact-us input[type="number"],
-main.main-services-temple-missionary .container-contact-us input[type="email"],
-main.main-services-temple-missionary .container-contact-us textarea,
-main.main-services-reception .reservation input[type="text"],
-main.main-services-reception .reservation input[type="tel"],
-main.main-services-reception .reservation input[type="number"],
-main.main-services-reception .reservation input[type="email"],
-main.main-services-reception .reservation textarea,
-main.main-services-reception .contact-page input[type="text"],
-main.main-services-reception .contact-page input[type="tel"],
-main.main-services-reception .contact-page input[type="number"],
-main.main-services-reception .contact-page input[type="email"],
-main.main-services-reception .contact-page textarea,
-main.main-services-reception .container-contact-us input[type="text"],
-main.main-services-reception .container-contact-us input[type="tel"],
-main.main-services-reception .container-contact-us input[type="number"],
-main.main-services-reception .container-contact-us input[type="email"],
-main.main-services-reception .container-contact-us textarea {
-  width: 100%;
-  display: block;
-  background-color: #dddddd;
-}
-main.main-services .reservation input[type="range"],
-main.main-services .contact-page input[type="range"],
-main.main-services .container-contact-us input[type="range"],
-main.main-reservation .reservation input[type="range"],
-main.main-reservation .contact-page input[type="range"],
-main.main-reservation .container-contact-us input[type="range"],
-main.main-contact-page .reservation input[type="range"],
-main.main-contact-page .contact-page input[type="range"],
-main.main-contact-page .container-contact-us input[type="range"],
-main.main-services-temple-missionary .reservation input[type="range"],
-main.main-services-temple-missionary .contact-page input[type="range"],
-main.main-services-temple-missionary .container-contact-us input[type="range"],
-main.main-services-reception .reservation input[type="range"],
-main.main-services-reception .contact-page input[type="range"],
-main.main-services-reception .container-contact-us input[type="range"] {
-  width: 50%;
-  display: block;
-}
-main.main-services .reservation input[type="date"],
-main.main-services .contact-page input[type="date"],
-main.main-services .container-contact-us input[type="date"],
-main.main-reservation .reservation input[type="date"],
-main.main-reservation .contact-page input[type="date"],
-main.main-reservation .container-contact-us input[type="date"],
-main.main-contact-page .reservation input[type="date"],
-main.main-contact-page .contact-page input[type="date"],
-main.main-contact-page .container-contact-us input[type="date"],
-main.main-services-temple-missionary .reservation input[type="date"],
-main.main-services-temple-missionary .contact-page input[type="date"],
-main.main-services-temple-missionary .container-contact-us input[type="date"],
-main.main-services-reception .reservation input[type="date"],
-main.main-services-reception .contact-page input[type="date"],
-main.main-services-reception .container-contact-us input[type="date"] {
-  background-color: #dddddd;
-}
-main.main-services .reservation input[type="radio"],
-main.main-services .contact-page input[type="radio"],
-main.main-services .container-contact-us input[type="radio"],
-main.main-reservation .reservation input[type="radio"],
-main.main-reservation .contact-page input[type="radio"],
-main.main-reservation .container-contact-us input[type="radio"],
-main.main-contact-page .reservation input[type="radio"],
-main.main-contact-page .contact-page input[type="radio"],
-main.main-contact-page .container-contact-us input[type="radio"],
-main.main-services-temple-missionary .reservation input[type="radio"],
-main.main-services-temple-missionary .contact-page input[type="radio"],
-main.main-services-temple-missionary .container-contact-us input[type="radio"],
-main.main-services-reception .reservation input[type="radio"],
-main.main-services-reception .contact-page input[type="radio"],
-main.main-services-reception .container-contact-us input[type="radio"] {
-  display: inline;
-}
-main.main-services .reservation fieldset:not(:nth-child(3)) label,
-main.main-services .contact-page fieldset:not(:nth-child(3)) label,
-main.main-services .container-contact-us fieldset:not(:nth-child(3)) label,
-main.main-reservation .reservation fieldset:not(:nth-child(3)) label,
-main.main-reservation .contact-page fieldset:not(:nth-child(3)) label,
-main.main-reservation .container-contact-us fieldset:not(:nth-child(3)) label,
-main.main-contact-page .reservation fieldset:not(:nth-child(3)) label,
-main.main-contact-page .contact-page fieldset:not(:nth-child(3)) label,
-main.main-contact-page .container-contact-us fieldset:not(:nth-child(3)) label,
-main.main-services-temple-missionary .reservation fieldset:not(:nth-child(3)) label,
-main.main-services-temple-missionary .contact-page fieldset:not(:nth-child(3)) label,
-main.main-services-temple-missionary .container-contact-us fieldset:not(:nth-child(3)) label,
-main.main-services-reception .reservation fieldset:not(:nth-child(3)) label,
-main.main-services-reception .contact-page fieldset:not(:nth-child(3)) label,
-main.main-services-reception .container-contact-us fieldset:not(:nth-child(3)) label {
-  margin-top: 10px;
-}
-main.main-services .reservation input[type="text"]:focus,
-main.main-services .reservation input[type="email"]:focus,
-main.main-services .reservation input[type="number"]:focus,
-main.main-services .reservation input[type="tel"]:focus,
-main.main-services .reservation textarea:focus,
-main.main-services .reservation input[type="date"]:focus,
-main.main-services .reservation select:focus,
-main.main-services .contact-page input[type="text"]:focus,
-main.main-services .contact-page input[type="email"]:focus,
-main.main-services .contact-page input[type="number"]:focus,
-main.main-services .contact-page input[type="tel"]:focus,
-main.main-services .contact-page textarea:focus,
-main.main-services .contact-page input[type="date"]:focus,
-main.main-services .contact-page select:focus,
-main.main-services .container-contact-us input[type="text"]:focus,
-main.main-services .container-contact-us input[type="email"]:focus,
-main.main-services .container-contact-us input[type="number"]:focus,
-main.main-services .container-contact-us input[type="tel"]:focus,
-main.main-services .container-contact-us textarea:focus,
-main.main-services .container-contact-us input[type="date"]:focus,
-main.main-services .container-contact-us select:focus,
-main.main-reservation .reservation input[type="text"]:focus,
-main.main-reservation .reservation input[type="email"]:focus,
-main.main-reservation .reservation input[type="number"]:focus,
-main.main-reservation .reservation input[type="tel"]:focus,
-main.main-reservation .reservation textarea:focus,
-main.main-reservation .reservation input[type="date"]:focus,
-main.main-reservation .reservation select:focus,
-main.main-reservation .contact-page input[type="text"]:focus,
-main.main-reservation .contact-page input[type="email"]:focus,
-main.main-reservation .contact-page input[type="number"]:focus,
-main.main-reservation .contact-page input[type="tel"]:focus,
-main.main-reservation .contact-page textarea:focus,
-main.main-reservation .contact-page input[type="date"]:focus,
-main.main-reservation .contact-page select:focus,
-main.main-reservation .container-contact-us input[type="text"]:focus,
-main.main-reservation .container-contact-us input[type="email"]:focus,
-main.main-reservation .container-contact-us input[type="number"]:focus,
-main.main-reservation .container-contact-us input[type="tel"]:focus,
-main.main-reservation .container-contact-us textarea:focus,
-main.main-reservation .container-contact-us input[type="date"]:focus,
-main.main-reservation .container-contact-us select:focus,
-main.main-contact-page .reservation input[type="text"]:focus,
-main.main-contact-page .reservation input[type="email"]:focus,
-main.main-contact-page .reservation input[type="number"]:focus,
-main.main-contact-page .reservation input[type="tel"]:focus,
-main.main-contact-page .reservation textarea:focus,
-main.main-contact-page .reservation input[type="date"]:focus,
-main.main-contact-page .reservation select:focus,
-main.main-contact-page .contact-page input[type="text"]:focus,
-main.main-contact-page .contact-page input[type="email"]:focus,
-main.main-contact-page .contact-page input[type="number"]:focus,
-main.main-contact-page .contact-page input[type="tel"]:focus,
-main.main-contact-page .contact-page textarea:focus,
-main.main-contact-page .contact-page input[type="date"]:focus,
-main.main-contact-page .contact-page select:focus,
-main.main-contact-page .container-contact-us input[type="text"]:focus,
-main.main-contact-page .container-contact-us input[type="email"]:focus,
-main.main-contact-page .container-contact-us input[type="number"]:focus,
-main.main-contact-page .container-contact-us input[type="tel"]:focus,
-main.main-contact-page .container-contact-us textarea:focus,
-main.main-contact-page .container-contact-us input[type="date"]:focus,
-main.main-contact-page .container-contact-us select:focus,
-main.main-services-temple-missionary .reservation input[type="text"]:focus,
-main.main-services-temple-missionary .reservation input[type="email"]:focus,
-main.main-services-temple-missionary .reservation input[type="number"]:focus,
-main.main-services-temple-missionary .reservation input[type="tel"]:focus,
-main.main-services-temple-missionary .reservation textarea:focus,
-main.main-services-temple-missionary .reservation input[type="date"]:focus,
-main.main-services-temple-missionary .reservation select:focus,
-main.main-services-temple-missionary .contact-page input[type="text"]:focus,
-main.main-services-temple-missionary .contact-page input[type="email"]:focus,
-main.main-services-temple-missionary .contact-page input[type="number"]:focus,
-main.main-services-temple-missionary .contact-page input[type="tel"]:focus,
-main.main-services-temple-missionary .contact-page textarea:focus,
-main.main-services-temple-missionary .contact-page input[type="date"]:focus,
-main.main-services-temple-missionary .contact-page select:focus,
-main.main-services-temple-missionary .container-contact-us input[type="text"]:focus,
-main.main-services-temple-missionary .container-contact-us input[type="email"]:focus,
-main.main-services-temple-missionary .container-contact-us input[type="number"]:focus,
-main.main-services-temple-missionary .container-contact-us input[type="tel"]:focus,
-main.main-services-temple-missionary .container-contact-us textarea:focus,
-main.main-services-temple-missionary .container-contact-us input[type="date"]:focus,
-main.main-services-temple-missionary .container-contact-us select:focus,
-main.main-services-reception .reservation input[type="text"]:focus,
-main.main-services-reception .reservation input[type="email"]:focus,
-main.main-services-reception .reservation input[type="number"]:focus,
-main.main-services-reception .reservation input[type="tel"]:focus,
-main.main-services-reception .reservation textarea:focus,
-main.main-services-reception .reservation input[type="date"]:focus,
-main.main-services-reception .reservation select:focus,
-main.main-services-reception .contact-page input[type="text"]:focus,
-main.main-services-reception .contact-page input[type="email"]:focus,
-main.main-services-reception .contact-page input[type="number"]:focus,
-main.main-services-reception .contact-page input[type="tel"]:focus,
-main.main-services-reception .contact-page textarea:focus,
-main.main-services-reception .contact-page input[type="date"]:focus,
-main.main-services-reception .contact-page select:focus,
-main.main-services-reception .container-contact-us input[type="text"]:focus,
-main.main-services-reception .container-contact-us input[type="email"]:focus,
-main.main-services-reception .container-contact-us input[type="number"]:focus,
-main.main-services-reception .container-contact-us input[type="tel"]:focus,
-main.main-services-reception .container-contact-us textarea:focus,
-main.main-services-reception .container-contact-us input[type="date"]:focus,
-main.main-services-reception .container-contact-us select:focus {
-  border: solid 1px gray;
-  background-color: #e0e0e0;
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 10px rgba(82, 168, 236, 0.8);
-  outline: none;
-}
-main.main-services .reservation input[type="text"]:valid,
-main.main-services .reservation input[type="email"]:valid,
-main.main-services .reservation input[type="number"]:valid,
-main.main-services .reservation input[type="tel"]:valid,
-main.main-services .reservation textarea:valid,
-main.main-services .reservation input[type="date"]:valid,
-main.main-services .reservation select:valid,
-main.main-services .contact-page input[type="text"]:valid,
-main.main-services .contact-page input[type="email"]:valid,
-main.main-services .contact-page input[type="number"]:valid,
-main.main-services .contact-page input[type="tel"]:valid,
-main.main-services .contact-page textarea:valid,
-main.main-services .contact-page input[type="date"]:valid,
-main.main-services .contact-page select:valid,
-main.main-services .container-contact-us input[type="text"]:valid,
-main.main-services .container-contact-us input[type="email"]:valid,
-main.main-services .container-contact-us input[type="number"]:valid,
-main.main-services .container-contact-us input[type="tel"]:valid,
-main.main-services .container-contact-us textarea:valid,
-main.main-services .container-contact-us input[type="date"]:valid,
-main.main-services .container-contact-us select:valid,
-main.main-reservation .reservation input[type="text"]:valid,
-main.main-reservation .reservation input[type="email"]:valid,
-main.main-reservation .reservation input[type="number"]:valid,
-main.main-reservation .reservation input[type="tel"]:valid,
-main.main-reservation .reservation textarea:valid,
-main.main-reservation .reservation input[type="date"]:valid,
-main.main-reservation .reservation select:valid,
-main.main-reservation .contact-page input[type="text"]:valid,
-main.main-reservation .contact-page input[type="email"]:valid,
-main.main-reservation .contact-page input[type="number"]:valid,
-main.main-reservation .contact-page input[type="tel"]:valid,
-main.main-reservation .contact-page textarea:valid,
-main.main-reservation .contact-page input[type="date"]:valid,
-main.main-reservation .contact-page select:valid,
-main.main-reservation .container-contact-us input[type="text"]:valid,
-main.main-reservation .container-contact-us input[type="email"]:valid,
-main.main-reservation .container-contact-us input[type="number"]:valid,
-main.main-reservation .container-contact-us input[type="tel"]:valid,
-main.main-reservation .container-contact-us textarea:valid,
-main.main-reservation .container-contact-us input[type="date"]:valid,
-main.main-reservation .container-contact-us select:valid,
-main.main-contact-page .reservation input[type="text"]:valid,
-main.main-contact-page .reservation input[type="email"]:valid,
-main.main-contact-page .reservation input[type="number"]:valid,
-main.main-contact-page .reservation input[type="tel"]:valid,
-main.main-contact-page .reservation textarea:valid,
-main.main-contact-page .reservation input[type="date"]:valid,
-main.main-contact-page .reservation select:valid,
-main.main-contact-page .contact-page input[type="text"]:valid,
-main.main-contact-page .contact-page input[type="email"]:valid,
-main.main-contact-page .contact-page input[type="number"]:valid,
-main.main-contact-page .contact-page input[type="tel"]:valid,
-main.main-contact-page .contact-page textarea:valid,
-main.main-contact-page .contact-page input[type="date"]:valid,
-main.main-contact-page .contact-page select:valid,
-main.main-contact-page .container-contact-us input[type="text"]:valid,
-main.main-contact-page .container-contact-us input[type="email"]:valid,
-main.main-contact-page .container-contact-us input[type="number"]:valid,
-main.main-contact-page .container-contact-us input[type="tel"]:valid,
-main.main-contact-page .container-contact-us textarea:valid,
-main.main-contact-page .container-contact-us input[type="date"]:valid,
-main.main-contact-page .container-contact-us select:valid,
-main.main-services-temple-missionary .reservation input[type="text"]:valid,
-main.main-services-temple-missionary .reservation input[type="email"]:valid,
-main.main-services-temple-missionary .reservation input[type="number"]:valid,
-main.main-services-temple-missionary .reservation input[type="tel"]:valid,
-main.main-services-temple-missionary .reservation textarea:valid,
-main.main-services-temple-missionary .reservation input[type="date"]:valid,
-main.main-services-temple-missionary .reservation select:valid,
-main.main-services-temple-missionary .contact-page input[type="text"]:valid,
-main.main-services-temple-missionary .contact-page input[type="email"]:valid,
-main.main-services-temple-missionary .contact-page input[type="number"]:valid,
-main.main-services-temple-missionary .contact-page input[type="tel"]:valid,
-main.main-services-temple-missionary .contact-page textarea:valid,
-main.main-services-temple-missionary .contact-page input[type="date"]:valid,
-main.main-services-temple-missionary .contact-page select:valid,
-main.main-services-temple-missionary .container-contact-us input[type="text"]:valid,
-main.main-services-temple-missionary .container-contact-us input[type="email"]:valid,
-main.main-services-temple-missionary .container-contact-us input[type="number"]:valid,
-main.main-services-temple-missionary .container-contact-us input[type="tel"]:valid,
-main.main-services-temple-missionary .container-contact-us textarea:valid,
-main.main-services-temple-missionary .container-contact-us input[type="date"]:valid,
-main.main-services-temple-missionary .container-contact-us select:valid,
-main.main-services-reception .reservation input[type="text"]:valid,
-main.main-services-reception .reservation input[type="email"]:valid,
-main.main-services-reception .reservation input[type="number"]:valid,
-main.main-services-reception .reservation input[type="tel"]:valid,
-main.main-services-reception .reservation textarea:valid,
-main.main-services-reception .reservation input[type="date"]:valid,
-main.main-services-reception .reservation select:valid,
-main.main-services-reception .contact-page input[type="text"]:valid,
-main.main-services-reception .contact-page input[type="email"]:valid,
-main.main-services-reception .contact-page input[type="number"]:valid,
-main.main-services-reception .contact-page input[type="tel"]:valid,
-main.main-services-reception .contact-page textarea:valid,
-main.main-services-reception .contact-page input[type="date"]:valid,
-main.main-services-reception .contact-page select:valid,
-main.main-services-reception .container-contact-us input[type="text"]:valid,
-main.main-services-reception .container-contact-us input[type="email"]:valid,
-main.main-services-reception .container-contact-us input[type="number"]:valid,
-main.main-services-reception .container-contact-us input[type="tel"]:valid,
-main.main-services-reception .container-contact-us textarea:valid,
-main.main-services-reception .container-contact-us input[type="date"]:valid,
-main.main-services-reception .container-contact-us select:valid {
-  border-left: solid 5px green;
-}
-main.main-services .reservation input[type="text"]:invalid,
-main.main-services .reservation input[type="email"]:invalid,
-main.main-services .reservation input[type="number"]:invalid,
-main.main-services .reservation input[type="tel"]:invalid,
-main.main-services .reservation textarea:invalid,
-main.main-services .reservation input[type="date"]:invalid,
-main.main-services .reservation select:invalid,
-main.main-services .contact-page input[type="text"]:invalid,
-main.main-services .contact-page input[type="email"]:invalid,
-main.main-services .contact-page input[type="number"]:invalid,
-main.main-services .contact-page input[type="tel"]:invalid,
-main.main-services .contact-page textarea:invalid,
-main.main-services .contact-page input[type="date"]:invalid,
-main.main-services .contact-page select:invalid,
-main.main-services .container-contact-us input[type="text"]:invalid,
-main.main-services .container-contact-us input[type="email"]:invalid,
-main.main-services .container-contact-us input[type="number"]:invalid,
-main.main-services .container-contact-us input[type="tel"]:invalid,
-main.main-services .container-contact-us textarea:invalid,
-main.main-services .container-contact-us input[type="date"]:invalid,
-main.main-services .container-contact-us select:invalid,
-main.main-reservation .reservation input[type="text"]:invalid,
-main.main-reservation .reservation input[type="email"]:invalid,
-main.main-reservation .reservation input[type="number"]:invalid,
-main.main-reservation .reservation input[type="tel"]:invalid,
-main.main-reservation .reservation textarea:invalid,
-main.main-reservation .reservation input[type="date"]:invalid,
-main.main-reservation .reservation select:invalid,
-main.main-reservation .contact-page input[type="text"]:invalid,
-main.main-reservation .contact-page input[type="email"]:invalid,
-main.main-reservation .contact-page input[type="number"]:invalid,
-main.main-reservation .contact-page input[type="tel"]:invalid,
-main.main-reservation .contact-page textarea:invalid,
-main.main-reservation .contact-page input[type="date"]:invalid,
-main.main-reservation .contact-page select:invalid,
-main.main-reservation .container-contact-us input[type="text"]:invalid,
-main.main-reservation .container-contact-us input[type="email"]:invalid,
-main.main-reservation .container-contact-us input[type="number"]:invalid,
-main.main-reservation .container-contact-us input[type="tel"]:invalid,
-main.main-reservation .container-contact-us textarea:invalid,
-main.main-reservation .container-contact-us input[type="date"]:invalid,
-main.main-reservation .container-contact-us select:invalid,
-main.main-contact-page .reservation input[type="text"]:invalid,
-main.main-contact-page .reservation input[type="email"]:invalid,
-main.main-contact-page .reservation input[type="number"]:invalid,
-main.main-contact-page .reservation input[type="tel"]:invalid,
-main.main-contact-page .reservation textarea:invalid,
-main.main-contact-page .reservation input[type="date"]:invalid,
-main.main-contact-page .reservation select:invalid,
-main.main-contact-page .contact-page input[type="text"]:invalid,
-main.main-contact-page .contact-page input[type="email"]:invalid,
-main.main-contact-page .contact-page input[type="number"]:invalid,
-main.main-contact-page .contact-page input[type="tel"]:invalid,
-main.main-contact-page .contact-page textarea:invalid,
-main.main-contact-page .contact-page input[type="date"]:invalid,
-main.main-contact-page .contact-page select:invalid,
-main.main-contact-page .container-contact-us input[type="text"]:invalid,
-main.main-contact-page .container-contact-us input[type="email"]:invalid,
-main.main-contact-page .container-contact-us input[type="number"]:invalid,
-main.main-contact-page .container-contact-us input[type="tel"]:invalid,
-main.main-contact-page .container-contact-us textarea:invalid,
-main.main-contact-page .container-contact-us input[type="date"]:invalid,
-main.main-contact-page .container-contact-us select:invalid,
-main.main-services-temple-missionary .reservation input[type="text"]:invalid,
-main.main-services-temple-missionary .reservation input[type="email"]:invalid,
-main.main-services-temple-missionary .reservation input[type="number"]:invalid,
-main.main-services-temple-missionary .reservation input[type="tel"]:invalid,
-main.main-services-temple-missionary .reservation textarea:invalid,
-main.main-services-temple-missionary .reservation input[type="date"]:invalid,
-main.main-services-temple-missionary .reservation select:invalid,
-main.main-services-temple-missionary .contact-page input[type="text"]:invalid,
-main.main-services-temple-missionary .contact-page input[type="email"]:invalid,
-main.main-services-temple-missionary .contact-page input[type="number"]:invalid,
-main.main-services-temple-missionary .contact-page input[type="tel"]:invalid,
-main.main-services-temple-missionary .contact-page textarea:invalid,
-main.main-services-temple-missionary .contact-page input[type="date"]:invalid,
-main.main-services-temple-missionary .contact-page select:invalid,
-main.main-services-temple-missionary .container-contact-us input[type="text"]:invalid,
-main.main-services-temple-missionary .container-contact-us input[type="email"]:invalid,
-main.main-services-temple-missionary .container-contact-us input[type="number"]:invalid,
-main.main-services-temple-missionary .container-contact-us input[type="tel"]:invalid,
-main.main-services-temple-missionary .container-contact-us textarea:invalid,
-main.main-services-temple-missionary .container-contact-us input[type="date"]:invalid,
-main.main-services-temple-missionary .container-contact-us select:invalid,
-main.main-services-reception .reservation input[type="text"]:invalid,
-main.main-services-reception .reservation input[type="email"]:invalid,
-main.main-services-reception .reservation input[type="number"]:invalid,
-main.main-services-reception .reservation input[type="tel"]:invalid,
-main.main-services-reception .reservation textarea:invalid,
-main.main-services-reception .reservation input[type="date"]:invalid,
-main.main-services-reception .reservation select:invalid,
-main.main-services-reception .contact-page input[type="text"]:invalid,
-main.main-services-reception .contact-page input[type="email"]:invalid,
-main.main-services-reception .contact-page input[type="number"]:invalid,
-main.main-services-reception .contact-page input[type="tel"]:invalid,
-main.main-services-reception .contact-page textarea:invalid,
-main.main-services-reception .contact-page input[type="date"]:invalid,
-main.main-services-reception .contact-page select:invalid,
-main.main-services-reception .container-contact-us input[type="text"]:invalid,
-main.main-services-reception .container-contact-us input[type="email"]:invalid,
-main.main-services-reception .container-contact-us input[type="number"]:invalid,
-main.main-services-reception .container-contact-us input[type="tel"]:invalid,
-main.main-services-reception .container-contact-us textarea:invalid,
-main.main-services-reception .container-contact-us input[type="date"]:invalid,
-main.main-services-reception .container-contact-us select:invalid {
-  border-left: solid 5px red;
-}
-main.main-services .container-contact-us,
-main.main-reservation .container-contact-us,
-main.main-contact-page .container-contact-us,
-main.main-services-temple-missionary .container-contact-us,
-main.main-services-reception .container-contact-us {
-  box-shadow: none;
-  background-color: transparent;
-}
-main.main-services .contact-page,
-main.main-reservation .contact-page,
-main.main-contact-page .contact-page,
-main.main-services-temple-missionary .contact-page,
-main.main-services-reception .contact-page {
-  width: 90%;
-  margin: 0 auto;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-main.main-services .reservation,
-main.main-reservation .reservation,
-main.main-contact-page .reservation,
-main.main-services-temple-missionary .reservation,
-main.main-services-reception .reservation {
-  width: 90%;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
+  /*margin: 10px;*/ }
+  main.main-services .reservation,
+  main.main-services .contact-page,
+  main.main-services .container-contact-us,
+  main.main-reservation .reservation,
+  main.main-reservation .contact-page,
+  main.main-reservation .container-contact-us,
+  main.main-contact-page .reservation,
+  main.main-contact-page .contact-page,
+  main.main-contact-page .container-contact-us,
+  main.main-services-temple-missionary .reservation,
+  main.main-services-temple-missionary .contact-page,
+  main.main-services-temple-missionary .container-contact-us,
+  main.main-services-reception .reservation,
+  main.main-services-reception .contact-page,
+  main.main-services-reception .container-contact-us {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+    color: #FFFF00;
+    background: rgba(8, 61, 119, 0.7);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    padding: 10px; }
+    main.main-services .reservation fieldset,
+    main.main-services .contact-page fieldset,
+    main.main-services .container-contact-us fieldset,
+    main.main-reservation .reservation fieldset,
+    main.main-reservation .contact-page fieldset,
+    main.main-reservation .container-contact-us fieldset,
+    main.main-contact-page .reservation fieldset,
+    main.main-contact-page .contact-page fieldset,
+    main.main-contact-page .container-contact-us fieldset,
+    main.main-services-temple-missionary .reservation fieldset,
+    main.main-services-temple-missionary .contact-page fieldset,
+    main.main-services-temple-missionary .container-contact-us fieldset,
+    main.main-services-reception .reservation fieldset,
+    main.main-services-reception .contact-page fieldset,
+    main.main-services-reception .container-contact-us fieldset {
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      flex-basis: 100%;
+      flex: 1;
+      padding: 15px;
+      box-sizing: border-box;
+      border-radius: 0;
+      /*border: 1px solid $font-color-yellow;*/
+      border: none;
+      margin-bottom: 20px;
+      margin-top: 10px; }
+    main.main-services .reservation fieldset legend,
+    main.main-services .contact-page fieldset legend,
+    main.main-services .container-contact-us fieldset legend,
+    main.main-reservation .reservation fieldset legend,
+    main.main-reservation .contact-page fieldset legend,
+    main.main-reservation .container-contact-us fieldset legend,
+    main.main-contact-page .reservation fieldset legend,
+    main.main-contact-page .contact-page fieldset legend,
+    main.main-contact-page .container-contact-us fieldset legend,
+    main.main-services-temple-missionary .reservation fieldset legend,
+    main.main-services-temple-missionary .contact-page fieldset legend,
+    main.main-services-temple-missionary .container-contact-us fieldset legend,
+    main.main-services-reception .reservation fieldset legend,
+    main.main-services-reception .contact-page fieldset legend,
+    main.main-services-reception .container-contact-us fieldset legend {
+      font-weight: bold; }
+    main.main-services .reservation fieldset:last-child,
+    main.main-services .contact-page fieldset:last-child,
+    main.main-services .container-contact-us fieldset:last-child,
+    main.main-reservation .reservation fieldset:last-child,
+    main.main-reservation .contact-page fieldset:last-child,
+    main.main-reservation .container-contact-us fieldset:last-child,
+    main.main-contact-page .reservation fieldset:last-child,
+    main.main-contact-page .contact-page fieldset:last-child,
+    main.main-contact-page .container-contact-us fieldset:last-child,
+    main.main-services-temple-missionary .reservation fieldset:last-child,
+    main.main-services-temple-missionary .contact-page fieldset:last-child,
+    main.main-services-temple-missionary .container-contact-us fieldset:last-child,
+    main.main-services-reception .reservation fieldset:last-child,
+    main.main-services-reception .contact-page fieldset:last-child,
+    main.main-services-reception .container-contact-us fieldset:last-child {
+      padding: 0;
+      margin-top: -20px;
+      margin-right: 21px;
+      margin-left: 21px; }
+      main.main-services .reservation fieldset:last-child legend,
+      main.main-services .contact-page fieldset:last-child legend,
+      main.main-services .container-contact-us fieldset:last-child legend,
+      main.main-reservation .reservation fieldset:last-child legend,
+      main.main-reservation .contact-page fieldset:last-child legend,
+      main.main-reservation .container-contact-us fieldset:last-child legend,
+      main.main-contact-page .reservation fieldset:last-child legend,
+      main.main-contact-page .contact-page fieldset:last-child legend,
+      main.main-contact-page .container-contact-us fieldset:last-child legend,
+      main.main-services-temple-missionary .reservation fieldset:last-child legend,
+      main.main-services-temple-missionary .contact-page fieldset:last-child legend,
+      main.main-services-temple-missionary .container-contact-us fieldset:last-child legend,
+      main.main-services-reception .reservation fieldset:last-child legend,
+      main.main-services-reception .contact-page fieldset:last-child legend,
+      main.main-services-reception .container-contact-us fieldset:last-child legend {
+        padding: 0;
+        margin: 0; }
+      main.main-services .reservation fieldset:last-child input[type="submit"],
+      main.main-services .contact-page fieldset:last-child input[type="submit"],
+      main.main-services .container-contact-us fieldset:last-child input[type="submit"],
+      main.main-reservation .reservation fieldset:last-child input[type="submit"],
+      main.main-reservation .contact-page fieldset:last-child input[type="submit"],
+      main.main-reservation .container-contact-us fieldset:last-child input[type="submit"],
+      main.main-contact-page .reservation fieldset:last-child input[type="submit"],
+      main.main-contact-page .contact-page fieldset:last-child input[type="submit"],
+      main.main-contact-page .container-contact-us fieldset:last-child input[type="submit"],
+      main.main-services-temple-missionary .reservation fieldset:last-child input[type="submit"],
+      main.main-services-temple-missionary .contact-page fieldset:last-child input[type="submit"],
+      main.main-services-temple-missionary .container-contact-us fieldset:last-child input[type="submit"],
+      main.main-services-reception .reservation fieldset:last-child input[type="submit"],
+      main.main-services-reception .contact-page fieldset:last-child input[type="submit"],
+      main.main-services-reception .container-contact-us fieldset:last-child input[type="submit"] {
+        margin: 0;
+        border: 1px solid #F06449; }
+    main.main-services .reservation label,
+    main.main-services .reservation input,
+    main.main-services .reservation select,
+    main.main-services .reservation textarea,
+    main.main-services .contact-page label,
+    main.main-services .contact-page input,
+    main.main-services .contact-page select,
+    main.main-services .contact-page textarea,
+    main.main-services .container-contact-us label,
+    main.main-services .container-contact-us input,
+    main.main-services .container-contact-us select,
+    main.main-services .container-contact-us textarea,
+    main.main-reservation .reservation label,
+    main.main-reservation .reservation input,
+    main.main-reservation .reservation select,
+    main.main-reservation .reservation textarea,
+    main.main-reservation .contact-page label,
+    main.main-reservation .contact-page input,
+    main.main-reservation .contact-page select,
+    main.main-reservation .contact-page textarea,
+    main.main-reservation .container-contact-us label,
+    main.main-reservation .container-contact-us input,
+    main.main-reservation .container-contact-us select,
+    main.main-reservation .container-contact-us textarea,
+    main.main-contact-page .reservation label,
+    main.main-contact-page .reservation input,
+    main.main-contact-page .reservation select,
+    main.main-contact-page .reservation textarea,
+    main.main-contact-page .contact-page label,
+    main.main-contact-page .contact-page input,
+    main.main-contact-page .contact-page select,
+    main.main-contact-page .contact-page textarea,
+    main.main-contact-page .container-contact-us label,
+    main.main-contact-page .container-contact-us input,
+    main.main-contact-page .container-contact-us select,
+    main.main-contact-page .container-contact-us textarea,
+    main.main-services-temple-missionary .reservation label,
+    main.main-services-temple-missionary .reservation input,
+    main.main-services-temple-missionary .reservation select,
+    main.main-services-temple-missionary .reservation textarea,
+    main.main-services-temple-missionary .contact-page label,
+    main.main-services-temple-missionary .contact-page input,
+    main.main-services-temple-missionary .contact-page select,
+    main.main-services-temple-missionary .contact-page textarea,
+    main.main-services-temple-missionary .container-contact-us label,
+    main.main-services-temple-missionary .container-contact-us input,
+    main.main-services-temple-missionary .container-contact-us select,
+    main.main-services-temple-missionary .container-contact-us textarea,
+    main.main-services-reception .reservation label,
+    main.main-services-reception .reservation input,
+    main.main-services-reception .reservation select,
+    main.main-services-reception .reservation textarea,
+    main.main-services-reception .contact-page label,
+    main.main-services-reception .contact-page input,
+    main.main-services-reception .contact-page select,
+    main.main-services-reception .contact-page textarea,
+    main.main-services-reception .container-contact-us label,
+    main.main-services-reception .container-contact-us input,
+    main.main-services-reception .container-contact-us select,
+    main.main-services-reception .container-contact-us textarea {
+      display: block;
+      padding: 5px; }
+    main.main-services .reservation input,
+    main.main-services .reservation select,
+    main.main-services .reservation button,
+    main.main-services .reservation textarea,
+    main.main-services .contact-page input,
+    main.main-services .contact-page select,
+    main.main-services .contact-page button,
+    main.main-services .contact-page textarea,
+    main.main-services .container-contact-us input,
+    main.main-services .container-contact-us select,
+    main.main-services .container-contact-us button,
+    main.main-services .container-contact-us textarea,
+    main.main-reservation .reservation input,
+    main.main-reservation .reservation select,
+    main.main-reservation .reservation button,
+    main.main-reservation .reservation textarea,
+    main.main-reservation .contact-page input,
+    main.main-reservation .contact-page select,
+    main.main-reservation .contact-page button,
+    main.main-reservation .contact-page textarea,
+    main.main-reservation .container-contact-us input,
+    main.main-reservation .container-contact-us select,
+    main.main-reservation .container-contact-us button,
+    main.main-reservation .container-contact-us textarea,
+    main.main-contact-page .reservation input,
+    main.main-contact-page .reservation select,
+    main.main-contact-page .reservation button,
+    main.main-contact-page .reservation textarea,
+    main.main-contact-page .contact-page input,
+    main.main-contact-page .contact-page select,
+    main.main-contact-page .contact-page button,
+    main.main-contact-page .contact-page textarea,
+    main.main-contact-page .container-contact-us input,
+    main.main-contact-page .container-contact-us select,
+    main.main-contact-page .container-contact-us button,
+    main.main-contact-page .container-contact-us textarea,
+    main.main-services-temple-missionary .reservation input,
+    main.main-services-temple-missionary .reservation select,
+    main.main-services-temple-missionary .reservation button,
+    main.main-services-temple-missionary .reservation textarea,
+    main.main-services-temple-missionary .contact-page input,
+    main.main-services-temple-missionary .contact-page select,
+    main.main-services-temple-missionary .contact-page button,
+    main.main-services-temple-missionary .contact-page textarea,
+    main.main-services-temple-missionary .container-contact-us input,
+    main.main-services-temple-missionary .container-contact-us select,
+    main.main-services-temple-missionary .container-contact-us button,
+    main.main-services-temple-missionary .container-contact-us textarea,
+    main.main-services-reception .reservation input,
+    main.main-services-reception .reservation select,
+    main.main-services-reception .reservation button,
+    main.main-services-reception .reservation textarea,
+    main.main-services-reception .contact-page input,
+    main.main-services-reception .contact-page select,
+    main.main-services-reception .contact-page button,
+    main.main-services-reception .contact-page textarea,
+    main.main-services-reception .container-contact-us input,
+    main.main-services-reception .container-contact-us select,
+    main.main-services-reception .container-contact-us button,
+    main.main-services-reception .container-contact-us textarea {
+      padding: 12px;
+      border: 1px solid gray;
+      border-radius: 0;
+      resize: vertical;
+      box-sizing: border-box;
+      margin-top: 10px; }
+    main.main-services .reservation input[type="text"],
+    main.main-services .reservation input[type="tel"],
+    main.main-services .reservation input[type="number"],
+    main.main-services .reservation input[type="email"],
+    main.main-services .reservation textarea,
+    main.main-services .contact-page input[type="text"],
+    main.main-services .contact-page input[type="tel"],
+    main.main-services .contact-page input[type="number"],
+    main.main-services .contact-page input[type="email"],
+    main.main-services .contact-page textarea,
+    main.main-services .container-contact-us input[type="text"],
+    main.main-services .container-contact-us input[type="tel"],
+    main.main-services .container-contact-us input[type="number"],
+    main.main-services .container-contact-us input[type="email"],
+    main.main-services .container-contact-us textarea,
+    main.main-reservation .reservation input[type="text"],
+    main.main-reservation .reservation input[type="tel"],
+    main.main-reservation .reservation input[type="number"],
+    main.main-reservation .reservation input[type="email"],
+    main.main-reservation .reservation textarea,
+    main.main-reservation .contact-page input[type="text"],
+    main.main-reservation .contact-page input[type="tel"],
+    main.main-reservation .contact-page input[type="number"],
+    main.main-reservation .contact-page input[type="email"],
+    main.main-reservation .contact-page textarea,
+    main.main-reservation .container-contact-us input[type="text"],
+    main.main-reservation .container-contact-us input[type="tel"],
+    main.main-reservation .container-contact-us input[type="number"],
+    main.main-reservation .container-contact-us input[type="email"],
+    main.main-reservation .container-contact-us textarea,
+    main.main-contact-page .reservation input[type="text"],
+    main.main-contact-page .reservation input[type="tel"],
+    main.main-contact-page .reservation input[type="number"],
+    main.main-contact-page .reservation input[type="email"],
+    main.main-contact-page .reservation textarea,
+    main.main-contact-page .contact-page input[type="text"],
+    main.main-contact-page .contact-page input[type="tel"],
+    main.main-contact-page .contact-page input[type="number"],
+    main.main-contact-page .contact-page input[type="email"],
+    main.main-contact-page .contact-page textarea,
+    main.main-contact-page .container-contact-us input[type="text"],
+    main.main-contact-page .container-contact-us input[type="tel"],
+    main.main-contact-page .container-contact-us input[type="number"],
+    main.main-contact-page .container-contact-us input[type="email"],
+    main.main-contact-page .container-contact-us textarea,
+    main.main-services-temple-missionary .reservation input[type="text"],
+    main.main-services-temple-missionary .reservation input[type="tel"],
+    main.main-services-temple-missionary .reservation input[type="number"],
+    main.main-services-temple-missionary .reservation input[type="email"],
+    main.main-services-temple-missionary .reservation textarea,
+    main.main-services-temple-missionary .contact-page input[type="text"],
+    main.main-services-temple-missionary .contact-page input[type="tel"],
+    main.main-services-temple-missionary .contact-page input[type="number"],
+    main.main-services-temple-missionary .contact-page input[type="email"],
+    main.main-services-temple-missionary .contact-page textarea,
+    main.main-services-temple-missionary .container-contact-us input[type="text"],
+    main.main-services-temple-missionary .container-contact-us input[type="tel"],
+    main.main-services-temple-missionary .container-contact-us input[type="number"],
+    main.main-services-temple-missionary .container-contact-us input[type="email"],
+    main.main-services-temple-missionary .container-contact-us textarea,
+    main.main-services-reception .reservation input[type="text"],
+    main.main-services-reception .reservation input[type="tel"],
+    main.main-services-reception .reservation input[type="number"],
+    main.main-services-reception .reservation input[type="email"],
+    main.main-services-reception .reservation textarea,
+    main.main-services-reception .contact-page input[type="text"],
+    main.main-services-reception .contact-page input[type="tel"],
+    main.main-services-reception .contact-page input[type="number"],
+    main.main-services-reception .contact-page input[type="email"],
+    main.main-services-reception .contact-page textarea,
+    main.main-services-reception .container-contact-us input[type="text"],
+    main.main-services-reception .container-contact-us input[type="tel"],
+    main.main-services-reception .container-contact-us input[type="number"],
+    main.main-services-reception .container-contact-us input[type="email"],
+    main.main-services-reception .container-contact-us textarea {
+      width: 100%;
+      display: block;
+      background-color: #dddddd; }
+    main.main-services .reservation input[type="range"],
+    main.main-services .contact-page input[type="range"],
+    main.main-services .container-contact-us input[type="range"],
+    main.main-reservation .reservation input[type="range"],
+    main.main-reservation .contact-page input[type="range"],
+    main.main-reservation .container-contact-us input[type="range"],
+    main.main-contact-page .reservation input[type="range"],
+    main.main-contact-page .contact-page input[type="range"],
+    main.main-contact-page .container-contact-us input[type="range"],
+    main.main-services-temple-missionary .reservation input[type="range"],
+    main.main-services-temple-missionary .contact-page input[type="range"],
+    main.main-services-temple-missionary .container-contact-us input[type="range"],
+    main.main-services-reception .reservation input[type="range"],
+    main.main-services-reception .contact-page input[type="range"],
+    main.main-services-reception .container-contact-us input[type="range"] {
+      width: 50%;
+      display: block; }
+    main.main-services .reservation input[type="date"],
+    main.main-services .contact-page input[type="date"],
+    main.main-services .container-contact-us input[type="date"],
+    main.main-reservation .reservation input[type="date"],
+    main.main-reservation .contact-page input[type="date"],
+    main.main-reservation .container-contact-us input[type="date"],
+    main.main-contact-page .reservation input[type="date"],
+    main.main-contact-page .contact-page input[type="date"],
+    main.main-contact-page .container-contact-us input[type="date"],
+    main.main-services-temple-missionary .reservation input[type="date"],
+    main.main-services-temple-missionary .contact-page input[type="date"],
+    main.main-services-temple-missionary .container-contact-us input[type="date"],
+    main.main-services-reception .reservation input[type="date"],
+    main.main-services-reception .contact-page input[type="date"],
+    main.main-services-reception .container-contact-us input[type="date"] {
+      background-color: #dddddd; }
+    main.main-services .reservation input[type="radio"],
+    main.main-services .contact-page input[type="radio"],
+    main.main-services .container-contact-us input[type="radio"],
+    main.main-reservation .reservation input[type="radio"],
+    main.main-reservation .contact-page input[type="radio"],
+    main.main-reservation .container-contact-us input[type="radio"],
+    main.main-contact-page .reservation input[type="radio"],
+    main.main-contact-page .contact-page input[type="radio"],
+    main.main-contact-page .container-contact-us input[type="radio"],
+    main.main-services-temple-missionary .reservation input[type="radio"],
+    main.main-services-temple-missionary .contact-page input[type="radio"],
+    main.main-services-temple-missionary .container-contact-us input[type="radio"],
+    main.main-services-reception .reservation input[type="radio"],
+    main.main-services-reception .contact-page input[type="radio"],
+    main.main-services-reception .container-contact-us input[type="radio"] {
+      display: inline; }
+    main.main-services .reservation fieldset:not(:nth-child(3)) label,
+    main.main-services .contact-page fieldset:not(:nth-child(3)) label,
+    main.main-services .container-contact-us fieldset:not(:nth-child(3)) label,
+    main.main-reservation .reservation fieldset:not(:nth-child(3)) label,
+    main.main-reservation .contact-page fieldset:not(:nth-child(3)) label,
+    main.main-reservation .container-contact-us fieldset:not(:nth-child(3)) label,
+    main.main-contact-page .reservation fieldset:not(:nth-child(3)) label,
+    main.main-contact-page .contact-page fieldset:not(:nth-child(3)) label,
+    main.main-contact-page .container-contact-us fieldset:not(:nth-child(3)) label,
+    main.main-services-temple-missionary .reservation fieldset:not(:nth-child(3)) label,
+    main.main-services-temple-missionary .contact-page fieldset:not(:nth-child(3)) label,
+    main.main-services-temple-missionary .container-contact-us fieldset:not(:nth-child(3)) label,
+    main.main-services-reception .reservation fieldset:not(:nth-child(3)) label,
+    main.main-services-reception .contact-page fieldset:not(:nth-child(3)) label,
+    main.main-services-reception .container-contact-us fieldset:not(:nth-child(3)) label {
+      margin-top: 10px; }
+    main.main-services .reservation input[type="text"]:focus,
+    main.main-services .reservation input[type="email"]:focus,
+    main.main-services .reservation input[type="number"]:focus,
+    main.main-services .reservation input[type="tel"]:focus,
+    main.main-services .reservation textarea:focus,
+    main.main-services .reservation input[type="date"]:focus,
+    main.main-services .reservation select:focus,
+    main.main-services .contact-page input[type="text"]:focus,
+    main.main-services .contact-page input[type="email"]:focus,
+    main.main-services .contact-page input[type="number"]:focus,
+    main.main-services .contact-page input[type="tel"]:focus,
+    main.main-services .contact-page textarea:focus,
+    main.main-services .contact-page input[type="date"]:focus,
+    main.main-services .contact-page select:focus,
+    main.main-services .container-contact-us input[type="text"]:focus,
+    main.main-services .container-contact-us input[type="email"]:focus,
+    main.main-services .container-contact-us input[type="number"]:focus,
+    main.main-services .container-contact-us input[type="tel"]:focus,
+    main.main-services .container-contact-us textarea:focus,
+    main.main-services .container-contact-us input[type="date"]:focus,
+    main.main-services .container-contact-us select:focus,
+    main.main-reservation .reservation input[type="text"]:focus,
+    main.main-reservation .reservation input[type="email"]:focus,
+    main.main-reservation .reservation input[type="number"]:focus,
+    main.main-reservation .reservation input[type="tel"]:focus,
+    main.main-reservation .reservation textarea:focus,
+    main.main-reservation .reservation input[type="date"]:focus,
+    main.main-reservation .reservation select:focus,
+    main.main-reservation .contact-page input[type="text"]:focus,
+    main.main-reservation .contact-page input[type="email"]:focus,
+    main.main-reservation .contact-page input[type="number"]:focus,
+    main.main-reservation .contact-page input[type="tel"]:focus,
+    main.main-reservation .contact-page textarea:focus,
+    main.main-reservation .contact-page input[type="date"]:focus,
+    main.main-reservation .contact-page select:focus,
+    main.main-reservation .container-contact-us input[type="text"]:focus,
+    main.main-reservation .container-contact-us input[type="email"]:focus,
+    main.main-reservation .container-contact-us input[type="number"]:focus,
+    main.main-reservation .container-contact-us input[type="tel"]:focus,
+    main.main-reservation .container-contact-us textarea:focus,
+    main.main-reservation .container-contact-us input[type="date"]:focus,
+    main.main-reservation .container-contact-us select:focus,
+    main.main-contact-page .reservation input[type="text"]:focus,
+    main.main-contact-page .reservation input[type="email"]:focus,
+    main.main-contact-page .reservation input[type="number"]:focus,
+    main.main-contact-page .reservation input[type="tel"]:focus,
+    main.main-contact-page .reservation textarea:focus,
+    main.main-contact-page .reservation input[type="date"]:focus,
+    main.main-contact-page .reservation select:focus,
+    main.main-contact-page .contact-page input[type="text"]:focus,
+    main.main-contact-page .contact-page input[type="email"]:focus,
+    main.main-contact-page .contact-page input[type="number"]:focus,
+    main.main-contact-page .contact-page input[type="tel"]:focus,
+    main.main-contact-page .contact-page textarea:focus,
+    main.main-contact-page .contact-page input[type="date"]:focus,
+    main.main-contact-page .contact-page select:focus,
+    main.main-contact-page .container-contact-us input[type="text"]:focus,
+    main.main-contact-page .container-contact-us input[type="email"]:focus,
+    main.main-contact-page .container-contact-us input[type="number"]:focus,
+    main.main-contact-page .container-contact-us input[type="tel"]:focus,
+    main.main-contact-page .container-contact-us textarea:focus,
+    main.main-contact-page .container-contact-us input[type="date"]:focus,
+    main.main-contact-page .container-contact-us select:focus,
+    main.main-services-temple-missionary .reservation input[type="text"]:focus,
+    main.main-services-temple-missionary .reservation input[type="email"]:focus,
+    main.main-services-temple-missionary .reservation input[type="number"]:focus,
+    main.main-services-temple-missionary .reservation input[type="tel"]:focus,
+    main.main-services-temple-missionary .reservation textarea:focus,
+    main.main-services-temple-missionary .reservation input[type="date"]:focus,
+    main.main-services-temple-missionary .reservation select:focus,
+    main.main-services-temple-missionary .contact-page input[type="text"]:focus,
+    main.main-services-temple-missionary .contact-page input[type="email"]:focus,
+    main.main-services-temple-missionary .contact-page input[type="number"]:focus,
+    main.main-services-temple-missionary .contact-page input[type="tel"]:focus,
+    main.main-services-temple-missionary .contact-page textarea:focus,
+    main.main-services-temple-missionary .contact-page input[type="date"]:focus,
+    main.main-services-temple-missionary .contact-page select:focus,
+    main.main-services-temple-missionary .container-contact-us input[type="text"]:focus,
+    main.main-services-temple-missionary .container-contact-us input[type="email"]:focus,
+    main.main-services-temple-missionary .container-contact-us input[type="number"]:focus,
+    main.main-services-temple-missionary .container-contact-us input[type="tel"]:focus,
+    main.main-services-temple-missionary .container-contact-us textarea:focus,
+    main.main-services-temple-missionary .container-contact-us input[type="date"]:focus,
+    main.main-services-temple-missionary .container-contact-us select:focus,
+    main.main-services-reception .reservation input[type="text"]:focus,
+    main.main-services-reception .reservation input[type="email"]:focus,
+    main.main-services-reception .reservation input[type="number"]:focus,
+    main.main-services-reception .reservation input[type="tel"]:focus,
+    main.main-services-reception .reservation textarea:focus,
+    main.main-services-reception .reservation input[type="date"]:focus,
+    main.main-services-reception .reservation select:focus,
+    main.main-services-reception .contact-page input[type="text"]:focus,
+    main.main-services-reception .contact-page input[type="email"]:focus,
+    main.main-services-reception .contact-page input[type="number"]:focus,
+    main.main-services-reception .contact-page input[type="tel"]:focus,
+    main.main-services-reception .contact-page textarea:focus,
+    main.main-services-reception .contact-page input[type="date"]:focus,
+    main.main-services-reception .contact-page select:focus,
+    main.main-services-reception .container-contact-us input[type="text"]:focus,
+    main.main-services-reception .container-contact-us input[type="email"]:focus,
+    main.main-services-reception .container-contact-us input[type="number"]:focus,
+    main.main-services-reception .container-contact-us input[type="tel"]:focus,
+    main.main-services-reception .container-contact-us textarea:focus,
+    main.main-services-reception .container-contact-us input[type="date"]:focus,
+    main.main-services-reception .container-contact-us select:focus {
+      border: solid 1px gray;
+      background-color: #e0e0e0;
+      box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 10px rgba(82, 168, 236, 0.8);
+      outline: none; }
+    main.main-services .reservation input[type="text"]:valid,
+    main.main-services .reservation input[type="email"]:valid,
+    main.main-services .reservation input[type="number"]:valid,
+    main.main-services .reservation input[type="tel"]:valid,
+    main.main-services .reservation textarea:valid,
+    main.main-services .reservation input[type="date"]:valid,
+    main.main-services .reservation select:valid,
+    main.main-services .contact-page input[type="text"]:valid,
+    main.main-services .contact-page input[type="email"]:valid,
+    main.main-services .contact-page input[type="number"]:valid,
+    main.main-services .contact-page input[type="tel"]:valid,
+    main.main-services .contact-page textarea:valid,
+    main.main-services .contact-page input[type="date"]:valid,
+    main.main-services .contact-page select:valid,
+    main.main-services .container-contact-us input[type="text"]:valid,
+    main.main-services .container-contact-us input[type="email"]:valid,
+    main.main-services .container-contact-us input[type="number"]:valid,
+    main.main-services .container-contact-us input[type="tel"]:valid,
+    main.main-services .container-contact-us textarea:valid,
+    main.main-services .container-contact-us input[type="date"]:valid,
+    main.main-services .container-contact-us select:valid,
+    main.main-reservation .reservation input[type="text"]:valid,
+    main.main-reservation .reservation input[type="email"]:valid,
+    main.main-reservation .reservation input[type="number"]:valid,
+    main.main-reservation .reservation input[type="tel"]:valid,
+    main.main-reservation .reservation textarea:valid,
+    main.main-reservation .reservation input[type="date"]:valid,
+    main.main-reservation .reservation select:valid,
+    main.main-reservation .contact-page input[type="text"]:valid,
+    main.main-reservation .contact-page input[type="email"]:valid,
+    main.main-reservation .contact-page input[type="number"]:valid,
+    main.main-reservation .contact-page input[type="tel"]:valid,
+    main.main-reservation .contact-page textarea:valid,
+    main.main-reservation .contact-page input[type="date"]:valid,
+    main.main-reservation .contact-page select:valid,
+    main.main-reservation .container-contact-us input[type="text"]:valid,
+    main.main-reservation .container-contact-us input[type="email"]:valid,
+    main.main-reservation .container-contact-us input[type="number"]:valid,
+    main.main-reservation .container-contact-us input[type="tel"]:valid,
+    main.main-reservation .container-contact-us textarea:valid,
+    main.main-reservation .container-contact-us input[type="date"]:valid,
+    main.main-reservation .container-contact-us select:valid,
+    main.main-contact-page .reservation input[type="text"]:valid,
+    main.main-contact-page .reservation input[type="email"]:valid,
+    main.main-contact-page .reservation input[type="number"]:valid,
+    main.main-contact-page .reservation input[type="tel"]:valid,
+    main.main-contact-page .reservation textarea:valid,
+    main.main-contact-page .reservation input[type="date"]:valid,
+    main.main-contact-page .reservation select:valid,
+    main.main-contact-page .contact-page input[type="text"]:valid,
+    main.main-contact-page .contact-page input[type="email"]:valid,
+    main.main-contact-page .contact-page input[type="number"]:valid,
+    main.main-contact-page .contact-page input[type="tel"]:valid,
+    main.main-contact-page .contact-page textarea:valid,
+    main.main-contact-page .contact-page input[type="date"]:valid,
+    main.main-contact-page .contact-page select:valid,
+    main.main-contact-page .container-contact-us input[type="text"]:valid,
+    main.main-contact-page .container-contact-us input[type="email"]:valid,
+    main.main-contact-page .container-contact-us input[type="number"]:valid,
+    main.main-contact-page .container-contact-us input[type="tel"]:valid,
+    main.main-contact-page .container-contact-us textarea:valid,
+    main.main-contact-page .container-contact-us input[type="date"]:valid,
+    main.main-contact-page .container-contact-us select:valid,
+    main.main-services-temple-missionary .reservation input[type="text"]:valid,
+    main.main-services-temple-missionary .reservation input[type="email"]:valid,
+    main.main-services-temple-missionary .reservation input[type="number"]:valid,
+    main.main-services-temple-missionary .reservation input[type="tel"]:valid,
+    main.main-services-temple-missionary .reservation textarea:valid,
+    main.main-services-temple-missionary .reservation input[type="date"]:valid,
+    main.main-services-temple-missionary .reservation select:valid,
+    main.main-services-temple-missionary .contact-page input[type="text"]:valid,
+    main.main-services-temple-missionary .contact-page input[type="email"]:valid,
+    main.main-services-temple-missionary .contact-page input[type="number"]:valid,
+    main.main-services-temple-missionary .contact-page input[type="tel"]:valid,
+    main.main-services-temple-missionary .contact-page textarea:valid,
+    main.main-services-temple-missionary .contact-page input[type="date"]:valid,
+    main.main-services-temple-missionary .contact-page select:valid,
+    main.main-services-temple-missionary .container-contact-us input[type="text"]:valid,
+    main.main-services-temple-missionary .container-contact-us input[type="email"]:valid,
+    main.main-services-temple-missionary .container-contact-us input[type="number"]:valid,
+    main.main-services-temple-missionary .container-contact-us input[type="tel"]:valid,
+    main.main-services-temple-missionary .container-contact-us textarea:valid,
+    main.main-services-temple-missionary .container-contact-us input[type="date"]:valid,
+    main.main-services-temple-missionary .container-contact-us select:valid,
+    main.main-services-reception .reservation input[type="text"]:valid,
+    main.main-services-reception .reservation input[type="email"]:valid,
+    main.main-services-reception .reservation input[type="number"]:valid,
+    main.main-services-reception .reservation input[type="tel"]:valid,
+    main.main-services-reception .reservation textarea:valid,
+    main.main-services-reception .reservation input[type="date"]:valid,
+    main.main-services-reception .reservation select:valid,
+    main.main-services-reception .contact-page input[type="text"]:valid,
+    main.main-services-reception .contact-page input[type="email"]:valid,
+    main.main-services-reception .contact-page input[type="number"]:valid,
+    main.main-services-reception .contact-page input[type="tel"]:valid,
+    main.main-services-reception .contact-page textarea:valid,
+    main.main-services-reception .contact-page input[type="date"]:valid,
+    main.main-services-reception .contact-page select:valid,
+    main.main-services-reception .container-contact-us input[type="text"]:valid,
+    main.main-services-reception .container-contact-us input[type="email"]:valid,
+    main.main-services-reception .container-contact-us input[type="number"]:valid,
+    main.main-services-reception .container-contact-us input[type="tel"]:valid,
+    main.main-services-reception .container-contact-us textarea:valid,
+    main.main-services-reception .container-contact-us input[type="date"]:valid,
+    main.main-services-reception .container-contact-us select:valid {
+      border-left: solid 5px green; }
+    main.main-services .reservation input[type="text"]:invalid,
+    main.main-services .reservation input[type="email"]:invalid,
+    main.main-services .reservation input[type="number"]:invalid,
+    main.main-services .reservation input[type="tel"]:invalid,
+    main.main-services .reservation textarea:invalid,
+    main.main-services .reservation input[type="date"]:invalid,
+    main.main-services .reservation select:invalid,
+    main.main-services .contact-page input[type="text"]:invalid,
+    main.main-services .contact-page input[type="email"]:invalid,
+    main.main-services .contact-page input[type="number"]:invalid,
+    main.main-services .contact-page input[type="tel"]:invalid,
+    main.main-services .contact-page textarea:invalid,
+    main.main-services .contact-page input[type="date"]:invalid,
+    main.main-services .contact-page select:invalid,
+    main.main-services .container-contact-us input[type="text"]:invalid,
+    main.main-services .container-contact-us input[type="email"]:invalid,
+    main.main-services .container-contact-us input[type="number"]:invalid,
+    main.main-services .container-contact-us input[type="tel"]:invalid,
+    main.main-services .container-contact-us textarea:invalid,
+    main.main-services .container-contact-us input[type="date"]:invalid,
+    main.main-services .container-contact-us select:invalid,
+    main.main-reservation .reservation input[type="text"]:invalid,
+    main.main-reservation .reservation input[type="email"]:invalid,
+    main.main-reservation .reservation input[type="number"]:invalid,
+    main.main-reservation .reservation input[type="tel"]:invalid,
+    main.main-reservation .reservation textarea:invalid,
+    main.main-reservation .reservation input[type="date"]:invalid,
+    main.main-reservation .reservation select:invalid,
+    main.main-reservation .contact-page input[type="text"]:invalid,
+    main.main-reservation .contact-page input[type="email"]:invalid,
+    main.main-reservation .contact-page input[type="number"]:invalid,
+    main.main-reservation .contact-page input[type="tel"]:invalid,
+    main.main-reservation .contact-page textarea:invalid,
+    main.main-reservation .contact-page input[type="date"]:invalid,
+    main.main-reservation .contact-page select:invalid,
+    main.main-reservation .container-contact-us input[type="text"]:invalid,
+    main.main-reservation .container-contact-us input[type="email"]:invalid,
+    main.main-reservation .container-contact-us input[type="number"]:invalid,
+    main.main-reservation .container-contact-us input[type="tel"]:invalid,
+    main.main-reservation .container-contact-us textarea:invalid,
+    main.main-reservation .container-contact-us input[type="date"]:invalid,
+    main.main-reservation .container-contact-us select:invalid,
+    main.main-contact-page .reservation input[type="text"]:invalid,
+    main.main-contact-page .reservation input[type="email"]:invalid,
+    main.main-contact-page .reservation input[type="number"]:invalid,
+    main.main-contact-page .reservation input[type="tel"]:invalid,
+    main.main-contact-page .reservation textarea:invalid,
+    main.main-contact-page .reservation input[type="date"]:invalid,
+    main.main-contact-page .reservation select:invalid,
+    main.main-contact-page .contact-page input[type="text"]:invalid,
+    main.main-contact-page .contact-page input[type="email"]:invalid,
+    main.main-contact-page .contact-page input[type="number"]:invalid,
+    main.main-contact-page .contact-page input[type="tel"]:invalid,
+    main.main-contact-page .contact-page textarea:invalid,
+    main.main-contact-page .contact-page input[type="date"]:invalid,
+    main.main-contact-page .contact-page select:invalid,
+    main.main-contact-page .container-contact-us input[type="text"]:invalid,
+    main.main-contact-page .container-contact-us input[type="email"]:invalid,
+    main.main-contact-page .container-contact-us input[type="number"]:invalid,
+    main.main-contact-page .container-contact-us input[type="tel"]:invalid,
+    main.main-contact-page .container-contact-us textarea:invalid,
+    main.main-contact-page .container-contact-us input[type="date"]:invalid,
+    main.main-contact-page .container-contact-us select:invalid,
+    main.main-services-temple-missionary .reservation input[type="text"]:invalid,
+    main.main-services-temple-missionary .reservation input[type="email"]:invalid,
+    main.main-services-temple-missionary .reservation input[type="number"]:invalid,
+    main.main-services-temple-missionary .reservation input[type="tel"]:invalid,
+    main.main-services-temple-missionary .reservation textarea:invalid,
+    main.main-services-temple-missionary .reservation input[type="date"]:invalid,
+    main.main-services-temple-missionary .reservation select:invalid,
+    main.main-services-temple-missionary .contact-page input[type="text"]:invalid,
+    main.main-services-temple-missionary .contact-page input[type="email"]:invalid,
+    main.main-services-temple-missionary .contact-page input[type="number"]:invalid,
+    main.main-services-temple-missionary .contact-page input[type="tel"]:invalid,
+    main.main-services-temple-missionary .contact-page textarea:invalid,
+    main.main-services-temple-missionary .contact-page input[type="date"]:invalid,
+    main.main-services-temple-missionary .contact-page select:invalid,
+    main.main-services-temple-missionary .container-contact-us input[type="text"]:invalid,
+    main.main-services-temple-missionary .container-contact-us input[type="email"]:invalid,
+    main.main-services-temple-missionary .container-contact-us input[type="number"]:invalid,
+    main.main-services-temple-missionary .container-contact-us input[type="tel"]:invalid,
+    main.main-services-temple-missionary .container-contact-us textarea:invalid,
+    main.main-services-temple-missionary .container-contact-us input[type="date"]:invalid,
+    main.main-services-temple-missionary .container-contact-us select:invalid,
+    main.main-services-reception .reservation input[type="text"]:invalid,
+    main.main-services-reception .reservation input[type="email"]:invalid,
+    main.main-services-reception .reservation input[type="number"]:invalid,
+    main.main-services-reception .reservation input[type="tel"]:invalid,
+    main.main-services-reception .reservation textarea:invalid,
+    main.main-services-reception .reservation input[type="date"]:invalid,
+    main.main-services-reception .reservation select:invalid,
+    main.main-services-reception .contact-page input[type="text"]:invalid,
+    main.main-services-reception .contact-page input[type="email"]:invalid,
+    main.main-services-reception .contact-page input[type="number"]:invalid,
+    main.main-services-reception .contact-page input[type="tel"]:invalid,
+    main.main-services-reception .contact-page textarea:invalid,
+    main.main-services-reception .contact-page input[type="date"]:invalid,
+    main.main-services-reception .contact-page select:invalid,
+    main.main-services-reception .container-contact-us input[type="text"]:invalid,
+    main.main-services-reception .container-contact-us input[type="email"]:invalid,
+    main.main-services-reception .container-contact-us input[type="number"]:invalid,
+    main.main-services-reception .container-contact-us input[type="tel"]:invalid,
+    main.main-services-reception .container-contact-us textarea:invalid,
+    main.main-services-reception .container-contact-us input[type="date"]:invalid,
+    main.main-services-reception .container-contact-us select:invalid {
+      border-left: solid 5px red; }
+  main.main-services .container-contact-us,
+  main.main-reservation .container-contact-us,
+  main.main-contact-page .container-contact-us,
+  main.main-services-temple-missionary .container-contact-us,
+  main.main-services-reception .container-contact-us {
+    box-shadow: none;
+    background-color: transparent; }
+  main.main-services .contact-page,
+  main.main-reservation .contact-page,
+  main.main-contact-page .contact-page,
+  main.main-services-temple-missionary .contact-page,
+  main.main-services-reception .contact-page {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px; }
+  main.main-services .reservation,
+  main.main-reservation .reservation,
+  main.main-contact-page .reservation,
+  main.main-services-temple-missionary .reservation,
+  main.main-services-reception .reservation {
+    width: 90%;
+    margin-top: 10px;
+    margin-bottom: 10px; }
 
 main.main-home {
   display: grid;
-  grid-template-columns: 1fr;
-}
-main.main-home .tagline-temple {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-column-gap: 10px;
-  grid-row-gap: 10px;
-  margin-top: 10px;
-}
-main.main-home .tagline img {
-  width: 150px;
-  height: 75px;
-  margin-left: 20px;
-}
-main.main-home .tagline h1 {
-  background-color: #FFFF00;
-  padding: 20px;
-  color: #090809;
-}
-main.main-home .tagline h3 {
-  padding-left: 20px;
-}
-main.main-home .tagline input[type="submit"] {
-  margin-left: 20px;
-  width: auto;
-}
-main.main-home .temple {
-  position: relative;
-}
-main.main-home .temple img {
-  width: 100%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
-}
-main.main-home .temple h2 {
-  margin-left: 20px;
-  color: #FFFF00;
-}
-main.main-home .temple div {
-  margin: 0;
-  position: absolute;
-  top: 68px;
-  left: 0;
-  width: 100%;
-  background-color: rgba(255, 255, 255, 0.6);
-  color: #090809;
-}
-main.main-home .temple div p {
-  padding-left: 10px;
-  padding-right: 10px;
-}
+  grid-template-columns: 1fr; }
+  main.main-home .tagline-temple {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    margin-top: 10px; }
+  main.main-home .tagline img {
+    width: 150px;
+    height: 75px;
+    margin-left: 20px; }
+  main.main-home .tagline h1 {
+    background-color: #FFFF00;
+    padding: 20px;
+    color: #090809; }
+  main.main-home .tagline h3 {
+    padding-left: 20px; }
+  main.main-home .tagline input[type="submit"] {
+    margin-left: 20px;
+    width: auto; }
+  main.main-home .temple {
+    position: relative; }
+    main.main-home .temple img {
+      width: 100%;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.1); }
+    main.main-home .temple h2 {
+      margin-left: 20px;
+      color: #FFFF00; }
+    main.main-home .temple div {
+      margin: 0;
+      position: absolute;
+      top: 68px;
+      left: 0;
+      width: 100%;
+      background-color: rgba(255, 255, 255, 0.6);
+      color: #090809; }
+      main.main-home .temple div p {
+        padding-left: 10px;
+        padding-right: 10px; }
 
 main {
   display: grid;
@@ -1738,111 +1611,90 @@ main {
   grid-template-columns: 100%;
   grid-template-rows: fit-content(100%);
   grid-row-gap: 0;
-  grid-gap: 0;
-}
-main .temples {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-row-gap: 10px;
-  margin-top: 10px;
-}
-main .temples section img {
-  width: 100%;
-  height: 150px;
-  border-top: 1px solid #feffff;
-  border-bottom: 1px solid #feffff;
-}
-main .temples section {
-  background-color: #083D77;
-  text-align: center;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
-  color: #FEFFFF;
-  border: solid 1px #74b3ce;
-}
-main .temples section h3 {
-  background-color: #042a2b;
-  padding: 20px;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-main .temples section div {
-  margin: auto 0;
-  text-align: justify;
-  color: #FEFFFF;
-  padding: 10px;
-}
+  grid-gap: 0; }
+  main .temples {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 10px;
+    margin-top: 10px; }
+  main .temples section img {
+    width: 100%;
+    height: 150px;
+    border-top: 1px solid #feffff;
+    border-bottom: 1px solid #feffff; }
+  main .temples section {
+    background-color: #083D77;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    color: #FEFFFF;
+    border: solid 1px #74b3ce; }
+  main .temples section h3 {
+    background-color: #042a2b;
+    padding: 20px;
+    margin-top: 0;
+    margin-bottom: 0; }
+  main .temples section div {
+    margin: auto 0;
+    text-align: justify;
+    color: #FEFFFF;
+    padding: 10px; }
 
 .temple-container p:first-child {
   padding-top: 0;
-  margin-top: 0;
-}
+  margin-top: 0; }
 
 .temp {
-  font-size: smaller;
-}
-.temp p {
-  margin: 0;
-  padding: 0;
-  text-align: left;
-}
+  font-size: smaller; }
+  .temp p {
+    margin: 0;
+    padding: 0;
+    text-align: left; }
 
 .aside section {
-  margin-bottom: 20px;
-}
-.aside section iframe {
-  display: none;
-  width: 100%;
-  /*box-shadow: $box-shadow;*/
-  height: 200px;
-}
+  margin-bottom: 20px; }
+  .aside section iframe {
+    display: none;
+    width: 100%;
+    /*box-shadow: $box-shadow;*/
+    height: 200px; }
 .aside h3,
 .aside h4,
 .aside p {
   margin: 0;
-  margin-bottom: 5px;
-}
+  margin-bottom: 5px; }
 .aside img {
   width: 30px;
-  height: 30px;
-}
+  height: 30px; }
 .aside .details-contact-information {
-  color: #FEFFFF;
-}
-.aside .details-contact-information div {
-  /*background-color: $bg-rgba;*/
-  padding-left: 0;
-  padding: 10px;
-  border-left: 4px solid #FFFF00;
-  /*border-top: 4px solid $font-color-yellow;*/
-  /*box-shadow: $box-shadow;*/
-}
-.aside .details-contact-information h3 {
-  color: #FFFF00;
-}
-.aside .details-contact-information p,
-.aside .details-contact-information h3 {
-  text-align: left;
-}
+  color: #FEFFFF; }
+  .aside .details-contact-information div {
+    /*background-color: $bg-rgba;*/
+    padding-left: 0;
+    padding: 10px;
+    border-left: 4px solid #FFFF00;
+    /*border-top: 4px solid $font-color-yellow;*/
+    /*box-shadow: $box-shadow;*/ }
+  .aside .details-contact-information h3 {
+    color: #FFFF00; }
+  .aside .details-contact-information p,
+  .aside .details-contact-information h3 {
+    text-align: left; }
 
 .thank-you {
   background: none;
-  background-color: none;
-}
+  background-color: none; }
 
 .main-thank-you {
   background: none;
   width: 100%;
   height: 100%;
   margin: 0 auto;
-  color: #090809;
-}
-.main-thank-you div {
-  margin: 0 auto;
-}
+  color: #090809; }
+  .main-thank-you div {
+    margin: 0 auto; }
 
 .attribution {
-  background-color: rgba(8, 61, 119, 0.7);
-}
+  background-color: rgba(8, 61, 119, 0.7); }
 
 main.main-attribution {
   margin: 0 auto;
@@ -1852,21 +1704,17 @@ main.main-attribution {
   width: 100%;
   height: 100%;
   color: #FEFFFF;
-  word-wrap: break-word;
-}
-main.main-attribution h1 {
-  margin: 0 auto;
-}
-main.main-attribution h3 {
-  margin-top: 0;
-  margin: 0 auto;
-}
-main.main-attribution div {
-  overflow: hidden;
-  word-wrap: break-word;
-  margin: 0 auto;
-  box-sizing: border-box;
-}
+  word-wrap: break-word; }
+  main.main-attribution h1 {
+    margin: 0 auto; }
+  main.main-attribution h3 {
+    margin-top: 0;
+    margin: 0 auto; }
+  main.main-attribution div {
+    overflow: hidden;
+    word-wrap: break-word;
+    margin: 0 auto;
+    box-sizing: border-box; }
 
 footer {
   height: auto;
@@ -1878,33 +1726,28 @@ footer {
   text-align: center;
   display: flex;
   border-top: solid 1px #1e4e83;
-  color: #FFFF00;
-}
-footer > div {
-  /*font-size: 1.6em;*/
-  padding: 1rem 4rem;
-  margin: 0 auto;
-  display: flex;
-}
-footer > div a,
-footer > div span {
-  margin: auto 0;
-  text-decoration: none;
-  color: #FFFF00;
-}
+  color: #FFFF00; }
+  footer > div {
+    /*font-size: 1.6em;*/
+    padding: 1rem 4rem;
+    margin: 0 auto;
+    display: flex; }
+    footer > div a,
+    footer > div span {
+      margin: auto 0;
+      text-decoration: none;
+      color: #FFFF00; }
 
 @media only screen and (min-width: 560px) {
   .slideshow-wrapper img {
-    height: 350px;
-  }
+    height: 350px; }
 
   main.main-services .services,
   main.main-services-temple-missionary .services,
   main.main-services-reception .services {
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 10px;
-    margin-bottom: 10px;
-  }
+    margin-bottom: 10px; }
 
   main.main-temples .reservation,
   main.main-temples .temples,
@@ -1920,26 +1763,22 @@ footer > div span {
   main.main-services-temple-missionary .temples,
   main.main-services .reservation,
   main.main-services .temples {
-    margin-top: 10px;
-  }
+    margin-top: 10px; }
 
   main {
-    /*temples*/
-  }
-  main .temples {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-row-gap: 10px;
-    grid-column-gap: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
+    /*temples*/ }
+    main .temples {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-row-gap: 10px;
+      grid-column-gap: 10px;
+      padding-left: 10px;
+      padding-right: 10px; }
 
   main.main-home .temple div {
     top: 80px;
     left: 10px;
-    width: 40%;
-  }
+    width: 40%; }
 
   aside {
     margin-top: 10px;
@@ -1948,25 +1787,20 @@ footer > div span {
     grid-row-gap: 10px;
     grid-column-gap: 10px;
     padding-left: 10px;
-    padding-right: 10px;
-  }
-  aside section {
-    margin-bottom: 20px;
-  }
-  aside section iframe {
-    display: block;
-    width: 100%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
-    height: 200px;
-  }
+    padding-right: 10px; }
+    aside section {
+      margin-bottom: 20px; }
+      aside section iframe {
+        display: block;
+        width: 100%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+        height: 200px; }
 
   main.main-attribution {
     width: 80%;
     border: 1px solid #1C77C3;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
-    margin-top: 10px;
-  }
-}
+    margin-top: 10px; } }
 /* end of media query */
 @media only screen and (min-width: 1028px) {
   @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
@@ -1984,8 +1818,7 @@ footer > div span {
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     font-size: 100%;
     color: #FEFFFF;
-    height: 100%;
-  }
+    height: 100%; }
 
   body {
     /*background-image: url('../img/rome-italy-temple-2190090-wallpaper.jpg');*/
@@ -2002,8 +1835,7 @@ footer > div span {
     grid-template-rows: fit-content(115px) fit-content(100%) fit-content(100%);
     grid-row-gap: 0;
     grid-gap: 0;
-    /*overflow-x: hidden;*/
-  }
+    /*overflow-x: hidden;*/ }
 
   /* IMPORTANT: Troubleshooting horizontal overflow
   .slide-content .scroller {
@@ -2015,8 +1847,7 @@ footer > div span {
   }*/
   header,
   footer {
-    grid-column: 1 / span 2;
-  }
+    grid-column: 1 / span 2; }
 
   /*header
   main,
@@ -2027,92 +1858,74 @@ footer > div span {
       justify-content: center;
   }*/
   header {
-    padding-left: 0;
-  }
-  header .company {
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-  header .company p {
-    font-size: 14px;
-    color: red;
-  }
+    padding-left: 0; }
+    header .company {
+      padding-top: 20px;
+      padding-bottom: 20px; }
+      header .company p {
+        font-size: 14px; }
 
   nav {
     background: rgba(8, 61, 119, 0.7);
     display: grid;
     padding: 10px;
-    grid-template-columns: 15% 45% 40%;
-  }
-  nav .logo {
-    padding-top: 0;
-  }
-  nav > ul > li:first-child {
-    display: none;
-  }
-  nav > a {
-    margin: auto 0;
-  }
-  nav a {
-    text-decoration: none;
-  }
-  nav ul {
-    display: flex;
-    justify-content: flex-end;
-    margin: 0;
-    padding-left: 0;
-    margin: auto 0;
-    background: transparent;
-    list-style: none;
-    text-align: right;
-  }
-  nav ul li {
-    display: block;
-  }
-  nav li {
-    color: #FFFF00;
-    background: transparent;
-    display: inline-block;
-    /*float: left;*/
-    padding: 1rem;
-    position: relative;
-    text-decoration: none;
-    transition-duration: 0.5s;
-  }
-  nav li a {
-    color: #FFFF00;
-  }
-  nav li:hover {
-    background: red;
-    cursor: pointer;
-  }
-  nav ul li ul {
-    /*background: $bg-rgba;*/
-    visibility: hidden;
-    opacity: 0;
-    position: absolute;
-    transition: all 0.5s ease;
-    margin-top: 1rem;
-    left: 0;
-    display: none;
-    text-align: left;
-  }
-  nav ul li:hover > ul,
-  nav ul li ul:hover {
-    visibility: visible;
-    opacity: 1;
-    display: block;
-    min-width: 10rem;
-  }
-  nav ul li ul li {
-    background: rgba(8, 61, 119, 0.7);
-    clear: both;
-    width: 100%;
-    z-index: 1000;
-  }
-  nav ul li ul li:last-child {
-    padding-bottom: 15px;
-  }
+    grid-template-columns: 15% 45% 40%; }
+    nav .logo {
+      padding-top: 0; }
+    nav > ul > li:first-child {
+      display: none; }
+    nav > a {
+      margin: auto 0; }
+    nav a {
+      text-decoration: none; }
+    nav ul {
+      display: flex;
+      justify-content: flex-end;
+      margin: 0;
+      padding-left: 0;
+      margin: auto 0;
+      background: transparent;
+      list-style: none;
+      text-align: right; }
+    nav ul li {
+      display: block; }
+    nav li {
+      color: #FFFF00;
+      background: transparent;
+      display: inline-block;
+      /*float: left;*/
+      padding: 1rem;
+      position: relative;
+      text-decoration: none;
+      transition-duration: 0.5s; }
+    nav li a {
+      color: #FFFF00; }
+    nav li:hover {
+      background: red;
+      cursor: pointer; }
+    nav ul li ul {
+      /*background: $bg-rgba;*/
+      visibility: hidden;
+      opacity: 0;
+      position: absolute;
+      transition: all 0.5s ease;
+      margin-top: 1rem;
+      left: 0;
+      display: none;
+      text-align: left; }
+    nav ul li:hover > ul,
+    nav ul li ul:hover {
+      visibility: visible;
+      opacity: 1;
+      display: block;
+      min-width: 10rem; }
+    nav ul li ul li {
+      background: rgba(8, 61, 119, 0.7);
+      clear: both;
+      width: 100%;
+      z-index: 1000; }
+    nav ul li ul li:last-child {
+      padding-bottom: 15px; }
 
   /* Main */
   main.main-temples .slideshow-container img,
@@ -2122,8 +1935,7 @@ footer > div span {
   main.main-services-reception .slideshow-container img,
   main.main-services-temple-missionary .slideshow-container img,
   main.main-services .slideshow-container img {
-    height: 400px;
-  }
+    height: 400px; }
   main.main-temples .slideshow-wrapper,
   main.main-contact-page .slideshow-wrapper,
   main.main-home .slideshow-wrapper,
@@ -2131,212 +1943,179 @@ footer > div span {
   main.main-services-reception .slideshow-wrapper,
   main.main-services-temple-missionary .slideshow-wrapper,
   main.main-services .slideshow-wrapper {
-    margin: 10px;
-  }
+    margin: 10px; }
 
   main.main-temples {
-    margin-bottom: 10px;
-  }
+    margin-bottom: 10px; }
 
   main.main-reservation,
   main.main-contact-page {
     margin: 0;
-    /*border: solid 1px #74B3CE;*/
-  }
-  main.main-reservation .reservation,
-  main.main-contact-page .reservation {
-    width: 50%;
-    margin-bottom: 10px;
-    border: solid 1px #74B3CE;
-    padding: 20px;
-    margin-top: 10px;
-  }
-  main.main-reservation .contact-page,
-  main.main-contact-page .contact-page {
-    border: solid 1px #74B3CE;
-    display: grid;
-    grid-template-columns: 60% 40%;
-    margin: 10px;
-    width: auto;
-    padding: 20px;
-  }
-  main.main-reservation .contact-page h1,
-  main.main-contact-page .contact-page h1 {
-    grid-column: 1 / span 2;
-  }
+    /*border: solid 1px #74B3CE;*/ }
+    main.main-reservation .reservation,
+    main.main-contact-page .reservation {
+      width: 50%;
+      margin-bottom: 10px;
+      border: solid 1px #74B3CE;
+      padding: 20px;
+      margin-top: 10px; }
+    main.main-reservation .contact-page,
+    main.main-contact-page .contact-page {
+      border: solid 1px #74B3CE;
+      display: grid;
+      grid-template-columns: 60% 40%;
+      margin: 10px;
+      width: auto;
+      padding: 20px; }
+      main.main-reservation .contact-page h1,
+      main.main-contact-page .contact-page h1 {
+        grid-column: 1 / span 2; }
 
   main.main-services,
   main.main-services-temple-missionary,
   main.main-services-reception {
-    margin-bottom: 0;
-  }
-  main.main-services h1,
-  main.main-services-temple-missionary h1,
-  main.main-services-reception h1 {
-    color: #FFFF00;
-  }
-  main.main-services .contact-us,
-  main.main-services-temple-missionary .contact-us,
-  main.main-services-reception .contact-us {
-    margin: auto 0;
-    width: 100%;
-  }
-  main.main-services .contact-us .container-contact-us,
-  main.main-services-temple-missionary .contact-us .container-contact-us,
-  main.main-services-reception .contact-us .container-contact-us {
-    margin: 0 auto;
-    width: 50%;
-  }
-  main.main-services .services,
-  main.main-services-temple-missionary .services,
-  main.main-services-reception .services {
-    border: solid 1px #74B3CE;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-row-gap: 10px;
-    margin: 10px;
-    margin-top: 10px;
-    width: auto;
-    padding: 10px;
-    background-color: rgba(8, 61, 119, 0.7);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
-  }
-  main.main-services .services ul,
-  main.main-services-temple-missionary .services ul,
-  main.main-services-reception .services ul {
-    margin: 0;
-    padding-left: 17px;
-  }
-  main.main-services .services ul li,
-  main.main-services-temple-missionary .services ul li,
-  main.main-services-reception .services ul li {
-    padding: 5px;
-  }
-  main.main-services .services section:last-child div > div,
-  main.main-services-temple-missionary .services section:last-child div > div,
-  main.main-services-reception .services section:last-child div > div {
-    border: none;
-  }
-  main.main-services .services div.amenities,
-  main.main-services .services div.specialized-services,
-  main.main-services-temple-missionary .services div.amenities,
-  main.main-services-temple-missionary .services div.specialized-services,
-  main.main-services-reception .services div.amenities,
-  main.main-services-reception .services div.specialized-services {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
-  }
-  main.main-services .services div.amenities .container,
-  main.main-services .services div.specialized-services .container,
-  main.main-services-temple-missionary .services div.amenities .container,
-  main.main-services-temple-missionary .services div.specialized-services .container,
-  main.main-services-reception .services div.amenities .container,
-  main.main-services-reception .services div.specialized-services .container {
-    position: relative;
-    text-align: center;
-  }
-  main.main-services .services div.amenities div.top-left,
-  main.main-services .services div.specialized-services div.top-left,
-  main.main-services-temple-missionary .services div.amenities div.top-left,
-  main.main-services-temple-missionary .services div.specialized-services div.top-left,
-  main.main-services-reception .services div.amenities div.top-left,
-  main.main-services-reception .services div.specialized-services div.top-left {
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    height: auto;
-    width: 100%;
-    background-color: rgba(8, 61, 119, 0.7);
-    color: #FEFFFF;
-    border-bottom: 4px solid #FFFF00;
-  }
-  main.main-services .services div.amenities h3,
-  main.main-services .services div.specialized-services h3,
-  main.main-services-temple-missionary .services div.amenities h3,
-  main.main-services-temple-missionary .services div.specialized-services h3,
-  main.main-services-reception .services div.amenities h3,
-  main.main-services-reception .services div.specialized-services h3 {
-    text-align: center;
-  }
-  main.main-services .services div.amenities img,
-  main.main-services .services div.specialized-services img,
-  main.main-services-temple-missionary .services div.amenities img,
-  main.main-services-temple-missionary .services div.specialized-services img,
-  main.main-services-reception .services div.amenities img,
-  main.main-services-reception .services div.specialized-services img {
-    width: 100%;
-    height: 300px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
-  }
+    margin-bottom: 0; }
+    main.main-services h1,
+    main.main-services-temple-missionary h1,
+    main.main-services-reception h1 {
+      color: #FFFF00; }
+    main.main-services .contact-us,
+    main.main-services-temple-missionary .contact-us,
+    main.main-services-reception .contact-us {
+      margin: auto 0;
+      width: 100%; }
+      main.main-services .contact-us .container-contact-us,
+      main.main-services-temple-missionary .contact-us .container-contact-us,
+      main.main-services-reception .contact-us .container-contact-us {
+        margin: 0 auto;
+        width: 50%; }
+    main.main-services .services,
+    main.main-services-temple-missionary .services,
+    main.main-services-reception .services {
+      border: solid 1px #74B3CE;
+      display: grid;
+      grid-template-columns: 100%;
+      grid-row-gap: 10px;
+      margin: 10px;
+      margin-top: 10px;
+      width: auto;
+      padding: 10px;
+      background-color: rgba(8, 61, 119, 0.7);
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.1); }
+      main.main-services .services ul,
+      main.main-services-temple-missionary .services ul,
+      main.main-services-reception .services ul {
+        margin: 0;
+        padding-left: 17px; }
+        main.main-services .services ul li,
+        main.main-services-temple-missionary .services ul li,
+        main.main-services-reception .services ul li {
+          padding: 5px; }
+      main.main-services .services section:last-child div > div,
+      main.main-services-temple-missionary .services section:last-child div > div,
+      main.main-services-reception .services section:last-child div > div {
+        border: none; }
+      main.main-services .services div.amenities,
+      main.main-services .services div.specialized-services,
+      main.main-services-temple-missionary .services div.amenities,
+      main.main-services-temple-missionary .services div.specialized-services,
+      main.main-services-reception .services div.amenities,
+      main.main-services-reception .services div.specialized-services {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 10px;
+        grid-row-gap: 10px; }
+        main.main-services .services div.amenities .container,
+        main.main-services .services div.specialized-services .container,
+        main.main-services-temple-missionary .services div.amenities .container,
+        main.main-services-temple-missionary .services div.specialized-services .container,
+        main.main-services-reception .services div.amenities .container,
+        main.main-services-reception .services div.specialized-services .container {
+          position: relative;
+          text-align: center; }
+        main.main-services .services div.amenities div.top-left,
+        main.main-services .services div.specialized-services div.top-left,
+        main.main-services-temple-missionary .services div.amenities div.top-left,
+        main.main-services-temple-missionary .services div.specialized-services div.top-left,
+        main.main-services-reception .services div.amenities div.top-left,
+        main.main-services-reception .services div.specialized-services div.top-left {
+          position: absolute;
+          bottom: 0px;
+          left: 0px;
+          height: auto;
+          width: 100%;
+          background-color: rgba(8, 61, 119, 0.7);
+          color: #FEFFFF;
+          border-bottom: 4px solid #FFFF00; }
+        main.main-services .services div.amenities h3,
+        main.main-services .services div.specialized-services h3,
+        main.main-services-temple-missionary .services div.amenities h3,
+        main.main-services-temple-missionary .services div.specialized-services h3,
+        main.main-services-reception .services div.amenities h3,
+        main.main-services-reception .services div.specialized-services h3 {
+          text-align: center; }
+        main.main-services .services div.amenities img,
+        main.main-services .services div.specialized-services img,
+        main.main-services-temple-missionary .services div.amenities img,
+        main.main-services-temple-missionary .services div.specialized-services img,
+        main.main-services-reception .services div.amenities img,
+        main.main-services-reception .services div.specialized-services img {
+          width: 100%;
+          height: 300px;
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.1); }
 
   main.main-home .tagline-temple {
     grid-template-columns: 1fr 1fr;
     margin-top: 0;
     margin: 10px;
-    margin-top: 10px;
-  }
-  main.main-home .tagline-temple .tagline img {
-    width: 200px;
-    height: 100px;
-    margin-left: 20px;
-  }
-  main.main-home .tagline-temple .tagline h1 {
-    background-color: #FFFF00;
-    padding: 20px;
-    color: #090809;
-  }
-  main.main-home .tagline-temple .tagline h3 {
-    padding-left: 20px;
-  }
-  main.main-home .tagline-temple .tagline input[type=submit] {
-    margin-left: 20px;
-    width: auto;
-  }
+    margin-top: 10px; }
+    main.main-home .tagline-temple .tagline img {
+      width: 200px;
+      height: 100px;
+      margin-left: 20px; }
+    main.main-home .tagline-temple .tagline h1 {
+      background-color: #FFFF00;
+      padding: 20px;
+      color: #090809; }
+    main.main-home .tagline-temple .tagline h3 {
+      padding-left: 20px; }
+    main.main-home .tagline-temple .tagline input[type=submit] {
+      margin-left: 20px;
+      width: auto; }
   main.main-home .temple div {
-    width: 45%;
-  }
+    width: 45%; }
 
   main {
-    /* temples */
-  }
-  main > h1 {
-    color: #FFFF00;
-  }
-  main .temples > div {
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-  main .temples {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-row-gap: 10px;
-    grid-column-gap: 10px;
-    margin-top: 10px;
-  }
-  main .temples section img {
-    width: 100%;
-    height: 150px;
-    border-top: 1px solid #FEFFFF;
-    border-bottom: 1px solid #FEFFFF;
-  }
-  main .temples section {
-    background-color: rgba(28, 119, 195, 0.8);
-    text-align: center;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
-    color: #FEFFFF;
-  }
-  main .temples section h3 {
-    background-color: #083D77;
-    padding: 20px;
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-  main .temples section div {
-    text-align: justify;
-    padding: 20px;
-  }
+    /* temples */ }
+    main > h1 {
+      color: #FFFF00; }
+    main .temples > div {
+      margin-top: 0;
+      margin-bottom: 0; }
+    main .temples {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-row-gap: 10px;
+      grid-column-gap: 10px;
+      margin-top: 10px; }
+    main .temples section img {
+      width: 100%;
+      height: 150px;
+      border-top: 1px solid #FEFFFF;
+      border-bottom: 1px solid #FEFFFF; }
+    main .temples section {
+      background-color: rgba(28, 119, 195, 0.8);
+      text-align: center;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+      color: #FEFFFF; }
+    main .temples section h3 {
+      background-color: #083D77;
+      padding: 20px;
+      margin-top: 0;
+      margin-bottom: 0; }
+    main .temples section div {
+      text-align: justify;
+      padding: 20px; }
 
   .aside {
     display: flex;
@@ -2348,53 +2127,43 @@ footer > div span {
     /*padding-right: 10px;*/
     /*grid-template-columns: 1fr;
     grid-row-gap: 0;
-    grid-column-gap: 0;*/
-  }
-  .aside section {
-    margin-bottom: 10px;
-  }
-  .aside section iframe {
-    display: block;
-    width: 100%;
-    /*box-shadow: $box-shadow;*/
-    height: 400px;
-  }
-  .aside h3,
-  .aside h4,
-  .aside p {
-    margin: 0;
-    margin-bottom: 5px;
-  }
-  .aside img {
-    width: 50px;
-    height: 50px;
-  }
-  .aside .details-contact-information div {
-    /*background-color: $bg-rgba;*/
-    padding: 10px;
-    border-right: none;
-    border-left: none;
-    border-top: none;
-    /*box-shadow: $box-shadow;*/
-  }
-  .aside .details-contact-information h3 {
-    color: #FFFF00;
-  }
-  .aside .details-contact-information p,
-  .aside .details-contact-information h3 {
-    text-align: center;
-  }
+    grid-column-gap: 0;*/ }
+    .aside section {
+      margin-bottom: 10px; }
+      .aside section iframe {
+        display: block;
+        width: 100%;
+        /*box-shadow: $box-shadow;*/
+        height: 400px; }
+    .aside h3,
+    .aside h4,
+    .aside p {
+      margin: 0;
+      margin-bottom: 5px; }
+    .aside img {
+      width: 50px;
+      height: 50px; }
+    .aside .details-contact-information div {
+      /*background-color: $bg-rgba;*/
+      padding: 10px;
+      border-right: none;
+      border-left: none;
+      border-top: none;
+      /*box-shadow: $box-shadow;*/ }
+    .aside .details-contact-information h3 {
+      color: #FFFF00; }
+    .aside .details-contact-information p,
+    .aside .details-contact-information h3 {
+      text-align: center; }
 
   main.main-attribution {
     width: 60%;
     border: 1px solid #1C77C3;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
-    margin-top: 10px;
-  }
+    margin-top: 10px; }
 
   footer {
-    position: relative;
-  }
+    position: relative; }
 
   /*
   https://picresize.com/ 
@@ -2406,6 +2175,7 @@ footer > div span {
   
   https://css-tricks.com/snippets/css/css-grid-starter-layouts/
   https://medium.com/@elad/becoming-a-css-grid-ninja-f4c6db018cc1
-  */
-}
+  */ }
 /* end of media query */
+
+/*# sourceMappingURL=styles.css.map */
