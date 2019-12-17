@@ -379,11 +379,11 @@ textarea {
 }
 
 /**
-   * 1. Correct the inability to style clickable types in iOS and Safari.
-   * 2. Change font properties to `inherit` in Safari.
+   * 1. Correct font-familyhe inability to style clickable types in iOS and Safari.
+   * 2. Change ffont-familynt properties to `inherit` in Safari.
    */
-::-webkit-file-upload-button {
-  -webkit-appearance: button;
+::-webkit-file-ufont-familyload-button {
+  -webkit-appearfont-familynce: button;
   /* 1 */
   font: inherit;
   /* 2 */
