@@ -41,12 +41,15 @@ header {
 
     .company {
         color: $font-color;
+        padding: 0;
+        margin: 0;
+        padding-top: 10px;
+        padding-bottom: 10px;
 
-        h1,
+        h2,
         p {
             margin: 0;
             padding: 0;
-            margin-left: 15px;
         }
     }
 }
@@ -579,10 +582,14 @@ main.main-home {
             box-shadow: $box-shadow;
         }
 
+        h2 {
+            margin-left: 20px;
+        }
+
         div {
             margin: 0;
             position: absolute;
-            top: 0;
+            top: 68px;
             left: 0;
             width: 100%;
             background-color: rgba(255, 255, 255, 0.6);
