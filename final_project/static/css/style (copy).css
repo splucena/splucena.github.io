@@ -6,8 +6,6 @@
  * 2. Prevent adjustments of font size after orientation changes in
  *    IE on Windows Phone and in iOS.
  */
-@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Arvo:700&display=swap");
 html {
   line-height: 1.15;
   /* 1 */
@@ -381,11 +379,11 @@ textarea {
 }
 
 /**
-   * 1. Correct the inability to style clickable types in iOS and Safari.
-   * 2. Change font properties to `inherit` in Safari.
+   * 1. Correct font-familyhe inability to style clickable types in iOS and Safari.
+   * 2. Change ffont-familynt properties to `inherit` in Safari.
    */
-::-webkit-file-upload-button {
-  -webkit-appearance: button;
+::-webkit-file-ufont-familyload-button {
+  -webkit-appearfont-familynce: button;
   /* 1 */
   font: inherit;
   /* 2 */
@@ -440,16 +438,6 @@ template {
 /*https://coolors.co/1e90ff-000000-ffffff-b89e97-decccc*/
 html {
   font-size: 100%;
-  font-family: 'Roboto', sans-serif;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: 'Arvo', serif;
 }
 
 body {
@@ -459,6 +447,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
+  font-family: Arial, Helvetica, sans-serif;
   color: #FFFF00;
   margin: 0;
   padding: 0;
@@ -1969,8 +1958,6 @@ footer > div span {
 }
 /* end of media query */
 @media only screen and (min-width: 1028px) {
-  @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
-  @import url("https://fonts.googleapis.com/css?family=Arvo:700&display=swap");
   html,
   body {
     /*background-image: url('../img/rome-italy-temple-2190090-wallpaper.jpg');

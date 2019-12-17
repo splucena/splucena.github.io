@@ -8,7 +8,6 @@
  */
 @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Arvo:700&display=swap");
-
 html {
   line-height: 1.15;
   /* 1 */
@@ -441,16 +440,16 @@ template {
 /*https://coolors.co/1e90ff-000000-ffffff-b89e97-decccc*/
 html {
   font-size: 100%;
-  font-family: 'Roboto', sans-serif !important;
+  font-family: 'Roboto', sans-serif;
 }
 
-html h1,
-html h2,
-html h3,
-html h4,
-html h5,
-html h6 {
-  font-family: 'Arvo', serif !important;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Arvo', serif;
 }
 
 body {
@@ -488,7 +487,6 @@ header {
   border-bottom: solid 1px #1e4e83;
   padding-left: 10px;
 }
-
 header .company {
   color: #FEFFFF;
   padding: 0;
@@ -496,7 +494,6 @@ header .company {
   padding-top: 10px;
   padding-bottom: 10px;
 }
-
 header .company h2,
 header .company p {
   margin: 0;
@@ -509,19 +506,15 @@ nav {
   background: rgba(8, 61, 119, 0.7);
   z-index: 1000;
 }
-
 nav li.active {
   background: linear-gradient(to bottom, #F06449, #FE4A49);
 }
-
 nav li.active a {
   color: #FEFFFF;
 }
-
 nav .responsive li {
   display: block;
 }
-
 nav .logo {
   width: 145px;
   height: 25;
@@ -530,18 +523,15 @@ nav .logo {
   padding-left: 15px;
   padding-top: 15px;
 }
-
-nav>ul>li:first-child {
+nav > ul > li:first-child {
   display: block;
 }
-
 nav ul {
   margin: 0;
   padding-left: 10px;
   background: transparent;
   list-style: none;
 }
-
 nav li {
   color: #FFFF00;
   background: transparent;
@@ -551,15 +541,12 @@ nav li {
   padding: 5px;
   transition-duration: 0.5s;
 }
-
 nav ul li ul li:last-child {
   padding-bottom: 0;
 }
-
 nav ul li {
   display: none;
 }
-
 nav ul li a {
   text-decoration: none;
   color: #FFFF00;
@@ -570,7 +557,6 @@ main.main-temples {
   margin: auto 0;
   margin-bottom: 10px;
 }
-
 main.main-temples h1 {
   padding-left: 10px;
   padding-right: 10px;
@@ -596,7 +582,6 @@ main.main-services {
   /* The dots/bullets/indicators */
   /* Fading animation */
 }
-
 main.main-temples .slideshow-wrapper,
 main.main-contact-page .slideshow-wrapper,
 main.main-home .slideshow-wrapper,
@@ -609,7 +594,6 @@ main.main-services .slideshow-wrapper {
   margin-top: 10px;
   z-index: 1;
 }
-
 main.main-temples .slideshow-wrapper img,
 main.main-contact-page .slideshow-wrapper img,
 main.main-home .slideshow-wrapper img,
@@ -623,7 +607,6 @@ main.main-services .slideshow-wrapper img {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
   z-index: 1;
 }
-
 main.main-temples .slideshow-container,
 main.main-contact-page .slideshow-container,
 main.main-home .slideshow-container,
@@ -635,7 +618,6 @@ main.main-services .slideshow-container {
   position: relative;
   /*margin: auto;*/
 }
-
 main.main-temples .mySlides,
 main.main-contact-page .mySlides,
 main.main-home .mySlides,
@@ -645,7 +627,6 @@ main.main-services-reception .mySlides,
 main.main-services .mySlides {
   display: none;
 }
-
 main.main-temples .prev,
 main.main-temples .next,
 main.main-contact-page .prev,
@@ -673,7 +654,6 @@ main.main-services .next {
   border-radius: 0 3px 3px 0;
   user-select: none;
 }
-
 main.main-temples .next,
 main.main-contact-page .next,
 main.main-home .next,
@@ -684,7 +664,6 @@ main.main-services .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
-
 main.main-temples .prev:hover,
 main.main-temples .next:hover,
 main.main-contact-page .prev:hover,
@@ -701,7 +680,6 @@ main.main-services .prev:hover,
 main.main-services .next:hover {
   background-color: rgba(8, 61, 119, 0.7);
 }
-
 main.main-temples .text,
 main.main-contact-page .text,
 main.main-home .text,
@@ -718,7 +696,6 @@ main.main-services .text {
   text-align: center;
   margin: 0 auto !important;
 }
-
 main.main-temples .numbertext,
 main.main-contact-page .numbertext,
 main.main-home .numbertext,
@@ -732,7 +709,6 @@ main.main-services .numbertext {
   position: absolute;
   top: 0;
 }
-
 main.main-temples .dot,
 main.main-contact-page .dot,
 main.main-home .dot,
@@ -749,7 +725,6 @@ main.main-services .dot {
   display: inline-block;
   transition: background-color 0.6s ease;
 }
-
 main.main-temples .active,
 main.main-temples .dot:hover,
 main.main-contact-page .active,
@@ -766,7 +741,6 @@ main.main-services .active,
 main.main-services .dot:hover {
   background-color: #ffff00;
 }
-
 main.main-temples .fade,
 main.main-contact-page .fade,
 main.main-home .fade,
@@ -779,47 +753,39 @@ main.main-services .fade {
   animation-name: fade;
   animation-duration: 1.5s;
 }
-
 @-webkit-keyframes fade {
   from {
     opacity: 0.4;
   }
-
   to {
     opacity: 1;
   }
 }
-
 @keyframes fade {
   from {
     opacity: 0.4;
   }
-
   to {
     opacity: 1;
   }
 }
-
 main.main-services h1,
 main.main-services-temple-missionary h1,
 main.main-services-reception h1 {
   color: #FFFF00;
 }
-
 main.main-services .contact-us,
 main.main-services-temple-missionary .contact-us,
 main.main-services-reception .contact-us {
   margin: auto 0;
   width: 100%;
 }
-
 main.main-services .contact-us .container-contact-us,
 main.main-services-temple-missionary .contact-us .container-contact-us,
 main.main-services-reception .contact-us .container-contact-us {
   margin: 0 auto;
   width: 100%;
 }
-
 main.main-services .services,
 main.main-services-temple-missionary .services,
 main.main-services-reception .services {
@@ -835,26 +801,22 @@ main.main-services-reception .services {
   background-color: rgba(8, 61, 119, 0.7);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
 }
-
 main.main-services .services ul,
 main.main-services-temple-missionary .services ul,
 main.main-services-reception .services ul {
   margin: 0;
   padding-left: 17px;
 }
-
 main.main-services .services ul li,
 main.main-services-temple-missionary .services ul li,
 main.main-services-reception .services ul li {
   padding: 5px;
 }
-
-main.main-services .services section:last-child div>div,
-main.main-services-temple-missionary .services section:last-child div>div,
-main.main-services-reception .services section:last-child div>div {
+main.main-services .services section:last-child div > div,
+main.main-services-temple-missionary .services section:last-child div > div,
+main.main-services-reception .services section:last-child div > div {
   border: none;
 }
-
 main.main-services .services div.amenities,
 main.main-services .services div.specialized-services,
 main.main-services-temple-missionary .services div.amenities,
@@ -866,7 +828,6 @@ main.main-services-reception .services div.specialized-services {
   grid-column-gap: 10px;
   grid-row-gap: 10px;
 }
-
 main.main-services .services div.amenities .container,
 main.main-services .services div.specialized-services .container,
 main.main-services-temple-missionary .services div.amenities .container,
@@ -876,7 +837,6 @@ main.main-services-reception .services div.specialized-services .container {
   position: relative;
   text-align: center;
 }
-
 main.main-services .services div.amenities div.top-left,
 main.main-services .services div.specialized-services div.top-left,
 main.main-services-temple-missionary .services div.amenities div.top-left,
@@ -892,7 +852,6 @@ main.main-services-reception .services div.specialized-services div.top-left {
   color: #FEFFFF;
   border-bottom: 4px solid #FFFF00;
 }
-
 main.main-services .services div.amenities h3,
 main.main-services .services div.specialized-services h3,
 main.main-services-temple-missionary .services div.amenities h3,
@@ -901,7 +860,6 @@ main.main-services-reception .services div.amenities h3,
 main.main-services-reception .services div.specialized-services h3 {
   text-align: center;
 }
-
 main.main-services .services div.amenities img,
 main.main-services .services div.specialized-services img,
 main.main-services-temple-missionary .services div.amenities img,
@@ -962,7 +920,6 @@ main.main-services-reception {
   grid-template-columns: 1fr;
   /*margin: 10px;*/
 }
-
 main.main-services .reservation,
 main.main-services .contact-page,
 main.main-services .container-contact-us,
@@ -988,7 +945,6 @@ main.main-services-reception .container-contact-us {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
   padding: 10px;
 }
-
 main.main-services .reservation fieldset,
 main.main-services .contact-page fieldset,
 main.main-services .container-contact-us fieldset,
@@ -1017,7 +973,6 @@ main.main-services-reception .container-contact-us fieldset {
   margin-bottom: 20px;
   margin-top: 10px;
 }
-
 main.main-services .reservation fieldset legend,
 main.main-services .contact-page fieldset legend,
 main.main-services .container-contact-us fieldset legend,
@@ -1035,7 +990,6 @@ main.main-services-reception .contact-page fieldset legend,
 main.main-services-reception .container-contact-us fieldset legend {
   font-weight: bold;
 }
-
 main.main-services .reservation fieldset:last-child,
 main.main-services .contact-page fieldset:last-child,
 main.main-services .container-contact-us fieldset:last-child,
@@ -1056,7 +1010,6 @@ main.main-services-reception .container-contact-us fieldset:last-child {
   margin-right: 21px;
   margin-left: 21px;
 }
-
 main.main-services .reservation fieldset:last-child legend,
 main.main-services .contact-page fieldset:last-child legend,
 main.main-services .container-contact-us fieldset:last-child legend,
@@ -1075,7 +1028,6 @@ main.main-services-reception .container-contact-us fieldset:last-child legend {
   padding: 0;
   margin: 0;
 }
-
 main.main-services .reservation fieldset:last-child input[type="submit"],
 main.main-services .contact-page fieldset:last-child input[type="submit"],
 main.main-services .container-contact-us fieldset:last-child input[type="submit"],
@@ -1094,7 +1046,6 @@ main.main-services-reception .container-contact-us fieldset:last-child input[typ
   margin: 0;
   border: 1px solid #F06449;
 }
-
 main.main-services .reservation label,
 main.main-services .reservation input,
 main.main-services .reservation select,
@@ -1158,7 +1109,6 @@ main.main-services-reception .container-contact-us textarea {
   display: block;
   padding: 5px;
 }
-
 main.main-services .reservation input,
 main.main-services .reservation select,
 main.main-services .reservation button,
@@ -1226,7 +1176,6 @@ main.main-services-reception .container-contact-us textarea {
   box-sizing: border-box;
   margin-top: 10px;
 }
-
 main.main-services .reservation input[type="text"],
 main.main-services .reservation input[type="tel"],
 main.main-services .reservation input[type="number"],
@@ -1306,7 +1255,6 @@ main.main-services-reception .container-contact-us textarea {
   display: block;
   background-color: #dddddd;
 }
-
 main.main-services .reservation input[type="range"],
 main.main-services .contact-page input[type="range"],
 main.main-services .container-contact-us input[type="range"],
@@ -1325,7 +1273,6 @@ main.main-services-reception .container-contact-us input[type="range"] {
   width: 50%;
   display: block;
 }
-
 main.main-services .reservation input[type="date"],
 main.main-services .contact-page input[type="date"],
 main.main-services .container-contact-us input[type="date"],
@@ -1343,7 +1290,6 @@ main.main-services-reception .contact-page input[type="date"],
 main.main-services-reception .container-contact-us input[type="date"] {
   background-color: #dddddd;
 }
-
 main.main-services .reservation input[type="radio"],
 main.main-services .contact-page input[type="radio"],
 main.main-services .container-contact-us input[type="radio"],
@@ -1361,7 +1307,6 @@ main.main-services-reception .contact-page input[type="radio"],
 main.main-services-reception .container-contact-us input[type="radio"] {
   display: inline;
 }
-
 main.main-services .reservation fieldset:not(:nth-child(3)) label,
 main.main-services .contact-page fieldset:not(:nth-child(3)) label,
 main.main-services .container-contact-us fieldset:not(:nth-child(3)) label,
@@ -1379,7 +1324,6 @@ main.main-services-reception .contact-page fieldset:not(:nth-child(3)) label,
 main.main-services-reception .container-contact-us fieldset:not(:nth-child(3)) label {
   margin-top: 10px;
 }
-
 main.main-services .reservation input[type="text"]:focus,
 main.main-services .reservation input[type="email"]:focus,
 main.main-services .reservation input[type="number"]:focus,
@@ -1490,7 +1434,6 @@ main.main-services-reception .container-contact-us select:focus {
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 10px rgba(82, 168, 236, 0.8);
   outline: none;
 }
-
 main.main-services .reservation input[type="text"]:valid,
 main.main-services .reservation input[type="email"]:valid,
 main.main-services .reservation input[type="number"]:valid,
@@ -1598,7 +1541,6 @@ main.main-services-reception .container-contact-us input[type="date"]:valid,
 main.main-services-reception .container-contact-us select:valid {
   border-left: solid 5px green;
 }
-
 main.main-services .reservation input[type="text"]:invalid,
 main.main-services .reservation input[type="email"]:invalid,
 main.main-services .reservation input[type="number"]:invalid,
@@ -1706,7 +1648,6 @@ main.main-services-reception .container-contact-us input[type="date"]:invalid,
 main.main-services-reception .container-contact-us select:invalid {
   border-left: solid 5px red;
 }
-
 main.main-services .container-contact-us,
 main.main-reservation .container-contact-us,
 main.main-contact-page .container-contact-us,
@@ -1715,7 +1656,6 @@ main.main-services-reception .container-contact-us {
   box-shadow: none;
   background-color: transparent;
 }
-
 main.main-services .contact-page,
 main.main-reservation .contact-page,
 main.main-contact-page .contact-page,
@@ -1726,7 +1666,6 @@ main.main-services-reception .contact-page {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-
 main.main-services .reservation,
 main.main-reservation .reservation,
 main.main-contact-page .reservation,
@@ -1741,7 +1680,6 @@ main.main-home {
   display: grid;
   grid-template-columns: 1fr;
 }
-
 main.main-home .tagline-temple {
   display: grid;
   grid-template-columns: 1fr;
@@ -1749,42 +1687,34 @@ main.main-home .tagline-temple {
   grid-row-gap: 10px;
   margin-top: 10px;
 }
-
 main.main-home .tagline img {
   width: 150px;
   height: 75px;
   margin-left: 20px;
 }
-
 main.main-home .tagline h1 {
   background-color: #FFFF00;
   padding: 20px;
   color: #090809;
 }
-
 main.main-home .tagline h3 {
   padding-left: 20px;
 }
-
 main.main-home .tagline input[type="submit"] {
   margin-left: 20px;
   width: auto;
 }
-
 main.main-home .temple {
   position: relative;
 }
-
 main.main-home .temple img {
   width: 100%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
 }
-
 main.main-home .temple h2 {
   margin-left: 20px;
   color: #FFFF00;
 }
-
 main.main-home .temple div {
   margin: 0;
   position: absolute;
@@ -1794,7 +1724,6 @@ main.main-home .temple div {
   background-color: rgba(255, 255, 255, 0.6);
   color: #090809;
 }
-
 main.main-home .temple div p {
   padding-left: 10px;
   padding-right: 10px;
@@ -1811,21 +1740,18 @@ main {
   grid-row-gap: 0;
   grid-gap: 0;
 }
-
 main .temples {
   display: grid;
   grid-template-columns: 1fr;
   grid-row-gap: 10px;
   margin-top: 10px;
 }
-
 main .temples section img {
   width: 100%;
   height: 150px;
   border-top: 1px solid #feffff;
   border-bottom: 1px solid #feffff;
 }
-
 main .temples section {
   background-color: #083D77;
   text-align: center;
@@ -1833,14 +1759,12 @@ main .temples section {
   color: #FEFFFF;
   border: solid 1px #74b3ce;
 }
-
 main .temples section h3 {
   background-color: #042a2b;
   padding: 20px;
   margin-top: 0;
   margin-bottom: 0;
 }
-
 main .temples section div {
   margin: auto 0;
   text-align: justify;
@@ -1856,7 +1780,6 @@ main .temples section div {
 .temp {
   font-size: smaller;
 }
-
 .temp p {
   margin: 0;
   padding: 0;
@@ -1866,30 +1789,25 @@ main .temples section div {
 .aside section {
   margin-bottom: 20px;
 }
-
 .aside section iframe {
   display: none;
   width: 100%;
   /*box-shadow: $box-shadow;*/
   height: 200px;
 }
-
 .aside h3,
 .aside h4,
 .aside p {
   margin: 0;
   margin-bottom: 5px;
 }
-
 .aside img {
   width: 30px;
   height: 30px;
 }
-
 .aside .details-contact-information {
   color: #FEFFFF;
 }
-
 .aside .details-contact-information div {
   /*background-color: $bg-rgba;*/
   padding-left: 0;
@@ -1898,11 +1816,9 @@ main .temples section div {
   /*border-top: 4px solid $font-color-yellow;*/
   /*box-shadow: $box-shadow;*/
 }
-
 .aside .details-contact-information h3 {
   color: #FFFF00;
 }
-
 .aside .details-contact-information p,
 .aside .details-contact-information h3 {
   text-align: left;
@@ -1920,7 +1836,6 @@ main .temples section div {
   margin: 0 auto;
   color: #090809;
 }
-
 .main-thank-you div {
   margin: 0 auto;
 }
@@ -1939,16 +1854,13 @@ main.main-attribution {
   color: #FEFFFF;
   word-wrap: break-word;
 }
-
 main.main-attribution h1 {
   margin: 0 auto;
 }
-
 main.main-attribution h3 {
   margin-top: 0;
   margin: 0 auto;
 }
-
 main.main-attribution div {
   overflow: hidden;
   word-wrap: break-word;
@@ -1968,16 +1880,14 @@ footer {
   border-top: solid 1px #1e4e83;
   color: #FFFF00;
 }
-
-footer>div {
+footer > div {
   /*font-size: 1.6em;*/
   padding: 1rem 4rem;
   margin: 0 auto;
   display: flex;
 }
-
-footer>div a,
-footer>div span {
+footer > div a,
+footer > div span {
   margin: auto 0;
   text-decoration: none;
   color: #FFFF00;
@@ -2016,7 +1926,6 @@ footer>div span {
   main {
     /*temples*/
   }
-
   main .temples {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -2041,11 +1950,9 @@ footer>div span {
     padding-left: 10px;
     padding-right: 10px;
   }
-
   aside section {
     margin-bottom: 20px;
   }
-
   aside section iframe {
     display: block;
     width: 100%;
@@ -2060,12 +1967,10 @@ footer>div span {
     margin-top: 10px;
   }
 }
-
 /* end of media query */
 @media only screen and (min-width: 1028px) {
   @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
   @import url("https://fonts.googleapis.com/css?family=Arvo:700&display=swap");
-
   html,
   body {
     /*background-image: url('../img/rome-italy-temple-2190090-wallpaper.jpg');
@@ -2124,14 +2029,13 @@ footer>div span {
   header {
     padding-left: 0;
   }
-
   header .company {
     padding-top: 20px;
     padding-bottom: 20px;
   }
-
   header .company p {
     font-size: 14px;
+    color: red;
   }
 
   nav {
@@ -2140,23 +2044,18 @@ footer>div span {
     padding: 10px;
     grid-template-columns: 15% 45% 40%;
   }
-
   nav .logo {
     padding-top: 0;
   }
-
-  nav>ul>li:first-child {
+  nav > ul > li:first-child {
     display: none;
   }
-
-  nav>a {
+  nav > a {
     margin: auto 0;
   }
-
   nav a {
     text-decoration: none;
   }
-
   nav ul {
     display: flex;
     justify-content: flex-end;
@@ -2167,11 +2066,9 @@ footer>div span {
     list-style: none;
     text-align: right;
   }
-
   nav ul li {
     display: block;
   }
-
   nav li {
     color: #FFFF00;
     background: transparent;
@@ -2182,16 +2079,13 @@ footer>div span {
     text-decoration: none;
     transition-duration: 0.5s;
   }
-
   nav li a {
     color: #FFFF00;
   }
-
   nav li:hover {
     background: red;
     cursor: pointer;
   }
-
   nav ul li ul {
     /*background: $bg-rgba;*/
     visibility: hidden;
@@ -2203,22 +2097,19 @@ footer>div span {
     display: none;
     text-align: left;
   }
-
-  nav ul li:hover>ul,
+  nav ul li:hover > ul,
   nav ul li ul:hover {
     visibility: visible;
     opacity: 1;
     display: block;
     min-width: 10rem;
   }
-
   nav ul li ul li {
     background: rgba(8, 61, 119, 0.7);
     clear: both;
     width: 100%;
     z-index: 1000;
   }
-
   nav ul li ul li:last-child {
     padding-bottom: 15px;
   }
@@ -2233,7 +2124,6 @@ footer>div span {
   main.main-services .slideshow-container img {
     height: 400px;
   }
-
   main.main-temples .slideshow-wrapper,
   main.main-contact-page .slideshow-wrapper,
   main.main-home .slideshow-wrapper,
@@ -2253,7 +2143,6 @@ footer>div span {
     margin: 0;
     /*border: solid 1px #74B3CE;*/
   }
-
   main.main-reservation .reservation,
   main.main-contact-page .reservation {
     width: 50%;
@@ -2262,7 +2151,6 @@ footer>div span {
     padding: 20px;
     margin-top: 10px;
   }
-
   main.main-reservation .contact-page,
   main.main-contact-page .contact-page {
     border: solid 1px #74B3CE;
@@ -2272,7 +2160,6 @@ footer>div span {
     width: auto;
     padding: 20px;
   }
-
   main.main-reservation .contact-page h1,
   main.main-contact-page .contact-page h1 {
     grid-column: 1 / span 2;
@@ -2283,27 +2170,23 @@ footer>div span {
   main.main-services-reception {
     margin-bottom: 0;
   }
-
   main.main-services h1,
   main.main-services-temple-missionary h1,
   main.main-services-reception h1 {
     color: #FFFF00;
   }
-
   main.main-services .contact-us,
   main.main-services-temple-missionary .contact-us,
   main.main-services-reception .contact-us {
     margin: auto 0;
     width: 100%;
   }
-
   main.main-services .contact-us .container-contact-us,
   main.main-services-temple-missionary .contact-us .container-contact-us,
   main.main-services-reception .contact-us .container-contact-us {
     margin: 0 auto;
     width: 50%;
   }
-
   main.main-services .services,
   main.main-services-temple-missionary .services,
   main.main-services-reception .services {
@@ -2318,26 +2201,22 @@ footer>div span {
     background-color: rgba(8, 61, 119, 0.7);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
   }
-
   main.main-services .services ul,
   main.main-services-temple-missionary .services ul,
   main.main-services-reception .services ul {
     margin: 0;
     padding-left: 17px;
   }
-
   main.main-services .services ul li,
   main.main-services-temple-missionary .services ul li,
   main.main-services-reception .services ul li {
     padding: 5px;
   }
-
-  main.main-services .services section:last-child div>div,
-  main.main-services-temple-missionary .services section:last-child div>div,
-  main.main-services-reception .services section:last-child div>div {
+  main.main-services .services section:last-child div > div,
+  main.main-services-temple-missionary .services section:last-child div > div,
+  main.main-services-reception .services section:last-child div > div {
     border: none;
   }
-
   main.main-services .services div.amenities,
   main.main-services .services div.specialized-services,
   main.main-services-temple-missionary .services div.amenities,
@@ -2349,7 +2228,6 @@ footer>div span {
     grid-column-gap: 10px;
     grid-row-gap: 10px;
   }
-
   main.main-services .services div.amenities .container,
   main.main-services .services div.specialized-services .container,
   main.main-services-temple-missionary .services div.amenities .container,
@@ -2359,7 +2237,6 @@ footer>div span {
     position: relative;
     text-align: center;
   }
-
   main.main-services .services div.amenities div.top-left,
   main.main-services .services div.specialized-services div.top-left,
   main.main-services-temple-missionary .services div.amenities div.top-left,
@@ -2375,7 +2252,6 @@ footer>div span {
     color: #FEFFFF;
     border-bottom: 4px solid #FFFF00;
   }
-
   main.main-services .services div.amenities h3,
   main.main-services .services div.specialized-services h3,
   main.main-services-temple-missionary .services div.amenities h3,
@@ -2384,7 +2260,6 @@ footer>div span {
   main.main-services-reception .services div.specialized-services h3 {
     text-align: center;
   }
-
   main.main-services .services div.amenities img,
   main.main-services .services div.specialized-services img,
   main.main-services-temple-missionary .services div.amenities img,
@@ -2402,28 +2277,23 @@ footer>div span {
     margin: 10px;
     margin-top: 10px;
   }
-
   main.main-home .tagline-temple .tagline img {
     width: 200px;
     height: 100px;
     margin-left: 20px;
   }
-
   main.main-home .tagline-temple .tagline h1 {
     background-color: #FFFF00;
     padding: 20px;
     color: #090809;
   }
-
   main.main-home .tagline-temple .tagline h3 {
     padding-left: 20px;
   }
-
   main.main-home .tagline-temple .tagline input[type=submit] {
     margin-left: 20px;
     width: auto;
   }
-
   main.main-home .temple div {
     width: 45%;
   }
@@ -2431,16 +2301,13 @@ footer>div span {
   main {
     /* temples */
   }
-
-  main>h1 {
+  main > h1 {
     color: #FFFF00;
   }
-
-  main .temples>div {
+  main .temples > div {
     margin-top: 0;
     margin-bottom: 0;
   }
-
   main .temples {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -2448,28 +2315,24 @@ footer>div span {
     grid-column-gap: 10px;
     margin-top: 10px;
   }
-
   main .temples section img {
     width: 100%;
     height: 150px;
     border-top: 1px solid #FEFFFF;
     border-bottom: 1px solid #FEFFFF;
   }
-
   main .temples section {
     background-color: rgba(28, 119, 195, 0.8);
     text-align: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
     color: #FEFFFF;
   }
-
   main .temples section h3 {
     background-color: #083D77;
     padding: 20px;
     margin-top: 0;
     margin-bottom: 0;
   }
-
   main .temples section div {
     text-align: justify;
     padding: 20px;
@@ -2487,30 +2350,25 @@ footer>div span {
     grid-row-gap: 0;
     grid-column-gap: 0;*/
   }
-
   .aside section {
     margin-bottom: 10px;
   }
-
   .aside section iframe {
     display: block;
     width: 100%;
     /*box-shadow: $box-shadow;*/
     height: 400px;
   }
-
   .aside h3,
   .aside h4,
   .aside p {
     margin: 0;
     margin-bottom: 5px;
   }
-
   .aside img {
     width: 50px;
     height: 50px;
   }
-
   .aside .details-contact-information div {
     /*background-color: $bg-rgba;*/
     padding: 10px;
@@ -2519,11 +2377,9 @@ footer>div span {
     border-top: none;
     /*box-shadow: $box-shadow;*/
   }
-
   .aside .details-contact-information h3 {
     color: #FFFF00;
   }
-
   .aside .details-contact-information p,
   .aside .details-contact-information h3 {
     text-align: center;
@@ -2552,5 +2408,4 @@ footer>div span {
   https://medium.com/@elad/becoming-a-css-grid-ninja-f4c6db018cc1
   */
 }
-
 /* end of media query */
