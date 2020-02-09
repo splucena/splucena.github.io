@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        a {
+            transition: 3s;
+            font-size: 100px;
+        }
+
+        a:link {
+            color: #309;
+        }
+
+        a:hover {
+            color: #f0c;
+        }
+
+        body {
+            background: #fcf;
+            transition: 5s;
+        }
+
+        .change {
+            background: #0cf;
+        }
+
+        button {
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <p><a href="">Link</a></p>
+
+    <div>
+        <h1>Transition example with a Javascript Trigger</h1>
+        <button>Trigger Transition</button>
+        <p>This transition effect will take five secconds to complete after the button is clicked.</p>
+    </div>
+</body>
+<script>
+    var btn = document.querySelector('button');
+    btn.addEventListener('click', function () {
+        document.body.classList.toggle('change');
+    });
+</script>
+
+</html>
